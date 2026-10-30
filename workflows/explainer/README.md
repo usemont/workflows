@@ -31,11 +31,13 @@ mont --json -C "$PWD" workflow run "$PWD/explainer.mont" \
 
 Successful outputs include the native `video` description, durable narration WAV path, editable workspace path, render result, and full `policy` state containing review/repair and selection evidence. The workflow only reports success when native project creation and MP4 rendering finish; narration errors do not become silent video. Provider access and rendering are real dependencies. The public scene generator is included in this repository; the proprietary Mont SDK compiler and renderer are not. Check the [collection's CLI availability warning](../../README.md) before installing a binary.
 
-## Verified native acceptance
+## Native execution verification, not visual acceptance
+
+**Visual acceptance is rejected.** The current native templates lose source theme, typography, icon, visual-detail, and motion fidelity. A successful MP4 and passing structural tests are not evidence of production-ready visuals. A compatible CLI release remains on hold until source-reference comparisons pass.
 
 On 2026-10-30, a funded live run completed the full native workflow with the unchanged example configuration: `cloudflare/clef` decisions, `anthropic/claude-haiku-5.5` chat, `hexgrad/kokoro-82m` speech with `af_heart`, and `openai/whisper-large-v3` word timestamps. Paid review, repair, family proposal, and two-pass merit stages completed; the result included an editable native Mont project and a 28.325-second H.264/AAC MP4 at 1920×1080, 30 fps. The same accepted scene/audio payload was also rendered natively at 1080×1920; this was a vertical re-render, not a second paid inference run. Jev is configured and covered by adapter tests, but was not exercised in this live acceptance.
 
-Replaying the completed run ID without provider credentials returned the durable result successfully, and the existing MP4's SHA-256 stayed unchanged. This acceptance demonstrates the tested native build and configured services; it does not establish that older public CLI packages support this workflow or that every provider/model remains available.
+Replaying the completed run ID without provider credentials returned the durable result successfully, and the existing MP4's SHA-256 stayed unchanged. This verifies execution and replay only, not visual fidelity, support in older public CLI packages, or continued provider/model availability.
 
 ## Stages and reusable parts
 

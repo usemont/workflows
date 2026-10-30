@@ -1,5 +1,7 @@
 # Mont workflows and native templates
 
+**Experimental; visual fidelity is not accepted.** The native port does not yet preserve the source themes, typography, icons, visual detail, or motion to the required standard. Publication of a compatible CLI release is on hold pending reference-based visual and temporal review. Execution tests below do not certify visual quality.
+
 Reusable, editable video workflows for [Mont CLI](https://github.com/usemont/mont-cli), published by Nauchu AB under Apache-2.0. Workflows and templates live in one repository so their grammar and execution contracts stay versioned together.
 
 ## Markdown → narrated explainer
@@ -29,7 +31,7 @@ mont --json -C "$PWD" workflow run "$PWD/explainer.mont" \
 cargo test --locked --manifest-path templates/engine/native/Cargo.toml
 ```
 
-Public generator tests validate template behavior without the proprietary SDK. Full native workflow acceptance was completed on 2026-10-30: real provider narration and word alignment, editable project creation, and a 28.325-second H.264/AAC MP4 at 1920×1080/30 fps. The accepted scene/audio payload also rendered natively at 1080×1920. See the [acceptance and recovery details](workflows/explainer/README.md#verified-native-acceptance).
+Public generator tests validate structural template behavior without the proprietary SDK. Native execution was verified on 2026-10-30: real provider narration and word alignment, editable project creation, and a 28.325-second H.264/AAC MP4 at 1920×1080/30 fps, plus a native 1080×1920 re-render. **These outputs failed visual acceptance.** See the [execution verification and recovery details](workflows/explainer/README.md#native-execution-verification-not-visual-acceptance).
 
 ## Reuse and contribute
 
