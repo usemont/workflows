@@ -1,0 +1,36 @@
+{
+  "adapters": {
+    "clef": {
+      "protocol": "decisions",
+      "endpoint": "https://openrouter.ai/api/alpha/decisions",
+      "model": "cloudflare/clef",
+      "credentialEnv": "OPENROUTER_API_KEY"
+    },
+    "jev": {
+      "protocol": "decisions",
+      "endpoint": "https://openrouter.ai/api/alpha/decisions",
+      "model": "typesafe/jev-1.14",
+      "credentialEnv": "OPENROUTER_API_KEY"
+    },
+    "haiku": {
+      "protocol": "chat",
+      "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+      "model": "anthropic/claude-haiku-5.5",
+      "credentialEnv": "OPENROUTER_API_KEY"
+    },
+    "voice": {
+      "protocol": "speech",
+      "endpoint": "https://openrouter.ai/api/v1/audio/speech",
+      "model": "hexgrad/kokoro-82m",
+      "voice": "af_heart",
+      "responseFormat": "pcm16",
+      "credentialEnv": "OPENROUTER_API_KEY"
+    },
+    "transcription": {
+      "protocol": "transcription",
+      "endpoint": "https://openrouter.ai/api/v1/audio/transcriptions",
+      "model": "openai/whisper-large-v3",
+      "credentialEnv": "OPENROUTER_API_KEY"
+    }
+  }
+}

@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 1,
+  "id": "explainer-voice",
+  "revision": "1",
+  "inputs": {
+    "item": {
+      "valueType": "object",
+      "required": true
+    },
+    "index": {
+      "valueType": "number",
+      "required": true
+    },
+    "voice": {
+      "valueType": "string",
+      "required": true
+    },
+    "transcription": {
+      "valueType": "string",
+      "required": true
+    }
+  },
+  "nodes": [
+    {
+      "id": "script",
+      "operation": "explainer.voice_script",
+      "operationVersion": "1",
+      "inputs": {
+        "state": {
+          "kind": "object",
+          "fields": {
+            "scene": {
+              "kind": "input",
+              "input": "item"
+            }
+          }
+        },
+        "response": {
+          "kind": "literal",
+          "value": {}
+        },
+        "policy": {
+          "kind": "literal",
+          "value": {}
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "speech",
+      "operation": "provider.speech",
+      "operationVersion": "1",
+      "inputs": {
+        "adapter": {
+          "kind": "input",
+          "input": "voice"
+        },
+        "text": {
+          "kind": "node",
+          "node": "script",
+          "output": "text"
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "transcribe",
+      "operation": "provider.transcribe",
+      "operationVersion": "1",
+      "inputs": {
+        "adapter": {
+          "kind": "input",
+          "input": "transcription"
+        },
+        "file": {
+          "kind": "node",
+          "node": "speech",
+          "output": "file"
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "align",
+      "operation": "explainer.align",
+      "operationVersion": "1",
+      "inputs": {
+        "state": {
+          "kind": "object",
+          "fields": {
+            "scene": {
+              "kind": "input",
+              "input": "item"
+            },
+            "script": {
+              "kind": "node",
+              "node": "script",
+              "output": "text"
+            },
+            "speech": {
+              "kind": "node",
+              "node": "speech",
+              "output": "result"
+            },
+            "transcription": {
+              "kind": "node",
+              "node": "transcribe",
+              "output": "result"
+            }
+          }
+        },
+        "response": {
+          "kind": "literal",
+          "value": {}
+        },
+        "policy": {
+          "kind": "literal",
+          "value": {}
+        }
+      },
+      "dependsOn": []
+    }
+  ],
+  "outputs": {
+    "result": {
+      "kind": "node",
+      "node": "align",
+      "output": "result"
+    }
+  },
+  "bounds": {
+    "maxNodes": 128,
+    "maxConcurrent": 1,
+    "maxAttempts": 1,
+    "maxInputBytes": 16777216,
+    "maxOutputBytes": 67108864
+  }
+}

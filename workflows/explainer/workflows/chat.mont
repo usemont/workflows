@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "id": "explainer-chat",
+  "revision": "1",
+  "inputs": {
+    "item": {
+      "valueType": "object",
+      "required": true
+    },
+    "index": {
+      "valueType": "number",
+      "required": true
+    },
+    "adapter": {
+      "valueType": "string",
+      "required": true
+    }
+  },
+  "nodes": [
+    {
+      "id": "prompt",
+      "operation": "workflow.select",
+      "operationVersion": "1",
+      "inputs": {
+        "value": {
+          "kind": "input",
+          "input": "item"
+        },
+        "path": {
+          "kind": "literal",
+          "value": [
+            "prompt"
+          ]
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "messages",
+      "operation": "workflow.script",
+      "operationVersion": "1",
+      "inputs": {
+        "source": {
+          "kind": "literal",
+          "value": {
+            "$asset": "messages.mont"
+          }
+        },
+        "function": {
+          "kind": "literal",
+          "value": "build_messages"
+        },
+        "arguments": {
+          "kind": "array",
+          "items": [
+            {
+              "kind": "node",
+              "node": "prompt",
+              "output": "result"
+            },
+            {
+              "kind": "input",
+              "input": "item"
+            }
+          ]
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "ask",
+      "operation": "provider.chat",
+      "operationVersion": "1",
+      "inputs": {
+        "adapter": {
+          "kind": "input",
+          "input": "adapter"
+        },
+        "messages": {
+          "kind": "node",
+          "node": "messages",
+          "output": "result"
+        }
+      },
+      "dependsOn": []
+    }
+  ],
+  "outputs": {
+    "result": {
+      "kind": "node",
+      "node": "ask",
+      "output": "result"
+    }
+  },
+  "bounds": {
+    "maxNodes": 128,
+    "maxConcurrent": 1,
+    "maxAttempts": 1,
+    "maxInputBytes": 16777216,
+    "maxOutputBytes": 67108864
+  }
+}

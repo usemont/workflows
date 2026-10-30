@@ -1,0 +1,2535 @@
+{
+  "human": [
+    "people",
+    "one person, an employee, a user",
+    [
+      "person",
+      "employee",
+      "user",
+      "colleague",
+      "individual",
+      "worker",
+      "staff member",
+      "you",
+      "member",
+      "requester",
+      "creator",
+      "owner",
+      "contractor",
+      "visitor",
+      "account",
+      "freelancer"
+    ]
+  ],
+  "group": [
+    "people",
+    "a team or several people",
+    [
+      "team",
+      "people",
+      "staff",
+      "colleagues",
+      "employees",
+      "workforce",
+      "users",
+      "group",
+      "department members",
+      "others",
+      "audience members",
+      "board",
+      "stakeholder",
+      "stakeholders",
+      "union",
+      "diversity",
+      "members",
+      "committee",
+      "volunteer",
+      "volunteers"
+    ]
+  ],
+  "customer": [
+    "people",
+    "a customer or client",
+    [
+      "customer",
+      "client",
+      "buyer",
+      "account holder",
+      "consumer",
+      "end user",
+      "patient",
+      "guest"
+    ]
+  ],
+  "manager": [
+    "people",
+    "a manager, leader or professional role",
+    [
+      "manager",
+      "line manager",
+      "leader",
+      "leadership",
+      "management",
+      "executive",
+      "supervisor",
+      "boss",
+      "professional",
+      "director",
+      "head of"
+    ]
+  ],
+  "expert": [
+    "people",
+    "an expert, specialist, or training and education",
+    [
+      "expert",
+      "specialist",
+      "qualified",
+      "expertise",
+      "solicitor",
+      "lawyer",
+      "advisor",
+      "consultant",
+      "training",
+      "education",
+      "course",
+      "learning",
+      "learner",
+      "student",
+      "trainer",
+      "mentor",
+      "coach",
+      "lesson",
+      "teacher",
+      "tutor"
+    ]
+  ],
+  "newcomer": [
+    "people",
+    "a new person joining: hiring, onboarding, a new user",
+    [
+      "new hire",
+      "onboarding",
+      "recruit",
+      "joiner",
+      "new employee",
+      "hiring",
+      "recruitment",
+      "invite",
+      "new starter",
+      "intern",
+      "apprentice",
+      "trainee",
+      "graduate",
+      "induction"
+    ]
+  ],
+  "leaver": [
+    "people",
+    "a person removed: leaving, offboarding, access removed",
+    [
+      "leaver",
+      "offboarding",
+      "dismissal",
+      "termination",
+      "removed user",
+      "blocked user"
+    ]
+  ],
+  "approver": [
+    "people",
+    "a person who approves or signs off",
+    [
+      "approver",
+      "reviewer",
+      "sign-off",
+      "authoriser",
+      "checker",
+      "human review",
+      "human oversight",
+      "human in the loop"
+    ]
+  ],
+  "candidate": [
+    "people",
+    "an identity, ID or candidate profile",
+    [
+      "identity",
+      "id",
+      "candidate",
+      "applicant",
+      "profile",
+      "badge",
+      "personal details",
+      "employee record"
+    ]
+  ],
+  "partner": [
+    "people",
+    "a partner, agreement or relationship",
+    [
+      "partner",
+      "partnership",
+      "agreement",
+      "deal",
+      "relationship",
+      "collaboration",
+      "supplier relationship",
+      "trust",
+      "negotiation",
+      "negotiate"
+    ]
+  ],
+  "support": [
+    "people",
+    "support, a help desk or a call centre",
+    [
+      "support",
+      "help desk",
+      "service desk",
+      "call centre",
+      "customer service",
+      "helpdesk",
+      "contact centre",
+      "IT support"
+    ]
+  ],
+  "building": [
+    "organisation",
+    "a company or organisation",
+    [
+      "company",
+      "organisation",
+      "organization",
+      "business",
+      "firm",
+      "employer",
+      "enterprise",
+      "corporate",
+      "head office",
+      "the company",
+      "headquarters",
+      "hq"
+    ]
+  ],
+  "office": [
+    "organisation",
+    "an office or workplace",
+    [
+      "office",
+      "workplace",
+      "site",
+      "premises",
+      "branch",
+      "location"
+    ]
+  ],
+  "government": [
+    "organisation",
+    "a government, regulator, bank or public authority",
+    [
+      "government",
+      "regulator",
+      "authority",
+      "public sector",
+      "bank",
+      "agency",
+      "ministry",
+      "court building",
+      "institution",
+      "regulatory body",
+      "regulators",
+      "public body",
+      "loan",
+      "mortgage",
+      "lender"
+    ]
+  ],
+  "factory": [
+    "organisation",
+    "a factory, manufacturer or supplier",
+    [
+      "factory",
+      "manufacturer",
+      "plant",
+      "production",
+      "manufacturing",
+      "supplier",
+      "vendor"
+    ]
+  ],
+  "store": [
+    "organisation",
+    "a shop or retail store",
+    [
+      "shop",
+      "store",
+      "retail",
+      "branch store",
+      "outlet",
+      "marketplace",
+      "market",
+      "sales",
+      "selling"
+    ]
+  ],
+  "warehouse": [
+    "organisation",
+    "a warehouse or stock",
+    [
+      "warehouse",
+      "stock",
+      "inventory",
+      "storage",
+      "depot",
+      "distribution centre"
+    ]
+  ],
+  "home": [
+    "organisation",
+    "home or remote work",
+    [
+      "home",
+      "remote work",
+      "working from home",
+      "house",
+      "household",
+      "flexible working",
+      "hybrid work",
+      "hybrid working"
+    ]
+  ],
+  "orgchart": [
+    "organisation",
+    "an org chart, structure or network of units",
+    [
+      "org chart",
+      "structure",
+      "hierarchy",
+      "departments",
+      "business functions",
+      "organisation structure",
+      "network",
+      "reporting line",
+      "department",
+      "subsidiary",
+      "division",
+      "unit",
+      "organisation chart",
+      "organization chart",
+      "business unit",
+      "business units"
+    ]
+  ],
+  "school": [
+    "organisation",
+    "a school or academy",
+    [
+      "school",
+      "academy",
+      "university",
+      "college",
+      "campus"
+    ]
+  ],
+  "document": [
+    "documents",
+    "a document, file or written output",
+    [
+      "document",
+      "file",
+      "text",
+      "output",
+      "draft",
+      "write-up",
+      "paper",
+      "content",
+      "material",
+      "record",
+      "brief",
+      "briefing",
+      "summary",
+      "proposal",
+      "statement",
+      "article"
+    ]
+  ],
+  "contract": [
+    "documents",
+    "a contract, signed document or agreement text",
+    [
+      "contract",
+      "agreement",
+      "terms",
+      "nda",
+      "signed document",
+      "signature",
+      "sign",
+      "contractual",
+      "licence",
+      "license",
+      "tender",
+      "bid"
+    ]
+  ],
+  "policy": [
+    "documents",
+    "a policy, rules or regulation text",
+    [
+      "policy",
+      "rules",
+      "regulation",
+      "code of conduct",
+      "guidelines",
+      "standard",
+      "procedure",
+      "law text",
+      "the policy",
+      "governance",
+      "rule",
+      "rules",
+      "gdpr",
+      "data protection law",
+      "privacy law"
+    ]
+  ],
+  "checklist": [
+    "documents",
+    "a checklist, form or list of requirements",
+    [
+      "checklist",
+      "form",
+      "requirements",
+      "list",
+      "questionnaire",
+      "template",
+      "request form",
+      "change request",
+      "job description",
+      "job spec",
+      "survey",
+      "poll"
+    ]
+  ],
+  "assessment": [
+    "documents",
+    "an assessment, evaluation or completed review",
+    [
+      "assessment",
+      "evaluation",
+      "review",
+      "audit result",
+      "appraisal",
+      "performance review",
+      "check",
+      "inspection"
+    ]
+  ],
+  "report": [
+    "documents",
+    "a report with figures",
+    [
+      "report",
+      "analysis",
+      "findings",
+      "statistics",
+      "figures",
+      "results",
+      "kpi report",
+      "quarterly report"
+    ]
+  ],
+  "invoice": [
+    "documents",
+    "an invoice, receipt or expense",
+    [
+      "invoice",
+      "receipt",
+      "expense",
+      "bill",
+      "purchase order",
+      "claim",
+      "payment record",
+      "payslip",
+      "quote",
+      "quotation",
+      "pay slip"
+    ]
+  ],
+  "certificate": [
+    "documents",
+    "a certificate, award or certification",
+    [
+      "certificate",
+      "certification",
+      "award",
+      "accreditation",
+      "qualification",
+      "achievement",
+      "recognition"
+    ]
+  ],
+  "folder": [
+    "documents",
+    "a folder or collection of files",
+    [
+      "folder",
+      "files",
+      "directory",
+      "collection",
+      "shared drive",
+      "project files"
+    ]
+  ],
+  "archive": [
+    "documents",
+    "an archive or records kept over time",
+    [
+      "archive",
+      "records",
+      "retention",
+      "history",
+      "backup",
+      "storage box"
+    ]
+  ],
+  "book": [
+    "documents",
+    "a manual, guide or handbook",
+    [
+      "manual",
+      "guide",
+      "handbook",
+      "guidance",
+      "knowledge base",
+      "documentation",
+      "playbook",
+      "book",
+      "reference",
+      "lessons learned",
+      "lessons"
+    ]
+  ],
+  "note": [
+    "documents",
+    "a note or reminder",
+    [
+      "note",
+      "notes",
+      "memo",
+      "reminder",
+      "comment",
+      "annotation",
+      "minutes",
+      "meeting notes"
+    ]
+  ],
+  "spreadsheet": [
+    "documents",
+    "a spreadsheet or table",
+    [
+      "spreadsheet",
+      "table",
+      "excel",
+      "tracker",
+      "sheet",
+      "budget sheet",
+      "data table",
+      "timesheet"
+    ]
+  ],
+  "slides": [
+    "documents",
+    "a presentation or slides",
+    [
+      "presentation",
+      "slides",
+      "deck",
+      "pitch",
+      "briefing session",
+      "talk"
+    ]
+  ],
+  "confidential": [
+    "documents",
+    "a confidential or restricted document",
+    [
+      "confidential",
+      "confidential information",
+      "sensitive document",
+      "restricted document",
+      "classified",
+      "secret",
+      "commercially sensitive",
+      "private file",
+      "trade secret",
+      "trade secrets"
+    ]
+  ],
+  "pen": [
+    "documents",
+    "writing, editing or signing",
+    [
+      "write",
+      "writing",
+      "edit",
+      "editing",
+      "drafting",
+      "author",
+      "sign off",
+      "rewrite"
+    ]
+  ],
+  "database": [
+    "technology",
+    "data, a database or records",
+    [
+      "data",
+      "database",
+      "records",
+      "dataset",
+      "information",
+      "personal data",
+      "customer data",
+      "knowledge sources",
+      "data store",
+      "crm"
+    ]
+  ],
+  "server": [
+    "technology",
+    "a server, system or infrastructure",
+    [
+      "server",
+      "system",
+      "systems",
+      "infrastructure",
+      "back end",
+      "hosting",
+      "data centre",
+      "shared systems",
+      "it systems"
+    ]
+  ],
+  "cloud": [
+    "technology",
+    "the cloud, an online service or the internet",
+    [
+      "cloud",
+      "online service",
+      "internet",
+      "saas",
+      "web",
+      "public web",
+      "external service",
+      "hosted service"
+    ]
+  ],
+  "machine": [
+    "technology",
+    "a computer or laptop",
+    [
+      "computer",
+      "laptop",
+      "device",
+      "workstation",
+      "pc",
+      "desktop"
+    ]
+  ],
+  "phone": [
+    "technology",
+    "a mobile phone or app on a phone",
+    [
+      "phone",
+      "mobile",
+      "smartphone",
+      "mobile app",
+      "text message",
+      "sms"
+    ]
+  ],
+  "app": [
+    "technology",
+    "an application, tool or software",
+    [
+      "app",
+      "application",
+      "software",
+      "tool",
+      "platform",
+      "program",
+      "product",
+      "website",
+      "portal",
+      "copilot"
+    ]
+  ],
+  "bot": [
+    "technology",
+    "an AI agent, assistant or chatbot",
+    [
+      "ai agent",
+      "agent",
+      "assistant",
+      "chatbot",
+      "bot",
+      "ai assistant",
+      "virtual assistant",
+      "copilot agent",
+      "automation",
+      "robot"
+    ]
+  ],
+  "spark": [
+    "technology",
+    "AI, generated content or something new",
+    [
+      "ai",
+      "generative ai",
+      "generated",
+      "ai-generated",
+      "magic",
+      "new feature",
+      "innovation",
+      "artificial intelligence",
+      "llm",
+      "model"
+    ]
+  ],
+  "chip": [
+    "technology",
+    "processing, hardware or an AI model engine",
+    [
+      "processor",
+      "chip",
+      "hardware",
+      "computing",
+      "processing",
+      "engine"
+    ]
+  ],
+  "code": [
+    "technology",
+    "code or programming",
+    [
+      "code",
+      "programming",
+      "software development",
+      "script",
+      "developer",
+      "source code",
+      "open source"
+    ]
+  ],
+  "plug": [
+    "technology",
+    "an integration, API or connection",
+    [
+      "integration",
+      "api",
+      "connector",
+      "connection",
+      "plugin",
+      "interface",
+      "product integration"
+    ]
+  ],
+  "puzzle": [
+    "technology",
+    "a component, piece or add-on that fits in",
+    [
+      "component",
+      "piece",
+      "module",
+      "add-on",
+      "fit",
+      "missing piece",
+      "extension"
+    ]
+  ],
+  "workflow": [
+    "technology",
+    "a workflow, process or automation steps",
+    [
+      "workflow",
+      "process",
+      "pipeline",
+      "automation",
+      "procedure",
+      "routine work",
+      "business process",
+      "repeatable task",
+      "algorithm",
+      "logic"
+    ]
+  ],
+  "gear": [
+    "technology",
+    "settings, configuration or operations",
+    [
+      "settings",
+      "configuration",
+      "configure",
+      "setup",
+      "operations",
+      "maintenance",
+      "mechanism",
+      "controls",
+      "machinery",
+      "machine part",
+      "equipment"
+    ]
+  ],
+  "tool": [
+    "technology",
+    "a tool, fix or repair",
+    [
+      "tool",
+      "fix",
+      "repair",
+      "maintenance work",
+      "troubleshoot",
+      "adjust",
+      "engineer",
+      "technician",
+      "mechanic"
+    ]
+  ],
+  "search": [
+    "technology",
+    "searching, research or looking something up",
+    [
+      "search",
+      "research",
+      "look up",
+      "find",
+      "investigate",
+      "query",
+      "web search",
+      "browse",
+      "root cause",
+      "investigate cause"
+    ]
+  ],
+  "filter": [
+    "technology",
+    "filtering or selecting",
+    [
+      "filter",
+      "screening",
+      "select",
+      "narrow down",
+      "sort"
+    ]
+  ],
+  "upload": [
+    "technology",
+    "uploading or sending data out",
+    [
+      "upload",
+      "paste",
+      "input",
+      "submit",
+      "send data",
+      "share data",
+      "export"
+    ]
+  ],
+  "download": [
+    "technology",
+    "downloading or receiving",
+    [
+      "download",
+      "import",
+      "receive",
+      "save",
+      "install"
+    ]
+  ],
+  "sync": [
+    "technology",
+    "updating, syncing or refreshing",
+    [
+      "update",
+      "sync",
+      "refresh",
+      "renew",
+      "regular updates",
+      "synchronise",
+      "controlled updates"
+    ]
+  ],
+  "link": [
+    "technology",
+    "a link or connection between things",
+    [
+      "link",
+      "url",
+      "hyperlink",
+      "connected",
+      "reference link"
+    ]
+  ],
+  "chart": [
+    "technology",
+    "a chart, metrics or analytics",
+    [
+      "chart",
+      "metrics",
+      "analytics",
+      "measures",
+      "kpi",
+      "performance",
+      "graph",
+      "numbers",
+      "statistics",
+      "analyst",
+      "data analysis"
+    ]
+  ],
+  "dashboard": [
+    "technology",
+    "a dashboard or overview",
+    [
+      "dashboard",
+      "overview",
+      "control panel",
+      "monitoring screen",
+      "status page",
+      "status",
+      "status update"
+    ]
+  ],
+  "terminal": [
+    "technology",
+    "a command line or technical console",
+    [
+      "terminal",
+      "command line",
+      "console",
+      "shell",
+      "cli"
+    ]
+  ],
+  "prompt": [
+    "technology",
+    "a prompt or text input",
+    [
+      "prompt",
+      "input",
+      "instruction",
+      "query text",
+      "text box",
+      "enter text",
+      "question to ai"
+    ]
+  ],
+  "brain": [
+    "technology",
+    "machine learning, reasoning or knowledge",
+    [
+      "machine learning",
+      "reasoning",
+      "intelligence",
+      "neural network",
+      "knowledge",
+      "judgement",
+      "thinking"
+    ]
+  ],
+  "globe": [
+    "technology",
+    "the world, global or public",
+    [
+      "global",
+      "world",
+      "international",
+      "public",
+      "worldwide",
+      "public information"
+    ]
+  ],
+  "lock": [
+    "security",
+    "locked, restricted or secured",
+    [
+      "lock",
+      "locked",
+      "restricted",
+      "secure",
+      "secured",
+      "access control",
+      "protected",
+      "encryption",
+      "vpn",
+      "encrypted connection"
+    ]
+  ],
+  "unlock": [
+    "security",
+    "unlocked, open access or permission granted",
+    [
+      "unlocked",
+      "open access",
+      "unlock",
+      "access granted",
+      "permission",
+      "allowed"
+    ]
+  ],
+  "key": [
+    "security",
+    "a key, password or credential",
+    [
+      "key",
+      "password",
+      "credentials",
+      "access key",
+      "token",
+      "secret key",
+      "login",
+      "two-factor authentication",
+      "2fa",
+      "mfa"
+    ]
+  ],
+  "shield": [
+    "security",
+    "protection, safety or security",
+    [
+      "protection",
+      "safety",
+      "security",
+      "safeguard",
+      "defence",
+      "protect"
+    ]
+  ],
+  "compliant": [
+    "security",
+    "compliant, safe or verified secure",
+    [
+      "compliant",
+      "compliance",
+      "safe",
+      "secure use",
+      "verified safe",
+      "approved and safe",
+      "within policy",
+      "health and safety",
+      "safety rules"
+    ]
+  ],
+  "threat": [
+    "security",
+    "a threat, risk or security alert",
+    [
+      "threat",
+      "risk",
+      "security risk",
+      "attack",
+      "danger",
+      "vulnerability",
+      "security incident",
+      "breach",
+      "fraud",
+      "scam",
+      "cyber attack",
+      "insider trading",
+      "money laundering"
+    ]
+  ],
+  "fingerprint": [
+    "security",
+    "identity, authentication or biometrics",
+    [
+      "authentication",
+      "biometrics",
+      "identity check",
+      "verification",
+      "login check",
+      "fingerprint"
+    ]
+  ],
+  "eye": [
+    "security",
+    "watching, monitoring or visibility",
+    [
+      "monitoring",
+      "oversight",
+      "watch",
+      "visibility",
+      "observe",
+      "supervision",
+      "transparency",
+      "seen"
+    ]
+  ],
+  "private": [
+    "security",
+    "private, hidden or not shared",
+    [
+      "private",
+      "hidden",
+      "privacy",
+      "not shared",
+      "anonymous",
+      "anonymised",
+      "invisible",
+      "anonymisation",
+      "anonymization",
+      "pseudonymisation"
+    ]
+  ],
+  "audit": [
+    "security",
+    "an audit, inspection or scan",
+    [
+      "audit",
+      "inspection",
+      "scan",
+      "investigation",
+      "examine",
+      "scrutiny",
+      "due diligence",
+      "auditor",
+      "auditing"
+    ]
+  ],
+  "bug": [
+    "security",
+    "a bug, error or defect",
+    [
+      "bug",
+      "defect",
+      "error",
+      "glitch",
+      "fault",
+      "mistake",
+      "inaccuracy",
+      "hallucination",
+      "malware",
+      "virus",
+      "ransomware"
+    ]
+  ],
+  "incident": [
+    "security",
+    "an incident or emergency",
+    [
+      "incident",
+      "emergency",
+      "outage",
+      "crisis",
+      "alarm",
+      "major issue"
+    ]
+  ],
+  "escalation": [
+    "security",
+    "an escalation, alert or urgent notice",
+    [
+      "escalation",
+      "escalate",
+      "alert",
+      "urgent",
+      "raise",
+      "flag up",
+      "notify",
+      "escalation path"
+    ]
+  ],
+  "ban": [
+    "security",
+    "prohibited, forbidden or not allowed",
+    [
+      "prohibited",
+      "forbidden",
+      "not allowed",
+      "banned",
+      "never",
+      "do not",
+      "must not",
+      "unapproved",
+      "block",
+      "harassment",
+      "bullying",
+      "discrimination",
+      "misconduct"
+    ]
+  ],
+  "legal": [
+    "security",
+    "legal matters, fairness or balance",
+    [
+      "legal",
+      "law",
+      "fairness",
+      "equality",
+      "justice",
+      "balance",
+      "ethics",
+      "rights",
+      "bias",
+      "legal risk",
+      "legal team"
+    ]
+  ],
+  "gavel": [
+    "security",
+    "a ruling, court, judgement or enforcement",
+    [
+      "court",
+      "ruling",
+      "judgement",
+      "decision",
+      "verdict",
+      "enforcement",
+      "sanction",
+      "litigation",
+      "tribunal",
+      "penalty",
+      "fine",
+      "fines"
+    ]
+  ],
+  "stamp": [
+    "security",
+    "approval, sign-off or an official stamp",
+    [
+      "approval",
+      "approved",
+      "sign-off",
+      "authorisation",
+      "authorization",
+      "endorsement",
+      "official",
+      "permission granted",
+      "requires approval",
+      "needs approval"
+    ]
+  ],
+  "verified": [
+    "security",
+    "verified, certified or accepted",
+    [
+      "verified",
+      "certified",
+      "validated",
+      "accepted",
+      "trusted",
+      "confirmed",
+      "accredited",
+      "authentic",
+      "quality check",
+      "quality assurance",
+      "warranty",
+      "guarantee"
+    ]
+  ],
+  "money": [
+    "business",
+    "money, payment or cost",
+    [
+      "money",
+      "payment",
+      "cash",
+      "cost",
+      "price",
+      "salary",
+      "pay",
+      "funds",
+      "fees",
+      "spend"
+    ]
+  ],
+  "coins": [
+    "business",
+    "budget, savings or small amounts of money",
+    [
+      "coins",
+      "budget",
+      "savings",
+      "funding",
+      "revenue",
+      "income",
+      "finance",
+      "finances"
+    ]
+  ],
+  "wallet": [
+    "business",
+    "a wallet, account balance or personal finances",
+    [
+      "wallet",
+      "account balance",
+      "personal finances",
+      "allowance",
+      "expenses budget",
+      "bank account",
+      "bank details"
+    ]
+  ],
+  "card": [
+    "business",
+    "a card payment or purchase",
+    [
+      "credit card",
+      "card payment",
+      "purchase",
+      "transaction",
+      "checkout",
+      "pay by card"
+    ]
+  ],
+  "percent": [
+    "business",
+    "a percentage, rate, discount or tax",
+    [
+      "percentage",
+      "rate",
+      "discount",
+      "tax",
+      "interest",
+      "margin",
+      "commission"
+    ]
+  ],
+  "calculator": [
+    "business",
+    "calculation, accounting or estimates",
+    [
+      "calculation",
+      "accounting",
+      "estimate",
+      "calculate",
+      "bookkeeping",
+      "forecast",
+      "accountant",
+      "accounts"
+    ]
+  ],
+  "trend": [
+    "business",
+    "growth, improvement or increase",
+    [
+      "growth",
+      "increase",
+      "improvement",
+      "rising",
+      "progress",
+      "gain",
+      "uptrend",
+      "better",
+      "profit",
+      "career",
+      "career growth",
+      "promotion"
+    ]
+  ],
+  "decline": [
+    "business",
+    "a decline, loss or decrease",
+    [
+      "decline",
+      "decrease",
+      "loss",
+      "drop",
+      "falling",
+      "downturn",
+      "worse",
+      "reduce"
+    ]
+  ],
+  "target": [
+    "business",
+    "a goal, target or objective",
+    [
+      "goal",
+      "target",
+      "objective",
+      "aim",
+      "purpose",
+      "focus",
+      "kpi target",
+      "mission",
+      "strategy",
+      "strategic goal",
+      "business plan",
+      "objectives"
+    ]
+  ],
+  "trophy": [
+    "business",
+    "success, a win or achievement",
+    [
+      "success",
+      "win",
+      "achievement",
+      "champion",
+      "best",
+      "victory",
+      "reward"
+    ]
+  ],
+  "cart": [
+    "business",
+    "buying, procurement or an order",
+    [
+      "buy",
+      "procurement",
+      "order",
+      "purchasing",
+      "shopping",
+      "basket"
+    ]
+  ],
+  "box": [
+    "business",
+    "a product, package or delivery",
+    [
+      "product",
+      "package",
+      "parcel",
+      "delivery",
+      "goods",
+      "item",
+      "shipment",
+      "deliverable",
+      "container"
+    ]
+  ],
+  "truck": [
+    "business",
+    "shipping, logistics or a supplier delivery",
+    [
+      "shipping",
+      "logistics",
+      "transport",
+      "delivery truck",
+      "dispatch",
+      "supply chain",
+      "courier"
+    ]
+  ],
+  "tag": [
+    "business",
+    "a label, tag, category or price tag",
+    [
+      "tag",
+      "label",
+      "category",
+      "classification",
+      "price tag",
+      "brand",
+      "branding",
+      "logo"
+    ]
+  ],
+  "chat": [
+    "communication",
+    "a message, chat or conversation",
+    [
+      "message",
+      "chat",
+      "conversation",
+      "reply",
+      "dialogue",
+      "discussion",
+      "teams message",
+      "comment thread",
+      "answer",
+      "post",
+      "reply"
+    ]
+  ],
+  "mail": [
+    "communication",
+    "email",
+    [
+      "email",
+      "e-mail",
+      "mail",
+      "inbox",
+      "newsletter",
+      "letter"
+    ]
+  ],
+  "call": [
+    "communication",
+    "a phone call",
+    [
+      "call",
+      "phone call",
+      "telephone",
+      "ring",
+      "hotline",
+      "dial",
+      "voicemail"
+    ]
+  ],
+  "meeting": [
+    "communication",
+    "a video call or meeting",
+    [
+      "meeting",
+      "video call",
+      "video",
+      "conference",
+      "webinar",
+      "online meeting",
+      "teams call",
+      "zoom"
+    ]
+  ],
+  "announce": [
+    "communication",
+    "an announcement, marketing or telling people",
+    [
+      "announcement",
+      "announce",
+      "marketing",
+      "campaign",
+      "publicise",
+      "broadcast",
+      "tell people",
+      "disclosure",
+      "promotion",
+      "whistleblowing",
+      "speak up",
+      "press release",
+      "raise a concern",
+      "advert",
+      "advertising",
+      "ad"
+    ]
+  ],
+  "bell": [
+    "communication",
+    "a notification or reminder",
+    [
+      "notification",
+      "reminder",
+      "notice",
+      "heads-up",
+      "ping"
+    ]
+  ],
+  "calendar": [
+    "communication",
+    "a date, schedule or deadline",
+    [
+      "calendar",
+      "schedule",
+      "date",
+      "deadline",
+      "appointment",
+      "agenda",
+      "booking",
+      "plan",
+      "quarter",
+      "month",
+      "year plan"
+    ]
+  ],
+  "share": [
+    "communication",
+    "sharing or distributing",
+    [
+      "share",
+      "sharing",
+      "distribute",
+      "publish",
+      "send out",
+      "circulate",
+      "disclose",
+      "social media",
+      "social network"
+    ]
+  ],
+  "send": [
+    "communication",
+    "sending, submitting or delivering a message",
+    [
+      "send",
+      "submit",
+      "deliver",
+      "dispatch message",
+      "forward"
+    ]
+  ],
+  "inbox": [
+    "communication",
+    "an inbox, queue or requests coming in",
+    [
+      "inbox",
+      "queue",
+      "requests",
+      "incoming",
+      "tickets",
+      "backlog",
+      "request",
+      "requests"
+    ]
+  ],
+  "translate": [
+    "communication",
+    "languages or translation",
+    [
+      "language",
+      "languages",
+      "translation",
+      "translate",
+      "multilingual",
+      "localisation"
+    ]
+  ],
+  "feedback": [
+    "communication",
+    "approval by people, feedback or a like",
+    [
+      "feedback",
+      "like",
+      "positive",
+      "thumbs up",
+      "agree",
+      "good",
+      "endorse"
+    ]
+  ],
+  "dislike": [
+    "communication",
+    "negative feedback or a dislike",
+    [
+      "dislike",
+      "negative",
+      "thumbs down",
+      "disagree",
+      "bad",
+      "complaint"
+    ]
+  ],
+  "clock": [
+    "process",
+    "time or timing",
+    [
+      "time",
+      "timing",
+      "hours",
+      "duration",
+      "when",
+      "time spent",
+      "save time"
+    ]
+  ],
+  "hourglass": [
+    "process",
+    "waiting, a time limit or something pending",
+    [
+      "waiting",
+      "pending",
+      "time limit",
+      "wait",
+      "delay",
+      "in progress",
+      "until",
+      "probation",
+      "trial period"
+    ]
+  ],
+  "flag": [
+    "process",
+    "a milestone, flag or start/finish point",
+    [
+      "milestone",
+      "flag",
+      "goal line",
+      "finish",
+      "start point",
+      "checkpoint",
+      "report an issue",
+      "priority"
+    ]
+  ],
+  "route": [
+    "process",
+    "a path, journey or route from A to B",
+    [
+      "route",
+      "path",
+      "journey",
+      "roadmap",
+      "way",
+      "steps",
+      "approach",
+      "plan of action"
+    ]
+  ],
+  "loop": [
+    "process",
+    "a loop, repetition or cycle",
+    [
+      "repeat",
+      "loop",
+      "cycle",
+      "recurring",
+      "again",
+      "iteration",
+      "regularly",
+      "ongoing",
+      "subscription",
+      "renewal",
+      "recurring payment"
+    ]
+  ],
+  "steps": [
+    "process",
+    "a list of checks or completed steps",
+    [
+      "checks",
+      "steps",
+      "to-do",
+      "tasks",
+      "action items",
+      "requirements met",
+      "step"
+    ]
+  ],
+  "check": [
+    "process",
+    "done, correct or allowed",
+    [
+      "done",
+      "correct",
+      "complete",
+      "ok",
+      "allowed",
+      "pass",
+      "acceptable",
+      "yes",
+      "fine",
+      "low risk",
+      "consent",
+      "agree to",
+      "opt in"
+    ]
+  ],
+  "x": [
+    "process",
+    "wrong, failed or rejected",
+    [
+      "wrong",
+      "failed",
+      "rejected",
+      "incorrect",
+      "no",
+      "error state",
+      "denied",
+      "refused"
+    ]
+  ],
+  "warning": [
+    "process",
+    "a warning or caution",
+    [
+      "warning",
+      "caution",
+      "careful",
+      "attention",
+      "watch out",
+      "higher risk",
+      "high risk",
+      "danger sign",
+      "hazard",
+      "spill",
+      "near miss",
+      "hazardous"
+    ]
+  ],
+  "info": [
+    "process",
+    "information or a fact",
+    [
+      "info",
+      "information",
+      "fact",
+      "detail",
+      "note this",
+      "about"
+    ]
+  ],
+  "question": [
+    "process",
+    "a question or something unclear",
+    [
+      "question",
+      "unsure",
+      "unclear",
+      "unknown",
+      "ask",
+      "doubt",
+      "help",
+      "faq"
+    ]
+  ],
+  "bulb": [
+    "process",
+    "an idea or insight",
+    [
+      "idea",
+      "insight",
+      "tip",
+      "suggestion",
+      "inspiration",
+      "creativity",
+      "benefit"
+    ]
+  ],
+  "rocket": [
+    "process",
+    "a launch, start or fast growth",
+    [
+      "launch",
+      "start",
+      "kick-off",
+      "go live",
+      "release",
+      "fast",
+      "boost"
+    ]
+  ],
+  "layers": [
+    "process",
+    "layers, levels or stacked parts",
+    [
+      "layers",
+      "levels",
+      "tiers",
+      "stack",
+      "multiple levels",
+      "depth"
+    ]
+  ],
+  "branch": [
+    "process",
+    "a decision point or branch",
+    [
+      "decision",
+      "branch",
+      "choice",
+      "fork",
+      "split",
+      "option",
+      "alternative",
+      "either or",
+      "exception",
+      "exceptions",
+      "condition"
+    ]
+  ],
+  "signpost": [
+    "process",
+    "direction, guidance or which way to go",
+    [
+      "direction",
+      "which way",
+      "signpost",
+      "navigate",
+      "choose path",
+      "routing",
+      "guidance"
+    ]
+  ],
+  "exchange": [
+    "process",
+    "an exchange, swap or two-way flow",
+    [
+      "exchange",
+      "swap",
+      "two-way",
+      "trade",
+      "back and forth",
+      "transfer",
+      "handover",
+      "hand over"
+    ]
+  ],
+  "timer": [
+    "process",
+    "a timer, speed or response time",
+    [
+      "timer",
+      "speed",
+      "response time",
+      "quick",
+      "stopwatch",
+      "sla"
+    ]
+  ],
+  "star": [
+    "process",
+    "quality, a rating or something important",
+    [
+      "rating",
+      "quality",
+      "important",
+      "favourite",
+      "featured",
+      "excellent",
+      "star"
+    ]
+  ],
+  "wellbeing": [
+    "care",
+    "care, wellbeing or support for people",
+    [
+      "wellbeing",
+      "care",
+      "support for staff",
+      "kindness",
+      "inclusion",
+      "community",
+      "volunteering",
+      "mental health",
+      "stress"
+    ]
+  ],
+  "health": [
+    "care",
+    "health or medical matters",
+    [
+      "health",
+      "medical",
+      "doctor",
+      "healthcare",
+      "sickness",
+      "occupational health",
+      "nurse",
+      "pharmacist",
+      "paramedic",
+      "medicine"
+    ]
+  ],
+  "leave": [
+    "care",
+    "leave, absence or time off",
+    [
+      "leave",
+      "absence",
+      "time off",
+      "holiday",
+      "vacation",
+      "day off",
+      "sick leave"
+    ]
+  ],
+  "accessible": [
+    "care",
+    "accessibility",
+    [
+      "accessibility",
+      "accessible",
+      "inclusive design",
+      "disability access",
+      "adjustments"
+    ]
+  ],
+  "location": [
+    "care",
+    "a place or location",
+    [
+      "location",
+      "place",
+      "address",
+      "where",
+      "map",
+      "venue"
+    ]
+  ],
+  "ticket": [
+    "care",
+    "a ticket, pass or request ticket",
+    [
+      "ticket",
+      "pass",
+      "voucher",
+      "support ticket",
+      "request ticket",
+      "admission"
+    ]
+  ],
+  "admin": [
+    "people",
+    "an administrator or account settings for a person",
+    [
+      "admin",
+      "administrator",
+      "system administrator",
+      "account settings",
+      "it admin",
+      "superuser"
+    ]
+  ],
+  "payout": [
+    "business",
+    "money handed to someone: a payment out, donation, investment or bribe",
+    [
+      "investor",
+      "shareholder",
+      "investment",
+      "donation",
+      "bribe",
+      "bribery",
+      "kickback",
+      "payout",
+      "reimbursement",
+      "dividend"
+    ]
+  ],
+  "hospital": [
+    "care",
+    "a hospital or clinic",
+    [
+      "hospital",
+      "clinic",
+      "medical centre",
+      "ward"
+    ]
+  ],
+  "wifi": [
+    "technology",
+    "wifi, a wireless network or connectivity",
+    [
+      "wifi",
+      "wi-fi",
+      "wireless",
+      "connectivity",
+      "network connection",
+      "hotspot"
+    ]
+  ],
+  "printer": [
+    "technology",
+    "a printer or printing",
+    [
+      "printer",
+      "print",
+      "printing",
+      "printout",
+      "hard copy"
+    ]
+  ],
+  "phishing": [
+    "security",
+    "a suspicious email or phishing",
+    [
+      "phishing",
+      "suspicious email",
+      "scam email",
+      "spam",
+      "spoofed email",
+      "email threat"
+    ]
+  ],
+  "copyright": [
+    "security",
+    "copyright or intellectual property",
+    [
+      "copyright",
+      "intellectual property",
+      "ip",
+      "trademark",
+      "patent",
+      "ownership of content",
+      "licensing rights"
+    ]
+  ],
+  "gift": [
+    "business",
+    "a gift, bonus, benefit or reward",
+    [
+      "gift",
+      "bonus",
+      "benefit",
+      "perk",
+      "reward",
+      "present",
+      "hospitality",
+      "incentive"
+    ]
+  ],
+  "competitor": [
+    "business",
+    "competition or a competitor",
+    [
+      "competitor",
+      "competition",
+      "rival",
+      "conflict",
+      "contest",
+      "battle"
+    ]
+  ],
+  "project": [
+    "business",
+    "a project or project board",
+    [
+      "project",
+      "project plan",
+      "programme",
+      "initiative",
+      "kanban",
+      "board of tasks",
+      "sprint"
+    ]
+  ],
+  "service": [
+    "business",
+    "a service offered to customers",
+    [
+      "service",
+      "services",
+      "hospitality service",
+      "concierge",
+      "service offering",
+      "customer service desk",
+      "receptionist",
+      "reception",
+      "front desk"
+    ]
+  ],
+  "test": [
+    "process",
+    "a test, experiment or trial",
+    [
+      "test",
+      "testing",
+      "experiment",
+      "trial",
+      "pilot",
+      "proof of concept",
+      "lab",
+      "experimentation"
+    ]
+  ],
+  "firstaid": [
+    "care",
+    "first aid or a medical kit",
+    [
+      "first aid",
+      "first aider",
+      "medical kit",
+      "injury",
+      "accident"
+    ]
+  ],
+  "exit": [
+    "care",
+    "an exit, leaving or evacuation",
+    [
+      "exit",
+      "evacuation",
+      "leave the building",
+      "way out",
+      "door",
+      "fire exit",
+      "escape"
+    ]
+  ],
+  "design": [
+    "documents",
+    "design or a designer",
+    [
+      "design",
+      "designer",
+      "creative",
+      "layout",
+      "graphic design",
+      "branding design"
+    ]
+  ],
+  "evidence": [
+    "security",
+    "evidence, a file under review or document search",
+    [
+      "evidence",
+      "proof",
+      "document review",
+      "case file",
+      "discovery",
+      "fact check",
+      "source check"
+    ]
+  ],
+  "task": [
+    "process",
+    "a task or completed item",
+    [
+      "task",
+      "assignment",
+      "job to do",
+      "action",
+      "completed task",
+      "tick box"
+    ]
+  ],
+  "travel": [
+    "care",
+    "travel, a flight or a business trip",
+    [
+      "travel",
+      "flight",
+      "business trip",
+      "plane",
+      "airport",
+      "trip",
+      "commute abroad"
+    ]
+  ],
+  "hotel": [
+    "care",
+    "a hotel, accommodation or rest",
+    [
+      "hotel",
+      "accommodation",
+      "overnight stay",
+      "rest",
+      "sleep",
+      "lodging"
+    ]
+  ],
+  "car": [
+    "care",
+    "a car, driving, parking or a company vehicle",
+    [
+      "car",
+      "vehicle",
+      "driving",
+      "driver",
+      "parking",
+      "company car",
+      "fleet",
+      "commute"
+    ]
+  ],
+  "coffee": [
+    "care",
+    "a break, canteen or coffee",
+    [
+      "coffee",
+      "break",
+      "coffee break",
+      "canteen",
+      "kitchen",
+      "lunch",
+      "catering",
+      "cafe"
+    ]
+  ],
+  "insurance": [
+    "business",
+    "insurance, cover or protection from loss",
+    [
+      "insurance",
+      "cover",
+      "coverage",
+      "policy cover",
+      "indemnity",
+      "protection plan"
+    ]
+  ],
+  "savings": [
+    "business",
+    "savings, a pension or a fund",
+    [
+      "savings",
+      "pension",
+      "retirement",
+      "fund",
+      "piggy bank",
+      "saving money"
+    ]
+  ],
+  "delete": [
+    "technology",
+    "deleting, disposal or the bin",
+    [
+      "delete",
+      "deletion",
+      "erase",
+      "remove data",
+      "dispose",
+      "disposal",
+      "bin",
+      "trash",
+      "destroy"
+    ]
+  ],
+  "copy": [
+    "documents",
+    "a copy, duplicate or plagiarism",
+    [
+      "copy",
+      "duplicate",
+      "plagiarism",
+      "clone",
+      "copied",
+      "reproduce"
+    ]
+  ],
+  "extinguisher": [
+    "care",
+    "a fire extinguisher or fire safety",
+    [
+      "fire extinguisher",
+      "fire safety",
+      "fire",
+      "fire drill",
+      "fire risk"
+    ]
+  ],
+  "forklift": [
+    "business",
+    "a forklift, lifting or warehouse equipment",
+    [
+      "forklift",
+      "lifting",
+      "heavy lifting",
+      "warehouse equipment",
+      "pallet",
+      "loading"
+    ]
+  ],
+  "firewall": [
+    "security",
+    "a firewall or barrier",
+    [
+      "firewall",
+      "barrier",
+      "wall",
+      "boundary protection",
+      "block traffic"
+    ]
+  ],
+  "undo": [
+    "process",
+    "undo, a refund, recall or going back",
+    [
+      "undo",
+      "refund",
+      "recall",
+      "return",
+      "reverse",
+      "roll back",
+      "rollback",
+      "go back",
+      "revert"
+    ]
+  ],
+  "monitor": [
+    "technology",
+    "a screen, monitor or display",
+    [
+      "monitor",
+      "screen",
+      "display",
+      "second screen",
+      "screen time"
+    ]
+  ],
+  "keyboard": [
+    "technology",
+    "a keyboard or typing",
+    [
+      "keyboard",
+      "typing",
+      "type",
+      "data entry"
+    ]
+  ],
+  "headphones": [
+    "technology",
+    "headphones, audio or listening",
+    [
+      "headphones",
+      "audio",
+      "listening",
+      "earphones",
+      "sound"
+    ]
+  ],
+  "usb": [
+    "technology",
+    "a USB stick or removable media",
+    [
+      "usb",
+      "usb stick",
+      "memory stick",
+      "removable media",
+      "flash drive"
+    ]
+  ],
+  "harddrive": [
+    "technology",
+    "a hard drive or local storage",
+    [
+      "hard drive",
+      "external drive",
+      "disk",
+      "local storage",
+      "storage device"
+    ]
+  ],
+  "camera": [
+    "communication",
+    "a camera, photo or recording",
+    [
+      "camera",
+      "photo",
+      "photograph",
+      "picture",
+      "recording",
+      "cctv",
+      "video recording"
+    ]
+  ],
+  "mic": [
+    "communication",
+    "a microphone, podcast or speaking",
+    [
+      "microphone",
+      "mic",
+      "podcast",
+      "speak",
+      "speaking",
+      "voice",
+      "public speaking",
+      "recording audio"
+    ]
+  ],
+  "leaf": [
+    "care",
+    "the environment or sustainability",
+    [
+      "sustainability",
+      "environment",
+      "green",
+      "nature",
+      "eco",
+      "climate",
+      "carbon footprint"
+    ]
+  ],
+  "recycle": [
+    "care",
+    "recycling or reuse",
+    [
+      "recycling",
+      "recycle",
+      "reuse",
+      "waste",
+      "circular"
+    ]
+  ],
+  "energy": [
+    "technology",
+    "energy, power or electricity",
+    [
+      "energy",
+      "power",
+      "electricity",
+      "energy use",
+      "battery",
+      "charge"
+    ]
+  ],
+  "history": [
+    "process",
+    "history, version history or a log of changes",
+    [
+      "history",
+      "version history",
+      "change log",
+      "audit trail",
+      "log",
+      "past versions",
+      "timeline"
+    ]
+  ],
+  "gauge": [
+    "business",
+    "a gauge, level, performance or service level",
+    [
+      "gauge",
+      "level",
+      "performance level",
+      "service level",
+      "sla",
+      "uptime",
+      "capacity",
+      "speedometer"
+    ]
+  ],
+  "newspaper": [
+    "communication",
+    "news, press or a newsletter",
+    [
+      "news",
+      "newspaper",
+      "press",
+      "media",
+      "newsletter",
+      "article",
+      "press coverage"
+    ]
+  ],
+  "forum": [
+    "communication",
+    "a discussion, forum or group chat",
+    [
+      "forum",
+      "community forum",
+      "discussion",
+      "group chat",
+      "comments",
+      "conversation thread",
+      "team chat"
+    ]
+  ],
+  "footprints": [
+    "care",
+    "footprints, a trace or steps someone took",
+    [
+      "footprint",
+      "footprints",
+      "trace",
+      "digital footprint",
+      "trail"
+    ]
+  ],
+  "rainbow": [
+    "care",
+    "pride, diversity or celebration",
+    [
+      "pride",
+      "pride month",
+      "lgbtq",
+      "rainbow",
+      "celebration"
+    ]
+  ],
+  "testtube": [
+    "care",
+    "chemicals, a lab sample or science",
+    [
+      "chemical",
+      "chemicals",
+      "lab sample",
+      "sample",
+      "science",
+      "laboratory",
+      "substance"
+    ]
+  ]
+}

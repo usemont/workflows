@@ -1,0 +1,504 @@
+{
+  "engine": "1.0.0",
+  "templates": {
+    "title": {
+      "variants": [
+        "text",
+        "emblem",
+        "editorial"
+      ],
+      "fields": "title, subtitle?, icon?",
+      "min": 0,
+      "max": 0,
+      "details": 0,
+      "focus": false
+    },
+    "statement": {
+      "variants": [
+        "keypoint",
+        "quote"
+      ],
+      "fields": "text, highlight?, highlightAt?, by?, label?, title?",
+      "min": 0,
+      "max": 0,
+      "details": 0,
+      "focus": false
+    },
+    "illustration": {
+      "variants": [
+        "picture",
+        "stage",
+        "panel"
+      ],
+      "fields": "text, picture{layout, items[{base, mod?, tone?}], links?, outside?}, title?, highlight?, highlightAt?",
+      "min": 0,
+      "max": 0,
+      "details": 0,
+      "focus": false
+    },
+    "media": {
+      "variants": [
+        "frame",
+        "split"
+      ],
+      "fields": "image, title?, subtitle?, alt?, fit?",
+      "min": 0,
+      "max": 0,
+      "details": 0,
+      "focus": false
+    },
+    "list": {
+      "variants": [
+        "bullets",
+        "checklist",
+        "warnings",
+        "cards",
+        "spotlight"
+      ],
+      "fields": "title, items[2-8]{label, at, tone?, icon? (cards: 2-4 items with icons; spotlight: 2-8 items, each with an icon and at)}, takeaway?{label, at, tone}",
+      "min": 2,
+      "max": 8,
+      "details": 0,
+      "focus": false
+    },
+    "framework": {
+      "variants": [
+        "canopy",
+        "hub"
+      ],
+      "fields": "title, focus{label,icon}, items[3-6]{label,icon}",
+      "min": 3,
+      "max": 6,
+      "details": 0,
+      "focus": true
+    },
+    "comparison": {
+      "variants": [
+        "versus",
+        "lanes"
+      ],
+      "fields": "title, items[2-3]{label,icon,details[1-6]}",
+      "min": 2,
+      "max": 3,
+      "details": 6,
+      "focus": false
+    },
+    "categories": {
+      "variants": [
+        "constellation",
+        "shelves"
+      ],
+      "fields": "title, items[2-6]{label,icon,details[1-3]}",
+      "min": 2,
+      "max": 6,
+      "details": 3,
+      "focus": false
+    },
+    "tool-selection": {
+      "variants": [
+        "switchboard",
+        "mode-columns"
+      ],
+      "fields": "title, focus{label,icon}, items[2-4]{label,icon,details[1]}",
+      "min": 2,
+      "max": 4,
+      "details": 1,
+      "focus": true
+    },
+    "rule-exception": {
+      "variants": [
+        "branch",
+        "detour"
+      ],
+      "fields": "title, focus{label,icon}, items[2-4]{label,icon} (first item = the rule)",
+      "min": 2,
+      "max": 4,
+      "details": 0,
+      "focus": true
+    },
+    "principle": {
+      "variants": [
+        "spotlight",
+        "satellites",
+        "chain"
+      ],
+      "fields": "title, focus{label,icon}, items[1-4]{label,icon,rel?}",
+      "min": 1,
+      "max": 4,
+      "details": 0,
+      "focus": true
+    },
+    "sequence": {
+      "variants": [
+        "track",
+        "lifecycle"
+      ],
+      "fields": "title, items[2-6]{label,icon}",
+      "min": 2,
+      "max": 6,
+      "details": 0,
+      "focus": false
+    },
+    "action": {
+      "variants": [
+        "stage"
+      ],
+      "fields": "title?, action{subject{kind, lines, icon?, tone?}, steps[1-8]{do, by?, to?, finds?, lines?, blocked?, against?, risk?, at?}}",
+      "min": 0,
+      "max": 0,
+      "details": 0,
+      "focus": false
+    },
+    "story": {
+      "variants": [
+        "morph"
+      ],
+      "fields": "title?, story{entities{id:{label, icon, who?, kind?, sub?}}, beats[1-8]{rel, at, on?, of?, to?, by?, fixes?, into?, set?, setAt?, subAt?}}",
+      "min": 0,
+      "max": 0,
+      "details": 0,
+      "focus": false
+    }
+  },
+  "families": {
+    "action": {
+      "steps": [
+        "draft",
+        "pass",
+        "inspect",
+        "approve",
+        "reject",
+        "strike",
+        "redact",
+        "compare",
+        "fake",
+        "fill",
+        "restyle",
+        "weigh"
+      ],
+      "durations": {
+        "draft": {
+          "machine": [
+            0.55,
+            0.17
+          ],
+          "human": [
+            0.7,
+            0.5
+          ],
+          "n": "lines"
+        },
+        "pass": {
+          "base": 1.4,
+          "blocked": 2
+        },
+        "inspect": {
+          "base": 0.6,
+          "per": 0.36,
+          "n": "lines"
+        },
+        "approve": {
+          "base": 1.3
+        },
+        "reject": {
+          "base": 1.3
+        },
+        "strike": {
+          "base": 0.5,
+          "per": 0.7,
+          "n": "own"
+        },
+        "redact": {
+          "base": 0.5,
+          "per": 0.7,
+          "n": "own"
+        },
+        "compare": {
+          "base": 0.9,
+          "per": 0.42,
+          "n": "lines"
+        },
+        "fake": {
+          "base": 0.9,
+          "per": 1.1,
+          "n": "own"
+        },
+        "fill": {
+          "base": 0.5,
+          "per": 0.75,
+          "n": "own"
+        },
+        "restyle": {
+          "base": 0.5,
+          "per": 0.6,
+          "n": "own"
+        },
+        "weigh": {
+          "base": 2.4
+        }
+      },
+      "lineArgs": {
+        "strike": {
+          "max": 3,
+          "dflt": [
+            2
+          ]
+        },
+        "redact": {
+          "max": 3,
+          "dflt": [
+            2
+          ]
+        },
+        "fake": {
+          "max": 2,
+          "dflt": 2
+        },
+        "fill": {
+          "max": 3,
+          "dflt": "all"
+        },
+        "restyle": {
+          "max": 4,
+          "dflt": 2
+        },
+        "inspect": {
+          "arg": "finds",
+          "max": "all"
+        },
+        "compare": {
+          "arg": "finds",
+          "max": 8
+        }
+      },
+      "machine": [
+        "bot",
+        "spark",
+        "chip",
+        "app",
+        "server",
+        "machine",
+        "cloud",
+        "brain",
+        "code",
+        "terminal",
+        "workflow",
+        "prompt"
+      ],
+      "maxSteps": 8,
+      "firstAt": 0.9,
+      "gapAfter": 0.45,
+      "subject": {
+        "kinds": [
+          "document",
+          "message"
+        ],
+        "lines": {
+          "document": [
+            2,
+            8
+          ],
+          "message": [
+            2,
+            3
+          ]
+        }
+      }
+    },
+    "story": {
+      "relations": [
+        "rule",
+        "example",
+        "also",
+        "except",
+        "contrast",
+        "because",
+        "then",
+        "state",
+        "so"
+      ],
+      "states": [
+        "unknown",
+        "risk",
+        "blocked",
+        "ok",
+        "focus",
+        "muted",
+        "none"
+      ],
+      "maxCards": 5,
+      "maxBeats": 8,
+      "args": {
+        "rule": [
+          "on"
+        ],
+        "example": [
+          "of",
+          "to"
+        ],
+        "also": [
+          "of",
+          "to[]"
+        ],
+        "except": [
+          "of",
+          "to"
+        ],
+        "contrast": [
+          "of",
+          "to"
+        ],
+        "because": [
+          "of",
+          "to"
+        ],
+        "then": [
+          "to"
+        ],
+        "state": [
+          "set"
+        ],
+        "so": [
+          "by?",
+          "fixes?",
+          "into?"
+        ]
+      },
+      "entity": {
+        "kinds": [
+          "thing",
+          "actor",
+          "conclusion"
+        ],
+        "label": 30,
+        "who": 26,
+        "sub": 40
+      },
+      "timing": {
+        "flip": 0.62,
+        "move": 0.85,
+        "hop": 0.3
+      }
+    }
+  },
+  "transitions": [
+    "slide",
+    "wipe",
+    "zoom",
+    "blinds",
+    "iris",
+    "cut",
+    "match",
+    "lift",
+    "pull"
+  ],
+  "picture": {
+    "mods": [
+      "check",
+      "alert",
+      "error",
+      "eye",
+      "search",
+      "question",
+      "clock"
+    ],
+    "tones": [
+      "default",
+      "accent",
+      "warning",
+      "muted"
+    ],
+    "links": [
+      "arrow",
+      "back",
+      "line",
+      "dashed",
+      "blocked",
+      "none"
+    ],
+    "layouts": [
+      "single",
+      "row",
+      "hub",
+      "tree",
+      "cycle",
+      "boundary"
+    ],
+    "counts": {
+      "single": [
+        1,
+        1
+      ],
+      "row": [
+        2,
+        3
+      ],
+      "hub": [
+        3,
+        5
+      ],
+      "tree": [
+        3,
+        4
+      ],
+      "cycle": [
+        3,
+        3
+      ],
+      "boundary": [
+        1,
+        2
+      ]
+    },
+    "maxSteps": 4,
+    "maxBeats": 6
+  },
+  "inserts": {
+    "insertMin": 1.8,
+    "pieceMin": 1.5
+  },
+  "relations": [
+    {
+      "rel": "follows",
+      "tag": ""
+    },
+    {
+      "rel": "example",
+      "tag": "e.g."
+    },
+    {
+      "rel": "also",
+      "tag": "also"
+    },
+    {
+      "rel": "so",
+      "tag": "so"
+    },
+    {
+      "rel": "because",
+      "tag": "because"
+    },
+    {
+      "rel": "except",
+      "tag": "except"
+    },
+    {
+      "rel": "contrast",
+      "tag": "but"
+    }
+  ],
+  "callouts": {
+    "max": 8,
+    "chars": 32,
+    "tones": [
+      "default",
+      "accent",
+      "warning",
+      "muted"
+    ],
+    "on": "picture item index | slide item index | null (the scene)",
+    "notOn": [
+      "action"
+    ]
+  }
+}

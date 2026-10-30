@@ -1,0 +1,77 @@
+{
+  "blockTypes": {
+    "paragraph": "Body text: one or more full sentences that the narrator reads as content.",
+    "section_heading": "A short heading that starts a new section of the lesson. A label, not a full sentence of content.",
+    "subsection_heading": "A short label for one sub-point inside a section, such as a lettered or numbered sub-part (\"Step 2 — Packing\") or the name of one item the section goes through. Not a full sentence.",
+    "list_item": "One item of a numbered or bulleted list.",
+    "list_intro": "A sentence that introduces the list items directly after it, usually ending with a colon.",
+    "lesson_title": "The title of the whole lesson, normally the very first line.",
+    "recap_heading": "A heading that starts a summary, recap or key-takeaways section."
+  },
+  "templates": {
+    "title": "Opens the video or a chapter: a title, optionally with a subtitle. Little narration beyond the title itself.",
+    "statement": "Makes one point that should land, or quotes someone. A single message, not a set of separate items.",
+    "media": "Refers to a picture, screenshot or diagram that we have as a file.",
+    "sequence": "Walks through ordered steps or a repeating cycle, where the order matters.",
+    "comparison": "Sets two or three sides against each other: alternatives (option A versus option B), or two sides of one thing (benefits versus risks, allowed versus not allowed, before versus after).",
+    "rule-exception": "Gives a default rule and its exceptions.",
+    "tool-selection": "Picks between modes of one tool depending on the situation.",
+    "principle": "Names one central idea and the consequences or benefits that follow from it.",
+    "framework": "Names the parts that together make up one whole.",
+    "categories": "Groups things into families or groups, each with its own members.",
+    "list": "Lists several things with no further structure: good points, things to do or check, or things to avoid or that are forbidden."
+  },
+  "features": [
+    [
+      "opener",
+      "Is this scene only the title of the lesson or of a chapter, with no other content?",
+      "title"
+    ],
+    [
+      "quote",
+      "Does the narration quote words said or written by a named person?",
+      "statement"
+    ],
+    [
+      "steps",
+      "Does the narration walk through steps where the order matters, or through a repeating cycle?",
+      "sequence"
+    ],
+    [
+      "contrast",
+      "Does the narration set two or three sides against each other, such as option A versus option B, benefits versus risks, or what is allowed versus what is not?",
+      "comparison"
+    ],
+    [
+      "rule_exc",
+      "Does the narration state a default rule and then the exceptions to that rule?",
+      "rule-exception"
+    ],
+    [
+      "modes",
+      "Does the narration explain how to choose between modes or settings of one tool?",
+      "tool-selection"
+    ],
+    [
+      "principle",
+      "Does the narration name one central idea and then the reasons or consequences that follow from it?",
+      "principle"
+    ],
+    [
+      "parts",
+      "Does the narration name the parts that together make up one whole thing?",
+      "framework"
+    ],
+    [
+      "groups",
+      "Does the narration sort things into groups that each have their own members?",
+      "categories"
+    ],
+    [
+      "items",
+      "Does the narration name several separate things, such as items, requirements, examples or warnings, that could be shown as a list?",
+      "list"
+    ]
+  ],
+  "brandRule": "brand: when the item stands for a named product, service or company (as the narration names it), add \"brand\": its name exactly as the narration says it. Still give the closest icon: the icon is shown until a logo for that brand is supplied. Never tag a generic thing (\"an AI model\", \"a chatbot\") as a brand."
+}

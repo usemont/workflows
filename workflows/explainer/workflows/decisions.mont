@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "id": "explainer-decisions",
+  "revision": "1",
+  "inputs": {
+    "item": {
+      "valueType": "object",
+      "required": true
+    },
+    "index": {
+      "valueType": "number",
+      "required": true
+    },
+    "adapter": {
+      "valueType": "string",
+      "required": true
+    }
+  },
+  "nodes": [
+    {
+      "id": "state",
+      "operation": "workflow.select",
+      "operationVersion": "1",
+      "inputs": {
+        "value": {
+          "kind": "input",
+          "input": "item"
+        },
+        "path": {
+          "kind": "literal",
+          "value": [
+            "state"
+          ]
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "questions",
+      "operation": "workflow.select",
+      "operationVersion": "1",
+      "inputs": {
+        "value": {
+          "kind": "input",
+          "input": "item"
+        },
+        "path": {
+          "kind": "literal",
+          "value": [
+            "questions"
+          ]
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "ask",
+      "operation": "provider.decisions",
+      "operationVersion": "1",
+      "inputs": {
+        "adapter": {
+          "kind": "input",
+          "input": "adapter"
+        },
+        "state": {
+          "kind": "node",
+          "node": "state",
+          "output": "result"
+        },
+        "questions": {
+          "kind": "node",
+          "node": "questions",
+          "output": "result"
+        }
+      },
+      "dependsOn": []
+    }
+  ],
+  "outputs": {
+    "result": {
+      "kind": "node",
+      "node": "ask",
+      "output": "result"
+    }
+  },
+  "bounds": {
+    "maxNodes": 128,
+    "maxConcurrent": 1,
+    "maxAttempts": 1,
+    "maxInputBytes": 16777216,
+    "maxOutputBytes": 67108864
+  }
+}

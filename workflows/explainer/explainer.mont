@@ -1,0 +1,3226 @@
+{
+  "schemaVersion": 1,
+  "id": "markdown-native-explainer",
+  "revision": "1",
+  "inputs": {
+    "markdown": {
+      "valueType": "string",
+      "required": true
+    },
+    "policy": {
+      "valueType": "object",
+      "required": false,
+      "default": {
+        "$json": "policy.json"
+      }
+    },
+    "theme": {
+      "valueType": "string",
+      "required": false,
+      "default": "daylight"
+    },
+    "brands": {
+      "valueType": "object",
+      "required": false,
+      "default": {}
+    },
+    "workspace": {
+      "valueType": "string",
+      "required": false,
+      "default": "output/example.mont-workspace"
+    },
+    "output": {
+      "valueType": "string",
+      "required": false,
+      "default": "output/example.mp4"
+    },
+    "width": {
+      "valueType": "number",
+      "required": false,
+      "default": 1920
+    },
+    "height": {
+      "valueType": "number",
+      "required": false,
+      "default": 1080
+    },
+    "fps": {
+      "valueType": "number",
+      "required": false,
+      "default": 30
+    },
+    "clef": {
+      "valueType": "string",
+      "required": false,
+      "default": "clef"
+    },
+    "haiku": {
+      "valueType": "string",
+      "required": false,
+      "default": "haiku"
+    },
+    "voice": {
+      "valueType": "string",
+      "required": false,
+      "default": "voice"
+    },
+    "transcription": {
+      "valueType": "string",
+      "required": false,
+      "default": "transcription"
+    },
+    "fill": {
+      "valueType": "string",
+      "required": false,
+      "default": "haiku"
+    }
+  },
+  "nodes": [
+    {
+      "id": "grammar",
+      "operation": "workflow.select",
+      "operationVersion": "1",
+      "inputs": {
+        "value": {
+          "kind": "input",
+          "input": "policy"
+        },
+        "path": {
+          "kind": "literal",
+          "value": [
+            "grammar"
+          ]
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "icons",
+      "operation": "workflow.select",
+      "operationVersion": "1",
+      "inputs": {
+        "value": {
+          "kind": "input",
+          "input": "policy"
+        },
+        "path": {
+          "kind": "literal",
+          "value": [
+            "icons"
+          ]
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "classification",
+      "operation": "workflow.select",
+      "operationVersion": "1",
+      "inputs": {
+        "value": {
+          "kind": "input",
+          "input": "policy"
+        },
+        "path": {
+          "kind": "literal",
+          "value": [
+            "classification"
+          ]
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "markdown",
+      "operation": "workflow.read-text",
+      "operationVersion": "1",
+      "inputs": {
+        "file": {
+          "kind": "input",
+          "input": "markdown"
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "parse",
+      "operation": "explainer.parse",
+      "operationVersion": "1",
+      "inputs": {
+        "state": {
+          "kind": "object",
+          "fields": {
+            "markdown": {
+              "kind": "node",
+              "node": "markdown",
+              "output": "result"
+            },
+            "theme": {
+              "kind": "input",
+              "input": "theme"
+            },
+            "brands": {
+              "kind": "input",
+              "input": "brands"
+            }
+          }
+        },
+        "response": {
+          "kind": "literal",
+          "value": {}
+        },
+        "policy": {
+          "kind": "object",
+          "fields": {
+            "grammar": {
+              "kind": "node",
+              "node": "grammar",
+              "output": "result"
+            },
+            "icons": {
+              "kind": "node",
+              "node": "icons",
+              "output": "result"
+            },
+            "classification": {
+              "kind": "node",
+              "node": "classification",
+              "output": "result"
+            }
+          }
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "classify_decisions",
+      "operation": "workflow.map",
+      "operationVersion": "1",
+      "inputs": {
+        "definition": {
+          "kind": "literal",
+          "value": {
+            "$json": "workflows/decisions.mont"
+          }
+        },
+        "items": {
+          "kind": "node",
+          "node": "parse",
+          "output": "items"
+        },
+        "shared": {
+          "kind": "object",
+          "fields": {
+            "adapter": {
+              "kind": "input",
+              "input": "clef"
+            }
+          }
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "classify",
+      "operation": "explainer.classify",
+      "operationVersion": "1",
+      "inputs": {
+        "state": {
+          "kind": "node",
+          "node": "parse",
+          "output": "result"
+        },
+        "response": {
+          "kind": "object",
+          "fields": {
+            "items": {
+              "kind": "node",
+              "node": "classify_decisions",
+              "output": "result"
+            }
+          }
+        },
+        "policy": {
+          "kind": "object",
+          "fields": {
+            "grammar": {
+              "kind": "node",
+              "node": "grammar",
+              "output": "result"
+            },
+            "icons": {
+              "kind": "node",
+              "node": "icons",
+              "output": "result"
+            },
+            "classification": {
+              "kind": "node",
+              "node": "classification",
+              "output": "result"
+            }
+          }
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "procedures_decisions",
+      "operation": "workflow.map",
+      "operationVersion": "1",
+      "inputs": {
+        "definition": {
+          "kind": "literal",
+          "value": {
+            "$json": "workflows/decisions.mont"
+          }
+        },
+        "items": {
+          "kind": "node",
+          "node": "classify",
+          "output": "items"
+        },
+        "shared": {
+          "kind": "object",
+          "fields": {
+            "adapter": {
+              "kind": "input",
+              "input": "clef"
+            }
+          }
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "procedures",
+      "operation": "explainer.procedures",
+      "operationVersion": "1",
+      "inputs": {
+        "state": {
+          "kind": "node",
+          "node": "classify",
+          "output": "result"
+        },
+        "response": {
+          "kind": "object",
+          "fields": {
+            "items": {
+              "kind": "node",
+              "node": "procedures_decisions",
+              "output": "result"
+            }
+          }
+        },
+        "policy": {
+          "kind": "object",
+          "fields": {
+            "grammar": {
+              "kind": "node",
+              "node": "grammar",
+              "output": "result"
+            },
+            "icons": {
+              "kind": "node",
+              "node": "icons",
+              "output": "result"
+            },
+            "classification": {
+              "kind": "node",
+              "node": "classification",
+              "output": "result"
+            }
+          }
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "boundaries_decisions",
+      "operation": "workflow.map",
+      "operationVersion": "1",
+      "inputs": {
+        "definition": {
+          "kind": "literal",
+          "value": {
+            "$json": "workflows/decisions.mont"
+          }
+        },
+        "items": {
+          "kind": "node",
+          "node": "procedures",
+          "output": "items"
+        },
+        "shared": {
+          "kind": "object",
+          "fields": {
+            "adapter": {
+              "kind": "input",
+              "input": "clef"
+            }
+          }
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "boundaries",
+      "operation": "explainer.boundaries",
+      "operationVersion": "1",
+      "inputs": {
+        "state": {
+          "kind": "node",
+          "node": "procedures",
+          "output": "result"
+        },
+        "response": {
+          "kind": "object",
+          "fields": {
+            "items": {
+              "kind": "node",
+              "node": "boundaries_decisions",
+              "output": "result"
+            }
+          }
+        },
+        "policy": {
+          "kind": "object",
+          "fields": {
+            "grammar": {
+              "kind": "node",
+              "node": "grammar",
+              "output": "result"
+            },
+            "icons": {
+              "kind": "node",
+              "node": "icons",
+              "output": "result"
+            },
+            "classification": {
+              "kind": "node",
+              "node": "classification",
+              "output": "result"
+            }
+          }
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "templates_decisions",
+      "operation": "workflow.map",
+      "operationVersion": "1",
+      "inputs": {
+        "definition": {
+          "kind": "literal",
+          "value": {
+            "$json": "workflows/decisions.mont"
+          }
+        },
+        "items": {
+          "kind": "node",
+          "node": "boundaries",
+          "output": "items"
+        },
+        "shared": {
+          "kind": "object",
+          "fields": {
+            "adapter": {
+              "kind": "input",
+              "input": "clef"
+            }
+          }
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "templates",
+      "operation": "explainer.templates",
+      "operationVersion": "1",
+      "inputs": {
+        "state": {
+          "kind": "node",
+          "node": "boundaries",
+          "output": "result"
+        },
+        "response": {
+          "kind": "object",
+          "fields": {
+            "items": {
+              "kind": "node",
+              "node": "templates_decisions",
+              "output": "result"
+            }
+          }
+        },
+        "policy": {
+          "kind": "object",
+          "fields": {
+            "grammar": {
+              "kind": "node",
+              "node": "grammar",
+              "output": "result"
+            },
+            "icons": {
+              "kind": "node",
+              "node": "icons",
+              "output": "result"
+            },
+            "classification": {
+              "kind": "node",
+              "node": "classification",
+              "output": "result"
+            }
+          }
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "verify_comparisons_decisions",
+      "operation": "workflow.map",
+      "operationVersion": "1",
+      "inputs": {
+        "definition": {
+          "kind": "literal",
+          "value": {
+            "$json": "workflows/decisions.mont"
+          }
+        },
+        "items": {
+          "kind": "node",
+          "node": "templates",
+          "output": "items"
+        },
+        "shared": {
+          "kind": "object",
+          "fields": {
+            "adapter": {
+              "kind": "input",
+              "input": "clef"
+            }
+          }
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "verify_comparisons",
+      "operation": "explainer.comparisons",
+      "operationVersion": "1",
+      "inputs": {
+        "state": {
+          "kind": "node",
+          "node": "templates",
+          "output": "result"
+        },
+        "response": {
+          "kind": "object",
+          "fields": {
+            "items": {
+              "kind": "node",
+              "node": "verify_comparisons_decisions",
+              "output": "result"
+            }
+          }
+        },
+        "policy": {
+          "kind": "object",
+          "fields": {
+            "grammar": {
+              "kind": "node",
+              "node": "grammar",
+              "output": "result"
+            },
+            "icons": {
+              "kind": "node",
+              "node": "icons",
+              "output": "result"
+            },
+            "classification": {
+              "kind": "node",
+              "node": "classification",
+              "output": "result"
+            }
+          }
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "merge_decisions",
+      "operation": "workflow.map",
+      "operationVersion": "1",
+      "inputs": {
+        "definition": {
+          "kind": "literal",
+          "value": {
+            "$json": "workflows/decisions.mont"
+          }
+        },
+        "items": {
+          "kind": "node",
+          "node": "verify_comparisons",
+          "output": "items"
+        },
+        "shared": {
+          "kind": "object",
+          "fields": {
+            "adapter": {
+              "kind": "input",
+              "input": "clef"
+            }
+          }
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "merge",
+      "operation": "explainer.merge",
+      "operationVersion": "1",
+      "inputs": {
+        "state": {
+          "kind": "node",
+          "node": "verify_comparisons",
+          "output": "result"
+        },
+        "response": {
+          "kind": "object",
+          "fields": {
+            "items": {
+              "kind": "node",
+              "node": "merge_decisions",
+              "output": "result"
+            }
+          }
+        },
+        "policy": {
+          "kind": "object",
+          "fields": {
+            "grammar": {
+              "kind": "node",
+              "node": "grammar",
+              "output": "result"
+            },
+            "icons": {
+              "kind": "node",
+              "node": "icons",
+              "output": "result"
+            },
+            "classification": {
+              "kind": "node",
+              "node": "classification",
+              "output": "result"
+            }
+          }
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "scenes",
+      "operation": "workflow.select",
+      "operationVersion": "1",
+      "inputs": {
+        "value": {
+          "kind": "node",
+          "node": "merge",
+          "output": "result"
+        },
+        "path": {
+          "kind": "literal",
+          "value": [
+            "scenes"
+          ]
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "voices",
+      "operation": "workflow.map",
+      "operationVersion": "1",
+      "inputs": {
+        "definition": {
+          "kind": "literal",
+          "value": {
+            "$json": "workflows/voice.mont"
+          }
+        },
+        "items": {
+          "kind": "node",
+          "node": "scenes",
+          "output": "result"
+        },
+        "shared": {
+          "kind": "object",
+          "fields": {
+            "voice": {
+              "kind": "input",
+              "input": "voice"
+            },
+            "transcription": {
+              "kind": "input",
+              "input": "transcription"
+            }
+          }
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "audio_join",
+      "operation": "explainer.audio_join",
+      "operationVersion": "1",
+      "inputs": {
+        "state": {
+          "kind": "node",
+          "node": "merge",
+          "output": "result"
+        },
+        "response": {
+          "kind": "object",
+          "fields": {
+            "items": {
+              "kind": "node",
+              "node": "voices",
+              "output": "result"
+            }
+          }
+        },
+        "policy": {
+          "kind": "object",
+          "fields": {
+            "grammar": {
+              "kind": "node",
+              "node": "grammar",
+              "output": "result"
+            },
+            "icons": {
+              "kind": "node",
+              "node": "icons",
+              "output": "result"
+            },
+            "classification": {
+              "kind": "node",
+              "node": "classification",
+              "output": "result"
+            }
+          }
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "fill_request",
+      "operation": "explainer.request",
+      "operationVersion": "1",
+      "inputs": {
+        "state": {
+          "kind": "node",
+          "node": "audio_join",
+          "output": "result"
+        },
+        "response": {
+          "kind": "literal",
+          "value": {}
+        },
+        "policy": {
+          "kind": "object",
+          "fields": {
+            "grammar": {
+              "kind": "node",
+              "node": "grammar",
+              "output": "result"
+            },
+            "icons": {
+              "kind": "node",
+              "node": "icons",
+              "output": "result"
+            },
+            "classification": {
+              "kind": "node",
+              "node": "classification",
+              "output": "result"
+            },
+            "mode": {
+              "kind": "literal",
+              "value": "fill"
+            }
+          }
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "fill_payload",
+      "operation": "workflow.select",
+      "operationVersion": "1",
+      "inputs": {
+        "value": {
+          "kind": "node",
+          "node": "fill_request",
+          "output": "result"
+        },
+        "path": {
+          "kind": "literal",
+          "value": [
+            "payload"
+          ]
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "fill_messages",
+      "operation": "workflow.script",
+      "operationVersion": "1",
+      "inputs": {
+        "source": {
+          "kind": "literal",
+          "value": {
+            "$asset": "messages.mont"
+          }
+        },
+        "function": {
+          "kind": "literal",
+          "value": "build_messages"
+        },
+        "arguments": {
+          "kind": "array",
+          "items": [
+            {
+              "kind": "literal",
+              "value": {
+                "$asset": "prompts/fill.txt"
+              }
+            },
+            {
+              "kind": "node",
+              "node": "fill_payload",
+              "output": "result"
+            }
+          ]
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "fill_chat",
+      "operation": "provider.chat",
+      "operationVersion": "1",
+      "inputs": {
+        "adapter": {
+          "kind": "input",
+          "input": "fill"
+        },
+        "messages": {
+          "kind": "node",
+          "node": "fill_messages",
+          "output": "result"
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "fill",
+      "operation": "explainer.fill",
+      "operationVersion": "1",
+      "inputs": {
+        "state": {
+          "kind": "node",
+          "node": "audio_join",
+          "output": "result"
+        },
+        "response": {
+          "kind": "node",
+          "node": "fill_chat",
+          "output": "result"
+        },
+        "policy": {
+          "kind": "object",
+          "fields": {
+            "grammar": {
+              "kind": "node",
+              "node": "grammar",
+              "output": "result"
+            },
+            "icons": {
+              "kind": "node",
+              "node": "icons",
+              "output": "result"
+            },
+            "classification": {
+              "kind": "node",
+              "node": "classification",
+              "output": "result"
+            }
+          }
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "coverage_request",
+      "operation": "explainer.request",
+      "operationVersion": "1",
+      "inputs": {
+        "state": {
+          "kind": "node",
+          "node": "fill",
+          "output": "result"
+        },
+        "response": {
+          "kind": "literal",
+          "value": {}
+        },
+        "policy": {
+          "kind": "object",
+          "fields": {
+            "grammar": {
+              "kind": "node",
+              "node": "grammar",
+              "output": "result"
+            },
+            "icons": {
+              "kind": "node",
+              "node": "icons",
+              "output": "result"
+            },
+            "classification": {
+              "kind": "node",
+              "node": "classification",
+              "output": "result"
+            },
+            "mode": {
+              "kind": "literal",
+              "value": "coverage"
+            }
+          }
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "coverage_decisions",
+      "operation": "workflow.map",
+      "operationVersion": "1",
+      "inputs": {
+        "definition": {
+          "kind": "literal",
+          "value": {
+            "$json": "workflows/decisions.mont"
+          }
+        },
+        "items": {
+          "kind": "node",
+          "node": "coverage_request",
+          "output": "items"
+        },
+        "shared": {
+          "kind": "object",
+          "fields": {
+            "adapter": {
+              "kind": "input",
+              "input": "clef"
+            }
+          }
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "coverage_review",
+      "operation": "explainer.review",
+      "operationVersion": "1",
+      "inputs": {
+        "state": {
+          "kind": "node",
+          "node": "coverage_request",
+          "output": "result"
+        },
+        "response": {
+          "kind": "object",
+          "fields": {
+            "items": {
+              "kind": "node",
+              "node": "coverage_decisions",
+              "output": "result"
+            }
+          }
+        },
+        "policy": {
+          "kind": "object",
+          "fields": {
+            "grammar": {
+              "kind": "node",
+              "node": "grammar",
+              "output": "result"
+            },
+            "icons": {
+              "kind": "node",
+              "node": "icons",
+              "output": "result"
+            },
+            "classification": {
+              "kind": "node",
+              "node": "classification",
+              "output": "result"
+            },
+            "prompt": {
+              "kind": "literal",
+              "value": {
+                "$asset": "prompts/fill.txt"
+              }
+            }
+          }
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "coverage_repairs",
+      "operation": "workflow.map",
+      "operationVersion": "1",
+      "inputs": {
+        "definition": {
+          "kind": "literal",
+          "value": {
+            "$json": "workflows/chat.mont"
+          }
+        },
+        "items": {
+          "kind": "node",
+          "node": "coverage_review",
+          "output": "items"
+        },
+        "shared": {
+          "kind": "object",
+          "fields": {
+            "adapter": {
+              "kind": "input",
+              "input": "fill"
+            }
+          }
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "coverage_repair",
+      "operation": "explainer.repair",
+      "operationVersion": "1",
+      "inputs": {
+        "state": {
+          "kind": "node",
+          "node": "coverage_review",
+          "output": "result"
+        },
+        "response": {
+          "kind": "object",
+          "fields": {
+            "items": {
+              "kind": "node",
+              "node": "coverage_repairs",
+              "output": "result"
+            }
+          }
+        },
+        "policy": {
+          "kind": "object",
+          "fields": {
+            "grammar": {
+              "kind": "node",
+              "node": "grammar",
+              "output": "result"
+            },
+            "icons": {
+              "kind": "node",
+              "node": "icons",
+              "output": "result"
+            },
+            "classification": {
+              "kind": "node",
+              "node": "classification",
+              "output": "result"
+            }
+          }
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "coverage_recheck_decisions",
+      "operation": "workflow.map",
+      "operationVersion": "1",
+      "inputs": {
+        "definition": {
+          "kind": "literal",
+          "value": {
+            "$json": "workflows/decisions.mont"
+          }
+        },
+        "items": {
+          "kind": "node",
+          "node": "coverage_repair",
+          "output": "items"
+        },
+        "shared": {
+          "kind": "object",
+          "fields": {
+            "adapter": {
+              "kind": "input",
+              "input": "clef"
+            }
+          }
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "coverage_recheck",
+      "operation": "explainer.recheck",
+      "operationVersion": "1",
+      "inputs": {
+        "state": {
+          "kind": "node",
+          "node": "coverage_repair",
+          "output": "result"
+        },
+        "response": {
+          "kind": "object",
+          "fields": {
+            "items": {
+              "kind": "node",
+              "node": "coverage_recheck_decisions",
+              "output": "result"
+            }
+          }
+        },
+        "policy": {
+          "kind": "object",
+          "fields": {
+            "grammar": {
+              "kind": "node",
+              "node": "grammar",
+              "output": "result"
+            },
+            "icons": {
+              "kind": "node",
+              "node": "icons",
+              "output": "result"
+            },
+            "classification": {
+              "kind": "node",
+              "node": "classification",
+              "output": "result"
+            }
+          }
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "titles_request",
+      "operation": "explainer.request",
+      "operationVersion": "1",
+      "inputs": {
+        "state": {
+          "kind": "node",
+          "node": "coverage_recheck",
+          "output": "result"
+        },
+        "response": {
+          "kind": "literal",
+          "value": {}
+        },
+        "policy": {
+          "kind": "object",
+          "fields": {
+            "grammar": {
+              "kind": "node",
+              "node": "grammar",
+              "output": "result"
+            },
+            "icons": {
+              "kind": "node",
+              "node": "icons",
+              "output": "result"
+            },
+            "classification": {
+              "kind": "node",
+              "node": "classification",
+              "output": "result"
+            },
+            "mode": {
+              "kind": "literal",
+              "value": "titles"
+            }
+          }
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "titles_decisions",
+      "operation": "workflow.map",
+      "operationVersion": "1",
+      "inputs": {
+        "definition": {
+          "kind": "literal",
+          "value": {
+            "$json": "workflows/decisions.mont"
+          }
+        },
+        "items": {
+          "kind": "node",
+          "node": "titles_request",
+          "output": "items"
+        },
+        "shared": {
+          "kind": "object",
+          "fields": {
+            "adapter": {
+              "kind": "input",
+              "input": "clef"
+            }
+          }
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "titles_review",
+      "operation": "explainer.review",
+      "operationVersion": "1",
+      "inputs": {
+        "state": {
+          "kind": "node",
+          "node": "titles_request",
+          "output": "result"
+        },
+        "response": {
+          "kind": "object",
+          "fields": {
+            "items": {
+              "kind": "node",
+              "node": "titles_decisions",
+              "output": "result"
+            }
+          }
+        },
+        "policy": {
+          "kind": "object",
+          "fields": {
+            "grammar": {
+              "kind": "node",
+              "node": "grammar",
+              "output": "result"
+            },
+            "icons": {
+              "kind": "node",
+              "node": "icons",
+              "output": "result"
+            },
+            "classification": {
+              "kind": "node",
+              "node": "classification",
+              "output": "result"
+            },
+            "prompt": {
+              "kind": "literal",
+              "value": {
+                "$asset": "prompts/title.txt"
+              }
+            }
+          }
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "titles_repairs",
+      "operation": "workflow.map",
+      "operationVersion": "1",
+      "inputs": {
+        "definition": {
+          "kind": "literal",
+          "value": {
+            "$json": "workflows/chat.mont"
+          }
+        },
+        "items": {
+          "kind": "node",
+          "node": "titles_review",
+          "output": "items"
+        },
+        "shared": {
+          "kind": "object",
+          "fields": {
+            "adapter": {
+              "kind": "input",
+              "input": "fill"
+            }
+          }
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "titles_repair",
+      "operation": "explainer.repair",
+      "operationVersion": "1",
+      "inputs": {
+        "state": {
+          "kind": "node",
+          "node": "titles_review",
+          "output": "result"
+        },
+        "response": {
+          "kind": "object",
+          "fields": {
+            "items": {
+              "kind": "node",
+              "node": "titles_repairs",
+              "output": "result"
+            }
+          }
+        },
+        "policy": {
+          "kind": "object",
+          "fields": {
+            "grammar": {
+              "kind": "node",
+              "node": "grammar",
+              "output": "result"
+            },
+            "icons": {
+              "kind": "node",
+              "node": "icons",
+              "output": "result"
+            },
+            "classification": {
+              "kind": "node",
+              "node": "classification",
+              "output": "result"
+            }
+          }
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "titles_recheck_decisions",
+      "operation": "workflow.map",
+      "operationVersion": "1",
+      "inputs": {
+        "definition": {
+          "kind": "literal",
+          "value": {
+            "$json": "workflows/decisions.mont"
+          }
+        },
+        "items": {
+          "kind": "node",
+          "node": "titles_repair",
+          "output": "items"
+        },
+        "shared": {
+          "kind": "object",
+          "fields": {
+            "adapter": {
+              "kind": "input",
+              "input": "clef"
+            }
+          }
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "titles_recheck",
+      "operation": "explainer.recheck",
+      "operationVersion": "1",
+      "inputs": {
+        "state": {
+          "kind": "node",
+          "node": "titles_repair",
+          "output": "result"
+        },
+        "response": {
+          "kind": "object",
+          "fields": {
+            "items": {
+              "kind": "node",
+              "node": "titles_recheck_decisions",
+              "output": "result"
+            }
+          }
+        },
+        "policy": {
+          "kind": "object",
+          "fields": {
+            "grammar": {
+              "kind": "node",
+              "node": "grammar",
+              "output": "result"
+            },
+            "icons": {
+              "kind": "node",
+              "node": "icons",
+              "output": "result"
+            },
+            "classification": {
+              "kind": "node",
+              "node": "classification",
+              "output": "result"
+            }
+          }
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "tone_request",
+      "operation": "explainer.request",
+      "operationVersion": "1",
+      "inputs": {
+        "state": {
+          "kind": "node",
+          "node": "titles_recheck",
+          "output": "result"
+        },
+        "response": {
+          "kind": "literal",
+          "value": {}
+        },
+        "policy": {
+          "kind": "object",
+          "fields": {
+            "grammar": {
+              "kind": "node",
+              "node": "grammar",
+              "output": "result"
+            },
+            "icons": {
+              "kind": "node",
+              "node": "icons",
+              "output": "result"
+            },
+            "classification": {
+              "kind": "node",
+              "node": "classification",
+              "output": "result"
+            },
+            "mode": {
+              "kind": "literal",
+              "value": "tone"
+            }
+          }
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "tone_decisions",
+      "operation": "workflow.map",
+      "operationVersion": "1",
+      "inputs": {
+        "definition": {
+          "kind": "literal",
+          "value": {
+            "$json": "workflows/decisions.mont"
+          }
+        },
+        "items": {
+          "kind": "node",
+          "node": "tone_request",
+          "output": "items"
+        },
+        "shared": {
+          "kind": "object",
+          "fields": {
+            "adapter": {
+              "kind": "input",
+              "input": "clef"
+            }
+          }
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "tone_review",
+      "operation": "explainer.review",
+      "operationVersion": "1",
+      "inputs": {
+        "state": {
+          "kind": "node",
+          "node": "tone_request",
+          "output": "result"
+        },
+        "response": {
+          "kind": "object",
+          "fields": {
+            "items": {
+              "kind": "node",
+              "node": "tone_decisions",
+              "output": "result"
+            }
+          }
+        },
+        "policy": {
+          "kind": "object",
+          "fields": {
+            "grammar": {
+              "kind": "node",
+              "node": "grammar",
+              "output": "result"
+            },
+            "icons": {
+              "kind": "node",
+              "node": "icons",
+              "output": "result"
+            },
+            "classification": {
+              "kind": "node",
+              "node": "classification",
+              "output": "result"
+            },
+            "prompt": {
+              "kind": "literal",
+              "value": {
+                "$asset": "prompts/tone.txt"
+              }
+            }
+          }
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "tone_repairs",
+      "operation": "workflow.map",
+      "operationVersion": "1",
+      "inputs": {
+        "definition": {
+          "kind": "literal",
+          "value": {
+            "$json": "workflows/chat.mont"
+          }
+        },
+        "items": {
+          "kind": "node",
+          "node": "tone_review",
+          "output": "items"
+        },
+        "shared": {
+          "kind": "object",
+          "fields": {
+            "adapter": {
+              "kind": "input",
+              "input": "fill"
+            }
+          }
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "tone_repair",
+      "operation": "explainer.repair",
+      "operationVersion": "1",
+      "inputs": {
+        "state": {
+          "kind": "node",
+          "node": "tone_review",
+          "output": "result"
+        },
+        "response": {
+          "kind": "object",
+          "fields": {
+            "items": {
+              "kind": "node",
+              "node": "tone_repairs",
+              "output": "result"
+            }
+          }
+        },
+        "policy": {
+          "kind": "object",
+          "fields": {
+            "grammar": {
+              "kind": "node",
+              "node": "grammar",
+              "output": "result"
+            },
+            "icons": {
+              "kind": "node",
+              "node": "icons",
+              "output": "result"
+            },
+            "classification": {
+              "kind": "node",
+              "node": "classification",
+              "output": "result"
+            }
+          }
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "tone_recheck_decisions",
+      "operation": "workflow.map",
+      "operationVersion": "1",
+      "inputs": {
+        "definition": {
+          "kind": "literal",
+          "value": {
+            "$json": "workflows/decisions.mont"
+          }
+        },
+        "items": {
+          "kind": "node",
+          "node": "tone_repair",
+          "output": "items"
+        },
+        "shared": {
+          "kind": "object",
+          "fields": {
+            "adapter": {
+              "kind": "input",
+              "input": "clef"
+            }
+          }
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "tone_recheck",
+      "operation": "explainer.recheck",
+      "operationVersion": "1",
+      "inputs": {
+        "state": {
+          "kind": "node",
+          "node": "tone_repair",
+          "output": "result"
+        },
+        "response": {
+          "kind": "object",
+          "fields": {
+            "items": {
+              "kind": "node",
+              "node": "tone_recheck_decisions",
+              "output": "result"
+            }
+          }
+        },
+        "policy": {
+          "kind": "object",
+          "fields": {
+            "grammar": {
+              "kind": "node",
+              "node": "grammar",
+              "output": "result"
+            },
+            "icons": {
+              "kind": "node",
+              "node": "icons",
+              "output": "result"
+            },
+            "classification": {
+              "kind": "node",
+              "node": "classification",
+              "output": "result"
+            }
+          }
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "relations_request",
+      "operation": "explainer.request",
+      "operationVersion": "1",
+      "inputs": {
+        "state": {
+          "kind": "node",
+          "node": "tone_recheck",
+          "output": "result"
+        },
+        "response": {
+          "kind": "literal",
+          "value": {}
+        },
+        "policy": {
+          "kind": "object",
+          "fields": {
+            "grammar": {
+              "kind": "node",
+              "node": "grammar",
+              "output": "result"
+            },
+            "icons": {
+              "kind": "node",
+              "node": "icons",
+              "output": "result"
+            },
+            "classification": {
+              "kind": "node",
+              "node": "classification",
+              "output": "result"
+            },
+            "mode": {
+              "kind": "literal",
+              "value": "relations"
+            }
+          }
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "relations_decisions",
+      "operation": "workflow.map",
+      "operationVersion": "1",
+      "inputs": {
+        "definition": {
+          "kind": "literal",
+          "value": {
+            "$json": "workflows/decisions.mont"
+          }
+        },
+        "items": {
+          "kind": "node",
+          "node": "relations_request",
+          "output": "items"
+        },
+        "shared": {
+          "kind": "object",
+          "fields": {
+            "adapter": {
+              "kind": "input",
+              "input": "clef"
+            }
+          }
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "relations_review",
+      "operation": "explainer.review",
+      "operationVersion": "1",
+      "inputs": {
+        "state": {
+          "kind": "node",
+          "node": "relations_request",
+          "output": "result"
+        },
+        "response": {
+          "kind": "object",
+          "fields": {
+            "items": {
+              "kind": "node",
+              "node": "relations_decisions",
+              "output": "result"
+            }
+          }
+        },
+        "policy": {
+          "kind": "object",
+          "fields": {
+            "grammar": {
+              "kind": "node",
+              "node": "grammar",
+              "output": "result"
+            },
+            "icons": {
+              "kind": "node",
+              "node": "icons",
+              "output": "result"
+            },
+            "classification": {
+              "kind": "node",
+              "node": "classification",
+              "output": "result"
+            },
+            "prompt": {
+              "kind": "literal",
+              "value": {
+                "$asset": "prompts/fill.txt"
+              }
+            }
+          }
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "relations_repairs",
+      "operation": "workflow.map",
+      "operationVersion": "1",
+      "inputs": {
+        "definition": {
+          "kind": "literal",
+          "value": {
+            "$json": "workflows/chat.mont"
+          }
+        },
+        "items": {
+          "kind": "node",
+          "node": "relations_review",
+          "output": "items"
+        },
+        "shared": {
+          "kind": "object",
+          "fields": {
+            "adapter": {
+              "kind": "input",
+              "input": "fill"
+            }
+          }
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "relations_repair",
+      "operation": "explainer.repair",
+      "operationVersion": "1",
+      "inputs": {
+        "state": {
+          "kind": "node",
+          "node": "relations_review",
+          "output": "result"
+        },
+        "response": {
+          "kind": "object",
+          "fields": {
+            "items": {
+              "kind": "node",
+              "node": "relations_repairs",
+              "output": "result"
+            }
+          }
+        },
+        "policy": {
+          "kind": "object",
+          "fields": {
+            "grammar": {
+              "kind": "node",
+              "node": "grammar",
+              "output": "result"
+            },
+            "icons": {
+              "kind": "node",
+              "node": "icons",
+              "output": "result"
+            },
+            "classification": {
+              "kind": "node",
+              "node": "classification",
+              "output": "result"
+            }
+          }
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "relations_recheck_decisions",
+      "operation": "workflow.map",
+      "operationVersion": "1",
+      "inputs": {
+        "definition": {
+          "kind": "literal",
+          "value": {
+            "$json": "workflows/decisions.mont"
+          }
+        },
+        "items": {
+          "kind": "node",
+          "node": "relations_repair",
+          "output": "items"
+        },
+        "shared": {
+          "kind": "object",
+          "fields": {
+            "adapter": {
+              "kind": "input",
+              "input": "clef"
+            }
+          }
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "relations_recheck",
+      "operation": "explainer.recheck",
+      "operationVersion": "1",
+      "inputs": {
+        "state": {
+          "kind": "node",
+          "node": "relations_repair",
+          "output": "result"
+        },
+        "response": {
+          "kind": "object",
+          "fields": {
+            "items": {
+              "kind": "node",
+              "node": "relations_recheck_decisions",
+              "output": "result"
+            }
+          }
+        },
+        "policy": {
+          "kind": "object",
+          "fields": {
+            "grammar": {
+              "kind": "node",
+              "node": "grammar",
+              "output": "result"
+            },
+            "icons": {
+              "kind": "node",
+              "node": "icons",
+              "output": "result"
+            },
+            "classification": {
+              "kind": "node",
+              "node": "classification",
+              "output": "result"
+            }
+          }
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "picture_route_request",
+      "operation": "explainer.request",
+      "operationVersion": "1",
+      "inputs": {
+        "state": {
+          "kind": "node",
+          "node": "relations_recheck",
+          "output": "result"
+        },
+        "response": {
+          "kind": "literal",
+          "value": {}
+        },
+        "policy": {
+          "kind": "object",
+          "fields": {
+            "grammar": {
+              "kind": "node",
+              "node": "grammar",
+              "output": "result"
+            },
+            "icons": {
+              "kind": "node",
+              "node": "icons",
+              "output": "result"
+            },
+            "classification": {
+              "kind": "node",
+              "node": "classification",
+              "output": "result"
+            },
+            "mode": {
+              "kind": "literal",
+              "value": "route"
+            },
+            "family": {
+              "kind": "literal",
+              "value": "picture"
+            }
+          }
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "picture_route_decisions",
+      "operation": "workflow.map",
+      "operationVersion": "1",
+      "inputs": {
+        "definition": {
+          "kind": "literal",
+          "value": {
+            "$json": "workflows/decisions.mont"
+          }
+        },
+        "items": {
+          "kind": "node",
+          "node": "picture_route_request",
+          "output": "items"
+        },
+        "shared": {
+          "kind": "object",
+          "fields": {
+            "adapter": {
+              "kind": "input",
+              "input": "clef"
+            }
+          }
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "picture_route",
+      "operation": "explainer.route",
+      "operationVersion": "1",
+      "inputs": {
+        "state": {
+          "kind": "node",
+          "node": "picture_route_request",
+          "output": "result"
+        },
+        "response": {
+          "kind": "object",
+          "fields": {
+            "items": {
+              "kind": "node",
+              "node": "picture_route_decisions",
+              "output": "result"
+            }
+          }
+        },
+        "policy": {
+          "kind": "object",
+          "fields": {
+            "grammar": {
+              "kind": "node",
+              "node": "grammar",
+              "output": "result"
+            },
+            "icons": {
+              "kind": "node",
+              "node": "icons",
+              "output": "result"
+            },
+            "classification": {
+              "kind": "node",
+              "node": "classification",
+              "output": "result"
+            },
+            "prompt": {
+              "kind": "literal",
+              "value": {
+                "$asset": "prompts/picture.txt"
+              }
+            }
+          }
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "picture_drafts",
+      "operation": "workflow.map",
+      "operationVersion": "1",
+      "inputs": {
+        "definition": {
+          "kind": "literal",
+          "value": {
+            "$json": "workflows/chat.mont"
+          }
+        },
+        "items": {
+          "kind": "node",
+          "node": "picture_route",
+          "output": "items"
+        },
+        "shared": {
+          "kind": "object",
+          "fields": {
+            "adapter": {
+              "kind": "input",
+              "input": "haiku"
+            }
+          }
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "picture_proposals",
+      "operation": "explainer.proposals",
+      "operationVersion": "1",
+      "inputs": {
+        "state": {
+          "kind": "node",
+          "node": "picture_route",
+          "output": "result"
+        },
+        "response": {
+          "kind": "object",
+          "fields": {
+            "items": {
+              "kind": "node",
+              "node": "picture_drafts",
+              "output": "result"
+            }
+          }
+        },
+        "policy": {
+          "kind": "object",
+          "fields": {
+            "grammar": {
+              "kind": "node",
+              "node": "grammar",
+              "output": "result"
+            },
+            "icons": {
+              "kind": "node",
+              "node": "icons",
+              "output": "result"
+            },
+            "classification": {
+              "kind": "node",
+              "node": "classification",
+              "output": "result"
+            },
+            "prompt": {
+              "kind": "literal",
+              "value": {
+                "$asset": "prompts/picture.txt"
+              }
+            }
+          }
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "picture_repairs",
+      "operation": "workflow.map",
+      "operationVersion": "1",
+      "inputs": {
+        "definition": {
+          "kind": "literal",
+          "value": {
+            "$json": "workflows/chat.mont"
+          }
+        },
+        "items": {
+          "kind": "node",
+          "node": "picture_proposals",
+          "output": "items"
+        },
+        "shared": {
+          "kind": "object",
+          "fields": {
+            "adapter": {
+              "kind": "input",
+              "input": "haiku"
+            }
+          }
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "picture_repair",
+      "operation": "explainer.family_repair",
+      "operationVersion": "1",
+      "inputs": {
+        "state": {
+          "kind": "node",
+          "node": "picture_proposals",
+          "output": "result"
+        },
+        "response": {
+          "kind": "object",
+          "fields": {
+            "items": {
+              "kind": "node",
+              "node": "picture_repairs",
+              "output": "result"
+            }
+          }
+        },
+        "policy": {
+          "kind": "object",
+          "fields": {
+            "grammar": {
+              "kind": "node",
+              "node": "grammar",
+              "output": "result"
+            },
+            "icons": {
+              "kind": "node",
+              "node": "icons",
+              "output": "result"
+            },
+            "classification": {
+              "kind": "node",
+              "node": "classification",
+              "output": "result"
+            },
+            "prompt": {
+              "kind": "literal",
+              "value": {
+                "$asset": "prompts/picture.txt"
+              }
+            }
+          }
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "picture_merit_request",
+      "operation": "explainer.request",
+      "operationVersion": "1",
+      "inputs": {
+        "state": {
+          "kind": "node",
+          "node": "picture_repair",
+          "output": "result"
+        },
+        "response": {
+          "kind": "literal",
+          "value": {}
+        },
+        "policy": {
+          "kind": "object",
+          "fields": {
+            "grammar": {
+              "kind": "node",
+              "node": "grammar",
+              "output": "result"
+            },
+            "icons": {
+              "kind": "node",
+              "node": "icons",
+              "output": "result"
+            },
+            "classification": {
+              "kind": "node",
+              "node": "classification",
+              "output": "result"
+            },
+            "mode": {
+              "kind": "literal",
+              "value": "merit"
+            }
+          }
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "picture_merit_decisions",
+      "operation": "workflow.map",
+      "operationVersion": "1",
+      "inputs": {
+        "definition": {
+          "kind": "literal",
+          "value": {
+            "$json": "workflows/decisions.mont"
+          }
+        },
+        "items": {
+          "kind": "node",
+          "node": "picture_merit_request",
+          "output": "items"
+        },
+        "shared": {
+          "kind": "object",
+          "fields": {
+            "adapter": {
+              "kind": "input",
+              "input": "clef"
+            }
+          }
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "picture_merit",
+      "operation": "explainer.merit",
+      "operationVersion": "1",
+      "inputs": {
+        "state": {
+          "kind": "node",
+          "node": "picture_merit_request",
+          "output": "result"
+        },
+        "response": {
+          "kind": "object",
+          "fields": {
+            "items": {
+              "kind": "node",
+              "node": "picture_merit_decisions",
+              "output": "result"
+            }
+          }
+        },
+        "policy": {
+          "kind": "object",
+          "fields": {
+            "grammar": {
+              "kind": "node",
+              "node": "grammar",
+              "output": "result"
+            },
+            "icons": {
+              "kind": "node",
+              "node": "icons",
+              "output": "result"
+            },
+            "classification": {
+              "kind": "node",
+              "node": "classification",
+              "output": "result"
+            }
+          }
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "action_route_request",
+      "operation": "explainer.request",
+      "operationVersion": "1",
+      "inputs": {
+        "state": {
+          "kind": "node",
+          "node": "relations_recheck",
+          "output": "result"
+        },
+        "response": {
+          "kind": "literal",
+          "value": {}
+        },
+        "policy": {
+          "kind": "object",
+          "fields": {
+            "grammar": {
+              "kind": "node",
+              "node": "grammar",
+              "output": "result"
+            },
+            "icons": {
+              "kind": "node",
+              "node": "icons",
+              "output": "result"
+            },
+            "classification": {
+              "kind": "node",
+              "node": "classification",
+              "output": "result"
+            },
+            "mode": {
+              "kind": "literal",
+              "value": "route"
+            },
+            "family": {
+              "kind": "literal",
+              "value": "action"
+            }
+          }
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "action_route_decisions",
+      "operation": "workflow.map",
+      "operationVersion": "1",
+      "inputs": {
+        "definition": {
+          "kind": "literal",
+          "value": {
+            "$json": "workflows/decisions.mont"
+          }
+        },
+        "items": {
+          "kind": "node",
+          "node": "action_route_request",
+          "output": "items"
+        },
+        "shared": {
+          "kind": "object",
+          "fields": {
+            "adapter": {
+              "kind": "input",
+              "input": "clef"
+            }
+          }
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "action_route",
+      "operation": "explainer.route",
+      "operationVersion": "1",
+      "inputs": {
+        "state": {
+          "kind": "node",
+          "node": "action_route_request",
+          "output": "result"
+        },
+        "response": {
+          "kind": "object",
+          "fields": {
+            "items": {
+              "kind": "node",
+              "node": "action_route_decisions",
+              "output": "result"
+            }
+          }
+        },
+        "policy": {
+          "kind": "object",
+          "fields": {
+            "grammar": {
+              "kind": "node",
+              "node": "grammar",
+              "output": "result"
+            },
+            "icons": {
+              "kind": "node",
+              "node": "icons",
+              "output": "result"
+            },
+            "classification": {
+              "kind": "node",
+              "node": "classification",
+              "output": "result"
+            },
+            "prompt": {
+              "kind": "literal",
+              "value": {
+                "$asset": "prompts/action.txt"
+              }
+            }
+          }
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "action_drafts",
+      "operation": "workflow.map",
+      "operationVersion": "1",
+      "inputs": {
+        "definition": {
+          "kind": "literal",
+          "value": {
+            "$json": "workflows/chat.mont"
+          }
+        },
+        "items": {
+          "kind": "node",
+          "node": "action_route",
+          "output": "items"
+        },
+        "shared": {
+          "kind": "object",
+          "fields": {
+            "adapter": {
+              "kind": "input",
+              "input": "haiku"
+            }
+          }
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "action_proposals",
+      "operation": "explainer.proposals",
+      "operationVersion": "1",
+      "inputs": {
+        "state": {
+          "kind": "node",
+          "node": "action_route",
+          "output": "result"
+        },
+        "response": {
+          "kind": "object",
+          "fields": {
+            "items": {
+              "kind": "node",
+              "node": "action_drafts",
+              "output": "result"
+            }
+          }
+        },
+        "policy": {
+          "kind": "object",
+          "fields": {
+            "grammar": {
+              "kind": "node",
+              "node": "grammar",
+              "output": "result"
+            },
+            "icons": {
+              "kind": "node",
+              "node": "icons",
+              "output": "result"
+            },
+            "classification": {
+              "kind": "node",
+              "node": "classification",
+              "output": "result"
+            },
+            "prompt": {
+              "kind": "literal",
+              "value": {
+                "$asset": "prompts/action.txt"
+              }
+            }
+          }
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "action_repairs",
+      "operation": "workflow.map",
+      "operationVersion": "1",
+      "inputs": {
+        "definition": {
+          "kind": "literal",
+          "value": {
+            "$json": "workflows/chat.mont"
+          }
+        },
+        "items": {
+          "kind": "node",
+          "node": "action_proposals",
+          "output": "items"
+        },
+        "shared": {
+          "kind": "object",
+          "fields": {
+            "adapter": {
+              "kind": "input",
+              "input": "haiku"
+            }
+          }
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "action_repair",
+      "operation": "explainer.family_repair",
+      "operationVersion": "1",
+      "inputs": {
+        "state": {
+          "kind": "node",
+          "node": "action_proposals",
+          "output": "result"
+        },
+        "response": {
+          "kind": "object",
+          "fields": {
+            "items": {
+              "kind": "node",
+              "node": "action_repairs",
+              "output": "result"
+            }
+          }
+        },
+        "policy": {
+          "kind": "object",
+          "fields": {
+            "grammar": {
+              "kind": "node",
+              "node": "grammar",
+              "output": "result"
+            },
+            "icons": {
+              "kind": "node",
+              "node": "icons",
+              "output": "result"
+            },
+            "classification": {
+              "kind": "node",
+              "node": "classification",
+              "output": "result"
+            },
+            "prompt": {
+              "kind": "literal",
+              "value": {
+                "$asset": "prompts/action.txt"
+              }
+            }
+          }
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "action_merit_request",
+      "operation": "explainer.request",
+      "operationVersion": "1",
+      "inputs": {
+        "state": {
+          "kind": "node",
+          "node": "action_repair",
+          "output": "result"
+        },
+        "response": {
+          "kind": "literal",
+          "value": {}
+        },
+        "policy": {
+          "kind": "object",
+          "fields": {
+            "grammar": {
+              "kind": "node",
+              "node": "grammar",
+              "output": "result"
+            },
+            "icons": {
+              "kind": "node",
+              "node": "icons",
+              "output": "result"
+            },
+            "classification": {
+              "kind": "node",
+              "node": "classification",
+              "output": "result"
+            },
+            "mode": {
+              "kind": "literal",
+              "value": "merit"
+            }
+          }
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "action_merit_decisions",
+      "operation": "workflow.map",
+      "operationVersion": "1",
+      "inputs": {
+        "definition": {
+          "kind": "literal",
+          "value": {
+            "$json": "workflows/decisions.mont"
+          }
+        },
+        "items": {
+          "kind": "node",
+          "node": "action_merit_request",
+          "output": "items"
+        },
+        "shared": {
+          "kind": "object",
+          "fields": {
+            "adapter": {
+              "kind": "input",
+              "input": "clef"
+            }
+          }
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "action_merit",
+      "operation": "explainer.merit",
+      "operationVersion": "1",
+      "inputs": {
+        "state": {
+          "kind": "node",
+          "node": "action_merit_request",
+          "output": "result"
+        },
+        "response": {
+          "kind": "object",
+          "fields": {
+            "items": {
+              "kind": "node",
+              "node": "action_merit_decisions",
+              "output": "result"
+            }
+          }
+        },
+        "policy": {
+          "kind": "object",
+          "fields": {
+            "grammar": {
+              "kind": "node",
+              "node": "grammar",
+              "output": "result"
+            },
+            "icons": {
+              "kind": "node",
+              "node": "icons",
+              "output": "result"
+            },
+            "classification": {
+              "kind": "node",
+              "node": "classification",
+              "output": "result"
+            }
+          }
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "story_route_request",
+      "operation": "explainer.request",
+      "operationVersion": "1",
+      "inputs": {
+        "state": {
+          "kind": "node",
+          "node": "relations_recheck",
+          "output": "result"
+        },
+        "response": {
+          "kind": "literal",
+          "value": {}
+        },
+        "policy": {
+          "kind": "object",
+          "fields": {
+            "grammar": {
+              "kind": "node",
+              "node": "grammar",
+              "output": "result"
+            },
+            "icons": {
+              "kind": "node",
+              "node": "icons",
+              "output": "result"
+            },
+            "classification": {
+              "kind": "node",
+              "node": "classification",
+              "output": "result"
+            },
+            "mode": {
+              "kind": "literal",
+              "value": "route"
+            },
+            "family": {
+              "kind": "literal",
+              "value": "story"
+            }
+          }
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "story_route_decisions",
+      "operation": "workflow.map",
+      "operationVersion": "1",
+      "inputs": {
+        "definition": {
+          "kind": "literal",
+          "value": {
+            "$json": "workflows/decisions.mont"
+          }
+        },
+        "items": {
+          "kind": "node",
+          "node": "story_route_request",
+          "output": "items"
+        },
+        "shared": {
+          "kind": "object",
+          "fields": {
+            "adapter": {
+              "kind": "input",
+              "input": "clef"
+            }
+          }
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "story_route",
+      "operation": "explainer.route",
+      "operationVersion": "1",
+      "inputs": {
+        "state": {
+          "kind": "node",
+          "node": "story_route_request",
+          "output": "result"
+        },
+        "response": {
+          "kind": "object",
+          "fields": {
+            "items": {
+              "kind": "node",
+              "node": "story_route_decisions",
+              "output": "result"
+            }
+          }
+        },
+        "policy": {
+          "kind": "object",
+          "fields": {
+            "grammar": {
+              "kind": "node",
+              "node": "grammar",
+              "output": "result"
+            },
+            "icons": {
+              "kind": "node",
+              "node": "icons",
+              "output": "result"
+            },
+            "classification": {
+              "kind": "node",
+              "node": "classification",
+              "output": "result"
+            },
+            "prompt": {
+              "kind": "literal",
+              "value": {
+                "$asset": "prompts/story.txt"
+              }
+            }
+          }
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "story_drafts",
+      "operation": "workflow.map",
+      "operationVersion": "1",
+      "inputs": {
+        "definition": {
+          "kind": "literal",
+          "value": {
+            "$json": "workflows/chat.mont"
+          }
+        },
+        "items": {
+          "kind": "node",
+          "node": "story_route",
+          "output": "items"
+        },
+        "shared": {
+          "kind": "object",
+          "fields": {
+            "adapter": {
+              "kind": "input",
+              "input": "haiku"
+            }
+          }
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "story_proposals",
+      "operation": "explainer.proposals",
+      "operationVersion": "1",
+      "inputs": {
+        "state": {
+          "kind": "node",
+          "node": "story_route",
+          "output": "result"
+        },
+        "response": {
+          "kind": "object",
+          "fields": {
+            "items": {
+              "kind": "node",
+              "node": "story_drafts",
+              "output": "result"
+            }
+          }
+        },
+        "policy": {
+          "kind": "object",
+          "fields": {
+            "grammar": {
+              "kind": "node",
+              "node": "grammar",
+              "output": "result"
+            },
+            "icons": {
+              "kind": "node",
+              "node": "icons",
+              "output": "result"
+            },
+            "classification": {
+              "kind": "node",
+              "node": "classification",
+              "output": "result"
+            },
+            "prompt": {
+              "kind": "literal",
+              "value": {
+                "$asset": "prompts/story.txt"
+              }
+            }
+          }
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "story_repairs",
+      "operation": "workflow.map",
+      "operationVersion": "1",
+      "inputs": {
+        "definition": {
+          "kind": "literal",
+          "value": {
+            "$json": "workflows/chat.mont"
+          }
+        },
+        "items": {
+          "kind": "node",
+          "node": "story_proposals",
+          "output": "items"
+        },
+        "shared": {
+          "kind": "object",
+          "fields": {
+            "adapter": {
+              "kind": "input",
+              "input": "haiku"
+            }
+          }
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "story_repair",
+      "operation": "explainer.family_repair",
+      "operationVersion": "1",
+      "inputs": {
+        "state": {
+          "kind": "node",
+          "node": "story_proposals",
+          "output": "result"
+        },
+        "response": {
+          "kind": "object",
+          "fields": {
+            "items": {
+              "kind": "node",
+              "node": "story_repairs",
+              "output": "result"
+            }
+          }
+        },
+        "policy": {
+          "kind": "object",
+          "fields": {
+            "grammar": {
+              "kind": "node",
+              "node": "grammar",
+              "output": "result"
+            },
+            "icons": {
+              "kind": "node",
+              "node": "icons",
+              "output": "result"
+            },
+            "classification": {
+              "kind": "node",
+              "node": "classification",
+              "output": "result"
+            },
+            "prompt": {
+              "kind": "literal",
+              "value": {
+                "$asset": "prompts/story.txt"
+              }
+            }
+          }
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "story_merit_request",
+      "operation": "explainer.request",
+      "operationVersion": "1",
+      "inputs": {
+        "state": {
+          "kind": "node",
+          "node": "story_repair",
+          "output": "result"
+        },
+        "response": {
+          "kind": "literal",
+          "value": {}
+        },
+        "policy": {
+          "kind": "object",
+          "fields": {
+            "grammar": {
+              "kind": "node",
+              "node": "grammar",
+              "output": "result"
+            },
+            "icons": {
+              "kind": "node",
+              "node": "icons",
+              "output": "result"
+            },
+            "classification": {
+              "kind": "node",
+              "node": "classification",
+              "output": "result"
+            },
+            "mode": {
+              "kind": "literal",
+              "value": "merit"
+            }
+          }
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "story_merit_decisions",
+      "operation": "workflow.map",
+      "operationVersion": "1",
+      "inputs": {
+        "definition": {
+          "kind": "literal",
+          "value": {
+            "$json": "workflows/decisions.mont"
+          }
+        },
+        "items": {
+          "kind": "node",
+          "node": "story_merit_request",
+          "output": "items"
+        },
+        "shared": {
+          "kind": "object",
+          "fields": {
+            "adapter": {
+              "kind": "input",
+              "input": "clef"
+            }
+          }
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "story_merit",
+      "operation": "explainer.merit",
+      "operationVersion": "1",
+      "inputs": {
+        "state": {
+          "kind": "node",
+          "node": "story_merit_request",
+          "output": "result"
+        },
+        "response": {
+          "kind": "object",
+          "fields": {
+            "items": {
+              "kind": "node",
+              "node": "story_merit_decisions",
+              "output": "result"
+            }
+          }
+        },
+        "policy": {
+          "kind": "object",
+          "fields": {
+            "grammar": {
+              "kind": "node",
+              "node": "grammar",
+              "output": "result"
+            },
+            "icons": {
+              "kind": "node",
+              "node": "icons",
+              "output": "result"
+            },
+            "classification": {
+              "kind": "node",
+              "node": "classification",
+              "output": "result"
+            }
+          }
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "compose",
+      "operation": "explainer.compose",
+      "operationVersion": "1",
+      "inputs": {
+        "state": {
+          "kind": "node",
+          "node": "relations_recheck",
+          "output": "result"
+        },
+        "response": {
+          "kind": "object",
+          "fields": {
+            "picture": {
+              "kind": "node",
+              "node": "picture_merit",
+              "output": "result"
+            },
+            "action": {
+              "kind": "node",
+              "node": "action_merit",
+              "output": "result"
+            },
+            "story": {
+              "kind": "node",
+              "node": "story_merit",
+              "output": "result"
+            }
+          }
+        },
+        "policy": {
+          "kind": "object",
+          "fields": {
+            "grammar": {
+              "kind": "node",
+              "node": "grammar",
+              "output": "result"
+            },
+            "icons": {
+              "kind": "node",
+              "node": "icons",
+              "output": "result"
+            },
+            "classification": {
+              "kind": "node",
+              "node": "classification",
+              "output": "result"
+            }
+          }
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "video",
+      "operation": "workflow.select",
+      "operationVersion": "1",
+      "inputs": {
+        "value": {
+          "kind": "node",
+          "node": "compose",
+          "output": "result"
+        },
+        "path": {
+          "kind": "literal",
+          "value": [
+            "video"
+          ]
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "project",
+      "operation": "explainer.project",
+      "operationVersion": "1",
+      "inputs": {
+        "video": {
+          "kind": "node",
+          "node": "video",
+          "output": "result"
+        },
+        "audio": {
+          "kind": "node",
+          "node": "audio_join",
+          "output": "file"
+        },
+        "workspace": {
+          "kind": "input",
+          "input": "workspace"
+        },
+        "width": {
+          "kind": "input",
+          "input": "width"
+        },
+        "height": {
+          "kind": "input",
+          "input": "height"
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "render",
+      "operation": "workspace.render",
+      "operationVersion": "1",
+      "inputs": {
+        "workspace": {
+          "kind": "node",
+          "node": "project",
+          "output": "workspace"
+        },
+        "output": {
+          "kind": "input",
+          "input": "output"
+        },
+        "fps": {
+          "kind": "input",
+          "input": "fps"
+        }
+      },
+      "dependsOn": []
+    }
+  ],
+  "outputs": {
+    "video": {
+      "kind": "node",
+      "node": "video",
+      "output": "result"
+    },
+    "audio": {
+      "kind": "node",
+      "node": "audio_join",
+      "output": "file"
+    },
+    "workspace": {
+      "kind": "node",
+      "node": "project",
+      "output": "workspace"
+    },
+    "result": {
+      "kind": "node",
+      "node": "render",
+      "output": "result"
+    },
+    "policy": {
+      "kind": "node",
+      "node": "compose",
+      "output": "result"
+    }
+  },
+  "bounds": {
+    "maxNodes": 128,
+    "maxConcurrent": 1,
+    "maxAttempts": 1,
+    "maxInputBytes": 16777216,
+    "maxOutputBytes": 67108864
+  }
+}

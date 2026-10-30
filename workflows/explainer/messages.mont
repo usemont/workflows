@@ -1,0 +1,3 @@
+fn build_messages(prompt: Text, payload: Json) -> Json {
+  return [{role:"system", content:prompt}, {role:"user", content:json.stringify(payload)}];
+}
