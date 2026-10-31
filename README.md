@@ -17,9 +17,7 @@ mont stretch-row-repeater
 
 On Linux, use the [signed CLI installation guide](https://github.com/usemont/mont-cli/blob/main/docs/install.md#linux).
 
-Mont downloads the official template and renders locally without an inference API key. Your video is saved to `out/stretch-row-repeater/preview.mp4`, with an editable workspace in `out/stretch-row-repeater/project/`. Running it again creates `out/stretch-row-repeater-2/`, then `-3/`, without overwriting previous output.
-
-Choose another template below, or open its guide to customize text, colors, and dimensions with `--inputs settings.json`.
+Saves `preview.mp4` and an editable project to `out/stretch-row-repeater/`.
 
 ## Kinetic typography
 
