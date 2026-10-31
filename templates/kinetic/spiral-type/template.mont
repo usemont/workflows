@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "spiral-type",
-  "revision": "1",
+  "revision": "2",
   "inputs": {
     "workspace": {
       "valueType": "string",
@@ -21,27 +21,37 @@
     "width": {
       "valueType": "number",
       "required": false,
-      "default": 400
+      "default": 960
     },
     "height": {
       "valueType": "number",
       "required": false,
-      "default": 712
+      "default": 540
     },
     "text": {
       "valueType": "string",
       "required": false,
-      "default": "SMALL STEPS, EVERY DAY ☺"
+      "default": "FOLLOW A DIFFERENT GRAVITY"
+    },
+    "orbitText": {
+      "valueType": "string",
+      "required": false,
+      "default": "CHANGE YOUR ORBIT"
     },
     "background": {
       "valueType": "string",
       "required": false,
-      "default": "#F8F7F3"
+      "default": "#101A30"
     },
     "ink": {
       "valueType": "string",
       "required": false,
-      "default": "#141514"
+      "default": "#DDEAFF"
+    },
+    "light": {
+      "valueType": "string",
+      "required": false,
+      "default": "#B1F6CF"
     },
     "speed": {
       "valueType": "number",
@@ -51,12 +61,12 @@
     "innerRadius": {
       "valueType": "number",
       "required": false,
-      "default": 59
+      "default": 62
     },
     "pitch": {
       "valueType": "number",
       "required": false,
-      "default": 32
+      "default": 80
     }
   },
   "nodes": [
@@ -203,8 +213,10 @@
                                     "width": { "kind": "input", "input": "width" },
                                     "height": { "kind": "input", "input": "height" },
                                     "text": { "kind": "input", "input": "text" },
+                                    "orbitText": { "kind": "input", "input": "orbitText" },
                                     "background": { "kind": "input", "input": "background" },
                                     "ink": { "kind": "input", "input": "ink" },
+                                    "light": { "kind": "input", "input": "light" },
                                     "speed": { "kind": "input", "input": "speed" },
                                     "innerRadius": { "kind": "input", "input": "innerRadius" },
                                     "pitch": { "kind": "input", "input": "pitch" }

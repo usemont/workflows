@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "stretch-row-repeater",
-  "revision": "1",
+  "revision": "2",
   "inputs": {
     "workspace": {
       "valueType": "string",
@@ -21,37 +21,42 @@
     "width": {
       "valueType": "number",
       "required": false,
-      "default": 480
+      "default": 960
     },
     "height": {
       "valueType": "number",
       "required": false,
-      "default": 480
+      "default": 540
     },
     "text": {
       "valueType": "string",
       "required": false,
-      "default": "WORK"
+      "default": "MAKE ROOM"
     },
     "alternateText": {
       "valueType": "string",
       "required": false,
-      "default": "PLAY"
+      "default": "FOR THE UNEXPECTED"
     },
-    "crimson": {
+    "background": {
       "valueType": "string",
       "required": false,
-      "default": "#D5170A"
+      "default": "#171B22"
     },
-    "cream": {
+    "cobalt": {
       "valueType": "string",
       "required": false,
-      "default": "#FDE3D2"
+      "default": "#3857FF"
+    },
+    "lemon": {
+      "valueType": "string",
+      "required": false,
+      "default": "#E7F478"
     },
     "stretch": {
       "valueType": "number",
       "required": false,
-      "default": 0.58
+      "default": 0.48
     },
     "cycleMs": {
       "valueType": "number",
@@ -209,8 +214,9 @@
                                     "height": { "kind": "input", "input": "height" },
                                     "text": { "kind": "input", "input": "text" },
                                     "alternateText": { "kind": "input", "input": "alternateText" },
-                                    "crimson": { "kind": "input", "input": "crimson" },
-                                    "cream": { "kind": "input", "input": "cream" },
+                                    "background": { "kind": "input", "input": "background" },
+                                    "cobalt": { "kind": "input", "input": "cobalt" },
+                                    "lemon": { "kind": "input", "input": "lemon" },
                                     "stretch": { "kind": "input", "input": "stretch" },
                                     "cycleMs": { "kind": "input", "input": "cycleMs" },
                                     "phase": { "kind": "input", "input": "phase" }

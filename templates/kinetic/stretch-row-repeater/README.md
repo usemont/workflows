@@ -1,40 +1,23 @@
 # Stretch row repeater
 
-Rows stretch independently and travel in opposite directions.
-
-![Stretch row repeater — native Mont render](../../../assets/previews/stretch-row-repeater-square.gif)
-
-## Try it
+Three asymmetric editorial ribbons cross a charcoal field. Space Grotesk lettering moves in opposing directions while a measured, continuous wave compresses and releases individual glyph cells. The cut bands, changing angles, and open negative space are part of the composition—not a full-frame text wallpaper.
 
 ```sh
-# install (macOS)
-brew install usemont/tap/mont
-# generate preview
-mont stretch-row-repeater
+mont templates preview stretch-row-repeater
 ```
 
-On Linux, use the [signed CLI installation guide](https://github.com/usemont/mont-cli/blob/main/docs/install.md#linux).
-
-Outputs: `out/stretch-row-repeater/preview.mp4` and editable `out/stretch-row-repeater/project/`. Reruns create `out/stretch-row-repeater-2/`, then `-3/`, without overwriting previous output.
-
-## Make it yours
-
-Save this as `settings.json` in your current directory:
+Save editable inputs as `settings.json`:
 
 ```json
-{"text":"MAKE SPACE","width":1080,"height":1920}
+{"text":"MAKE ROOM","alternateText":"FOR THE UNEXPECTED","width":1080,"height":1920,"stretch":0.48}
 ```
 
 ```sh
-mont stretch-row-repeater --inputs settings.json
+mont templates preview stretch-row-repeater --inputs settings.json
 ```
 
-| Format | Width × height |
-| --- | --- |
-| Landscape · 16:9 | 1920 × 1080 |
-| Portrait · 9:16 | 1080 × 1920 |
-| Square · 1:1 | 1080 × 1080 |
+Defaults: **960 × 540**, **24 fps**, **12 seconds**; `text: "MAKE ROOM"`, `alternateText: "FOR THE UNEXPECTED"`, `background: "#171B22"`, `cobalt: "#3857FF"`, `lemon: "#E7F478"`, `stretch: 0.48`, `cycleMs: 12000`, `phase: 0` (radians). `stretch: 0` disables the compression wave without stopping the ribbon travel.
 
-`alternateText` changes the alternating rows; `crimson` and `cream` set the palette. See [template.mont](template.mont) for all inputs; edit [scene.tsx](scene.tsx) to change the animation.
+Use 1920 × 1080 for 16:9, 1080 × 1920 for 9:16, or 1080 × 1080 for square. Ribbon dimensions respond to the canvas; measured advances preserve spaces and Unicode clusters with both short and long copy. Space Grotesk 700 is bundled; fallback glyphs may need additional catalog fonts.
 
-No inference API key needed. First use of a non-embedded font needs network access.
+Native scene only: no HTML or browser animation runtime. Review motion at **0, 1800, 4200, and 7800 ms**; the default cycle restarts at **12000 ms**. All animation is a deterministic function of scene time. Inputs and bindings live in [template.mont](template.mont); composition lives in [scene.tsx](scene.tsx).

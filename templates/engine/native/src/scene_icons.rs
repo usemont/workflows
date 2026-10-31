@@ -1,0 +1,18 @@
+impl<'a> Scene<'a>{
+    fn node_icon(&mut self,id:&str,name:&str,x:f64,y:f64,size:f64,d:&Value)->Result<(),String>{
+        static ICONS:std::sync::LazyLock<Value>=std::sync::LazyLock::new(||serde_json::from_str(include_str!("icons.json")).expect("checked icon catalogue"));
+        let path=ICONS[name].as_str().ok_or_else(||format!("unknown source icon {name:?}"))?;let th=&SOURCE_THEMES[self.theme.name];let focus=d["role"]=="focus";let exc=d["exc"].as_i64()==Some(1);let tile=d["tile"].as_i64()!=Some(0);let g=if tile{size*0.52}else{size};let off=(((size-g)/2.0)*10.0).round()/10.0;let ink=th[if focus{"focusIcon"}else if exc{"exception"}else{"accent"}].as_str().unwrap();
+        if tile{let bg=th[if focus{"focusIconBg"}else if exc{"exceptionTint"}else{"accentTint"}].as_str().unwrap();let radius=if d["round"].as_i64()==Some(1){size/2.0}else{(size*0.28).min(self.theme.radius*0.8+4.0)};let radius=(radius*10.0).round()/10.0;let s=self.scale;self.body.push_str(&format!("<Rect id={} x={{{}}} y={{{}}} width={{{}}} height={{{}}} radius={{{}}} fill={}/>",q(&format!("{id}-tile")),x*s,y*s,size*s,size*s,radius*s,q(bg)));}
+        // The source serializes SVG translation to f1, scale and stroke width to f3.
+        let stroke=((if tile{2.2}else{3.0}/(g/24.0))*1000.0).round()/1000.0;let painted_g=((g/24.0)*1000.0).round()/1000.0*24.0;
+        self.svg_path(id,path,x+off,y+off,painted_g,painted_g,"0 0 24 24","none",ink,stroke,-10000.0,None);Ok(())
+    }
+    fn layout_icon(&mut self,id:&str,item:&Value,name:&str,x:f64,y:f64,size:f64,d:&Value,at:f64)->Result<(),String>{
+        if item["marker"].is_null(){if let Some(src)=item["brand"].as_str().and_then(|name|self.brands.and_then(|brands|brands.get(&crate::grammar::brand_key(name)))){let s=self.scale;self.body.push_str(&format!("<Image id={} src={} x={{{}}} y={{{}}} width={{{}}} height={{{}}} fit=\"contain\"/>",q(id),q(src),x*s,y*s,size*s,size*s));return Ok(());}}
+        let Some(marker)=item["marker"].as_str()else{return self.node_icon(id,name,x,y,size,d)};let dot=marker=="dot";let cross=marker=="cross";if !matches!(marker,"check"|"cross"|"dot"){return Err(format!("unknown source marker {marker:?}"));}
+        let warning=cross||item["tone"]=="warning";let ink=if warning{self.theme.warning}else{self.theme.accent};let bg=if dot{"transparent"}else if warning{self.theme.warning_tint}else{self.theme.tint};let radius=if marker=="check"{(size*0.3).min(self.theme.radius*0.6+4.0)}else{size/2.0};let radius=(radius*10.0).round()/10.0;let s=self.scale;self.body.push_str(&format!("<Rect id={} x={{{}}} y={{{}}} width={{{}}} height={{{}}} radius={{{}}} fill={}/>",q(&format!("{id}-marker")),x*s,y*s,size*s,size*s,radius*s,q(bg)));
+        let g=size*if dot{0.5}else{0.56};let off=(((size-g)/2.0)*10.0).round()/10.0;let icons:Value=serde_json::from_str(include_str!("icons.json")).expect("checked icon catalogue");let path=if dot{"M12 12h.01"}else{icons[if cross{"x"}else{"check"}].as_str().unwrap()};let width=if dot{(size*0.3).round()}else{2.8}/(g/24.0);let width=(width*1000.0).round()/1000.0;let g=((g/24.0)*1000.0).round()/1000.0*24.0;let duration=SOURCE_THEMES[self.theme.name]["motion"]["dur"].as_f64().unwrap()*1000.0;
+        self.body.push_str(&format!("<Path id={} d={} x={{{}}} y={{{}}} width={{{}}} height={{{}}} viewBox=\"0 0 24 24\" fill=\"none\" stroke={} strokeWidth={{{}}} strokeLinecap=\"round\" strokeLinejoin=\"round\" trimEnd={{{}}}>",q(id),q(path),(x+off)*s,(y+off)*s,g*s,g*s,q(ink),width,if dot{1}else{0}));
+        if !dot{let start=at+duration*0.55;self.body.push_str(&format!("<Animate prop=\"trimEnd\" from={{0}} to={{1}} start=\"{start}ms\" duration=\"380ms\" ease=\"outCubic\"/>"));}self.body.push_str("</Path>");Ok(())
+    }
+}

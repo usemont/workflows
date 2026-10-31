@@ -1,40 +1,25 @@
 # Letter inflate swell
 
-Staggered letters inflate into rounded, over-canvas shapes.
-
-![Letter inflate swell — native Mont render](../../../assets/previews/letter-inflate-swell-square.gif)
-
-## Try it
+Pale-mint lettering becomes an airy sculpture above a quiet copper glow on ink blue. A rounded bulge travels through each letter's contours. It uses **one face throughout**—not a font crossfade, weight swap, or uniform word-scale animation. There are no corner labels or brand furniture.
 
 ```sh
-# install (macOS)
-brew install usemont/tap/mont
-# generate preview
-mont letter-inflate-swell
+mont templates preview letter-inflate-swell
 ```
 
-On Linux, use the [signed CLI installation guide](https://github.com/usemont/mont-cli/blob/main/docs/install.md#linux).
-
-Outputs: `out/letter-inflate-swell/preview.mp4` and editable `out/letter-inflate-swell/project/`. Reruns create `out/letter-inflate-swell-2/`, then `-3/`, without overwriting previous output.
-
-## Make it yours
-
-Save this as `settings.json` in your current directory:
+Save editable inputs as `settings.json`:
 
 ```json
-{"text":"BLOOM","width":1080,"height":1920}
+{"text":"breathe","width":1080,"height":1920,"bulge":0.85,"cycleMs":6000}
 ```
 
 ```sh
-mont letter-inflate-swell --inputs settings.json
+mont templates preview letter-inflate-swell --inputs settings.json
 ```
 
-| Format | Width × height |
-| --- | --- |
-| Landscape · 16:9 | 1920 × 1080 |
-| Portrait · 9:16 | 1080 × 1920 |
-| Square · 1:1 | 1080 × 1080 |
+Defaults: **960 × 540**, **24 fps**, **12 seconds**; `text: "aerate"`, `background: "#142A3A"`, `mint: "#DAF3DE"`, `copper: "#CA8968"`, `bulge: 0.85`, `cycleMs: 6000`, `phase: 0` (cycle fraction). `bulge: 0` gives undeformed lettering.
 
-`background`, `pink`, and `glow` set the palette. Uses Titan One. See [template.mont](template.mont) for all inputs; edit [scene.tsx](scene.tsx) to change the animation.
+Native clipped text bands deform each glyph around its own center. Measured advances keep letter order and word spacing while the lettering inflates. Bands follow output resolution; no browser runtime or unsupported warp prop is used.
 
-No inference API key needed. First use of a non-embedded font needs network access.
+Use 1920 × 1080 for 16:9, 1080 × 1920 for 9:16, or 1080 × 1080 for square. Short and long copy fit within the canvas; very long copy necessarily renders smaller. Space Grotesk 700 is bundled; fallback glyphs may need additional catalog fonts.
+
+Review contours at **0 ms** (rest), **1500 ms** (traveling crest), **3000 ms** (maximum breath), and **4500 ms** (release). The default rest/reset is **6000 ms**. See [template.mont](template.mont) for inputs and [scene.tsx](scene.tsx) for the native deformation.

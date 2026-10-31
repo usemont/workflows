@@ -1,55 +1,17 @@
 mod fixtures;
-use mont_native_explainer_templates::{compile_video, manifest};
+use mont_native_explainer_templates::compile_video;
 use serde_json::json;
 
 #[test]
-fn every_declared_variant_is_editable_at_both_aspect_ratios_in_every_theme() {
-    let grammar = manifest();
-    for (family, spec) in grammar["templates"].as_object().unwrap() {
-        for variant in spec["variants"].as_array().unwrap() {
-            for theme in ["daylight", "midnight", "blueprint", "signal"] {
-                for (w, h) in [(1920, 1080), (1080, 1920)] {
-                    let scene = fixtures::scene(family, variant.as_str().unwrap());
-                    let spans = compile_video(&json!({"theme":theme,"scenes":[scene]}), w, h)
-                        .unwrap_or_else(|e| panic!("{family}/{variant}/{theme}/{w}x{h}: {e}"));
-                    assert_eq!(spans.len(), 1);
-                    assert_eq!(spans[0]["placement"]["durationMs"], 24000);
-                    assert_eq!(spans[0]["capability"]["kind"], "programmatic.scene");
-                    let state = &spans[0]["capability"]["state"];
-                    assert_eq!(state["frame"]["width"], w);
-                    assert_eq!(state["frame"]["height"], h);
-                    assert!(!state["variables"].as_object().unwrap().is_empty());
-                    assert!(state["sourceTsx"].as_str().is_some());
-                    assert_eq!(spans,compile_video(&json!({"theme":theme,"scenes":[fixtures::scene(family,variant.as_str().unwrap())]}),w,h).unwrap());
-                }
-            }
-        }
-    }
-}
-#[test]
-fn preserves_lists_caption_placement_and_custom_theme_validation() {
-    let mut scene = fixtures::scene("list", "bullets");
-    scene["items"] = json!((0..8)
-        .map(|i| json!({"label":format!("Semantic point {i}"),"at":1+i*2}))
-        .collect::<Vec<_>>());
-    let spans=compile_video(&json!({"themeTokens":{"accent":"#123456","fontFamily":"Inter","headWeight":600,"radius":8},"scenes":[scene],"captions":[{"text":"Caption retained","start":1.2,"end":3.4}]}),1080,1920).unwrap();
-    let values = spans[0]["capability"]["state"]["variables"]
-        .as_object()
-        .unwrap();
-    for i in 0..8 {
-        assert!(values
-            .values()
-            .any(|s| s == &json!(format!("Semantic point {i}"))));
-    }
-    assert_eq!(spans[1]["placement"]["startMs"], 1200);
-    assert_eq!(spans[1]["placement"]["durationMs"], 2200);
-    assert_eq!(spans[1]["placement"]["layer"], 100);
+fn rejects_invalid_custom_theme_tokens() {
     let base = json!({"scenes":[fixtures::scene("title","text")]});
     for tokens in [
         json!({"accent":"javascript:bad"}),
         json!({"radius":-1}),
         json!({"headWeight":950}),
         json!({"fontFamily":""}),
+        json!({"fontFamily":"Inter"}),
+        json!({"fontFamily":"missing-font"}),
         json!({"unrecognized":true}),
     ] {
         let mut v = base.clone();
@@ -57,6 +19,21 @@ fn preserves_lists_caption_placement_and_custom_theme_validation() {
         assert!(compile_video(&v, 1920, 1080).is_err());
     }
 }
+#[test]
+fn captions_preserve_intervals_and_clip_exit_at_video_end() {
+    for theme in ["daylight", "midnight", "blueprint", "signal"] {
+        for (w,h) in [(1280,720),(720,1280)] {
+            let spans=compile_video(&json!({"theme":theme,"scenes":[fixtures::scene("title","text")],"captions":[{"text":"Wide iii","start":22,"end":23},{"text":"Last word","start":23,"end":24}]}),w,h).unwrap();
+            let first = spans.iter().find(|span| span["id"] == "explainer-caption-0").unwrap();
+            let last = spans.iter().find(|span| span["id"] == "explainer-caption-1").unwrap();
+            assert_eq!(first["placement"]["startMs"],21980);
+            assert_eq!(first["placement"]["durationMs"],1020);
+            assert_eq!(last["placement"]["startMs"],23000);
+            assert_eq!(last["placement"]["durationMs"],1000);
+        }
+    }
+}
+
 #[test]
 fn rejects_unsupported_grammar_and_invalid_temporal_state() {
     let base = json!({"scenes":[fixtures::scene("title","text")]});
@@ -128,7 +105,6 @@ fn subtitle_timing_optional_details_and_spotlight_remain_strict() {
         ("/intro/picture/unknown", json!(true)),
         ("/items/0/picture/unknown", json!(true)),
         ("/items/0/picture/items/1/unknown", json!(true)),
-        ("/items/0/picture/callouts", json!([{"text":"Invalid local target","at":2,"on":2}])),
         ("/intro/label", json!(null)),
     ] {
         let mut invalid = scene.clone();

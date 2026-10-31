@@ -1,4 +1,4 @@
-![Mont motion templates: stretching red type, swelling pink letters, and a continuous typographic spiral](assets/header.png)
+![Mont kinetic typography templates](assets/header.png)
 
 # Mont Workflows
 
@@ -12,20 +12,23 @@ Ready-to-run video workflows and editable motion templates for [Mont CLI](https:
 # install (macOS)
 brew install usemont/tap/mont
 # generate preview
-mont stretch-row-repeater
+mont templates preview stretch-row-repeater
 ```
 
 On Linux, use the [signed CLI installation guide](https://github.com/usemont/mont-cli/blob/main/docs/install.md#linux).
 
 Saves `preview.mp4` and an editable project to `out/stretch-row-repeater/`.
 
+Explore the latest collection with `mont templates list` and `mont workflows list`.
+Inspect settings with `mont templates show <name>` before rendering.
+
 ## Kinetic typography
 
 <table>
 <tr>
-<td align="center" valign="top"><a href="templates/kinetic/stretch-row-repeater"><img src="assets/previews/stretch-row-repeater-square.gif" width="260" alt="Alternating rows of type stretch and slide in opposite directions"></a><br><a href="templates/kinetic/stretch-row-repeater"><strong>Stretch row repeater</strong></a><br><code>mont stretch-row-repeater</code></td>
-<td align="center" valign="top"><a href="templates/kinetic/letter-inflate-swell"><img src="assets/previews/letter-inflate-swell-square.gif" width="260" alt="Pink letters inflate and swell across a dark canvas"></a><br><a href="templates/kinetic/letter-inflate-swell"><strong>Letter inflate swell</strong></a><br><code>mont letter-inflate-swell</code></td>
-<td align="center" valign="top"><a href="templates/kinetic/spiral-type"><img src="assets/previews/spiral-type-square.gif" width="260" alt="Repeated typography travels along a continuous spiral"></a><br><a href="templates/kinetic/spiral-type"><strong>Spiral type</strong></a><br><code>mont spiral-type</code></td>
+<td align="center" valign="top"><a href="templates/kinetic/stretch-row-repeater"><img src="assets/previews/stretch-row-repeater-square.gif" width="260" alt="Elastic typographic ribbons"></a><br><a href="templates/kinetic/stretch-row-repeater"><strong>Stretch row repeater</strong></a><br><code>mont templates preview stretch-row-repeater</code></td>
+<td align="center" valign="top"><a href="templates/kinetic/letter-inflate-swell"><img src="assets/previews/letter-inflate-swell-square.gif" width="260" alt="Letters deform through an elastic swell"></a><br><a href="templates/kinetic/letter-inflate-swell"><strong>Letter inflate swell</strong></a><br><code>mont templates preview letter-inflate-swell</code></td>
+<td align="center" valign="top"><a href="templates/kinetic/spiral-type"><img src="assets/previews/spiral-type-square.gif" width="260" alt="Orbiting typography follows a spiral"></a><br><a href="templates/kinetic/spiral-type"><strong>Spiral type</strong></a><br><code>mont templates preview spiral-type</code></td>
 </tr>
 </table>
 

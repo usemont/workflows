@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "letter-inflate-swell",
-  "revision": "2",
+  "revision": "3",
   "inputs": {
     "workspace": {
       "valueType": "string",
@@ -21,72 +21,47 @@
     "width": {
       "valueType": "number",
       "required": false,
-      "default": 640
+      "default": 960
     },
     "height": {
       "valueType": "number",
       "required": false,
-      "default": 360
+      "default": 540
     },
     "text": {
       "valueType": "string",
       "required": false,
-      "default": "PLUMP"
+      "default": "aerate"
     },
     "background": {
       "valueType": "string",
       "required": false,
-      "default": "#21112b"
+      "default": "#142A3A"
     },
-    "pink": {
+    "mint": {
       "valueType": "string",
       "required": false,
-      "default": "#ff7eb8"
+      "default": "#DAF3DE"
     },
-    "glow": {
+    "copper": {
       "valueType": "string",
       "required": false,
-      "default": "#6d3b58"
+      "default": "#CA8968"
     },
-    "brand": {
-      "valueType": "string",
-      "required": false,
-      "default": "Puffmouth Type Co."
-    },
-    "description": {
-      "valueType": "string",
-      "required": false,
-      "default": "A soft display face"
-    },
-    "detail": {
-      "valueType": "string",
-      "required": false,
-      "default": "Six weights of air"
-    },
-    "release": {
-      "valueType": "string",
-      "required": false,
-      "default": "Out now"
-    },
-    "speed": {
+    "bulge": {
       "valueType": "number",
       "required": false,
-      "default": 1
+      "default": 0.85
     },
-    "staggerMs": {
+    "cycleMs": {
       "valueType": "number",
       "required": false,
-      "default": 140
+      "default": 6000
     },
-    "swellHeight": {
+    "phase": {
       "valueType": "number",
       "required": false,
-      "default": 1
-    },
-    "swellWidth": {
-      "valueType": "number",
-      "required": false,
-      "default": 1
+      "default": 0
     }
   },
   "nodes": [
@@ -264,46 +239,11 @@
                                   "kind": "input",
                                   "input": "background"
                                 },
-                                "pink": {
-                                  "kind": "input",
-                                  "input": "pink"
-                                },
-                                "glow": {
-                                  "kind": "input",
-                                  "input": "glow"
-                                },
-                                "brand": {
-                                  "kind": "input",
-                                  "input": "brand"
-                                },
-                                "description": {
-                                  "kind": "input",
-                                  "input": "description"
-                                },
-                                "detail": {
-                                  "kind": "input",
-                                  "input": "detail"
-                                },
-                                "release": {
-                                  "kind": "input",
-                                  "input": "release"
-                                },
-                                "speed": {
-                                  "kind": "input",
-                                  "input": "speed"
-                                },
-                                "staggerMs": {
-                                  "kind": "input",
-                                  "input": "staggerMs"
-                                },
-                                "swellHeight": {
-                                  "kind": "input",
-                                  "input": "swellHeight"
-                                },
-                                "swellWidth": {
-                                  "kind": "input",
-                                  "input": "swellWidth"
-                                }
+                                "mint": { "kind": "input", "input": "mint" },
+                                "copper": { "kind": "input", "input": "copper" },
+                                "bulge": { "kind": "input", "input": "bulge" },
+                                "cycleMs": { "kind": "input", "input": "cycleMs" },
+                                "phase": { "kind": "input", "input": "phase" }
                               }
                             },
                             "frame": {

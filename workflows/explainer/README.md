@@ -21,7 +21,7 @@ The default decision input `clef` selects adapter `clef`; set `"clef":"jev"` in 
 Make `OPENROUTER_API_KEY` available in the environment through your usual secret manager. Never put key values in a definition, inputs file, prompt, or tracked config. Credentials are not bundled, and models are not local services.
 
 ```sh
-mont --json -C "$PWD" workflow run "$PWD/explainer.mont" \
+mont --json -C "$PWD" workflows run "$PWD/explainer.mont" \
   --inputs "$PWD/inputs.example.json" \
   --config "$PWD/config.example.json" \
   --run-id explainer-example

@@ -150,6 +150,21 @@ pub(crate) fn optional_text(v: &Value, key: &str) -> Result<(), String> {
     }
     Ok(())
 }
+pub(crate) fn image_source(uri:&str)->Result<(),String>{
+    if !uri.trim().starts_with("data:image/") {
+        return Err("native images require embedded data:image URIs; resolve local workflow files with {\"$image\":\"relative/path.svg\"}; HTTP, file URLs, and bare paths are not fetched".into());
+    }
+    if uri.len()>16*1024*1024*3{return Err("image source exceeds the 16 MiB decoded source limit".into());}
+    if !uri.contains(','){return Err("image data URI requires a payload separator".into());}
+    Ok(())
+}
+pub(crate) fn brand_key(name:&str)->String{
+    let mut key=String::with_capacity(name.len());let mut space=false;
+    for c in name.chars().flat_map(char::to_lowercase){
+        if c.is_ascii_alphanumeric(){if space&&!key.is_empty(){key.push(' ');}key.push(c);space=false;}else{space=true;}
+    }
+    key
+}
 pub(crate) fn brands(v: Option<&Value>) -> Result<BTreeMap<String, String>, String> {
     let mut b = BTreeMap::new();
     if let Some(v) = v {
@@ -161,7 +176,8 @@ pub(crate) fn brands(v: Option<&Value>) -> Result<BTreeMap<String, String>, Stri
                 .as_str()
                 .filter(|s| !s.is_empty())
                 .ok_or("brand URI must be a nonempty string")?;
-            b.insert(k.clone(), uri.into());
+            image_source(uri)?;
+            b.insert(brand_key(k), uri.into());
         }
     }
     Ok(b)
@@ -175,6 +191,7 @@ pub(crate) fn scene(v: &Value) -> Result<(), String> {
     choice(v, "variant", config.1)?;
     let mut allowed = vec![
         "id", "section", "start", "end", "template", "variant", "title", "callouts",
+        "theme", "transition", "piece", "clock", "clockEnd",
     ];
     allowed.extend(match name {
         "title" => vec!["subtitle", "subtitleAt", "icon"],
@@ -190,6 +207,10 @@ pub(crate) fn scene(v: &Value) -> Result<(), String> {
     optional_text(v, "title")?;
     optional_text(v, "id")?;
     optional_text(v, "section")?;
+    optional_choice(v, "theme", &["daylight", "midnight", "blueprint", "signal"])?;
+    optional_choice(v, "piece", &["insert", "resume"])?;
+    if v.get("clock").is_some() { number(v, "clock")?; }
+    if v.get("clockEnd").is_some() { number(v, "clockEnd")?; }
     if v.get("subtitleAt").is_some() {
         text(v, "subtitle")?;
         let at = number(v, "subtitleAt")?;
@@ -239,7 +260,7 @@ pub(crate) fn scene(v: &Value) -> Result<(), String> {
             }
         }
         "media" => {
-            text(v, "image")?;
+            image_source(text(v, "image")?)?;
             optional_text(v, "subtitle")?;
             optional_text(v, "alt")?;
             optional_choice(v, "fit", &["contain", "cover"])?;
@@ -247,12 +268,7 @@ pub(crate) fn scene(v: &Value) -> Result<(), String> {
         "action" | "story" => {}
         _ => {
             text(v, "title")?;
-            let max = if name == "list" && text(v, "variant")? == "cards" {
-                4
-            } else {
-                config.3
-            };
-            let items = array(v, "items", config.2, max)?;
+            let items = array(v, "items", config.2, config.3)?;
             for item in items {
                 fields(
                     item,
@@ -268,6 +284,7 @@ pub(crate) fn scene(v: &Value) -> Result<(), String> {
                         "goneAt",
                         "hide",
                         "picture",
+                        "role",
                     ],
                     "item",
                 )?;
@@ -281,11 +298,16 @@ pub(crate) fn scene(v: &Value) -> Result<(), String> {
                     }
                     picture(spec)?;
                 }
-                if name != "list" || matches!(text(v, "variant")?, "cards" | "spotlight") {
+                if name != "list" {
                     icon(text(item, "icon")?)?;
                 }
-                if name == "list" && text(v, "variant")? == "spotlight" {
+                if item.get("at").is_some() {
                     number(item, "at")?;
+                }
+                if name == "rule-exception" {
+                    optional_choice(item, "role", &["default", "rule"])?;
+                } else if item.get("role").is_some() {
+                    return Err("role is only accepted by rule-exception items".into());
                 }
                 if config.4 > 0 {
                     let required = usize::from(name == "tool-selection");
@@ -330,7 +352,9 @@ pub(crate) fn scene(v: &Value) -> Result<(), String> {
             if let Some(t) = v.get("takeaway") {
                 fields(t, &["label", "at", "tone"], "takeaway")?;
                 text(t, "label")?;
-                number(t, "at")?;
+                if t.get("at").is_some() {
+                    number(t, "at")?;
+                }
                 optional_choice(t, "tone", TONES)?;
             }
         }
@@ -545,4 +569,27 @@ pub(crate) fn callouts(s: &mut Scene, v: &Value, prefix: &str, anchor_offset: us
         }
     }
     Ok(())
+}
+
+#[cfg(test)]
+mod timing_tests {
+    use super::*;
+    use serde_json::json;
+
+    #[test]
+    fn omitted_takeaway_timing_stays_owned_by_choreography() {
+        let mut spec = json!({"template":"list","variant":"bullets","title":"Default timing",
+            "start":0,"end":24,"items":[{"label":"First"},{"label":"Second"}],
+            "takeaway":{"label":"Still responsible","tone":"warning"}});
+        scene(&spec).unwrap();
+        let mut output = Scene::new("defaults".into(),1280,720,24000.0,0.0,crate::scene::Theme::get("daylight").unwrap());
+        let brands = std::collections::BTreeMap::new();
+        crate::layout::render(&mut output,&spec,&brands).unwrap();
+        let takeaway = output.transition_nodes.iter().find(|n| n["t"] == "takeaway").unwrap();
+        let themes: Value = serde_json::from_str(include_str!("themes.json")).unwrap();
+        assert_eq!(takeaway["a"],json!(0.95 * themes["daylight"]["motion"]["tempo"].as_f64().unwrap()));
+        assert!(spec["takeaway"].get("at").is_none());
+        spec["takeaway"]["at"] = json!("invalid");
+        assert_eq!(scene(&spec).unwrap_err(),"at must be a finite number");
+    }
 }

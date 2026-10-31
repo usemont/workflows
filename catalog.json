@@ -5,6 +5,7 @@
       "name": "stretch-row-repeater",
       "title": "Stretch row repeater",
       "category": "Kinetic typography",
+      "description": "Native kinetic typography built from repeating animated rows; customize text, palette, and canvas dimensions.",
       "path": "templates/kinetic/stretch-row-repeater",
       "files": ["template.mont", "scene.tsx"]
     },
@@ -12,6 +13,7 @@
       "name": "letter-inflate-swell",
       "title": "Letter inflate swell",
       "category": "Kinetic typography",
+      "description": "Native inflatable letter composition with editable text, colors, and canvas dimensions.",
       "path": "templates/kinetic/letter-inflate-swell",
       "files": ["template.mont", "scene.tsx"]
     },
@@ -19,8 +21,36 @@
       "name": "spiral-type",
       "title": "Spiral type",
       "category": "Kinetic typography",
+      "description": "Native spiral typography with editable text, palette, and canvas dimensions.",
       "path": "templates/kinetic/spiral-type",
       "files": ["template.mont", "scene.tsx"]
+    }
+  ],
+  "workflows": [
+    {
+      "name": "explainer",
+      "title": "Markdown native explainer",
+      "category": "Narrated explainer",
+      "description": "Turn a Markdown file into an editable native project and narrated MP4 using configured chat, speech, and transcription providers. Experimental visual fidelity; paid provider access is required.",
+      "path": "workflows/explainer",
+      "entry": "explainer.mont",
+      "files": [
+        "explainer.mont",
+        "messages.mont",
+        "policy.json",
+        "grammar.json",
+        "icons.json",
+        "classification.json",
+        "workflows/chat.mont",
+        "workflows/decisions.mont",
+        "workflows/voice.mont",
+        "prompts/action.txt",
+        "prompts/fill.txt",
+        "prompts/picture.txt",
+        "prompts/story.txt",
+        "prompts/title.txt",
+        "prompts/tone.txt"
+      ]
     }
   ]
 }
