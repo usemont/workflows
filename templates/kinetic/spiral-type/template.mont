@@ -1,0 +1,307 @@
+{
+  "schemaVersion": 1,
+  "id": "spiral-type",
+  "revision": "1",
+  "inputs": {
+    "workspace": {
+      "valueType": "string",
+      "required": false,
+      "default": "project"
+    },
+    "output": {
+      "valueType": "string",
+      "required": false,
+      "default": "preview.mp4"
+    },
+    "fps": {
+      "valueType": "number",
+      "required": false,
+      "default": 24
+    },
+    "width": {
+      "valueType": "number",
+      "required": false,
+      "default": 400
+    },
+    "height": {
+      "valueType": "number",
+      "required": false,
+      "default": 712
+    },
+    "text": {
+      "valueType": "string",
+      "required": false,
+      "default": "SMALL STEPS, EVERY DAY ☺"
+    },
+    "background": {
+      "valueType": "string",
+      "required": false,
+      "default": "#F8F7F3"
+    },
+    "ink": {
+      "valueType": "string",
+      "required": false,
+      "default": "#141514"
+    },
+    "speed": {
+      "valueType": "number",
+      "required": false,
+      "default": 1
+    },
+    "innerRadius": {
+      "valueType": "number",
+      "required": false,
+      "default": 59
+    },
+    "pitch": {
+      "valueType": "number",
+      "required": false,
+      "default": 32
+    }
+  },
+  "nodes": [
+    {
+      "id": "init",
+      "operation": "workspace.init",
+      "operationVersion": "1",
+      "inputs": {
+        "workspace": {
+          "kind": "input",
+          "input": "workspace"
+        },
+        "projectId": {
+          "kind": "literal",
+          "value": "spiral-type"
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "width",
+      "operation": "workspace.dispatch",
+      "operationVersion": "1",
+      "inputs": {
+        "workspace": {
+          "kind": "input",
+          "input": "workspace"
+        },
+        "envelope": {
+          "kind": "object",
+          "fields": {
+            "commandId": {
+              "kind": "literal",
+              "value": "width"
+            },
+            "command": {
+              "kind": "object",
+              "fields": {
+                "type": { "kind": "literal", "value": "setProjectValue" },
+                "pointer": { "kind": "literal", "value": "/sceneWidth" },
+                "value": { "kind": "input", "input": "width" }
+              }
+            }
+          }
+        }
+      },
+      "dependsOn": [
+        "init"
+      ]
+    },
+    {
+      "id": "height",
+      "operation": "workspace.dispatch",
+      "operationVersion": "1",
+      "inputs": {
+        "workspace": {
+          "kind": "input",
+          "input": "workspace"
+        },
+        "envelope": {
+          "kind": "object",
+          "fields": {
+            "commandId": {
+              "kind": "literal",
+              "value": "height"
+            },
+            "command": {
+              "kind": "object",
+              "fields": {
+                "type": { "kind": "literal", "value": "setProjectValue" },
+                "pointer": { "kind": "literal", "value": "/sceneHeight" },
+                "value": { "kind": "input", "input": "height" }
+              }
+            }
+          }
+        }
+      },
+      "dependsOn": [
+        "width"
+      ]
+    },
+    {
+      "id": "scene",
+      "operation": "workspace.dispatch",
+      "operationVersion": "1",
+      "inputs": {
+        "workspace": {
+          "kind": "input",
+          "input": "workspace"
+        },
+        "envelope": {
+          "kind": "object",
+          "fields": {
+            "commandId": {
+              "kind": "literal",
+              "value": "scene"
+            },
+            "command": {
+              "kind": "object",
+              "fields": {
+                "type": {
+                  "kind": "literal",
+                  "value": "user_intent:programmatic_span.create"
+                },
+                "request": {
+                      "kind": "object",
+                      "fields": {
+                        "requestedId": {
+                          "kind": "literal",
+                          "value": "spiral-type"
+                        },
+                        "placement": {
+                          "kind": "literal",
+                          "value": {
+                            "startMs": 0,
+                            "durationMs": 9000,
+                            "trackId": "kinetic",
+                            "layer": 0
+                          }
+                        },
+                        "capability": {
+                          "kind": "object",
+                          "fields": {
+                            "kind": {
+                              "kind": "literal",
+                              "value": "programmatic.scene"
+                            },
+                            "version": {
+                              "kind": "literal",
+                              "value": 1
+                            },
+                            "state": {
+                              "kind": "object",
+                              "fields": {
+                                "sourceTsx": {
+                                  "kind": "literal",
+                                  "value": {
+                                    "$asset": "scene.tsx"
+                                  }
+                                },
+                                "variables": {
+                                  "kind": "object",
+                                  "fields": {
+                                    "width": { "kind": "input", "input": "width" },
+                                    "height": { "kind": "input", "input": "height" },
+                                    "text": { "kind": "input", "input": "text" },
+                                    "background": { "kind": "input", "input": "background" },
+                                    "ink": { "kind": "input", "input": "ink" },
+                                    "speed": { "kind": "input", "input": "speed" },
+                                    "innerRadius": { "kind": "input", "input": "innerRadius" },
+                                    "pitch": { "kind": "input", "input": "pitch" }
+                                  }
+                                },
+                                "frame": {
+                                  "kind": "object",
+                                  "fields": {
+                                    "x": { "kind": "literal", "value": 0 },
+                                    "y": { "kind": "literal", "value": 0 },
+                                    "width": { "kind": "input", "input": "width" },
+                                    "height": { "kind": "input", "input": "height" }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "interaction": {
+                          "kind": "literal",
+                          "value": {
+                            "selectable": true
+                          }
+                        },
+                        "producer": {
+                          "kind": "literal",
+                          "value": {
+                            "kind": "programmatic",
+                            "id": "mont-kinetic-typography",
+                            "version": "1"
+                          }
+                        }
+                      }
+                }
+              }
+            }
+          }
+        }
+      },
+      "dependsOn": [
+        "height"
+      ]
+    },
+    {
+      "id": "validate",
+      "operation": "workspace.validate",
+      "operationVersion": "1",
+      "inputs": {
+        "workspace": {
+          "kind": "input",
+          "input": "workspace"
+        }
+      },
+      "dependsOn": [
+        "scene"
+      ]
+    },
+    {
+      "id": "render",
+      "operation": "workspace.render",
+      "operationVersion": "1",
+      "inputs": {
+        "workspace": {
+          "kind": "input",
+          "input": "workspace"
+        },
+        "output": {
+          "kind": "input",
+          "input": "output"
+        },
+        "fps": {
+          "kind": "input",
+          "input": "fps"
+        }
+      },
+      "dependsOn": [
+        "validate"
+      ]
+    }
+  ],
+  "outputs": {
+    "project": {
+      "kind": "node",
+      "node": "validate",
+      "output": "result"
+    },
+    "video": {
+      "kind": "node",
+      "node": "render",
+      "output": "result"
+    }
+  },
+  "bounds": {
+    "maxNodes": 16,
+    "maxConcurrent": 1,
+    "maxAttempts": 1,
+    "maxInputBytes": 2097152,
+    "maxOutputBytes": 16777216
+  }
+}

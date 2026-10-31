@@ -1,0 +1,415 @@
+{
+  "schemaVersion": 1,
+  "id": "letter-inflate-swell",
+  "revision": "2",
+  "inputs": {
+    "workspace": {
+      "valueType": "string",
+      "required": false,
+      "default": "project"
+    },
+    "output": {
+      "valueType": "string",
+      "required": false,
+      "default": "preview.mp4"
+    },
+    "fps": {
+      "valueType": "number",
+      "required": false,
+      "default": 24
+    },
+    "width": {
+      "valueType": "number",
+      "required": false,
+      "default": 640
+    },
+    "height": {
+      "valueType": "number",
+      "required": false,
+      "default": 360
+    },
+    "text": {
+      "valueType": "string",
+      "required": false,
+      "default": "PLUMP"
+    },
+    "background": {
+      "valueType": "string",
+      "required": false,
+      "default": "#21112b"
+    },
+    "pink": {
+      "valueType": "string",
+      "required": false,
+      "default": "#ff7eb8"
+    },
+    "glow": {
+      "valueType": "string",
+      "required": false,
+      "default": "#6d3b58"
+    },
+    "brand": {
+      "valueType": "string",
+      "required": false,
+      "default": "Puffmouth Type Co."
+    },
+    "description": {
+      "valueType": "string",
+      "required": false,
+      "default": "A soft display face"
+    },
+    "detail": {
+      "valueType": "string",
+      "required": false,
+      "default": "Six weights of air"
+    },
+    "release": {
+      "valueType": "string",
+      "required": false,
+      "default": "Out now"
+    },
+    "speed": {
+      "valueType": "number",
+      "required": false,
+      "default": 1
+    },
+    "staggerMs": {
+      "valueType": "number",
+      "required": false,
+      "default": 140
+    },
+    "swellHeight": {
+      "valueType": "number",
+      "required": false,
+      "default": 1
+    },
+    "swellWidth": {
+      "valueType": "number",
+      "required": false,
+      "default": 1
+    }
+  },
+  "nodes": [
+    {
+      "id": "init",
+      "operation": "workspace.init",
+      "operationVersion": "1",
+      "inputs": {
+        "workspace": {
+          "kind": "input",
+          "input": "workspace"
+        },
+        "projectId": {
+          "kind": "literal",
+          "value": "letter-inflate-swell"
+        }
+      },
+      "dependsOn": []
+    },
+    {
+      "id": "width",
+      "operation": "workspace.dispatch",
+      "operationVersion": "1",
+      "inputs": {
+        "workspace": {
+          "kind": "input",
+          "input": "workspace"
+        },
+        "envelope": {
+          "kind": "object",
+          "fields": {
+            "commandId": {
+              "kind": "literal",
+              "value": "width"
+            },
+            "command": {
+              "kind": "object",
+              "fields": {
+                "type": {
+                  "kind": "literal",
+                  "value": "setProjectValue"
+                },
+                "pointer": {
+                  "kind": "literal",
+                  "value": "/sceneWidth"
+                },
+                "value": {
+                  "kind": "input",
+                  "input": "width"
+                }
+              }
+            }
+          }
+        }
+      },
+      "dependsOn": [
+        "init"
+      ]
+    },
+    {
+      "id": "height",
+      "operation": "workspace.dispatch",
+      "operationVersion": "1",
+      "inputs": {
+        "workspace": {
+          "kind": "input",
+          "input": "workspace"
+        },
+        "envelope": {
+          "kind": "object",
+          "fields": {
+            "commandId": {
+              "kind": "literal",
+              "value": "height"
+            },
+            "command": {
+              "kind": "object",
+              "fields": {
+                "type": {
+                  "kind": "literal",
+                  "value": "setProjectValue"
+                },
+                "pointer": {
+                  "kind": "literal",
+                  "value": "/sceneHeight"
+                },
+                "value": {
+                  "kind": "input",
+                  "input": "height"
+                }
+              }
+            }
+          }
+        }
+      },
+      "dependsOn": [
+        "width"
+      ]
+    },
+    {
+      "id": "scene",
+      "operation": "workspace.dispatch",
+      "operationVersion": "1",
+      "inputs": {
+        "workspace": {
+          "kind": "input",
+          "input": "workspace"
+        },
+        "envelope": {
+          "kind": "object",
+          "fields": {
+            "commandId": {
+              "kind": "literal",
+              "value": "scene"
+            },
+            "command": {
+              "kind": "object",
+              "fields": {
+                "type": {
+                  "kind": "literal",
+                  "value": "user_intent:programmatic_span.create"
+                },
+                "request": {
+                  "kind": "object",
+                  "fields": {
+                    "requestedId": {
+                      "kind": "literal",
+                      "value": "letter-inflate-swell"
+                    },
+                    "placement": {
+                      "kind": "literal",
+                      "value": {
+                        "startMs": 0,
+                        "durationMs": 12000,
+                        "trackId": "kinetic",
+                        "layer": 0
+                      }
+                    },
+                    "capability": {
+                      "kind": "object",
+                      "fields": {
+                        "kind": {
+                          "kind": "literal",
+                          "value": "programmatic.scene"
+                        },
+                        "version": {
+                          "kind": "literal",
+                          "value": 1
+                        },
+                        "state": {
+                          "kind": "object",
+                          "fields": {
+                            "sourceTsx": {
+                              "kind": "literal",
+                              "value": {
+                                "$asset": "scene.tsx"
+                              }
+                            },
+                            "variables": {
+                              "kind": "object",
+                              "fields": {
+                                "width": {
+                                  "kind": "input",
+                                  "input": "width"
+                                },
+                                "height": {
+                                  "kind": "input",
+                                  "input": "height"
+                                },
+                                "text": {
+                                  "kind": "input",
+                                  "input": "text"
+                                },
+                                "background": {
+                                  "kind": "input",
+                                  "input": "background"
+                                },
+                                "pink": {
+                                  "kind": "input",
+                                  "input": "pink"
+                                },
+                                "glow": {
+                                  "kind": "input",
+                                  "input": "glow"
+                                },
+                                "brand": {
+                                  "kind": "input",
+                                  "input": "brand"
+                                },
+                                "description": {
+                                  "kind": "input",
+                                  "input": "description"
+                                },
+                                "detail": {
+                                  "kind": "input",
+                                  "input": "detail"
+                                },
+                                "release": {
+                                  "kind": "input",
+                                  "input": "release"
+                                },
+                                "speed": {
+                                  "kind": "input",
+                                  "input": "speed"
+                                },
+                                "staggerMs": {
+                                  "kind": "input",
+                                  "input": "staggerMs"
+                                },
+                                "swellHeight": {
+                                  "kind": "input",
+                                  "input": "swellHeight"
+                                },
+                                "swellWidth": {
+                                  "kind": "input",
+                                  "input": "swellWidth"
+                                }
+                              }
+                            },
+                            "frame": {
+                              "kind": "object",
+                              "fields": {
+                                "x": {
+                                  "kind": "literal",
+                                  "value": 0
+                                },
+                                "y": {
+                                  "kind": "literal",
+                                  "value": 0
+                                },
+                                "width": {
+                                  "kind": "input",
+                                  "input": "width"
+                                },
+                                "height": {
+                                  "kind": "input",
+                                  "input": "height"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "interaction": {
+                      "kind": "literal",
+                      "value": {
+                        "selectable": true
+                      }
+                    },
+                    "producer": {
+                      "kind": "literal",
+                      "value": {
+                        "kind": "programmatic",
+                        "id": "mont-kinetic-typography",
+                        "version": "1"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "dependsOn": [
+        "height"
+      ]
+    },
+    {
+      "id": "validate",
+      "operation": "workspace.validate",
+      "operationVersion": "1",
+      "inputs": {
+        "workspace": {
+          "kind": "input",
+          "input": "workspace"
+        }
+      },
+      "dependsOn": [
+        "scene"
+      ]
+    },
+    {
+      "id": "render",
+      "operation": "workspace.render",
+      "operationVersion": "1",
+      "inputs": {
+        "workspace": {
+          "kind": "input",
+          "input": "workspace"
+        },
+        "output": {
+          "kind": "input",
+          "input": "output"
+        },
+        "fps": {
+          "kind": "input",
+          "input": "fps"
+        }
+      },
+      "dependsOn": [
+        "validate"
+      ]
+    }
+  ],
+  "outputs": {
+    "project": {
+      "kind": "node",
+      "node": "validate",
+      "output": "result"
+    },
+    "video": {
+      "kind": "node",
+      "node": "render",
+      "output": "result"
+    }
+  },
+  "bounds": {
+    "maxNodes": 16,
+    "maxConcurrent": 1,
+    "maxAttempts": 1,
+    "maxInputBytes": 1048576,
+    "maxOutputBytes": 16777216
+  }
+}
