@@ -38,5 +38,6 @@ See each template for text and aspect-ratio settings. Use a new output directory
 
 Workflows execute instructions and can send inputs to configured APIs; review unfamiliar collections before running them. Contributions welcome via issues and pull requests. Never commit credentials or generated projects.
 
-[Apache-2.0](LICENSE) · Nauchu AB · [Agent skills](https://github.com/usemont/skills) · [CLI releases](https://github.com/usemont/mont-cli/releases)  
+[Apache-2.0](LICENSE) · Nauchu AB · [Agent skills](https://github.com/usemont/skills) · [CLI releases](https://github.com/usemont/mont-cli/releases)
+
 Kinetic templates inspired by [UXPilot](https://uxpilot.ai/kinetic-typography); recreations, not pixel-identical copies.
