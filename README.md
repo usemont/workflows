@@ -1,6 +1,6 @@
 ![Mont motion templates: stretching red type, swelling pink letters, and a continuous typographic spiral](assets/header.png)
 
-# Awesome Mont Workflows
+# Mont Workflows
 
 Ready-to-run video workflows and editable motion templates for [Mont CLI](https://github.com/usemont/mont-cli).
 
