@@ -1,6 +1,6 @@
 # Mont workflows and native templates
 
-**Experimental; visual fidelity is not accepted.** Source-reference visual and temporal verification remains incomplete. Some focused comparisons differ only in small rasterized regions; those results do not establish full-workflow correctness or complete collection fidelity. Publication of a compatible CLI release is on hold pending that review. Execution tests below do not certify visual quality.
+**Experimental; complete explainer visual fidelity is not accepted.** Source-reference visual and temporal verification remains incomplete. Some focused comparisons differ only in small rasterized regions; those results do not establish full-workflow correctness or complete collection fidelity. CLI compatibility and visual acceptance are separate: preview.5 can execute this collection, but execution tests do not certify visual quality.
 
 Reusable, editable video workflows for [Mont CLI](https://github.com/usemont/mont-cli), published by Nauchu AB under Apache-2.0. Workflows and templates live in one repository so their grammar and execution contracts stay versioned together.
 
@@ -17,7 +17,7 @@ mont --json -C "$PWD" workflow run "$PWD/explainer.mont" \
   --config "$PWD/config.example.json" --run-id explainer-example
 ```
 
-**Requires an unreleased Mont build supporting the explainer/provider workflow operations.** The currently published CLI packages cannot execute this workflow. This repository does not distribute the proprietary CLI or SDK; do not install an older release expecting these commands. Rendering also needs the runtime dependencies documented by your CLI distribution. Inference requires provider access and incurs costs. Review the configuration before running; no key is included.
+**Requires Mont CLI 0.1.0-preview.5 or newer.** Earlier public packages cannot execute this workflow. Install or upgrade through the [CLI distribution](https://github.com/usemont/mont-cli), which also documents rendering dependencies. This repository does not distribute the proprietary CLI or SDK. Inference requires provider access and incurs costs. Review the configuration before running; no key is included.
 
 ## Native templates
 
@@ -43,7 +43,7 @@ Three editable native recreations inspired by [UXPilot's kinetic typography refe
 | [`letter-inflate-swell`](templates/kinetic/letter-inflate-swell) | 12 s | `text`, `width`, `height`, `background`, `pink`, `glow`, corner copy, `speed`, `staggerMs`, `swellHeight`, `swellWidth` |
 | [`spiral-type`](templates/kinetic/spiral-type) | 9 s | `text`, `width`, `height`, `background`, `ink`, `speed`, `innerRadius`, `pitch` |
 
-Run from this repository with a compatible unreleased Mont CLI:
+Run from this repository with Mont CLI 0.1.0-preview.5 or newer:
 
 ```sh
 template=stretch-row-repeater # or letter-inflate-swell / spiral-type
@@ -62,7 +62,7 @@ The output directory contains `preview.mp4` and the editable workspace under `pr
 
 Dimensions drive the project, span frame, and native scene together. Layouts adapt their row count, text fit, metadata placement, and spiral coverage rather than stretching a fixed source canvas. Full phrases replace positional character slots; native font measurement preserves proportional advances and whitespace. Text repetition is bounded, and unsupported inputs produce an error rather than silently dropping glyphs.
 
-The row repeater retains independent horizontal letter deformation and opposed row motion. Inflate retains staggered compact-to-rounded crossfades and intentional over-canvas swelling; its rounded face is **Titan One, not the reference's unavailable custom face**, so its letterforms are not pixel-identical. Spiral follows one continuous Archimedean curve with tangent rotation and an inner fade. These templates require an unreleased CLI with native text measurement and repetition support. Fonts resolve through Mont's pinned catalog; first use of a non-embedded face requires network access.
+The row repeater retains independent horizontal letter deformation and opposed row motion. Inflate retains staggered compact-to-rounded crossfades and intentional over-canvas swelling; its rounded face is **Titan One, not the reference's unavailable custom face**, so its letterforms are not pixel-identical. Spiral follows one continuous Archimedean curve with tangent rotation and an inner fade. These templates require preview.5 or newer for native text measurement and repetition support. Fonts resolve through Mont's pinned catalog; first use of a non-embedded face requires network access.
 
 The native compiler/renderer behavioral checks live in the owning monorepo at `projects/explainer-templates/tests/kinetic_templates.rs`. They cover short/long/default copy, measured text sizes, visible text bounds, metadata placement, letter staggering, seeking/reset, independent row deformation, spiral pitch, tangent orientation, and the central hole across all three aspect ratios, including Full HD dimensions. These checks require the private compiler and are not part of the standalone public generator's test suite.
 
