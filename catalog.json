@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "templates": [
+    {
+      "name": "stretch-row-repeater",
+      "title": "Stretch row repeater",
+      "category": "Kinetic typography",
+      "path": "templates/kinetic/stretch-row-repeater",
+      "files": ["template.mont", "scene.tsx"]
+    },
+    {
+      "name": "letter-inflate-swell",
+      "title": "Letter inflate swell",
+      "category": "Kinetic typography",
+      "path": "templates/kinetic/letter-inflate-swell",
+      "files": ["template.mont", "scene.tsx"]
+    },
+    {
+      "name": "spiral-type",
+      "title": "Spiral type",
+      "category": "Kinetic typography",
+      "path": "templates/kinetic/spiral-type",
+      "files": ["template.mont", "scene.tsx"]
+    }
+  ]
+}
