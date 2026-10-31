@@ -8,5 +8,4 @@ description = "Editable native Mont explainer scene templates and theme grammar"
 [workspace]
 
 [dependencies]
-serde_json = { version = "1", features = ["preserve_order"] }
-cosmic-text = "=0.14.2"
+serde_json = "1"

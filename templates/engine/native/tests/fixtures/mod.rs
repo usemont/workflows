@@ -1,7 +1,5 @@
 use serde_json::{json, Value};
 
-pub const IMAGE_SOURCE:&str="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='48'%3E%3Cpath d='M0 0H64V48H0Z' fill='red'/%3E%3C/svg%3E";
-
 // Grammar examples adapted from engine/fixtures/{v96_lists_tones,check_verbs,story_morph}.json
 // in the supplied v9.12 archive. Timings are rebased for isolated native scene sampling.
 pub fn scene(family: &str, variant: &str) -> Value {
@@ -22,7 +20,7 @@ pub fn scene(family: &str, variant: &str) -> Value {
             v["picture"] = json!({"layout":"row","items":[{"base":"bot"},{"base":"human"}],"links":["arrow"],"beats":[{"at":2,"items":[1],"links":[0]}],"steps":[{"at":5,"items":[{"base":"bot"},{"base":"human","mod":"check"}]}]});
         }
         "media" => {
-            v["image"] = json!(IMAGE_SOURCE);
+            v["image"] = json!("https://example.com/review.png");
             v["subtitle"] = json!("Review the original source");
         }
         "action" => {
