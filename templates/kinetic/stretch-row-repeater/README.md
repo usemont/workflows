@@ -4,19 +4,29 @@ Rows stretch independently and travel in opposite directions.
 
 ![Stretch row repeater — native Mont render](../../../assets/previews/stretch-row-repeater-square.gif)
 
+## Try it
+
+```sh
+# install (macOS)
+brew install usemont/tap/mont
+# generate preview
+mont stretch-row-repeater
+```
+
+On Linux, use the [signed CLI installation guide](https://github.com/usemont/mont-cli/blob/main/docs/install.md#linux).
+
+Outputs: `out/stretch-row-repeater/preview.mp4` and editable `out/stretch-row-repeater/project/`. Reruns create `out/stretch-row-repeater-2/`, then `-3/`, without overwriting previous output.
+
 ## Make it yours
 
-From the repository root, save this as `settings.json`:
+Save this as `settings.json` in your current directory:
 
 ```json
 {"text":"MAKE SPACE","width":1080,"height":1920}
 ```
 
 ```sh
-mkdir -p out/stretch-row-repeater-custom
-mont -C "$PWD/out/stretch-row-repeater-custom" workflow run \
-  "$PWD/templates/kinetic/stretch-row-repeater/template.mont" \
-  --inputs "$PWD/settings.json" --run-id custom
+mont stretch-row-repeater --inputs settings.json
 ```
 
 | Format | Width × height |
@@ -27,4 +37,4 @@ mont -C "$PWD/out/stretch-row-repeater-custom" workflow run \
 
 `alternateText` changes the alternating rows; `crimson` and `cream` set the palette. See [template.mont](template.mont) for all inputs; edit [scene.tsx](scene.tsx) to change the animation.
 
-Requires [Mont CLI](https://github.com/usemont/mont-cli#install) 0.1.0-preview.5+. No inference key. Outputs `preview.mp4` and editable `project/`. First use of a non-embedded font needs network access. Use a new output directory and run ID for each new generation.
+No inference API key needed. First use of a non-embedded font needs network access.

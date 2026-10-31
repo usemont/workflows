@@ -4,19 +4,29 @@ Staggered letters inflate into rounded, over-canvas shapes.
 
 ![Letter inflate swell — native Mont render](../../../assets/previews/letter-inflate-swell-square.gif)
 
+## Try it
+
+```sh
+# install (macOS)
+brew install usemont/tap/mont
+# generate preview
+mont letter-inflate-swell
+```
+
+On Linux, use the [signed CLI installation guide](https://github.com/usemont/mont-cli/blob/main/docs/install.md#linux).
+
+Outputs: `out/letter-inflate-swell/preview.mp4` and editable `out/letter-inflate-swell/project/`. Reruns create `out/letter-inflate-swell-2/`, then `-3/`, without overwriting previous output.
+
 ## Make it yours
 
-From the repository root, save this as `settings.json`:
+Save this as `settings.json` in your current directory:
 
 ```json
 {"text":"BLOOM","width":1080,"height":1920}
 ```
 
 ```sh
-mkdir -p out/letter-inflate-swell-custom
-mont -C "$PWD/out/letter-inflate-swell-custom" workflow run \
-  "$PWD/templates/kinetic/letter-inflate-swell/template.mont" \
-  --inputs "$PWD/settings.json" --run-id custom
+mont letter-inflate-swell --inputs settings.json
 ```
 
 | Format | Width × height |
@@ -25,6 +35,6 @@ mont -C "$PWD/out/letter-inflate-swell-custom" workflow run \
 | Portrait · 9:16 | 1080 × 1920 |
 | Square · 1:1 | 1080 × 1080 |
 
-`background`, `pink`, and `glow` set the palette. Uses Titan One; letterforms differ from the reference’s custom font. See [template.mont](template.mont) for all inputs; edit [scene.tsx](scene.tsx) to change the animation.
+`background`, `pink`, and `glow` set the palette. Uses Titan One. See [template.mont](template.mont) for all inputs; edit [scene.tsx](scene.tsx) to change the animation.
 
-Requires [Mont CLI](https://github.com/usemont/mont-cli#install) 0.1.0-preview.5+. No inference key. Outputs `preview.mp4` and editable `project/`. First use of a non-embedded font needs network access. Use a new output directory and run ID for each new generation.
+No inference API key needed. First use of a non-embedded font needs network access.
