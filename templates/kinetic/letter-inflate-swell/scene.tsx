@@ -1,5 +1,3 @@
-// Rounded, glyph-local contour inflation; measured advances retain word spacing.
-// Subpixel clip overlap closes native antialias seams without font substitution.
 export default defineSpanScene({
   id: "letter-inflate-swell",
   width: 960,
