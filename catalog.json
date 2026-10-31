@@ -7,7 +7,7 @@
       "category": "Kinetic typography",
       "description": "Native kinetic typography built from repeating animated rows; customize text, palette, and canvas dimensions.",
       "path": "templates/kinetic/stretch-row-repeater",
-      "files": ["template.mont", "scene.tsx"]
+      "files": ["scene.tsx"]
     },
     {
       "name": "letter-inflate-swell",
@@ -15,7 +15,7 @@
       "category": "Kinetic typography",
       "description": "Native inflatable letter composition with editable text, colors, and canvas dimensions.",
       "path": "templates/kinetic/letter-inflate-swell",
-      "files": ["template.mont", "scene.tsx"]
+      "files": ["scene.tsx"]
     },
     {
       "name": "spiral-type",
@@ -23,7 +23,7 @@
       "category": "Kinetic typography",
       "description": "Native spiral typography with editable text, palette, and canvas dimensions.",
       "path": "templates/kinetic/spiral-type",
-      "files": ["template.mont", "scene.tsx"]
+      "files": ["scene.tsx"]
     }
   ],
   "workflows": [

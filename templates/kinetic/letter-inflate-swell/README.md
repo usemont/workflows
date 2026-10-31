@@ -22,4 +22,4 @@ Native clipped text bands deform each glyph around its own center. Measured adva
 
 Use 1920 × 1080 for 16:9, 1080 × 1920 for 9:16, or 1080 × 1080 for square. Short and long copy fit within the canvas; very long copy necessarily renders smaller. Space Grotesk 700 is bundled; fallback glyphs may need additional catalog fonts.
 
-Review contours at **0 ms** (rest), **1500 ms** (traveling crest), **3000 ms** (maximum breath), and **4500 ms** (release). The default rest/reset is **6000 ms**. See [template.mont](template.mont) for inputs and [scene.tsx](scene.tsx) for the native deformation.
+Review contours at **0 ms** (rest), **1500 ms** (traveling crest), **3000 ms** (maximum breath), and **4500 ms** (release). The default rest/reset is **6000 ms**. [scene.tsx](scene.tsx) is the sole source for inputs, defaults, and native deformation.
