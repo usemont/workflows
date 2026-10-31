@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "stretch-row-repeater",
-  "revision": "2",
+  "revision": "3",
   "inputs": {
     "workspace": {
       "valueType": "string",

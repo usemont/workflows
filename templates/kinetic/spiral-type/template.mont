@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "spiral-type",
-  "revision": "2",
+  "revision": "3",
   "inputs": {
     "workspace": {
       "valueType": "string",
@@ -33,11 +33,6 @@
       "required": false,
       "default": "FOLLOW A DIFFERENT GRAVITY"
     },
-    "orbitText": {
-      "valueType": "string",
-      "required": false,
-      "default": "CHANGE YOUR ORBIT"
-    },
     "background": {
       "valueType": "string",
       "required": false,
@@ -48,15 +43,10 @@
       "required": false,
       "default": "#DDEAFF"
     },
-    "light": {
-      "valueType": "string",
-      "required": false,
-      "default": "#B1F6CF"
-    },
     "speed": {
       "valueType": "number",
       "required": false,
-      "default": 1
+      "default": 0.85
     },
     "innerRadius": {
       "valueType": "number",
@@ -66,7 +56,7 @@
     "pitch": {
       "valueType": "number",
       "required": false,
-      "default": 80
+      "default": 46
     }
   },
   "nodes": [
@@ -213,10 +203,8 @@
                                     "width": { "kind": "input", "input": "width" },
                                     "height": { "kind": "input", "input": "height" },
                                     "text": { "kind": "input", "input": "text" },
-                                    "orbitText": { "kind": "input", "input": "orbitText" },
                                     "background": { "kind": "input", "input": "background" },
                                     "ink": { "kind": "input", "input": "ink" },
-                                    "light": { "kind": "input", "input": "light" },
                                     "speed": { "kind": "input", "input": "speed" },
                                     "innerRadius": { "kind": "input", "input": "innerRadius" },
                                     "pitch": { "kind": "input", "input": "pitch" }
