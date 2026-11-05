@@ -10,7 +10,7 @@ export default defineSpanScene({
     width: numberVar(960),
     height: numberVar(540),
     windowTitle: stringVar("atlas / preview board"),
-    background: colorVar("#080e18"),
+    background: colorVar("#dce5ef"),
     windowBackground: colorVar("#10151f"),
     chromeBackground: colorVar("#182130"),
     foreground: colorVar("#e2e8f0"),

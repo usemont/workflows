@@ -36,7 +36,7 @@ Inspect settings with `mont templates show <name>` before rendering.
 
 <table>
 <tr>
-<td align="center" valign="top"><a href="templates/showcase/terminal-showcase"><img src="assets/previews/terminal-showcase-square.gif" width="260" alt="Recorded CLI typing, animated loader, and colored output"></a><br><a href="templates/showcase/terminal-showcase"><strong>Terminal showcase</strong></a><br><code>mont templates preview terminal-showcase</code></td>
+<td align="center" valign="top"><a href="templates/showcase/terminal-showcase"><img src="assets/previews/terminal-showcase.gif" width="640" alt="Recorded CLI typing, animated loader, and colored output"></a><br><a href="templates/showcase/terminal-showcase"><strong>Terminal showcase</strong></a><br><code>mont templates preview terminal-showcase</code></td>
 </tr>
 </table>
 
