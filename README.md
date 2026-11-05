@@ -34,35 +34,11 @@ Inspect settings with `mont templates show <name>` before rendering.
 
 ## Terminal showcase
 
-**[Terminal showcase](templates/showcase/terminal-showcase)** replays recorded terminal output inside an editable native terminal window. It requires a Mont build containing native `<Terminal>` support and the bundled Noto Sans Symbols 2 braille fallback. The template source is published here; older CLI builds without that support cannot compile it.
-
-```sh
-mont templates preview terminal-showcase
-# From this repository, open the full-screen TUI example instead:
-mont edit templates/showcase/terminal-showcase/tui.tsx
-```
-
-- `scene.tsx` embeds [`cli.cast`](templates/showcase/terminal-showcase/cli.cast): an asciicast **v2** session with character typing, a braille loader overwritten in place, and colored success output.
-- `tui.tsx` embeds [`tui.cast`](templates/showcase/terminal-showcase/tui.cast): an asciicast **v3** session with an alternate screen, box drawing, cursor movement, selection changes, cursor hiding, a resize, and restoration of the main screen.
-- Replace the `recording` variable (`vars.recording`) with the complete `.cast` JSONL **text**, not a file path. The TSX defaults are ordinary escaped string literals; keep the matching `.cast` source in sync when editing them. Version 2 timestamps are absolute seconds; version 3 timestamps are intervals since the previous event.
-- Both examples contain a centered terminal window with a soft shadow over a configurable scene background, with no outer titles or footer. The terminal viewport has square top corners and rounded bottom corners. Edit `windowTitle`, `background`, window colors, `width`, and `height` through the scene variables. Recorded rows and columns stay fixed and are fitted with letterboxing, not reflowed. Resize events (`"r"`, such as `"72x16"`) change that recorded grid. Adjust `durationMs` for longer recordings.
-- Both examples use the embedded JetBrains Mono 400/500 faces, including window labels, with bundled Noto Sans Symbols 2 fallback for braille spinner glyphs. Native and browser previews need no font download.
-
-These fictional commands and outputs are **recorded data only**: replay never executes commands. Compilation produces ordinary native text and rectangle tracks; no browser, JavaScript runtime, file loading, or external font dependency is required.
-
-Use the same primitive in another scene:
-
-```tsx
-<Terminal id="terminal" recording={vars.recording}
-  x={32} y={48} width={896} height={432}
-  fontSize={18} foreground="#e2e8f0" background="#10151f" />
-```
-
-`recording`, viewport dimensions, `fontSize`, `fontFamily`, and theme colors must resolve at compilation. The default font is the bundled JetBrains Mono; use a monospace font to preserve cell alignment. Standard group transforms and animation modifiers apply to the terminal as a whole. Output updates are discrete, including at exact event timestamps; seeking backward restores the earlier state without replaying commands.
-
-Replay supports the VT sequences handled by `vt100`, including carriage-return loaders, scrolling, erase operations, ANSI/256/RGB colors, wide and combining characters, cursor visibility, and alternate screens. It uses the conventional xterm palette and the authored foreground/background, not header themes. Input, marker, and exit events do not produce terminal output. This is text replay, not a terminal graphics player: sixel and Kitty graphics are rejected; unsupported OSC payloads are ignored.
-
-Compilation rejects malformed recordings and bounds work to 16 MiB of JSONL, 100,000 events, a 400×200 maximum grid, two million stored snapshot cells, and 64 million scanned snapshot cells. For larger sessions, trim the recording or reduce its grid.
+<table>
+<tr>
+<td align="center" valign="top"><a href="templates/showcase/terminal-showcase"><img src="assets/previews/terminal-showcase-square.gif" width="260" alt="Recorded CLI typing, animated loader, and colored output"></a><br><a href="templates/showcase/terminal-showcase"><strong>Terminal showcase</strong></a><br><code>mont templates preview terminal-showcase</code></td>
+</tr>
+</table>
 
 ## Workflows
 
