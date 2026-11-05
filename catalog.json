@@ -24,6 +24,14 @@
       "description": "Native spiral typography with editable text, palette, and canvas dimensions.",
       "path": "templates/kinetic/spiral-type",
       "files": ["scene.tsx"]
+    },
+    {
+      "name": "terminal-showcase",
+      "title": "Terminal showcase",
+      "category": "Terminal demos",
+      "description": "Native asciicast v2/v3 replay in an editable terminal window, with CLI and full-screen TUI examples; customize recording, title, palette, and canvas dimensions.",
+      "path": "templates/showcase/terminal-showcase",
+      "files": ["scene.tsx", "tui.tsx", "cli.cast", "tui.cast"]
     }
   ],
   "workflows": [
