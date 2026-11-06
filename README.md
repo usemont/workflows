@@ -1,3 +1,5 @@
+<p><a href="https://usemont.com"><img src="assets/logo.svg" alt="Mont" width="150" height="40"></a></p>
+
 ![Mont kinetic typography templates](assets/header.png)
 
 # Mont Workflows
