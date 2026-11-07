@@ -42,6 +42,14 @@
       "files": ["scene.tsx"]
     },
     {
+      "name": "focus-blur-resolve",
+      "title": "Focus blur resolve",
+      "category": "Kinetic typography",
+      "description": "Three editable words pull into focus one by one, hold, then blur away in order; customize copy, palette, stagger, timing, and canvas dimensions.",
+      "path": "templates/kinetic/focus-blur-resolve",
+      "files": ["scene.tsx"]
+    },
+    {
       "name": "terminal-showcase",
       "title": "Terminal showcase",
       "category": "Terminal demos",
