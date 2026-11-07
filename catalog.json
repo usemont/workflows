@@ -34,6 +34,14 @@
       "files": ["scene.tsx"]
     },
     {
+      "name": "bottom-up-letters",
+      "title": "Bottom-up letters",
+      "category": "Kinetic typography",
+      "description": "Editable single-line typography rises letter by letter with staggered overshoot, a hold, and an upward exit; customize text, colors, timing, and canvas dimensions.",
+      "path": "templates/kinetic/bottom-up-letters",
+      "files": ["scene.tsx"]
+    },
+    {
       "name": "terminal-showcase",
       "title": "Terminal showcase",
       "category": "Terminal demos",

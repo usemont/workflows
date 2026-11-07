@@ -34,6 +34,7 @@ Inspect settings with `mont templates show <name>` before rendering.
 </tr>
 <tr>
 <td align="center" valign="top"><a href="templates/kinetic/morph-text"><img src="assets/previews/morph-text-square.gif" width="260" alt="Bold phrases merge through a liquid ink morph"></a><br><a href="templates/kinetic/morph-text"><strong>Morph text</strong></a><br><code>mont templates preview morph-text</code></td>
+<td align="center" valign="top"><a href="templates/kinetic/bottom-up-letters"><img src="assets/previews/bottom-up-letters-square.gif" width="260" alt="Bottom up letters rise with staggered motion and a gentle overshoot"></a><br><a href="templates/kinetic/bottom-up-letters"><strong>Bottom-up letters</strong></a><br><code>mont templates preview bottom-up-letters</code></td>
 </tr>
 </table>
 
