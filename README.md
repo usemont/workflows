@@ -32,6 +32,9 @@ Inspect settings with `mont templates show <name>` before rendering.
 <td align="center" valign="top"><a href="templates/kinetic/letter-inflate-swell"><img src="assets/previews/letter-inflate-swell-square.gif" width="260" alt="Letters deform through an elastic swell"></a><br><a href="templates/kinetic/letter-inflate-swell"><strong>Letter inflate swell</strong></a><br><code>mont templates preview letter-inflate-swell</code></td>
 <td align="center" valign="top"><a href="templates/kinetic/spiral-type"><img src="assets/previews/spiral-type-square.gif" width="260" alt="Orbiting typography follows a spiral"></a><br><a href="templates/kinetic/spiral-type"><strong>Spiral type</strong></a><br><code>mont templates preview spiral-type</code></td>
 </tr>
+<tr>
+<td align="center" valign="top"><a href="templates/kinetic/morph-text"><img src="assets/previews/morph-text-square.gif" width="260" alt="Bold phrases merge through a liquid ink morph"></a><br><a href="templates/kinetic/morph-text"><strong>Morph text</strong></a><br><code>mont templates preview morph-text</code></td>
+</tr>
 </table>
 
 ## Terminal showcase

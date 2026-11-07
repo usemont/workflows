@@ -26,6 +26,14 @@
       "files": ["scene.tsx"]
     },
     {
+      "name": "morph-text",
+      "title": "Morph text",
+      "category": "Kinetic typography",
+      "description": "Five editable phrases merge through a native blur-and-threshold ink morph; customize copy, colors, timing, type size, and canvas dimensions.",
+      "path": "templates/kinetic/morph-text",
+      "files": ["scene.tsx"]
+    },
+    {
       "name": "terminal-showcase",
       "title": "Terminal showcase",
       "category": "Terminal demos",
