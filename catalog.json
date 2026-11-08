@@ -178,6 +178,30 @@
       "files": ["scene.tsx"]
     },
     {
+      "name": "circle-carousel",
+      "title": "Circle carousel",
+      "category": "Carousels",
+      "description": "Ten original AI-generated posters travel around a perspective circle, ease to a stop, feature the front-center poster, then shrink it back before resuming; editable images, speed, background and canvas, 1920 × 1080, seamless 14-second loop.",
+      "path": "templates/carousels/circle-carousel",
+      "files": ["scene.tsx"]
+    },
+    {
+      "name": "orbit-carousel",
+      "title": "Orbit carousel",
+      "category": "Carousels",
+      "description": "Ten original AI-generated posters orbit a golden-angle sphere with depth-aware layering, pause for a central poster feature, then return and accelerate; editable images, speed, background and canvas, 1920 × 1080, seamless 14-second loop.",
+      "path": "templates/carousels/orbit-carousel",
+      "files": ["scene.tsx"]
+    },
+    {
+      "name": "path-carousel",
+      "title": "Path carousel",
+      "category": "Carousels",
+      "description": "Original AI-generated posters follow a rising sigmoid path, ease to a stop for a central poster feature, then shrink back and continue with hidden offscreen resets; editable images, speed, background and canvas, 1920 × 1080, seamless 14-second loop.",
+      "path": "templates/carousels/path-carousel",
+      "files": ["scene.tsx"]
+    },
+    {
       "name": "terminal-showcase",
       "title": "Terminal showcase",
       "category": "Terminal demos",

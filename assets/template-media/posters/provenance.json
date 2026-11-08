@@ -1,0 +1,174 @@
+{
+  "collection": "Original carousel posters",
+  "model": "gemini-3.1-flash-image",
+  "count": 10,
+  "usedBy": [
+    "templates/carousels/circle-carousel/scene.tsx",
+    "templates/carousels/orbit-carousel/scene.tsx",
+    "templates/carousels/path-carousel/scene.tsx"
+  ],
+  "images": [
+    {
+      "path": "assets/template-media/posters/02-night-bloom.png",
+      "model": "gemini-3.1-flash-image",
+      "prompt": "Risograph botanical art poster titled NIGHT BLOOM. Electric cobalt, hot pink and soft cream inks, abstract oversized tropical leaves, visible ink grain and imperfect registration, bold hand-cut lettering. Original full bleed graphic print, no frame.",
+      "generatedAt": "2026-11-08T20:17:49.204053+00:00",
+      "sha256": "ec7cff8a1dda56d87a70041d803cda83ee20cf43a4140901eaf601864a7bf7c6"
+    },
+    {
+      "path": "assets/template-media/posters/03-ridge.png",
+      "model": "gemini-3.1-flash-image",
+      "prompt": "Japanese-inspired contemporary woodcut travel art poster titled RIDGE. Ochre sun above dramatic indigo mountains, rich carved grain, muted sage foothills, elegant minimal typography. Original imaginary landscape, full bleed, no frame.",
+      "generatedAt": "2026-11-08T20:17:49.482404+00:00",
+      "sha256": "07f2c2750b8b8f46c71bb0f480034f0366bb8ec2ebb3720e349bbf760912f536"
+    },
+    {
+      "path": "assets/template-media/posters/01-form-study.png",
+      "model": "gemini-3.1-flash-image",
+      "prompt": "Swiss International Typographic Style exhibition poster. Large black typography reading FORM STUDY, warm ivory paper, one vivid vermilion geometric circle, strict asymmetric grid, tiny fictional exhibition details. Museum-quality print design, no frame, no mockup, full bleed.",
+      "generatedAt": "2026-11-08T20:17:49.541643+00:00",
+      "sha256": "c0a31b49f9748453090257ad1adf90092fcc2b013606675ec5526d7592c42d0d"
+    },
+    {
+      "path": "assets/template-media/posters/05-soft-space.png",
+      "model": "gemini-3.1-flash-image",
+      "prompt": "Architectural photography poster titled SOFT SPACE. Sunlit peach concrete sculptural stairs in a fictional desert building, cobalt sky, strong cinematic shadows, tasteful small white modernist typography. Luxurious art direction, full bleed, no frame.",
+      "generatedAt": "2026-11-08T20:17:58.245158+00:00",
+      "sha256": "fde418002e0f5f63ed8e6caa88b3028c52f0c01388c8fa7c69c3473de5911f22"
+    },
+    {
+      "path": "assets/template-media/posters/06-wave-field.png",
+      "model": "gemini-3.1-flash-image",
+      "prompt": "Psychedelic optical art poster titled WAVE FIELD. Flowing magenta, orange and violet concentric moire curves, wavy cream retro lettering, 1970s screenprint texture. Original striking graphic composition, full bleed, no frame.",
+      "generatedAt": "2026-11-08T20:17:58.367571+00:00",
+      "sha256": "5bf4968b096ecb24b6aaab97caf2497a12895f0b71468069b99a15639efa156b"
+    },
+    {
+      "path": "assets/template-media/posters/04-signal.png",
+      "model": "gemini-3.1-flash-image",
+      "prompt": "Experimental acid graphic design music poster titled SIGNAL 09. Sharp lime green and black, distorted condensed typography, metallic halftone ribbons and tiny fictional technical glyphs. Bold modern underground print design, full bleed, no frame.",
+      "generatedAt": "2026-11-08T20:17:58.661624+00:00",
+      "sha256": "1fb176e189b2f0b90ac97a6b2b87da4c9e3e52a49c845e997c43947e4e4bd421"
+    },
+    {
+      "path": "assets/template-media/posters/09-slow-sunday.png",
+      "model": "gemini-3.1-flash-image",
+      "prompt": "Expressive watercolor and ink editorial poster titled SLOW SUNDAY. Loose lemon-yellow citrus, blue ceramic vase and pink tablecloth still life, airy white paper, handwritten title, visible wet watercolor edges. Original art, full bleed, no frame.",
+      "generatedAt": "2026-11-08T20:18:07.782326+00:00",
+      "sha256": "a5617e7ea559b04c14f514e7d34599e755d14885c24ffbc83b18f8c79d3318cd"
+    },
+    {
+      "path": "assets/template-media/posters/08-deep-orbit.png",
+      "model": "gemini-3.1-flash-image",
+      "prompt": "Cosmic screenprinted science fiction poster titled DEEP ORBIT. Tiny pale spacecraft against enormous turquoise ringed planet, midnight navy and burnt orange, strong cinematic negative space, retro-futurist lettering. Original illustration, full bleed, no frame.",
+      "generatedAt": "2026-11-08T20:18:07.828962+00:00",
+      "sha256": "db8aade659d3edcf302c00f7cfecf3dc40d5a3ceb2b9cccc8d4c2e92fe17c825"
+    },
+    {
+      "path": "assets/template-media/posters/07-paper-garden.png",
+      "model": "gemini-3.1-flash-image",
+      "prompt": "Tactile paper-cut art poster titled PAPER GARDEN. Layered sculptural pastel mint, coral and lavender abstract flowers with real cut-paper shadows on warm off-white, playful small geometric type. Editorial craft aesthetic, full bleed, no frame.",
+      "generatedAt": "2026-11-08T20:18:08.545481+00:00",
+      "sha256": "0ccfe1e3bec4aa4af5032758fa2ad4640b278ff4f384231b4a87b926f5eaebc7"
+    },
+    {
+      "path": "assets/template-media/posters/10-liquid-future.png",
+      "model": "gemini-3.1-flash-image",
+      "prompt": "High-end 3D design poster titled LIQUID FUTURE. Iridescent chrome liquid sculpture floating over violet satin, luminous cyan reflections, razor-sharp narrow white typography, experimental fashion magazine aesthetic. Full bleed, no frame.",
+      "generatedAt": "2026-11-08T20:18:16.139642+00:00",
+      "sha256": "f414d1e20e51eded5a081a805554005c92c97c323635d6de06aa745025710172"
+    }
+  ],
+  "sceneImages": [
+    {
+      "id": "01-form-study",
+      "source": "01-form-study.png",
+      "embeddedJpegSha256": "793758ea0521edc2b414622e5fbdab26812fdbdc49b72e77def32af97408d93c",
+      "embeddedSize": [
+        600,
+        800
+      ]
+    },
+    {
+      "id": "02-night-bloom",
+      "source": "02-night-bloom.png",
+      "embeddedJpegSha256": "a9fa8f23d2bba3eeddbb6ec1c9d0ad486eb2c2191add20be5ab1cdbcbb3207e1",
+      "embeddedSize": [
+        600,
+        800
+      ]
+    },
+    {
+      "id": "03-ridge",
+      "source": "03-ridge.png",
+      "embeddedJpegSha256": "82bec94b1153e7727aa46f3e84160c31bc8adcabdaf8eea5ee78f079a9e70ba1",
+      "embeddedSize": [
+        600,
+        800
+      ]
+    },
+    {
+      "id": "04-signal",
+      "source": "04-signal.png",
+      "embeddedJpegSha256": "ece79c43c9b1cb8ba6a1bfc8fce928ccade96090ce8895d1e6227b67042e607c",
+      "embeddedSize": [
+        600,
+        800
+      ]
+    },
+    {
+      "id": "05-soft-space",
+      "source": "05-soft-space.png",
+      "embeddedJpegSha256": "5cf4aafc7c866be7b2054705e6b9ec28b27ff1a7bc1d439c85e1ab3698b6dd99",
+      "embeddedSize": [
+        600,
+        800
+      ]
+    },
+    {
+      "id": "06-wave-field",
+      "source": "06-wave-field.png",
+      "embeddedJpegSha256": "3a06cbfaf2ed1d71500218211537c8b6cc09afb07456e87cedc4d0d923557071",
+      "embeddedSize": [
+        600,
+        800
+      ]
+    },
+    {
+      "id": "07-paper-garden",
+      "source": "07-paper-garden.png",
+      "embeddedJpegSha256": "0ac6d4f39e894bd26ee42d4180054b4d6c0b71d5d0b4f8d8fda05badead1c8ac",
+      "embeddedSize": [
+        600,
+        800
+      ]
+    },
+    {
+      "id": "08-deep-orbit",
+      "source": "08-deep-orbit.png",
+      "embeddedJpegSha256": "3e111143b882bdc5b86855188423a5a5f5f19a19ad9ad4c869c8b1027e5ff767",
+      "embeddedSize": [
+        600,
+        800
+      ]
+    },
+    {
+      "id": "09-slow-sunday",
+      "source": "09-slow-sunday.png",
+      "embeddedJpegSha256": "6c52277b1a69ac941b652ce9398f4c3e0146c16fe5d8034920b537a465946481",
+      "embeddedSize": [
+        600,
+        800
+      ]
+    },
+    {
+      "id": "10-liquid-future",
+      "source": "10-liquid-future.png",
+      "embeddedJpegSha256": "d032103e4b043ef5e7eb98b4967a00a73630b8ac23d70d24033c1a77dc21499c",
+      "embeddedSize": [
+        600,
+        800
+      ]
+    }
+  ]
+}

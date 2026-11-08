@@ -107,6 +107,16 @@ Inspect settings with `mont templates show <name>` before rendering.
 </tr>
 </table>
 
+## Carousels
+
+<table>
+<tr>
+<td align="center" valign="top"><a href="templates/carousels/circle-carousel"><img src="assets/previews/circle-carousel.gif" width="260" alt="Original posters circle in perspective, pause for a featured poster, then resume"></a><br><a href="templates/carousels/circle-carousel"><strong>Circle carousel</strong></a><br><code>mont templates preview circle-carousel</code></td>
+<td align="center" valign="top"><a href="templates/carousels/orbit-carousel"><img src="assets/previews/orbit-carousel.gif" width="260" alt="Original posters orbit a sphere, pause for a central feature, then resume"></a><br><a href="templates/carousels/orbit-carousel"><strong>Orbit carousel</strong></a><br><code>mont templates preview orbit-carousel</code></td>
+<td align="center" valign="top"><a href="templates/carousels/path-carousel"><img src="assets/previews/path-carousel.gif" width="260" alt="Original posters follow a sigmoid path, feature the central poster, then continue"></a><br><a href="templates/carousels/path-carousel"><strong>Path carousel</strong></a><br><code>mont templates preview path-carousel</code></td>
+</tr>
+</table>
+
 ## Terminal showcase
 
 <table>
@@ -122,5 +132,7 @@ Inspect settings with `mont templates show <name>` before rendering.
 ## Contribute
 
 Contributions welcome via issues and pull requests. Review unfamiliar workflows before running them: they can send inputs to configured APIs. Never commit credentials or generated projects.
+
+Carousel motion checks: `node templates/carousels/verify.mjs`. Featured-poster sequences stop travel before expansion, return the poster to its carousel pose before resuming, and preserve position and velocity across the loop.
 
 [Apache-2.0](LICENSE) · Nauchu AB · [Agent skills](https://github.com/usemont/skills) · [CLI releases](https://github.com/usemont/mont-cli/releases)
