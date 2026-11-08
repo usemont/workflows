@@ -146,6 +146,14 @@
       "files": ["scene.tsx"]
     },
     {
+      "name": "drag-and-drop",
+      "title": "Drag and drop",
+      "category": "Cursors",
+      "description": "An editable video-production board with original task copy, Linear-inspired surfaces, a curved Mont cursor drag, gentle lift and landing, list gap closure and updated counts; landscape 1920 × 1080, 3.6 seconds.",
+      "path": "templates/cursors/drag-and-drop",
+      "files": ["scene.tsx"]
+    },
+    {
       "name": "terminal-showcase",
       "title": "Terminal showcase",
       "category": "Terminal demos",

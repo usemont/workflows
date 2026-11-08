@@ -6,7 +6,7 @@
 
 Ready-to-run video workflows and editable motion templates for [Mont CLI](https://github.com/usemont/mont-cli).
 
-[Try a template](#try-a-template) · [Kinetic typography](#kinetic-typography) · [Mock UI](#mock-ui) · [Notifications](#notifications) · [Social posts](#social-posts) · [Subscribe & follow](#subscribe--follow) · [Terminal showcase](#terminal-showcase) · [Workflows](#workflows) · [Contribute](#contribute)
+[Try a template](#try-a-template) · [Kinetic typography](#kinetic-typography) · [Mock UI](#mock-ui) · [Notifications](#notifications) · [Social posts](#social-posts) · [Subscribe & follow](#subscribe--follow) · [Cursors](#cursors) · [Terminal showcase](#terminal-showcase) · [Workflows](#workflows) · [Contribute](#contribute)
 
 ## Try a template
 
@@ -87,6 +87,14 @@ Inspect settings with `mont templates show <name>` before rendering.
 </tr>
 <tr>
 <td align="center" valign="top" colspan="2"><a href="templates/subscribe/x-follow-card"><img src="assets/previews/x-follow-card.gif" width="640" alt="A fictional X creator profile whose follower portraits settle before the Follow button is clicked"></a><br><a href="templates/subscribe/x-follow-card"><strong>X follow card</strong></a><br><code>mont templates preview x-follow-card</code></td>
+</tr>
+</table>
+
+## Cursors
+
+<table>
+<tr>
+<td align="center" valign="top"><a href="templates/cursors/drag-and-drop"><img src="assets/previews/drag-and-drop.gif" width="640" alt="A Mont arrow smoothly drags an original video-production task from Ideas to In motion on a neutral board"></a><br><a href="templates/cursors/drag-and-drop"><strong>Drag and drop</strong></a><br><code>mont templates preview drag-and-drop</code></td>
 </tr>
 </table>
 
