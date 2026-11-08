@@ -37,6 +37,9 @@ Inspect settings with `mont templates show <name>` before rendering.
 <td align="center" valign="top"><a href="templates/kinetic/bottom-up-letters"><img src="assets/previews/bottom-up-letters-square.gif" width="260" alt="Bottom up letters rise with staggered motion and a gentle overshoot"></a><br><a href="templates/kinetic/bottom-up-letters"><strong>Bottom-up letters</strong></a><br><code>mont templates preview bottom-up-letters</code></td>
 <td align="center" valign="top"><a href="templates/kinetic/focus-blur-resolve"><img src="assets/previews/focus-blur-resolve-square.gif" width="260" alt="Focus blur resolve sharpens word by word, then blurs away in order"></a><br><a href="templates/kinetic/focus-blur-resolve"><strong>Focus blur resolve</strong></a><br><code>mont templates preview focus-blur-resolve</code></td>
 </tr>
+<tr>
+<td align="center" valign="top"><a href="templates/kinetic/camera-follow-captions"><img src="assets/previews/camera-follow-captions-square.gif" width="260" alt="Gold words pack into a grid as the camera pulls outward"></a><br><a href="templates/kinetic/camera-follow-captions"><strong>Camera follow captions</strong></a><br><code>mont templates preview camera-follow-captions</code></td>
+</tr>
 </table>
 
 ## Terminal showcase

@@ -50,6 +50,14 @@
       "files": ["scene.tsx"]
     },
     {
+      "name": "camera-follow-captions",
+      "title": "Camera follow captions",
+      "category": "Kinetic typography",
+      "description": "Six editable words build a tightly packed, golden-ratio typographic grid as one camera pulls outward; customize copy, colors, and canvas dimensions.",
+      "path": "templates/kinetic/camera-follow-captions",
+      "files": ["scene.tsx"]
+    },
+    {
       "name": "terminal-showcase",
       "title": "Terminal showcase",
       "category": "Terminal demos",
