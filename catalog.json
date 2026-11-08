@@ -202,6 +202,118 @@
       "files": ["scene.tsx"]
     },
     {
+      "name": "cube-flip-transition",
+      "title": "Cube Flip",
+      "category": "Transitions",
+      "description": "Reusable 3D cube transition that maps outgoing and incoming timeline frames onto rotating model faces. Square 1080 \u00d7 1080, 1 seconds; includes standalone A/B preview and live timeline source.",
+      "path": "templates/transitions/cube-flip-transition",
+      "entry": "preview.tsx",
+      "files": [
+        "preview.tsx",
+        "scene.tsx",
+        "README.md",
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "circular-wipe-transition",
+      "title": "Circular Wipe",
+      "category": "Transitions",
+      "description": "Reusable timeline transition template that reveals the incoming clip through an expanding circular mask over outgoing and incoming host-frame streams. Square 1080 \u00d7 1080, 3 seconds; includes standalone A/B preview and live timeline source.",
+      "path": "templates/transitions/circular-wipe-transition",
+      "entry": "preview.tsx",
+      "files": [
+        "preview.tsx",
+        "scene.tsx",
+        "README.md",
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "reverse-circle-wipe-transition",
+      "title": "Reverse Circle Wipe",
+      "category": "Transitions",
+      "description": "Reusable reverse circular wipe transition that keeps the outgoing frame inside a shrinking circle while revealing the incoming frame behind it. Square 540 \u00d7 540, 1 seconds; includes standalone A/B preview and live timeline source.",
+      "path": "templates/transitions/reverse-circle-wipe-transition",
+      "entry": "preview.tsx",
+      "files": [
+        "preview.tsx",
+        "scene.tsx",
+        "README.md",
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "dither-dissolve-transition",
+      "title": "Dither Dissolve",
+      "category": "Transitions",
+      "description": "Reusable shader transition that dissolves the outgoing clip into the incoming clip with an ordered Bayer dither pattern and subtle diagonal grain. Square 1080 \u00d7 1080, 1 seconds; includes standalone A/B preview and live timeline source.",
+      "path": "templates/transitions/dither-dissolve-transition",
+      "entry": "preview.tsx",
+      "files": [
+        "preview.tsx",
+        "scene.tsx",
+        "README.md",
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "liquid-metal-wipe-transition",
+      "title": "Liquid Metal Wipe",
+      "category": "Transitions",
+      "description": "Reusable shader transition that reveals the incoming clip through a reflective liquid-metal wipe band with distortion, contour highlights, and host-frame texture refraction. Square 1080 \u00d7 1080, 1 seconds; includes standalone A/B preview and live timeline source.",
+      "path": "templates/transitions/liquid-metal-wipe-transition",
+      "entry": "preview.tsx",
+      "files": [
+        "preview.tsx",
+        "scene.tsx",
+        "README.md",
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "page-turn-transition",
+      "title": "Page Turn",
+      "category": "Transitions",
+      "description": "Reusable page-curl transition that rolls the outgoing clip away like a turning page, revealing the incoming clip underneath with curvature and shadow controls. Square 1080 \u00d7 1080, 1 seconds; includes standalone A/B preview and live timeline source.",
+      "path": "templates/transitions/page-turn-transition",
+      "entry": "preview.tsx",
+      "files": [
+        "preview.tsx",
+        "scene.tsx",
+        "README.md",
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "object-flyby-wipe-transition",
+      "title": "Object Flyby Wipe",
+      "category": "Transitions",
+      "description": "Reusable object flyby wipe transition that hides the moving A/B edge behind a close foreground object crossing the camera. Square 1080 \u00d7 1080, 1 seconds; includes standalone A/B preview and live timeline source.",
+      "path": "templates/transitions/object-flyby-wipe-transition",
+      "entry": "preview.tsx",
+      "files": [
+        "preview.tsx",
+        "scene.tsx",
+        "README.md",
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "noise-field-dissolve-transition",
+      "title": "Noise Field Dissolve",
+      "category": "Transitions",
+      "description": "Reusable procedural noise-field dissolve transition with soft threshold motion, subtle turbulent texture, and clean host-frame endpoints. Square 1080 \u00d7 1080, 1 seconds; includes standalone A/B preview and live timeline source.",
+      "path": "templates/transitions/noise-field-dissolve-transition",
+      "entry": "preview.tsx",
+      "files": [
+        "preview.tsx",
+        "scene.tsx",
+        "README.md",
+        "LICENSE"
+      ]
+    },
+    {
       "name": "terminal-showcase",
       "title": "Terminal showcase",
       "category": "Terminal demos",

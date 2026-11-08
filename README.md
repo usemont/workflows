@@ -6,7 +6,7 @@
 
 Ready-to-run video workflows and editable motion templates for [Mont CLI](https://github.com/usemont/mont-cli).
 
-[Try a template](#try-a-template) · [Kinetic typography](#kinetic-typography) · [Mock UI](#mock-ui) · [Notifications](#notifications) · [Social posts](#social-posts) · [Subscribe & follow](#subscribe--follow) · [Cursors](#cursors) · [Terminal showcase](#terminal-showcase) · [Workflows](#workflows) · [Contribute](#contribute)
+[Try a template](#try-a-template) · [Kinetic typography](#kinetic-typography) · [Mock UI](#mock-ui) · [Notifications](#notifications) · [Social posts](#social-posts) · [Subscribe & follow](#subscribe--follow) · [Cursors](#cursors) · [Transitions](#transitions) · [Terminal showcase](#terminal-showcase) · [Workflows](#workflows) · [Contribute](#contribute)
 
 ## Try a template
 
@@ -114,6 +114,29 @@ Inspect settings with `mont templates show <name>` before rendering.
 <td align="center" valign="top"><a href="templates/carousels/circle-carousel"><img src="assets/previews/circle-carousel.gif" width="260" alt="Original posters circle in perspective, pause for a featured poster, then resume"></a><br><a href="templates/carousels/circle-carousel"><strong>Circle carousel</strong></a><br><code>mont templates preview circle-carousel</code></td>
 <td align="center" valign="top"><a href="templates/carousels/orbit-carousel"><img src="assets/previews/orbit-carousel.gif" width="260" alt="Original posters orbit a sphere, pause for a central feature, then resume"></a><br><a href="templates/carousels/orbit-carousel"><strong>Orbit carousel</strong></a><br><code>mont templates preview orbit-carousel</code></td>
 <td align="center" valign="top"><a href="templates/carousels/path-carousel"><img src="assets/previews/path-carousel.gif" width="260" alt="Original posters follow a sigmoid path, feature the central poster, then continue"></a><br><a href="templates/carousels/path-carousel"><strong>Path carousel</strong></a><br><code>mont templates preview path-carousel</code></td>
+</tr>
+</table>
+
+## Transitions
+
+Square A/B previews. Each template includes a standalone scene and a reusable live-frame transition; see [timeline setup and licenses](templates/transitions/README.md).
+
+<table>
+<tr>
+<td align="center" valign="top"><a href="templates/transitions/cube-flip-transition"><img src="assets/previews/cube-flip-transition.gif" width="360" alt="Cube Flip: square transition from animated scene A to scene B"></a><br><a href="templates/transitions/cube-flip-transition"><strong>Cube Flip</strong></a><br><code>mont templates preview cube-flip-transition</code></td>
+<td align="center" valign="top"><a href="templates/transitions/circular-wipe-transition"><img src="assets/previews/circular-wipe-transition.gif" width="360" alt="Circular Wipe: square transition from animated scene A to scene B"></a><br><a href="templates/transitions/circular-wipe-transition"><strong>Circular Wipe</strong></a><br><code>mont templates preview circular-wipe-transition</code></td>
+</tr>
+<tr>
+<td align="center" valign="top"><a href="templates/transitions/reverse-circle-wipe-transition"><img src="assets/previews/reverse-circle-wipe-transition.gif" width="360" alt="Reverse Circle Wipe: square transition from animated scene A to scene B"></a><br><a href="templates/transitions/reverse-circle-wipe-transition"><strong>Reverse Circle Wipe</strong></a><br><code>mont templates preview reverse-circle-wipe-transition</code></td>
+<td align="center" valign="top"><a href="templates/transitions/dither-dissolve-transition"><img src="assets/previews/dither-dissolve-transition.gif" width="360" alt="Dither Dissolve: square transition from animated scene A to scene B"></a><br><a href="templates/transitions/dither-dissolve-transition"><strong>Dither Dissolve</strong></a><br><code>mont templates preview dither-dissolve-transition</code></td>
+</tr>
+<tr>
+<td align="center" valign="top"><a href="templates/transitions/liquid-metal-wipe-transition"><img src="assets/previews/liquid-metal-wipe-transition.gif" width="360" alt="Liquid Metal Wipe: square transition from animated scene A to scene B"></a><br><a href="templates/transitions/liquid-metal-wipe-transition"><strong>Liquid Metal Wipe</strong></a><br><code>mont templates preview liquid-metal-wipe-transition</code></td>
+<td align="center" valign="top"><a href="templates/transitions/page-turn-transition"><img src="assets/previews/page-turn-transition.gif" width="360" alt="Page Turn: square transition from animated scene A to scene B"></a><br><a href="templates/transitions/page-turn-transition"><strong>Page Turn</strong></a><br><code>mont templates preview page-turn-transition</code></td>
+</tr>
+<tr>
+<td align="center" valign="top"><a href="templates/transitions/object-flyby-wipe-transition"><img src="assets/previews/object-flyby-wipe-transition.gif" width="360" alt="Object Flyby Wipe: square transition from animated scene A to scene B"></a><br><a href="templates/transitions/object-flyby-wipe-transition"><strong>Object Flyby Wipe</strong></a><br><code>mont templates preview object-flyby-wipe-transition</code></td>
+<td align="center" valign="top"><a href="templates/transitions/noise-field-dissolve-transition"><img src="assets/previews/noise-field-dissolve-transition.gif" width="360" alt="Noise Field Dissolve: square transition from animated scene A to scene B"></a><br><a href="templates/transitions/noise-field-dissolve-transition"><strong>Noise Field Dissolve</strong></a><br><code>mont templates preview noise-field-dissolve-transition</code></td>
 </tr>
 </table>
 
