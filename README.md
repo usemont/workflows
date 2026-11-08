@@ -48,6 +48,7 @@ Inspect settings with `mont templates show <name>` before rendering.
 <table>
 <tr>
 <td align="center" valign="top"><a href="templates/mock-ui/chatgpt-exchange"><img src="assets/previews/chatgpt-exchange-square.gif" width="360" alt="An original ChatGPT conversation types into a compact composer and streams a reply"></a><br><a href="templates/mock-ui/chatgpt-exchange"><strong>ChatGPT exchange</strong></a><br><code>mont templates preview chatgpt-exchange</code></td>
+<td align="center" valign="top"><a href="templates/mock-ui/claude-exchange"><img src="assets/previews/claude-exchange-square.gif" width="360" alt="A Claude-style conversation explains making videos with Mont CLI, with sans-serif responses and monospace commands"></a><br><a href="templates/mock-ui/claude-exchange"><strong>Claude exchange</strong></a><br><code>mont templates preview claude-exchange</code></td>
 </tr>
 </table>
 

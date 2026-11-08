@@ -74,6 +74,14 @@
       "files": ["scene.tsx"]
     },
     {
+      "name": "claude-exchange",
+      "title": "Claude exchange",
+      "category": "Mock UI",
+      "description": "An original Mont CLI video-making conversation types and streams inside an editable Claude-style interface with sans-serif responses, monospace commands, and a two-row composer.",
+      "path": "templates/mock-ui/claude-exchange",
+      "files": ["scene.tsx"]
+    },
+    {
       "name": "terminal-showcase",
       "title": "Terminal showcase",
       "category": "Terminal demos",
