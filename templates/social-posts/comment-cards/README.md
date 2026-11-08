@@ -19,7 +19,7 @@ mont templates create comment-cards ./comment-cards
 mont render -C ./comment-cards --output ./comment-cards.mp4 --fps 30
 ```
 
-The catalog downloads only `scene.tsx`: portraits and thumb glyphs are embedded; fonts use Mont's existing catalog. All four body lines measure and render in explicitly declared Inter 500, so the compiler can prepare their glyph render configuration without a dynamic font-family lookup. The [gallery GIF](../../../assets/previews/comment-cards.gif) comes from the approved standalone MP4, with full-frame landscape scaling and Rec.709-to-sRGB conversion; it is not scene media.
+The catalog downloads only `scene.tsx`: portraits and thumb glyphs are embedded; fonts use Mont's existing catalog. The [gallery GIF](../../../assets/previews/comment-cards.gif) comes from the approved standalone MP4, with full-frame landscape scaling and Rec.709-to-sRGB conversion; it is not scene media.
 
 Text, card geometry, timing, and colors remain native editable objects. Always-live offscreen image nodes preserve embedded resources; small transparent image nodes use explicit zero-width transparent borders. No screenshot, browser, DOM, CSS, or GSAP renderer is used in the native scene.
 
