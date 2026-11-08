@@ -24,6 +24,8 @@ Saves `preview.mp4` and an editable project to `out/stretch-row-repeater/`.
 Explore the latest collection with `mont templates list` and `mont workflows list`.
 Inspect settings with `mont templates show <name>` before rendering.
 
+**Image-template CLI requirement:** Notification cascade, Slack notification ad, and Comment cards require a CLI build with embedded-image template materialization support. `0.1.0-preview.16` does not support their standalone create/preview flow. The GIFs are independently viewable; availability of a public CLI release with this capability is not claimed here.
+
 ## Kinetic typography
 
 <table>

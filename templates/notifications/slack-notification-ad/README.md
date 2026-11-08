@@ -21,6 +21,8 @@ Native adaptation of [the HyperFrames source](https://hyperframes.heygen.com/pub
 
 ## Native preview and evidence
 
+Requires a CLI build with **embedded-image template materialization support**. `0.1.0-preview.16` lacks this capability and fails standalone rendering with missing image resources. Availability of a public CLI release with this support is not claimed here; the gallery GIF remains independently viewable.
+
 Preview independently with `mont templates preview slack-notification-ad`. To create and render without opening an app:
 
 ```sh
