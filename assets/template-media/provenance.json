@@ -1,0 +1,112 @@
+{
+  "description": "Original fictional creator portraits and photographic backgrounds generated for Mont template demos. Fictional identities are not real endorsements. Canonical Mont brand marks are copied from Mont source assets. No Hyperframes or HeyGen photographic, avatar, or brand assets are included in this media set.",
+  "generatedAssets": [
+    {
+      "path": "assets/template-media/backgrounds/creator-abstract-hero.png",
+      "model": "gemini-3.1-flash-image",
+      "prompt": "Create an original abstract editorial artwork, wide panoramic composition. Sculptural flowing ribbons and folded translucent frosted-glass forms in sea-glass teal, muted jade, warm ivory and a small burnt-orange accent. Soft directional studio lighting, rich tactile satin and glass detail, layered depth, sophisticated calm creative-tool aesthetic. Asymmetric composition with flowing forms spanning horizontally, readable when cropped to an extremely wide shallow profile header. Fill the complete rectangular image edge to edge. No lettering, no logos, no people, no UI, no border, no rounded corners, no watermark. This is artwork only, not a profile card or mockup.",
+      "generatedAt": "2026-11-08T13:20:34.528400+00:00",
+      "sha256": "cff90187d52bfc216edc44cec777a78ee4f9a7ad0aeef6b3829200f8d2baebc8"
+    },
+    {
+      "path": "assets/template-media/backgrounds/phone-on-desk.png",
+      "model": "gemini-3.1-flash-image",
+      "prompt": "Original photorealistic cinematic 16:9 desk photograph. An unbranded dark smartphone lies in portrait orientation at center-right on a warm natural oak desk, seen from a gentle elevated angle. Screen is completely dark blank glass with no text, UI, icons or logos. Soft late afternoon light, subtle shadows, tasteful modern creative workspace out of focus. Reserve the central and lower frame as quiet low-detail dark-neutral negative space suitable for editable notification overlays. No people or hands, no brand identifiers or watermark.",
+      "generatedAt": "2026-11-08T10:42:54.671253+00:00",
+      "sha256": "251fbc0c286931722c2df9c3169bccb49c127b6ca85fb3231850b26adca6d5e7"
+    },
+    {
+      "path": "assets/template-media/backgrounds/studio-desk.png",
+      "model": "gemini-3.1-flash-image",
+      "prompt": "A single original photorealistic cinematic photograph of an empty creative editing desk in a dim modern home studio. A switched-off completely black monitor, a physical keyboard, mouse, a brass task lamp, wooden desk, blurred books and warm room lights. Balanced dark neutral center with physical photographic depth. Nothing is displayed on any screen. Absolutely no text anywhere, no notifications, no message cards, no UI overlays, no interface panels, no icons, no logos, no watermark, no people. This is ONLY a plain interior photograph, not an advertisement or scene mockup. Wide16:9 composition.",
+      "generatedAt": "2026-11-08T10:43:46.975908+00:00",
+      "sha256": "8d2bec29cf9bc72559f729cb84658e0cd632a97f1758333d201960e7b0c73df4"
+    },
+    {
+      "path": "assets/template-media/backgrounds/x-profile-hero.png",
+      "model": "gemini-3.1-flash-image",
+      "prompt": "Original photorealistic cinematic wide 16:9 cover photograph for a fictional filmmaker: rugged coastal cliffs above a serene teal ocean at blue hour with pale warm sunlight at the horizon, foreground dune grasses subtly framing the edges, atmospheric depth, rich but natural colors. Wide panoramic composition suitable for cropping to a social profile cover, genuinely detailed photographic landscape not an abstract gradient. No text, logos, people, watermarks or interface.",
+      "generatedAt": "2026-11-08T10:43:03.544691+00:00",
+      "sha256": "e9dd35dbb110f394d7cf0755c6dd7c97b1257d489bbfe42571d2076273650cb4"
+    },
+    {
+      "path": "assets/template-media/people/ava-patel.png",
+      "model": "gemini-3.1-flash-image",
+      "prompt": "Generate one original photorealistic professional creator profile portrait of a completely fictional person, not a public figure or identifiable real individual: South Asian woman around 31, long dark hair tied back loosely, green top, soft neutral peach studio background. Square head-and-shoulders photo, face centered, upper shoulders visible, natural candid expression, realistic skin texture, soft flattering daylight, photographic not illustration. No text, logos, watermarks, border or interface. Intended for small circular social avatar crop.",
+      "generatedAt": "2026-11-08T10:42:46.083019+00:00",
+      "sha256": "2f426966caf2c1fe4f840d3dcc1b89b284525e29a0e667ca236d1269ace69a07"
+    },
+    {
+      "path": "assets/template-media/people/elias-reed.png",
+      "model": "gemini-3.1-flash-image",
+      "prompt": "Generate one original photorealistic professional creator profile portrait of a completely fictional person, not a public figure or identifiable real individual: man around 34 with medium brown skin, wavy dark hair, light stubble, olive overshirt, soft warm grey studio background. Square head-and-shoulders photo, face centered, upper shoulders visible, natural candid expression, realistic skin texture, soft flattering daylight, photographic not illustration. No text, logos, watermarks, border or interface. Intended for small circular social avatar crop.",
+      "generatedAt": "2026-11-08T10:42:37.788524+00:00",
+      "sha256": "0c7f5d16192c8a0f5415eb31198ddea1e20c65a8b923a4cdb1efe2685935ff39"
+    },
+    {
+      "path": "assets/template-media/people/jules-rivera.png",
+      "model": "gemini-3.1-flash-image",
+      "prompt": "Generate one original photorealistic professional creator profile portrait of a completely fictional person, not a public figure or identifiable real individual: Latino person around 30, short dark curly hair, cheerful expression, simple burgundy shirt, soft neutral studio background. Square head-and-shoulders photo, face centered, upper shoulders visible, natural candid expression, realistic skin texture, soft flattering daylight, photographic not illustration. No text, logos, watermarks, border or interface. Intended for small circular social avatar crop.",
+      "generatedAt": "2026-11-08T10:42:44.838403+00:00",
+      "sha256": "7f8526cd48bdd7836619a3df9e7c4f8af1b60ca1ef94fdddcd47e577fe3ebd88"
+    },
+    {
+      "path": "assets/template-media/people/leo-morgan.png",
+      "model": "gemini-3.1-flash-image",
+      "prompt": "Generate one original photorealistic professional creator profile portrait of a completely fictional person, not a public figure or identifiable real individual: man around 28 with light skin, auburn wavy hair and subtle freckles, charcoal tee, soft blue-grey studio background. Square head-and-shoulders photo, face centered, upper shoulders visible, natural candid expression, realistic skin texture, soft flattering daylight, photographic not illustration. No text, logos, watermarks, border or interface. Intended for small circular social avatar crop.",
+      "generatedAt": "2026-11-08T10:42:54.135289+00:00",
+      "sha256": "1965c1d3a245a81065b1951afbed241ddf24d5b87f337d906e289a2367540c51"
+    },
+    {
+      "path": "assets/template-media/people/maya-chen.png",
+      "model": "gemini-3.1-flash-image",
+      "prompt": "Generate one original photorealistic head-and-shoulders studio portrait of a fictional creator: East Asian woman around 30, shoulder-length black hair, warm understated smile, denim shirt, warm terracotta studio background. Square composition, centered face, no text, no logo, no watermark.",
+      "generatedAt": "2026-11-08T10:42:27.209249+00:00",
+      "sha256": "c89eb22763723fe2946cb5d642b4e035851bc415d2029d172df1f8aa26013ebc"
+    },
+    {
+      "path": "assets/template-media/people/nia-brooks.png",
+      "model": "gemini-3.1-flash-image",
+      "prompt": "Generate one original photorealistic professional creator profile portrait of a completely fictional person, not a public figure or identifiable real individual: Black woman around 29, short natural curls, confident friendly smile, rust knit top, soft cream studio background. Square head-and-shoulders photo, face centered, upper shoulders visible, natural candid expression, realistic skin texture, soft flattering daylight, photographic not illustration. No text, logos, watermarks, border or interface. Intended for small circular social avatar crop.",
+      "generatedAt": "2026-11-08T10:42:36.199757+00:00",
+      "sha256": "2ca61af2418013860bdf5a7844c0207bca563b7d46ea6f08cd1d6ee73719281a"
+    },
+    {
+      "path": "assets/template-media/people/rina-okafor.png",
+      "model": "gemini-3.1-flash-image",
+      "prompt": "Generate one original photorealistic professional creator profile portrait of a completely fictional person, not a public figure or identifiable real individual: Black woman around 35, braided hair tied up, mustard blouse, warm grey studio background. Square head-and-shoulders photo, face centered, upper shoulders visible, natural candid expression, realistic skin texture, soft flattering daylight, photographic not illustration. No text, logos, watermarks, border or interface. Intended for small circular social avatar crop.",
+      "generatedAt": "2026-11-08T10:42:55.104645+00:00",
+      "sha256": "d682821e402722484200ebc27eaa073ea0e18528527e8ce74ba3ed0feeac471a"
+    },
+    {
+      "path": "assets/template-media/people/sora-kim.png",
+      "model": "gemini-3.1-flash-image",
+      "prompt": "Generate one original photorealistic professional creator profile portrait of a completely fictional person, not a public figure or identifiable real individual: East Asian woman around 27, chin-length black bob, navy crew-neck, soft warm taupe studio background. Square head-and-shoulders photo, face centered, upper shoulders visible, natural candid expression, realistic skin texture, soft flattering daylight, photographic not illustration. No text, logos, watermarks, border or interface. Intended for small circular social avatar crop.",
+      "generatedAt": "2026-11-08T10:42:44.838625+00:00",
+      "sha256": "fa9dc56a114141657d9b2013c8ad5566a131ec89bf18ab08b9a700921d122ba5"
+    },
+    {
+      "path": "assets/template-media/people/theo-park.png",
+      "model": "gemini-3.1-flash-image",
+      "prompt": "Generate one original photorealistic professional creator profile portrait of a completely fictional person, not a public figure or identifiable real individual: East Asian man around 32, short textured black hair, round black glasses, muted teal shirt, soft grey studio background. Square head-and-shoulders photo, face centered, upper shoulders visible, natural candid expression, realistic skin texture, soft flattering daylight, photographic not illustration. No text, logos, watermarks, border or interface. Intended for small circular social avatar crop.",
+      "generatedAt": "2026-11-08T10:42:36.705053+00:00",
+      "sha256": "342caef5f5af130789f5648f45df9aee21e7832d8254faa071f41c6b00f269c3"
+    }
+  ],
+  "brandAssets": [
+    {
+      "path": "assets/template-media/mont-icon.png",
+      "origin": "Mont canonical brand asset",
+      "sourceRepository": "slides-recorder-monorepo",
+      "sourcePath": "assets/brand/logo-icon-512.png",
+      "sha256": "d5e4fcf18ca3a927dd22fbc39afa876e21f7c0012fff95363c8a76007666cb5f"
+    },
+    {
+      "path": "assets/template-media/mont-icon-white.svg",
+      "origin": "Mont canonical brand asset",
+      "sourceRepository": "slides-recorder-monorepo",
+      "sourcePath": "assets/brand/logo-icon-white.svg",
+      "sha256": "1d43f730e046abf9576efac1bffd38eb9657d0606d3659310d9014407f310a9d"
+    }
+  ]
+}

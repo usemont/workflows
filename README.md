@@ -85,6 +85,9 @@ Inspect settings with `mont templates show <name>` before rendering.
 <td align="center" valign="top"><a href="templates/subscribe/creator-follow-card"><img src="assets/previews/creator-follow-card.gif" width="360" alt="A fictional creator card with original abstract artwork, a curved Mont cursor click, a restrained particle burst and gentle residual drift"></a><br><a href="templates/subscribe/creator-follow-card"><strong>Creator follow card</strong></a><br><code>mont templates preview creator-follow-card</code></td>
 <td align="center" valign="top"><a href="templates/subscribe/youtube-subscribe"><img src="assets/previews/youtube-subscribe.gif" width="360" alt="A Mont YouTube-style subscribe lower third with the actual Mont icon, a Subscribed state and subtle particles"></a><br><a href="templates/subscribe/youtube-subscribe"><strong>YouTube subscribe</strong></a><br><code>mont templates preview youtube-subscribe</code></td>
 </tr>
+<tr>
+<td align="center" valign="top" colspan="2"><a href="templates/subscribe/x-follow-card"><img src="assets/previews/x-follow-card.gif" width="640" alt="A fictional X creator profile whose follower portraits settle before the Follow button is clicked"></a><br><a href="templates/subscribe/x-follow-card"><strong>X follow card</strong></a><br><code>mont templates preview x-follow-card</code></td>
+</tr>
 </table>
 
 ## Terminal showcase

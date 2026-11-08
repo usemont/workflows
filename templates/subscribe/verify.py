@@ -86,6 +86,8 @@ def verify(output, name, case, create_only=False):
                "burst": 1.3, "after": 1.9, "hold": 3.5, "end": 4.2}
     if name == "creator-follow-card":
         moments["press"] = 1.2
+    if name == "x-follow-card":
+        moments.update(before=1.4, press=1.666667, burst=1.9, after=2.5)
     frames = {}
     for label, seconds in moments.items():
         path = folder / (label + ".png")
@@ -115,6 +117,11 @@ def verify(output, name, case, create_only=False):
         avatar_delta = delta(frames["entry"].crop(avatars_box), frames["after"].crop(avatars_box))
         assert stat_delta > 8 and avatar_delta > 8, (stat_delta, avatar_delta)
     checks = {}
+    if name == "x-follow-card":
+        # All six followers must settle while Follow is still unclicked.
+        checks["followers_settled_before_click_delta"] = delta(
+            frames["before"].crop(avatars_box), frames["after"].crop(avatars_box))
+        assert checks["followers_settled_before_click_delta"] < 1, checks
     if button_box:
         checks["button_state_delta"] = delta(frames["before"].crop(button_box), frames["after"].crop(button_box))
         checks["press_delta"] = delta(frames["before"].crop(button_box), frames["press"].crop(button_box))

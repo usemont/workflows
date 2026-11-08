@@ -138,6 +138,14 @@
       "files": ["scene.tsx"]
     },
     {
+      "name": "x-follow-card",
+      "title": "X follow card",
+      "category": "Subscribe & follow",
+      "description": "A fictional creator profile with original generated imagery, staggered follower portraits before the Follow click, a restrained press/state/particle interaction and reading hold; landscape 1920 × 1080, 5 seconds.",
+      "path": "templates/subscribe/x-follow-card",
+      "files": ["scene.tsx"]
+    },
+    {
       "name": "terminal-showcase",
       "title": "Terminal showcase",
       "category": "Terminal demos",
