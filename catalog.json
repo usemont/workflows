@@ -66,6 +66,14 @@
       "files": ["scene.tsx"]
     },
     {
+      "name": "chatgpt-exchange",
+      "title": "ChatGPT exchange",
+      "category": "Mock UI",
+      "description": "An original conversation types and streams inside an editable ChatGPT-style interface with the current compact composer.",
+      "path": "templates/mock-ui/chatgpt-exchange",
+      "files": ["scene.tsx"]
+    },
+    {
       "name": "terminal-showcase",
       "title": "Terminal showcase",
       "category": "Terminal demos",

@@ -6,7 +6,7 @@
 
 Ready-to-run video workflows and editable motion templates for [Mont CLI](https://github.com/usemont/mont-cli).
 
-[Try a template](#try-a-template) · [Kinetic typography](#kinetic-typography) · [Terminal showcase](#terminal-showcase) · [Workflows](#workflows) · [Contribute](#contribute)
+[Try a template](#try-a-template) · [Kinetic typography](#kinetic-typography) · [Mock UI](#mock-ui) · [Terminal showcase](#terminal-showcase) · [Workflows](#workflows) · [Contribute](#contribute)
 
 ## Try a template
 
@@ -40,6 +40,14 @@ Inspect settings with `mont templates show <name>` before rendering.
 <tr>
 <td align="center" valign="top"><a href="templates/kinetic/camera-follow-captions"><img src="assets/previews/camera-follow-captions-square.gif" width="260" alt="Gold words pack into a grid as the camera pulls outward"></a><br><a href="templates/kinetic/camera-follow-captions"><strong>Camera follow captions</strong></a><br><code>mont templates preview camera-follow-captions</code></td>
 <td align="center" valign="top"><a href="templates/kinetic/caret-swap"><img src="assets/previews/caret-swap-square.gif" width="260" alt="A chartreuse caret wipes between two phrases with smooth motion and letter-by-letter typing"></a><br><a href="templates/kinetic/caret-swap"><strong>Caret swap</strong></a><br><code>mont templates preview caret-swap</code></td>
+</tr>
+</table>
+
+## Mock UI
+
+<table>
+<tr>
+<td align="center" valign="top"><a href="templates/mock-ui/chatgpt-exchange"><img src="assets/previews/chatgpt-exchange-square.gif" width="360" alt="An original ChatGPT conversation types into a compact composer and streams a reply"></a><br><a href="templates/mock-ui/chatgpt-exchange"><strong>ChatGPT exchange</strong></a><br><code>mont templates preview chatgpt-exchange</code></td>
 </tr>
 </table>
 
