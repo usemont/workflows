@@ -39,6 +39,7 @@ Inspect settings with `mont templates show <name>` before rendering.
 </tr>
 <tr>
 <td align="center" valign="top"><a href="templates/kinetic/camera-follow-captions"><img src="assets/previews/camera-follow-captions-square.gif" width="260" alt="Gold words pack into a grid as the camera pulls outward"></a><br><a href="templates/kinetic/camera-follow-captions"><strong>Camera follow captions</strong></a><br><code>mont templates preview camera-follow-captions</code></td>
+<td align="center" valign="top"><a href="templates/kinetic/caret-swap"><img src="assets/previews/caret-swap-square.gif" width="260" alt="A chartreuse caret wipes between two phrases with smooth motion and letter-by-letter typing"></a><br><a href="templates/kinetic/caret-swap"><strong>Caret swap</strong></a><br><code>mont templates preview caret-swap</code></td>
 </tr>
 </table>
 

@@ -58,6 +58,14 @@
       "files": ["scene.tsx"]
     },
     {
+      "name": "caret-swap",
+      "title": "Caret swap",
+      "category": "Kinetic typography",
+      "description": "Two editable phrases swap through a smooth opaque caret wipe, measured letter-by-letter typing, and a seamless reverse reveal; customize copy, colors, timing, and canvas dimensions.",
+      "path": "templates/kinetic/caret-swap",
+      "files": ["scene.tsx"]
+    },
+    {
       "name": "terminal-showcase",
       "title": "Terminal showcase",
       "category": "Terminal demos",
