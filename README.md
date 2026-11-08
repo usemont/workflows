@@ -50,6 +50,9 @@ Inspect settings with `mont templates show <name>` before rendering.
 <td align="center" valign="top"><a href="templates/mock-ui/chatgpt-exchange"><img src="assets/previews/chatgpt-exchange-square.gif" width="360" alt="An original ChatGPT conversation types into a compact composer and streams a reply"></a><br><a href="templates/mock-ui/chatgpt-exchange"><strong>ChatGPT exchange</strong></a><br><code>mont templates preview chatgpt-exchange</code></td>
 <td align="center" valign="top"><a href="templates/mock-ui/claude-exchange"><img src="assets/previews/claude-exchange-square.gif" width="360" alt="A Claude-style conversation explains making videos with Mont CLI, with sans-serif responses and monospace commands"></a><br><a href="templates/mock-ui/claude-exchange"><strong>Claude exchange</strong></a><br><code>mont templates preview claude-exchange</code></td>
 </tr>
+<tr>
+<td align="center" valign="top" colspan="2"><a href="templates/mock-ui/ai-chat-reveal"><img src="assets/previews/ai-chat-reveal.gif" width="270" alt="An original mobile AI chat with a reusable keyboard synchronized to typed letters, spaces, Shift and punctuation"></a><br><a href="templates/mock-ui/ai-chat-reveal"><strong>AI chat reveal</strong></a><br><code>python3 templates/mock-ui/ai-chat-reveal/create.py ./ai-chat</code><br><code>mont edit -C ./ai-chat</code><br>Includes the reusable <a href="templates/components/mobile-keyboard">mobile keyboard scene</a>.</td>
+</tr>
 </table>
 
 ## Terminal showcase
