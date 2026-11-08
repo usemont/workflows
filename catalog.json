@@ -162,6 +162,14 @@
       "files": ["scene.tsx"]
     },
     {
+      "name": "annotate-cursor",
+      "title": "Annotate cursor",
+      "category": "Cursors",
+      "description": "A vector marker draws a smooth, tapered annotation around an editable metric, overshoots a full turn without connecting, then lifts aside; original production-note UI, landscape 1920 × 1080, 3.6 seconds.",
+      "path": "templates/cursors/annotate-cursor",
+      "files": ["scene.tsx"]
+    },
+    {
       "name": "terminal-showcase",
       "title": "Terminal showcase",
       "category": "Terminal demos",
