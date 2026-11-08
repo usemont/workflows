@@ -114,6 +114,30 @@
       "files": ["scene.tsx"]
     },
     {
+      "name": "tiktok-follow",
+      "title": "TikTok follow",
+      "category": "Subscribe & follow",
+      "description": "An editable Mont @usemont follow banner with the actual Mont icon, a rose button, a restrained press/state/particle interaction and downward exit; portrait 1080 × 1920, 4.5 seconds.",
+      "path": "templates/subscribe/tiktok-follow",
+      "files": ["scene.tsx"]
+    },
+    {
+      "name": "instagram-follow",
+      "title": "Instagram follow",
+      "category": "Subscribe & follow",
+      "description": "An editable Mont @usemont follow banner with the actual Mont icon, a blue button, a restrained press/state/particle interaction and downward exit; portrait 1080 × 1920, 4.5 seconds.",
+      "path": "templates/subscribe/instagram-follow",
+      "files": ["scene.tsx"]
+    },
+    {
+      "name": "youtube-subscribe",
+      "title": "YouTube subscribe",
+      "category": "Subscribe & follow",
+      "description": "An editable Mont channel lower third with the actual Mont icon, a Subscribe-to-Subscribed button, a restrained press/particle interaction and downward exit; landscape 1920 × 1080, 4.5 seconds.",
+      "path": "templates/subscribe/youtube-subscribe",
+      "files": ["scene.tsx"]
+    },
+    {
       "name": "terminal-showcase",
       "title": "Terminal showcase",
       "category": "Terminal demos",

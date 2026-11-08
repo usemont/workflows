@@ -24,7 +24,7 @@ Saves `preview.mp4` and an editable project to `out/stretch-row-repeater/`.
 Explore the latest collection with `mont templates list` and `mont workflows list`.
 Inspect settings with `mont templates show <name>` before rendering.
 
-**Image-template CLI requirement:** Notification cascade, Slack notification ad, Comment cards, and Creator follow card require a CLI build with embedded-image template materialization support. `0.1.0-preview.16` does not support their standalone create/preview flow. The GIFs are independently viewable; availability of a public CLI release with this capability is not claimed here.
+**Image-template CLI requirement:** Image-backed templates require a CLI build with embedded-image template materialization support. `0.1.0-preview.16` does not support their standalone create/preview flow. The GIFs are independently viewable; availability of a public CLI release with this capability is not claimed here.
 
 ## Kinetic typography
 
@@ -78,7 +78,12 @@ Inspect settings with `mont templates show <name>` before rendering.
 
 <table>
 <tr>
-<td align="center" valign="top"><a href="templates/subscribe/creator-follow-card"><img src="assets/previews/creator-follow-card.gif" width="640" alt="A fictional creator card with original abstract artwork, a curved Mont cursor click, a restrained particle burst and gentle residual drift"></a><br><a href="templates/subscribe/creator-follow-card"><strong>Creator follow card</strong></a><br><code>mont templates preview creator-follow-card</code></td>
+<td align="center" valign="top"><a href="templates/subscribe/tiktok-follow"><img src="assets/previews/tiktok-follow.gif" width="270" alt="A Mont TikTok-style follow banner with a button press, Following state and subtle particles"></a><br><a href="templates/subscribe/tiktok-follow"><strong>TikTok follow</strong></a><br><code>mont templates preview tiktok-follow</code></td>
+<td align="center" valign="top"><a href="templates/subscribe/instagram-follow"><img src="assets/previews/instagram-follow.gif" width="270" alt="A Mont Instagram-style follow banner with a button press, Following state and subtle particles"></a><br><a href="templates/subscribe/instagram-follow"><strong>Instagram follow</strong></a><br><code>mont templates preview instagram-follow</code></td>
+</tr>
+<tr>
+<td align="center" valign="top"><a href="templates/subscribe/creator-follow-card"><img src="assets/previews/creator-follow-card.gif" width="360" alt="A fictional creator card with original abstract artwork, a curved Mont cursor click, a restrained particle burst and gentle residual drift"></a><br><a href="templates/subscribe/creator-follow-card"><strong>Creator follow card</strong></a><br><code>mont templates preview creator-follow-card</code></td>
+<td align="center" valign="top"><a href="templates/subscribe/youtube-subscribe"><img src="assets/previews/youtube-subscribe.gif" width="360" alt="A Mont YouTube-style subscribe lower third with the actual Mont icon, a Subscribed state and subtle particles"></a><br><a href="templates/subscribe/youtube-subscribe"><strong>YouTube subscribe</strong></a><br><code>mont templates preview youtube-subscribe</code></td>
 </tr>
 </table>
 
