@@ -1,0 +1,71 @@
+{
+  "description": "Original generated assets and canonical Mont branding used by the three approved standalone scenes. Fictional identities and messages are illustrative, not real endorsements. Source code attribution and Apache-2.0 notices are retained in each template README.",
+  "generatedAssets": [
+    {
+      "path": "assets/template-media/backgrounds/phone-on-desk.png",
+      "model": "gemini-3.1-flash-image",
+      "prompt": "Original photorealistic cinematic 16:9 desk photograph. An unbranded dark smartphone lies in portrait orientation at center-right on a warm natural oak desk, seen from a gentle elevated angle. Screen is completely dark blank glass with no text, UI, icons or logos. Soft late afternoon light, subtle shadows, tasteful modern creative workspace out of focus. Reserve the central and lower frame as quiet low-detail dark-neutral negative space suitable for editable notification overlays. No people or hands, no brand identifiers or watermark.",
+      "generatedAt": "2026-11-08T10:42:54.671253+00:00",
+      "sha256": "251fbc0c286931722c2df9c3169bccb49c127b6ca85fb3231850b26adca6d5e7"
+    },
+    {
+      "path": "assets/template-media/backgrounds/studio-desk.png",
+      "model": "gemini-3.1-flash-image",
+      "prompt": "A single original photorealistic cinematic photograph of an empty creative editing desk in a dim modern home studio. A switched-off completely black monitor, a physical keyboard, mouse, a brass task lamp, wooden desk, blurred books and warm room lights. Balanced dark neutral center with physical photographic depth. Nothing is displayed on any screen. Absolutely no text anywhere, no notifications, no message cards, no UI overlays, no interface panels, no icons, no logos, no watermark, no people. This is ONLY a plain interior photograph, not an advertisement or scene mockup. Wide16:9 composition.",
+      "generatedAt": "2026-11-08T10:43:46.975908+00:00",
+      "sha256": "8d2bec29cf9bc72559f729cb84658e0cd632a97f1758333d201960e7b0c73df4"
+    },
+    {
+      "path": "assets/template-media/people/elias-reed.png",
+      "model": "gemini-3.1-flash-image",
+      "prompt": "Generate one original photorealistic professional creator profile portrait of a completely fictional person, not a public figure or identifiable real individual: man around 34 with medium brown skin, wavy dark hair, light stubble, olive overshirt, soft warm grey studio background. Square head-and-shoulders photo, face centered, upper shoulders visible, natural candid expression, realistic skin texture, soft flattering daylight, photographic not illustration. No text, logos, watermarks, border or interface. Intended for small circular social avatar crop.",
+      "generatedAt": "2026-11-08T10:42:37.788524+00:00",
+      "sha256": "0c7f5d16192c8a0f5415eb31198ddea1e20c65a8b923a4cdb1efe2685935ff39"
+    },
+    {
+      "path": "assets/template-media/people/nia-brooks.png",
+      "model": "gemini-3.1-flash-image",
+      "prompt": "Generate one original photorealistic professional creator profile portrait of a completely fictional person, not a public figure or identifiable real individual: Black woman around 29, short natural curls, confident friendly smile, rust knit top, soft cream studio background. Square head-and-shoulders photo, face centered, upper shoulders visible, natural candid expression, realistic skin texture, soft flattering daylight, photographic not illustration. No text, logos, watermarks, border or interface. Intended for small circular social avatar crop.",
+      "generatedAt": "2026-11-08T10:42:36.199757+00:00",
+      "sha256": "2ca61af2418013860bdf5a7844c0207bca563b7d46ea6f08cd1d6ee73719281a"
+    }
+  ],
+  "brandAssets": [
+    {
+      "path": "assets/template-media/mont-icon.png",
+      "origin": "Mont canonical brand asset",
+      "sourceRepository": "slides-recorder-monorepo",
+      "sourcePath": "assets/brand/logo-icon-512.png",
+      "sha256": "d5e4fcf18ca3a927dd22fbc39afa876e21f7c0012fff95363c8a76007666cb5f"
+    }
+  ],
+  "galleryPreviews": [
+    {
+      "path": "assets/previews/notification-cascade.gif",
+      "source": "User-approved standalone notification-cascade.mp4",
+      "sourceSha256": "27db46cf63510e09fa128905d6541eed3ae9f2f41503661ccaa6ef6563d77884",
+      "width": 270,
+      "height": 480,
+      "fps": 15,
+      "conversion": "Full frame, aspect-preserving Lanczos scale; Rec.709 to full-range sRGB before palette generation; 256-color Sierra 2-4A dithering; infinite loop."
+    },
+    {
+      "path": "assets/previews/slack-notification-ad.gif",
+      "source": "User-approved standalone slack-notification-ad.mp4",
+      "sourceSha256": "aaee461df2775315bbbafa293b56ba8d2956e9b27b201f298cdab146db174af9",
+      "width": 270,
+      "height": 480,
+      "fps": 15,
+      "conversion": "Full frame, aspect-preserving Lanczos scale; Rec.709 to full-range sRGB before palette generation; 256-color Sierra 2-4A dithering; infinite loop."
+    },
+    {
+      "path": "assets/previews/comment-cards.gif",
+      "source": "User-approved standalone comment-cards.mp4",
+      "sourceSha256": "7b978bb18ec31051fd8cae0c5cde0e1d4fb2259ff27eed9839c95f957a59ac44",
+      "width": 640,
+      "height": 360,
+      "fps": 15,
+      "conversion": "Full frame, aspect-preserving Lanczos scale; Rec.709 to full-range sRGB before palette generation; 256-color Sierra 2-4A dithering; infinite loop."
+    }
+  ]
+}

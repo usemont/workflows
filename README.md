@@ -6,7 +6,7 @@
 
 Ready-to-run video workflows and editable motion templates for [Mont CLI](https://github.com/usemont/mont-cli).
 
-[Try a template](#try-a-template) · [Kinetic typography](#kinetic-typography) · [Mock UI](#mock-ui) · [Terminal showcase](#terminal-showcase) · [Workflows](#workflows) · [Contribute](#contribute)
+[Try a template](#try-a-template) · [Kinetic typography](#kinetic-typography) · [Mock UI](#mock-ui) · [Notifications](#notifications) · [Social posts](#social-posts) · [Terminal showcase](#terminal-showcase) · [Workflows](#workflows) · [Contribute](#contribute)
 
 ## Try a template
 
@@ -52,6 +52,23 @@ Inspect settings with `mont templates show <name>` before rendering.
 </tr>
 <tr>
 <td align="center" valign="top" colspan="2"><a href="templates/mock-ui/ai-chat-reveal"><img src="assets/previews/ai-chat-reveal.gif" width="270" alt="An original mobile AI chat with a reusable keyboard synchronized to typed letters, spaces, Shift and punctuation"></a><br><a href="templates/mock-ui/ai-chat-reveal"><strong>AI chat reveal</strong></a><br><code>python3 templates/mock-ui/ai-chat-reveal/create.py ./ai-chat</code><br><code>mont edit -C ./ai-chat</code><br>Includes the reusable <a href="templates/components/mobile-keyboard">mobile keyboard scene</a>.</td>
+</tr>
+</table>
+
+## Notifications
+
+<table>
+<tr>
+<td align="center" valign="top"><a href="templates/notifications/notification-cascade"><img src="assets/previews/notification-cascade.gif" width="270" alt="Four fictional messages cascade into warm translucent notification cards over a photographed phone"></a><br><a href="templates/notifications/notification-cascade"><strong>Notification cascade</strong></a><br><code>mont templates preview notification-cascade</code></td>
+<td align="center" valign="top"><a href="templates/notifications/slack-notification-ad"><img src="assets/previews/slack-notification-ad.gif" width="270" alt="Fictional Slack messages build into a portrait lock-screen stack over an aspect-preserving studio photograph"></a><br><a href="templates/notifications/slack-notification-ad"><strong>Slack notification ad</strong></a><br><code>mont templates preview slack-notification-ad</code></td>
+</tr>
+</table>
+
+## Social posts
+
+<table>
+<tr>
+<td align="center" valign="top"><a href="templates/social-posts/comment-cards"><img src="assets/previews/comment-cards.gif" width="640" alt="Two fictional creator comments pop in with original portraits, progressively typed text, and paired thumb controls"></a><br><a href="templates/social-posts/comment-cards"><strong>Comment cards</strong></a><br><code>mont templates preview comment-cards</code></td>
 </tr>
 </table>
 

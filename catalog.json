@@ -82,6 +82,30 @@
       "files": ["scene.tsx"]
     },
     {
+      "name": "notification-cascade",
+      "title": "Notification cascade",
+      "category": "Notifications",
+      "description": "Four editable fictional messages cascade into warm translucent notification cards over an original phone photograph; portrait 540 × 960, 10 seconds.",
+      "path": "templates/notifications/notification-cascade",
+      "files": ["scene.tsx"]
+    },
+    {
+      "name": "slack-notification-ad",
+      "title": "Slack notification ad",
+      "category": "Notifications",
+      "description": "Twelve editable fictional Slack and Mont messages build into a portrait lock-screen stack over an original studio photograph; portrait 540 × 960, 12 seconds.",
+      "path": "templates/notifications/slack-notification-ad",
+      "files": ["scene.tsx"]
+    },
+    {
+      "name": "comment-cards",
+      "title": "Comment cards",
+      "category": "Social posts",
+      "description": "Two fictional creator comments pop in with original portraits, progressively typed editable text, and paired thumb controls; landscape 960 × 540, 8 seconds.",
+      "path": "templates/social-posts/comment-cards",
+      "files": ["scene.tsx"]
+    },
+    {
       "name": "terminal-showcase",
       "title": "Terminal showcase",
       "category": "Terminal demos",
