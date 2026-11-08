@@ -53,13 +53,13 @@ export default defineSpanScene({
             <Repeat items={text.glyphs(vars.line11, { fontFamily: "Inter", fontWeight: 500, fontSize: 17 })} render={(glyph) => (
               <Text id={"text-1-1-" + glyph.index} text={glyph.text} x={43 + glyph.offset} y={19.5}
                 width={Math.max(glyph.advance, glyph.inkWidth + Math.abs(glyph.bearingX)) + 3} height={25}
-                fontFamily={glyph.fontFamily} fontWeight={500} size={17} lineHeight={22.95} fit="none" color={vars.foreground}
+                fontFamily="Inter" fontWeight={500} size={17} lineHeight={22.95} fit="none" color={vars.foreground}
                 opacity={Math.max(0, Math.min(1, (computed.clock - computed.start1 - 400 - (glyph.index + 0) * computed.delay1) / 20))} />
             )} />
             <Repeat items={text.glyphs(vars.line12, { fontFamily: "Inter", fontWeight: 500, fontSize: 17 })} render={(glyph) => (
               <Text id={"text-1-2-" + glyph.index} text={glyph.text} x={43 + glyph.offset} y={42.45}
                 width={Math.max(glyph.advance, glyph.inkWidth + Math.abs(glyph.bearingX)) + 3} height={25}
-                fontFamily={glyph.fontFamily} fontWeight={500} size={17} lineHeight={22.95} fit="none" color={vars.foreground}
+                fontFamily="Inter" fontWeight={500} size={17} lineHeight={22.95} fit="none" color={vars.foreground}
                 opacity={Math.max(0, Math.min(1, (computed.clock - computed.start1 - 400 - (glyph.index + text.glyphs(vars.line11, { fontFamily: "Inter", fontWeight: 500, fontSize: 17 })[0].count + 1) * computed.delay1) / 20))} />
             )} />
             <Group id="actions-1" x={43} y={71.4} opacity={computed.actions1} width={0} height={0} pivotX={0} pivotY={0}>
@@ -80,13 +80,13 @@ export default defineSpanScene({
             <Repeat items={text.glyphs(vars.line21, { fontFamily: "Inter", fontWeight: 500, fontSize: 17 })} render={(glyph) => (
               <Text id={"text-2-1-" + glyph.index} text={glyph.text} x={43 + glyph.offset} y={19.5}
                 width={Math.max(glyph.advance, glyph.inkWidth + Math.abs(glyph.bearingX)) + 3} height={25}
-                fontFamily={glyph.fontFamily} fontWeight={500} size={17} lineHeight={22.95} fit="none" color={vars.foreground}
+                fontFamily="Inter" fontWeight={500} size={17} lineHeight={22.95} fit="none" color={vars.foreground}
                 opacity={Math.max(0, Math.min(1, (computed.clock - computed.start2 - 400 - (glyph.index + 0) * computed.delay2) / 20))} />
             )} />
             <Repeat items={text.glyphs(vars.line22, { fontFamily: "Inter", fontWeight: 500, fontSize: 17 })} render={(glyph) => (
               <Text id={"text-2-2-" + glyph.index} text={glyph.text} x={43 + glyph.offset} y={42.45}
                 width={Math.max(glyph.advance, glyph.inkWidth + Math.abs(glyph.bearingX)) + 3} height={25}
-                fontFamily={glyph.fontFamily} fontWeight={500} size={17} lineHeight={22.95} fit="none" color={vars.foreground}
+                fontFamily="Inter" fontWeight={500} size={17} lineHeight={22.95} fit="none" color={vars.foreground}
                 opacity={Math.max(0, Math.min(1, (computed.clock - computed.start2 - 400 - (glyph.index + text.glyphs(vars.line21, { fontFamily: "Inter", fontWeight: 500, fontSize: 17 })[0].count + 1) * computed.delay2) / 20))} />
             )} />
             <Group id="actions-2" x={43} y={71.4} opacity={computed.actions2} width={0} height={0} pivotX={0} pivotY={0}>
