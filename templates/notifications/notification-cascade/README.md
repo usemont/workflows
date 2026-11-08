@@ -1,6 +1,6 @@
 # Notification Cascade
 
-Native editable Mont scene, **540 × 960**, **10 seconds**. Original fictional Mont workflow copy; no baked video or full UI screenshot.
+Native editable Mont scene, **540 × 960**, **10 seconds**. Original fictional Mont workflow copy; no baked video, full UI screenshot or bottom-right branding footers.
 
 ## Original asset inventory
 
@@ -15,7 +15,11 @@ Edit the exported `variables` and native nodes in `scene.tsx`. Keep copy close t
 
 ## Notification surface reference
 
-The material follows the filmed **iOS 26** notification behavior in the [MacStories review](https://www.macstories.net/stories/ios-and-ipados-26-the-macstories-review/6/) ([actual recording](https://cdn.macstories.net/notification-1757840169857.mp4)): wallpaper-dependent warm/gray tint, softened background detail, restrained light rim and rounded cards—not opaque navy. Native `backdropBlur`, a readable tinted fill and a thin stroke approximate that appearance. This is not Apple's proprietary Liquid Glass shader or physical refraction. Keep `surface` neutral and sufficiently tinted for white copy.
+The material follows the filmed **iOS 26** notification behavior in the [MacStories review](https://www.macstories.net/stories/ios-and-ipados-26-the-macstories-review/6/) ([actual recording](https://cdn.macstories.net/notification-1757840169857.mp4)) and the supplied Notification Centre reference: strongly diffused wallpaper, smoky neutral tint and directional glass edges—not opaque navy or a uniform white outline. Cards use continuous cubic/arc corners (radius 21, smoothing 0.6), following the MIT-licensed [figma-squircle construction](https://github.com/phamfoo/figma-squircle). Its license is retained in `scene.tsx`.
+
+One existing Mont WGSL pass shades all four cards from one captured, animated wallpaper: 32-tap weighted frosting, restrained edge refraction, a light-facing highlight, darker side edges and a faint inner reflection. The editable `surface` variable supplies the neutral 32%-alpha tint; native text and icons remain separate editable nodes. This is an iOS-inspired approximation, not Apple's proprietary Liquid Glass shader or an exact reproduction of UIKit's continuous corners.
+
+Keep the wallpaper capture in canvas coordinates. Shader `top0`–`top3` uniforms include the same card motion and stack exit offset as their native contents, so the frosting samples the wallpaper beneath each moving card rather than sliding with it. Arrival/exit alpha belongs on the shader's individual surfaces and each separate tint/content node, not their common parent. `../verify.py --scene notification-cascade` renders a native MP4 and checks reduced wood-grain detail through the cards while retaining wallpaper-dependent tones.
 
 Android's [official Material 3 Expressive reference](https://blog.google/products-and-platforms/platforms/android/material-3-expressive-android-wearos-launch/) uses separate tonal/grouped surfaces and shade blur; this template does not claim to implement Android styling. “iOS 26-inspired” identifies the reference version, not the latest OS.
 
@@ -37,6 +41,12 @@ mont render -C ./notification-cascade --output ./notification-cascade.mp4 --fps 
 ```
 
 The catalog downloads only `scene.tsx`: image data is embedded and fonts use Mont's existing catalog. The [gallery GIF](../../../assets/previews/notification-cascade.gif) comes from the approved standalone MP4, with full-frame portrait scaling and Rec.709-to-sRGB conversion; it is not scene media.
+
+Native render checks (requires `mont`, `ffmpeg`, `ffprobe` and Python with Pillow):
+
+```sh
+python3 templates/notifications/verify.py --scene notification-cascade --output /absolute/path/to/previews
+```
 
 <details>
 <summary>Upstream Apache2.0 license and copyright notice</summary>

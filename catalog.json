@@ -85,7 +85,7 @@
       "name": "notification-cascade",
       "title": "Notification cascade",
       "category": "Notifications",
-      "description": "Four editable fictional messages cascade into warm translucent notification cards over an original phone photograph; portrait 540 × 960, 10 seconds.",
+      "description": "Four editable fictional messages cascade into frosted-glass cards with continuous corners and directional rim highlights over an original phone photograph; portrait 540 × 960, 10 seconds.",
       "path": "templates/notifications/notification-cascade",
       "files": ["scene.tsx"]
     },

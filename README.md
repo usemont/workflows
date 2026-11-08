@@ -61,7 +61,7 @@ Inspect settings with `mont templates show <name>` before rendering.
 
 <table>
 <tr>
-<td align="center" valign="top"><a href="templates/notifications/notification-cascade"><img src="assets/previews/notification-cascade.gif" width="270" alt="Four fictional messages cascade into warm translucent notification cards over a photographed phone"></a><br><a href="templates/notifications/notification-cascade"><strong>Notification cascade</strong></a><br><code>mont templates preview notification-cascade</code></td>
+<td align="center" valign="top"><a href="templates/notifications/notification-cascade"><img src="assets/previews/notification-cascade.gif" width="270" alt="Four fictional messages cascade into frosted-glass notification cards with continuous corners over a photographed phone"></a><br><a href="templates/notifications/notification-cascade"><strong>Notification cascade</strong></a><br><code>mont templates preview notification-cascade</code></td>
 <td align="center" valign="top"><a href="templates/notifications/slack-notification-ad"><img src="assets/previews/slack-notification-ad.gif" width="270" alt="Fictional Slack messages build into a portrait lock-screen stack over an aspect-preserving studio photograph"></a><br><a href="templates/notifications/slack-notification-ad"><strong>Slack notification ad</strong></a><br><code>mont templates preview slack-notification-ad</code></td>
 </tr>
 </table>
