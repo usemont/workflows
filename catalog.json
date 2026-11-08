@@ -154,6 +154,14 @@
       "files": ["scene.tsx"]
     },
     {
+      "name": "text-select-cursor",
+      "title": "Text-select cursor",
+      "category": "Cursors",
+      "description": "An editable document with a shaped-text selection, first-party Mont cursor, floating formatting toolbar and real Bold change, with anticipation, smooth curved travel and restrained follow-through; landscape 1920 × 1080, 5.6 seconds.",
+      "path": "templates/cursors/text-select-cursor",
+      "files": ["scene.tsx"]
+    },
+    {
       "name": "terminal-showcase",
       "title": "Terminal showcase",
       "category": "Terminal demos",

@@ -96,6 +96,9 @@ Inspect settings with `mont templates show <name>` before rendering.
 <tr>
 <td align="center" valign="top"><a href="templates/cursors/drag-and-drop"><img src="assets/previews/drag-and-drop.gif" width="640" alt="A Mont arrow smoothly drags an original video-production task from Ideas to In motion on a neutral board"></a><br><a href="templates/cursors/drag-and-drop"><strong>Drag and drop</strong></a><br><code>mont templates preview drag-and-drop</code></td>
 </tr>
+<tr>
+<td align="center" valign="top"><a href="templates/cursors/text-select-cursor"><img src="assets/previews/text-select-cursor.gif" width="640" alt="A Mont cursor selects editable document text, reveals a formatting toolbar and clicks Bold with restrained anticipation and follow-through"></a><br><a href="templates/cursors/text-select-cursor"><strong>Text-select cursor</strong></a><br><code>mont templates preview text-select-cursor</code></td>
+</tr>
 </table>
 
 ## Terminal showcase
