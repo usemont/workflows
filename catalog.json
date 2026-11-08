@@ -170,6 +170,14 @@
       "files": ["scene.tsx"]
     },
     {
+      "name": "agent-cursor",
+      "title": "Agent cursor",
+      "category": "Cursors",
+      "description": "An AI cursor types its intent, selects vertical format and enables captions with smooth curved travel, content-sized labels and a concentric golden-ratio preview that reflows without drifting; original Mont setup UI, landscape 1920 × 1080, 4.8 seconds.",
+      "path": "templates/cursors/agent-cursor",
+      "files": ["scene.tsx"]
+    },
+    {
       "name": "terminal-showcase",
       "title": "Terminal showcase",
       "category": "Terminal demos",

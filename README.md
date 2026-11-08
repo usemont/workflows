@@ -102,6 +102,9 @@ Inspect settings with `mont templates show <name>` before rendering.
 <tr>
 <td align="center" valign="top"><a href="templates/cursors/annotate-cursor"><img src="assets/previews/annotate-cursor.gif" width="640" alt="A vector marker circles an editable metric with smooth tapered ink, overshoots the starting angle without connecting, and lifts aside"></a><br><a href="templates/cursors/annotate-cursor"><strong>Annotate cursor</strong></a><br><code>mont templates preview annotate-cursor</code></td>
 </tr>
+<tr>
+<td align="center" valign="top"><a href="templates/cursors/agent-cursor"><img src="assets/previews/agent-cursor.gif" width="640" alt="A Mont AI cursor types its intent, selects vertical format and enables captions while concentric golden-ratio artwork reflows smoothly"></a><br><a href="templates/cursors/agent-cursor"><strong>Agent cursor</strong></a><br><code>mont templates preview agent-cursor</code></td>
+</tr>
 </table>
 
 ## Terminal showcase
