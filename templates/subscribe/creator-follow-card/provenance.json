@@ -1,0 +1,25 @@
+{
+  "description": "Original generated artwork and fictional creator portrait for creator-follow-card; no real-person endorsement. The Mont arrow is an unmodified first-party cursor asset.",
+  "generatedAssets": [
+    {
+      "path": "assets/template-media/backgrounds/creator-abstract-hero.png",
+      "model": "gemini-3.1-flash-image",
+      "prompt": "Create an original abstract editorial artwork, wide panoramic composition. Sculptural flowing ribbons and folded translucent frosted-glass forms in sea-glass teal, muted jade, warm ivory and a small burnt-orange accent. Soft directional studio lighting, rich tactile satin and glass detail, layered depth, sophisticated calm creative-tool aesthetic. Asymmetric composition with flowing forms spanning horizontally, readable when cropped to an extremely wide shallow profile header. Fill the complete rectangular image edge to edge. No lettering, no logos, no people, no UI, no border, no rounded corners, no watermark. This is artwork only, not a profile card or mockup.",
+      "generatedAt": "2026-11-08T13:20:34.528400+00:00",
+      "sha256": "cff90187d52bfc216edc44cec777a78ee4f9a7ad0aeef6b3829200f8d2baebc8"
+    },
+    {
+      "path": "assets/template-media/people/elias-reed.png",
+      "model": "gemini-3.1-flash-image",
+      "prompt": "Generate one original photorealistic professional creator profile portrait of a completely fictional person, not a public figure or identifiable real individual: man around 34 with medium brown skin, wavy dark hair, light stubble, olive overshirt, soft warm grey studio background. Square head-and-shoulders photo, face centered, upper shoulders visible, natural candid expression, realistic skin texture, soft flattering daylight, photographic not illustration. No text, logos, watermarks, border or interface. Intended for small circular social avatar crop.",
+      "generatedAt": "2026-11-08T10:42:37.788524+00:00",
+      "sha256": "0c7f5d16192c8a0f5415eb31198ddea1e20c65a8b923a4cdb1efe2685935ff39"
+    }
+  ],
+  "cursor": {
+    "sourceRepository": "slides-recorder-monorepo",
+    "sourcePath": "projects/mont-sdk/flutter/assets/mont-cursors/png/large-2x/cursor-arrow.png",
+    "sha256": "b6fb12e393a1550b8f22ffb7c9f7ced90cfcb66f024b493a09fef424e0409239",
+    "embeddedUnmodified": true
+  }
+}

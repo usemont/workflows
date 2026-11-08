@@ -106,6 +106,14 @@
       "files": ["scene.tsx"]
     },
     {
+      "name": "creator-follow-card",
+      "title": "Creator follow card",
+      "category": "Subscribe & follow",
+      "description": "An editable fictional creator card with an original abstract hero, generated portrait, Mont arrow cursor, curved click motion, a restrained particle burst, and gentle residual drift; landscape 1920 × 1080, 4.5 seconds.",
+      "path": "templates/subscribe/creator-follow-card",
+      "files": ["scene.tsx"]
+    },
+    {
       "name": "terminal-showcase",
       "title": "Terminal showcase",
       "category": "Terminal demos",

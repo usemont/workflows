@@ -6,7 +6,7 @@
 
 Ready-to-run video workflows and editable motion templates for [Mont CLI](https://github.com/usemont/mont-cli).
 
-[Try a template](#try-a-template) · [Kinetic typography](#kinetic-typography) · [Mock UI](#mock-ui) · [Notifications](#notifications) · [Social posts](#social-posts) · [Terminal showcase](#terminal-showcase) · [Workflows](#workflows) · [Contribute](#contribute)
+[Try a template](#try-a-template) · [Kinetic typography](#kinetic-typography) · [Mock UI](#mock-ui) · [Notifications](#notifications) · [Social posts](#social-posts) · [Subscribe & follow](#subscribe--follow) · [Terminal showcase](#terminal-showcase) · [Workflows](#workflows) · [Contribute](#contribute)
 
 ## Try a template
 
@@ -24,7 +24,7 @@ Saves `preview.mp4` and an editable project to `out/stretch-row-repeater/`.
 Explore the latest collection with `mont templates list` and `mont workflows list`.
 Inspect settings with `mont templates show <name>` before rendering.
 
-**Image-template CLI requirement:** Notification cascade, Slack notification ad, and Comment cards require a CLI build with embedded-image template materialization support. `0.1.0-preview.16` does not support their standalone create/preview flow. The GIFs are independently viewable; availability of a public CLI release with this capability is not claimed here.
+**Image-template CLI requirement:** Notification cascade, Slack notification ad, Comment cards, and Creator follow card require a CLI build with embedded-image template materialization support. `0.1.0-preview.16` does not support their standalone create/preview flow. The GIFs are independently viewable; availability of a public CLI release with this capability is not claimed here.
 
 ## Kinetic typography
 
@@ -71,6 +71,14 @@ Inspect settings with `mont templates show <name>` before rendering.
 <table>
 <tr>
 <td align="center" valign="top"><a href="templates/social-posts/comment-cards"><img src="assets/previews/comment-cards.gif" width="640" alt="Two fictional creator comments pop in with original portraits, progressively typed text, and paired thumb controls"></a><br><a href="templates/social-posts/comment-cards"><strong>Comment cards</strong></a><br><code>mont templates preview comment-cards</code></td>
+</tr>
+</table>
+
+## Subscribe & follow
+
+<table>
+<tr>
+<td align="center" valign="top"><a href="templates/subscribe/creator-follow-card"><img src="assets/previews/creator-follow-card.gif" width="640" alt="A fictional creator card with original abstract artwork, a curved Mont cursor click, a restrained particle burst and gentle residual drift"></a><br><a href="templates/subscribe/creator-follow-card"><strong>Creator follow card</strong></a><br><code>mont templates preview creator-follow-card</code></td>
 </tr>
 </table>
 
