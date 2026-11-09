@@ -1,0 +1,56 @@
+{
+  "path": "assets/template-media/recorders/presenter.mp4",
+  "sha256": "b360b89f1ce1ed91e8407faa71c65ae2e6547e3b773762f223222972ca9e80da",
+  "description": "Original AI-generated fictional adult presenter video for reusable synthetic screen + camera + cursor recording demos. This is not real camera capture, evidence of recording, a real person, or an endorsement.",
+  "aiGenerated": true,
+  "fictionalIdentity": true,
+  "identity": {
+    "name": null,
+    "description": "Completely fictional adult woman, approximately 32, warm medium brown skin, short naturally curly dark hair, plain muted sage crewneck top. No real-person reference image or camera media was used."
+  },
+  "provider": "Google Cloud Vertex AI",
+  "model": "veo-3.1-generate-001",
+  "region": "us-central1",
+  "prompt": "Original photorealistic eight-second continuous real-time video of a completely fictional adult woman, not based on any real person, public figure, photograph, or camera recording. She is approximately 32, has warm medium brown skin and short naturally curly dark hair, and wears a plain muted sage crewneck top. She is seated quietly and comfortably in a locked-off professional webcam head-and-shoulders shot. Her face is centered, her whole head and both shoulders are visible with generous headroom and clear background on either side, suitable for centered square or portrait crops. Warm light-gray seamless studio background, soft steady daylight, realistic skin texture.\nThe entire eight seconds is a quiet waiting moment, not a performance, conversation, or reaction. Her head stays upright at exactly the same angle and position, gaze fixed gently toward the lens, shoulders and torso resting still. Her expression is neutral and unchanging, lips softly closed throughout, not smiling. The only visible movement is one ordinary small natural blink and barely perceptible breathing. Her head does not follow the breath. Hands remain out of frame. Keep identity, hair, clothing, face scale, lighting, and framing consistent from the first frame to the last. Genuine continuous live-action-style video with natural tiny physiological motion, not a still image or slideshow. Fixed camera on a tripod, no camera movement, pan, zoom, reframing, cuts, or transitions. Empty clean frame without text, logos, captions, interface, borders, or objects. Silent video.",
+  "parameters": {
+    "sampleCount": 1,
+    "durationSeconds": 8,
+    "aspectRatio": "16:9",
+    "resolution": "720p",
+    "personGeneration": "allow_adult",
+    "generateAudio": false,
+    "enhancePrompt": true,
+    "seed": 483271,
+    "negativePrompt": "talking, speech, lip movement, open mouth, smiling, changing expression, nodding, head tilt, head rotation, head bobbing, swaying, leaning, gesturing, moving shoulders, moving torso, looking away, eye darting, acting, performance, exaggerated breathing, rapid movement, camera movement, handheld camera, zoom, cuts, transitions, frozen still, slideshow, identity change, text, subtitles, captions, logo, watermark, screen interface, public figure, child, multiple people, hands"
+  },
+  "submittedAt": "2026-11-09T21:23:18.170435+00:00",
+  "generatedAt": "2026-11-09T21:24:37.466729+00:00",
+  "generation": {
+    "method": "text-to-video",
+    "promptEnhancementRequiredByProvider": true,
+    "sourceImage": null,
+    "sourceCameraCapture": false,
+    "postprocessing": null,
+    "notes": "New text-to-video generation for a minimally moving, neutral, closed-mouth presenter. Original provider MP4 bytes retained without transcoding, looping, freezing frames, still-image animation, stabilization, or audio modification. Prompt enhancement was enabled as required by this model; the prompt above is the submitted prompt, not a claimed provider-rewritten prompt. The requested seed does not guarantee deterministic output when prompt enhancement is enabled."
+  },
+  "media": {
+    "mimeType": "video/mp4",
+    "videoCodec": "h264",
+    "width": 1280,
+    "height": 720,
+    "durationSeconds": 8,
+    "framesPerSecond": 24,
+    "frameCount": 192,
+    "audioStreams": 0,
+    "bytes": 1235129
+  },
+  "usage": "Persistent reusable source asset for all Mont synthetic recorder demos; synthetic/generated media must not be presented as real capture evidence.",
+  "inspection": {
+    "metadata": "ffprobe confirmed 8.000000s, 1280x720, H.264, 24 fps, 192 frames, no audio stream.",
+    "visual": "Inspected the six-frame video preview and a sixteen-frame temporal contact sheet sampled at 2 fps across the eight-second clip. Stable fictional identity and locked head-and-shoulders framing, neutral closed-mouth expression, visible natural blinking and subtle physiological movement; no visible talking, nodding, head tilting, swaying, hand gestures, camera movement, text, or logos in the sampled frames. Whole head and both shoulders remain visible, with clear side margins for centered crops."
+  },
+  "providerDocumentation": [
+    "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/veo/3-1-generate",
+    "https://docs.cloud.google.com/gemini-enterprise-agent-platform/reference/rest/Shared.Types/VideoGenerationModelParams"
+  ]
+}

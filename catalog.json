@@ -322,6 +322,846 @@
       "files": ["scene.tsx", "tui.tsx", "cli.cast", "tui.cast"]
     }
   ],
+  "tools": [
+  {
+    "canonical": {
+      "path": "recorders/camera-screen-cursor-recorder.mont",
+      "recorderId": "cameraScreenCursor",
+      "repository": "usemont/programmatic-tools",
+      "revision": "a2fc7873cc8caa5c9822237b760fec84aef12e57",
+      "sha256": "b57e080504ec2d241ed87574a0ea8d8be3ac7319a3d0d336a83ac788ac8f16ef"
+    },
+    "category": "Tools",
+    "compatibility": {
+      "recipeVersion": 1,
+      "recordingSessionVersion": 1
+    },
+    "description": "Corner bubble recording layout with Studio theme and Studio cursor. Synthetic desktop, authored cursor and fictional AI presenter; no live capture.",
+    "example": {
+      "assets": [
+        {
+          "path": "assets/template-media/recorders/silence.m4a",
+          "sha256": "2ad850f642488893f15cf5a75fa5eb5ed05e9165a663c5066ee2dec90bbdcbbc"
+        },
+        {
+          "path": "assets/template-media/recorders/desktop.mp4",
+          "sha256": "eada7766f72bbeb939d64ca906dc11f12ad4d62e03f99f5224afa653decc990b"
+        },
+        {
+          "path": "assets/template-media/recorders/presenter.mp4",
+          "sha256": "b360b89f1ce1ed91e8407faa71c65ae2e6547e3b773762f223222972ca9e80da"
+        },
+        {
+          "path": "templates/tools/recorder-demo/storyboard.json",
+          "sha256": "df75a094025b548c9d5454505eda5fda60631efd4b36e07b4b47751974266e3d"
+        },
+        {
+          "path": "templates/tools/corner-bubble/asset-catalog.json",
+          "sha256": "b7d032078eca3d43dd8bc7f262a3dd3c87ed1c55544f5410239423d1177045ab"
+        }
+      ],
+      "id": "synthetic-recorder-demo",
+      "previews": {
+        "mp4": {
+          "path": "assets/previews/recorder-corner-bubble.mp4",
+          "sha256": "0f4839a2fa9abb5e8e65191812f0b8ac09a636a291f1747cfbe11048824379dd"
+        },
+        "gif": {
+          "path": "assets/previews/recorder-corner-bubble.gif",
+          "sha256": "b3d7aa10b7b379737a08d61d08c4a2f3e866d93b1a260e0e4c7dc1cd32f6a9fc"
+        }
+      },
+      "recipe": {
+        "path": "templates/tools/corner-bubble/recipe.json",
+        "sha256": "280bc0d1d96d720dd24e052a2dec856a6c98567faebe5d64559a23d4883a361a"
+      }
+    },
+    "name": "corner-bubble",
+    "requiredCapabilities": [
+      {
+        "capabilityId": "span.transient-projection",
+        "minimumVersion": 1
+      },
+      {
+        "capabilityId": "capture.sample-stream",
+        "minimumVersion": 1
+      },
+      {
+        "capabilityId": "resource.chunked-generation",
+        "minimumVersion": 1
+      },
+      {
+        "capabilityId": "recording.session",
+        "minimumVersion": 1
+      },
+      {
+        "capabilityId": "microphoneCapture",
+        "minimumVersion": 1
+      },
+      {
+        "capabilityId": "displayCapture",
+        "minimumVersion": 1
+      },
+      {
+        "capabilityId": "cameraCapture",
+        "minimumVersion": 1
+      },
+      {
+        "capabilityId": "cursorSuppression",
+        "minimumVersion": 1
+      },
+      {
+        "capabilityId": "cursorTelemetry",
+        "minimumVersion": 1
+      }
+    ],
+    "title": "Corner bubble"
+  },
+  {
+    "canonical": {
+      "path": "recorders/camera-screen-cursor-recorder.mont",
+      "recorderId": "cameraScreenCursor",
+      "repository": "usemont/programmatic-tools",
+      "revision": "a2fc7873cc8caa5c9822237b760fec84aef12e57",
+      "sha256": "b57e080504ec2d241ed87574a0ea8d8be3ac7319a3d0d336a83ac788ac8f16ef"
+    },
+    "category": "Tools",
+    "compatibility": {
+      "recipeVersion": 1,
+      "recordingSessionVersion": 1
+    },
+    "description": "Corner tile recording layout with Paper theme and Halo cursor. Synthetic desktop, authored cursor and fictional AI presenter; no live capture.",
+    "example": {
+      "assets": [
+        {
+          "path": "assets/template-media/recorders/silence.m4a",
+          "sha256": "2ad850f642488893f15cf5a75fa5eb5ed05e9165a663c5066ee2dec90bbdcbbc"
+        },
+        {
+          "path": "assets/template-media/recorders/desktop.mp4",
+          "sha256": "eada7766f72bbeb939d64ca906dc11f12ad4d62e03f99f5224afa653decc990b"
+        },
+        {
+          "path": "assets/template-media/recorders/presenter.mp4",
+          "sha256": "b360b89f1ce1ed91e8407faa71c65ae2e6547e3b773762f223222972ca9e80da"
+        },
+        {
+          "path": "templates/tools/recorder-demo/storyboard.json",
+          "sha256": "df75a094025b548c9d5454505eda5fda60631efd4b36e07b4b47751974266e3d"
+        },
+        {
+          "path": "templates/tools/corner-tile/asset-catalog.json",
+          "sha256": "00ca456f0591b82d5010448240bc924d6ea619f1e70471e23aca5d46c03a4003"
+        }
+      ],
+      "id": "synthetic-recorder-demo",
+      "previews": {
+        "mp4": {
+          "path": "assets/previews/recorder-corner-tile.mp4",
+          "sha256": "26c15318b620f1e1c490a388c20e75d2645f1143505d95b89b730b3d84f40d19"
+        },
+        "gif": {
+          "path": "assets/previews/recorder-corner-tile.gif",
+          "sha256": "020e67adf644aad199cc001be416e122c87af8501a7e9d993c5bd16c0a2d98c5"
+        }
+      },
+      "recipe": {
+        "path": "templates/tools/corner-tile/recipe.json",
+        "sha256": "83e24508d12f1ceacea18e19722657f1a34f1bd9bf85649a8096d7652ee00530"
+      }
+    },
+    "name": "corner-tile",
+    "requiredCapabilities": [
+      {
+        "capabilityId": "span.transient-projection",
+        "minimumVersion": 1
+      },
+      {
+        "capabilityId": "capture.sample-stream",
+        "minimumVersion": 1
+      },
+      {
+        "capabilityId": "resource.chunked-generation",
+        "minimumVersion": 1
+      },
+      {
+        "capabilityId": "recording.session",
+        "minimumVersion": 1
+      },
+      {
+        "capabilityId": "microphoneCapture",
+        "minimumVersion": 1
+      },
+      {
+        "capabilityId": "displayCapture",
+        "minimumVersion": 1
+      },
+      {
+        "capabilityId": "cameraCapture",
+        "minimumVersion": 1
+      },
+      {
+        "capabilityId": "cursorSuppression",
+        "minimumVersion": 1
+      },
+      {
+        "capabilityId": "cursorTelemetry",
+        "minimumVersion": 1
+      }
+    ],
+    "title": "Corner tile"
+  },
+  {
+    "canonical": {
+      "path": "recorders/camera-screen-cursor-recorder.mont",
+      "recorderId": "cameraScreenCursor",
+      "repository": "usemont/programmatic-tools",
+      "revision": "a2fc7873cc8caa5c9822237b760fec84aef12e57",
+      "sha256": "b57e080504ec2d241ed87574a0ea8d8be3ac7319a3d0d336a83ac788ac8f16ef"
+    },
+    "category": "Tools",
+    "compatibility": {
+      "recipeVersion": 1,
+      "recordingSessionVersion": 1
+    },
+    "description": "Side by side recording layout with Glass theme and Dot cursor. Synthetic desktop, authored cursor and fictional AI presenter; no live capture.",
+    "example": {
+      "assets": [
+        {
+          "path": "assets/template-media/recorders/silence.m4a",
+          "sha256": "2ad850f642488893f15cf5a75fa5eb5ed05e9165a663c5066ee2dec90bbdcbbc"
+        },
+        {
+          "path": "assets/template-media/recorders/desktop.mp4",
+          "sha256": "eada7766f72bbeb939d64ca906dc11f12ad4d62e03f99f5224afa653decc990b"
+        },
+        {
+          "path": "assets/template-media/recorders/presenter.mp4",
+          "sha256": "b360b89f1ce1ed91e8407faa71c65ae2e6547e3b773762f223222972ca9e80da"
+        },
+        {
+          "path": "templates/tools/recorder-demo/storyboard.json",
+          "sha256": "df75a094025b548c9d5454505eda5fda60631efd4b36e07b4b47751974266e3d"
+        },
+        {
+          "path": "templates/tools/side-by-side/asset-catalog.json",
+          "sha256": "420120b28970bd72a2ff07cc7cee82844f1b761ffeb7262294385e957dac4ee2"
+        }
+      ],
+      "id": "synthetic-recorder-demo",
+      "previews": {
+        "mp4": {
+          "path": "assets/previews/recorder-side-by-side.mp4",
+          "sha256": "f3eeb28e955eff0e99817cac05ec655ab7613061cf8c4f3c1e4b25da05172864"
+        },
+        "gif": {
+          "path": "assets/previews/recorder-side-by-side.gif",
+          "sha256": "a986bfadfb0a665b08b16a1ade3b3dd79bf684880373c045bf52721eadb4b515"
+        }
+      },
+      "recipe": {
+        "path": "templates/tools/side-by-side/recipe.json",
+        "sha256": "9be7b218676061e9a489b4adea186221a6750fcf5dd5011f0f186ec341467752"
+      }
+    },
+    "name": "side-by-side",
+    "requiredCapabilities": [
+      {
+        "capabilityId": "span.transient-projection",
+        "minimumVersion": 1
+      },
+      {
+        "capabilityId": "capture.sample-stream",
+        "minimumVersion": 1
+      },
+      {
+        "capabilityId": "resource.chunked-generation",
+        "minimumVersion": 1
+      },
+      {
+        "capabilityId": "recording.session",
+        "minimumVersion": 1
+      },
+      {
+        "capabilityId": "microphoneCapture",
+        "minimumVersion": 1
+      },
+      {
+        "capabilityId": "displayCapture",
+        "minimumVersion": 1
+      },
+      {
+        "capabilityId": "cameraCapture",
+        "minimumVersion": 1
+      },
+      {
+        "capabilityId": "cursorSuppression",
+        "minimumVersion": 1
+      },
+      {
+        "capabilityId": "cursorTelemetry",
+        "minimumVersion": 1
+      }
+    ],
+    "title": "Side by side"
+  },
+  {
+    "canonical": {
+      "path": "recorders/camera-screen-cursor-recorder.mont",
+      "recorderId": "cameraScreenCursor",
+      "repository": "usemont/programmatic-tools",
+      "revision": "a2fc7873cc8caa5c9822237b760fec84aef12e57",
+      "sha256": "b57e080504ec2d241ed87574a0ea8d8be3ac7319a3d0d336a83ac788ac8f16ef"
+    },
+    "category": "Tools",
+    "compatibility": {
+      "recipeVersion": 1,
+      "recordingSessionVersion": 1
+    },
+    "description": "Presenter recording layout with Device theme and Marker cursor. Synthetic desktop, authored cursor and fictional AI presenter; no live capture.",
+    "example": {
+      "assets": [
+        {
+          "path": "assets/template-media/recorders/silence.m4a",
+          "sha256": "2ad850f642488893f15cf5a75fa5eb5ed05e9165a663c5066ee2dec90bbdcbbc"
+        },
+        {
+          "path": "assets/template-media/recorders/desktop.mp4",
+          "sha256": "eada7766f72bbeb939d64ca906dc11f12ad4d62e03f99f5224afa653decc990b"
+        },
+        {
+          "path": "assets/template-media/recorders/presenter.mp4",
+          "sha256": "b360b89f1ce1ed91e8407faa71c65ae2e6547e3b773762f223222972ca9e80da"
+        },
+        {
+          "path": "templates/tools/recorder-demo/storyboard.json",
+          "sha256": "df75a094025b548c9d5454505eda5fda60631efd4b36e07b4b47751974266e3d"
+        },
+        {
+          "path": "templates/tools/presenter/asset-catalog.json",
+          "sha256": "cbacffc7061c359aa6d14a7f5cacbdac95855f893144e55e4e289daf0f45f562"
+        }
+      ],
+      "id": "synthetic-recorder-demo",
+      "previews": {
+        "mp4": {
+          "path": "assets/previews/recorder-presenter.mp4",
+          "sha256": "cf148613f73e3c2cdcab9d7f9e6c37f0f7c665bcea589bd8077b49dc328cb750"
+        },
+        "gif": {
+          "path": "assets/previews/recorder-presenter.gif",
+          "sha256": "6a2e703c5aecd057b862f511f6877b9b598f0c722699c93575615c8691969b1c"
+        }
+      },
+      "recipe": {
+        "path": "templates/tools/presenter/recipe.json",
+        "sha256": "8b3dddedcc234dd066c1b545342a3441475a2572cf4bde8037e03f8e8ee76b2e"
+      }
+    },
+    "name": "presenter",
+    "requiredCapabilities": [
+      {
+        "capabilityId": "span.transient-projection",
+        "minimumVersion": 1
+      },
+      {
+        "capabilityId": "capture.sample-stream",
+        "minimumVersion": 1
+      },
+      {
+        "capabilityId": "resource.chunked-generation",
+        "minimumVersion": 1
+      },
+      {
+        "capabilityId": "recording.session",
+        "minimumVersion": 1
+      },
+      {
+        "capabilityId": "microphoneCapture",
+        "minimumVersion": 1
+      },
+      {
+        "capabilityId": "displayCapture",
+        "minimumVersion": 1
+      },
+      {
+        "capabilityId": "cameraCapture",
+        "minimumVersion": 1
+      },
+      {
+        "capabilityId": "cursorSuppression",
+        "minimumVersion": 1
+      },
+      {
+        "capabilityId": "cursorTelemetry",
+        "minimumVersion": 1
+      }
+    ],
+    "title": "Presenter"
+  },
+  {
+    "canonical": {
+      "path": "recorders/camera-screen-cursor-recorder.mont",
+      "recorderId": "cameraScreenCursor",
+      "repository": "usemont/programmatic-tools",
+      "revision": "a2fc7873cc8caa5c9822237b760fec84aef12e57",
+      "sha256": "b57e080504ec2d241ed87574a0ea8d8be3ac7319a3d0d336a83ac788ac8f16ef"
+    },
+    "category": "Tools",
+    "compatibility": {
+      "recipeVersion": 1,
+      "recordingSessionVersion": 1
+    },
+    "description": "Edge bubble recording layout with Bold theme and Spotlight cursor. Synthetic desktop, authored cursor and fictional AI presenter; no live capture.",
+    "example": {
+      "assets": [
+        {
+          "path": "assets/template-media/recorders/silence.m4a",
+          "sha256": "2ad850f642488893f15cf5a75fa5eb5ed05e9165a663c5066ee2dec90bbdcbbc"
+        },
+        {
+          "path": "assets/template-media/recorders/desktop.mp4",
+          "sha256": "eada7766f72bbeb939d64ca906dc11f12ad4d62e03f99f5224afa653decc990b"
+        },
+        {
+          "path": "assets/template-media/recorders/presenter.mp4",
+          "sha256": "b360b89f1ce1ed91e8407faa71c65ae2e6547e3b773762f223222972ca9e80da"
+        },
+        {
+          "path": "templates/tools/recorder-demo/storyboard.json",
+          "sha256": "df75a094025b548c9d5454505eda5fda60631efd4b36e07b4b47751974266e3d"
+        },
+        {
+          "path": "templates/tools/edge-bubble/asset-catalog.json",
+          "sha256": "cd3d980c3b1b4f65bc38b34299845e152078329560ae9fb503e928cdd95380b3"
+        }
+      ],
+      "id": "synthetic-recorder-demo",
+      "previews": {
+        "mp4": {
+          "path": "assets/previews/recorder-edge-bubble.mp4",
+          "sha256": "f371b816912005a01deb8fedea9cbef24b68f09427051de0ae5d2929c4d448e3"
+        },
+        "gif": {
+          "path": "assets/previews/recorder-edge-bubble.gif",
+          "sha256": "536d5d36cac55a5d5d65af67014667ba653c2abf56a15064888614c132d398c8"
+        }
+      },
+      "recipe": {
+        "path": "templates/tools/edge-bubble/recipe.json",
+        "sha256": "04219132c8600f255b29dedbd830b8bc48b61722a22d6f1878f9ecce503a4c03"
+      }
+    },
+    "name": "edge-bubble",
+    "requiredCapabilities": [
+      {
+        "capabilityId": "span.transient-projection",
+        "minimumVersion": 1
+      },
+      {
+        "capabilityId": "capture.sample-stream",
+        "minimumVersion": 1
+      },
+      {
+        "capabilityId": "resource.chunked-generation",
+        "minimumVersion": 1
+      },
+      {
+        "capabilityId": "recording.session",
+        "minimumVersion": 1
+      },
+      {
+        "capabilityId": "microphoneCapture",
+        "minimumVersion": 1
+      },
+      {
+        "capabilityId": "displayCapture",
+        "minimumVersion": 1
+      },
+      {
+        "capabilityId": "cameraCapture",
+        "minimumVersion": 1
+      },
+      {
+        "capabilityId": "cursorSuppression",
+        "minimumVersion": 1
+      },
+      {
+        "capabilityId": "cursorTelemetry",
+        "minimumVersion": 1
+      }
+    ],
+    "title": "Edge bubble"
+  },
+  {
+    "canonical": {
+      "path": "recorders/screen-cursor-recorder.mont",
+      "recorderId": "screenCursor",
+      "repository": "usemont/programmatic-tools",
+      "revision": "a2fc7873cc8caa5c9822237b760fec84aef12e57",
+      "sha256": "48e914077f909f866e7ac393e035b718bbcec4daf88bade6fe6073b90965bab4"
+    },
+    "category": "Tools",
+    "compatibility": {
+      "recipeVersion": 1,
+      "recordingSessionVersion": 1
+    },
+    "description": "Screen only recording layout with Ambient theme and Studio cursor. Synthetic desktop, authored cursor and fictional AI presenter; no live capture.",
+    "example": {
+      "assets": [
+        {
+          "path": "assets/template-media/recorders/silence.m4a",
+          "sha256": "2ad850f642488893f15cf5a75fa5eb5ed05e9165a663c5066ee2dec90bbdcbbc"
+        },
+        {
+          "path": "assets/template-media/recorders/desktop.mp4",
+          "sha256": "eada7766f72bbeb939d64ca906dc11f12ad4d62e03f99f5224afa653decc990b"
+        },
+        {
+          "path": "templates/tools/recorder-demo/storyboard.json",
+          "sha256": "df75a094025b548c9d5454505eda5fda60631efd4b36e07b4b47751974266e3d"
+        },
+        {
+          "path": "templates/tools/screen-only/asset-catalog.json",
+          "sha256": "65da79fb22fda054e1e2f3debf49d337ae9335ca7262c7cfc14fe2cd310250cb"
+        }
+      ],
+      "id": "synthetic-recorder-demo",
+      "previews": {
+        "mp4": {
+          "path": "assets/previews/recorder-screen-only.mp4",
+          "sha256": "215b61f627d367a9a70f2317b59fd7cad49c0b65149f0221e8450466482f999e"
+        },
+        "gif": {
+          "path": "assets/previews/recorder-screen-only.gif",
+          "sha256": "44a30d5a209fec817d01953a160383e63e29794ad2d6e673c45936cb58b8b58c"
+        }
+      },
+      "recipe": {
+        "path": "templates/tools/screen-only/recipe.json",
+        "sha256": "234737196dfd4dbcd2c2faab42625da3d0bf5f50c244d358f4ca086998ed161b"
+      }
+    },
+    "name": "screen-only",
+    "requiredCapabilities": [
+      {
+        "capabilityId": "span.transient-projection",
+        "minimumVersion": 1
+      },
+      {
+        "capabilityId": "capture.sample-stream",
+        "minimumVersion": 1
+      },
+      {
+        "capabilityId": "resource.chunked-generation",
+        "minimumVersion": 1
+      },
+      {
+        "capabilityId": "recording.session",
+        "minimumVersion": 1
+      },
+      {
+        "capabilityId": "microphoneCapture",
+        "minimumVersion": 1
+      },
+      {
+        "capabilityId": "displayCapture",
+        "minimumVersion": 1
+      },
+      {
+        "capabilityId": "cursorSuppression",
+        "minimumVersion": 1
+      },
+      {
+        "capabilityId": "cursorTelemetry",
+        "minimumVersion": 1
+      }
+    ],
+    "title": "Screen only"
+  },
+  {
+    "canonical": {
+      "path": "recorders/camera-screen-cursor-recorder.mont",
+      "recorderId": "cameraScreenCursor",
+      "repository": "usemont/programmatic-tools",
+      "revision": "a2fc7873cc8caa5c9822237b760fec84aef12e57",
+      "sha256": "b57e080504ec2d241ed87574a0ea8d8be3ac7319a3d0d336a83ac788ac8f16ef"
+    },
+    "category": "Tools",
+    "compatibility": {
+      "recipeVersion": 1,
+      "recordingSessionVersion": 1
+    },
+    "description": "Cinematic recording layout with Paper theme and Dot cursor. Synthetic desktop, authored cursor and fictional AI presenter; no live capture.",
+    "example": {
+      "assets": [
+        {
+          "path": "assets/template-media/recorders/silence.m4a",
+          "sha256": "2ad850f642488893f15cf5a75fa5eb5ed05e9165a663c5066ee2dec90bbdcbbc"
+        },
+        {
+          "path": "assets/template-media/recorders/desktop.mp4",
+          "sha256": "eada7766f72bbeb939d64ca906dc11f12ad4d62e03f99f5224afa653decc990b"
+        },
+        {
+          "path": "assets/template-media/recorders/presenter.mp4",
+          "sha256": "b360b89f1ce1ed91e8407faa71c65ae2e6547e3b773762f223222972ca9e80da"
+        },
+        {
+          "path": "templates/tools/recorder-demo/storyboard.json",
+          "sha256": "df75a094025b548c9d5454505eda5fda60631efd4b36e07b4b47751974266e3d"
+        },
+        {
+          "path": "templates/tools/cinematic/asset-catalog.json",
+          "sha256": "76c4b8b658a24de3367ffe0787774597c22c324d71740f20536458dddc85ca6f"
+        }
+      ],
+      "id": "synthetic-recorder-demo",
+      "previews": {
+        "mp4": {
+          "path": "assets/previews/recorder-cinematic.mp4",
+          "sha256": "6e644215cc21e67e18b818dd1a4ead7323906f6b5369f5029ad673e0d1f1faa8"
+        },
+        "gif": {
+          "path": "assets/previews/recorder-cinematic.gif",
+          "sha256": "01f67f173310eec33783c8d0e594aa9bc60149090aee71fea1a88b02679165b7"
+        }
+      },
+      "recipe": {
+        "path": "templates/tools/cinematic/recipe.json",
+        "sha256": "14f3a4bdc7f03cdc9fa397a9ccf4c3d0d6575b0cd55f3c4774b1d7bdb99e8906"
+      }
+    },
+    "name": "cinematic",
+    "requiredCapabilities": [
+      {
+        "capabilityId": "span.transient-projection",
+        "minimumVersion": 1
+      },
+      {
+        "capabilityId": "capture.sample-stream",
+        "minimumVersion": 1
+      },
+      {
+        "capabilityId": "resource.chunked-generation",
+        "minimumVersion": 1
+      },
+      {
+        "capabilityId": "recording.session",
+        "minimumVersion": 1
+      },
+      {
+        "capabilityId": "microphoneCapture",
+        "minimumVersion": 1
+      },
+      {
+        "capabilityId": "displayCapture",
+        "minimumVersion": 1
+      },
+      {
+        "capabilityId": "cameraCapture",
+        "minimumVersion": 1
+      },
+      {
+        "capabilityId": "cursorSuppression",
+        "minimumVersion": 1
+      },
+      {
+        "capabilityId": "cursorTelemetry",
+        "minimumVersion": 1
+      }
+    ],
+    "title": "Cinematic"
+  },
+  {
+    "canonical": {
+      "path": "recorders/camera-screen-cursor-recorder.mont",
+      "recorderId": "cameraScreenCursor",
+      "repository": "usemont/programmatic-tools",
+      "revision": "a2fc7873cc8caa5c9822237b760fec84aef12e57",
+      "sha256": "b57e080504ec2d241ed87574a0ea8d8be3ac7319a3d0d336a83ac788ac8f16ef"
+    },
+    "category": "Tools",
+    "compatibility": {
+      "recipeVersion": 1,
+      "recordingSessionVersion": 1
+    },
+    "description": "Shorts stack recording layout with Glass theme and Marker cursor. Synthetic desktop, authored cursor and fictional AI presenter; no live capture.",
+    "example": {
+      "assets": [
+        {
+          "path": "assets/template-media/recorders/silence.m4a",
+          "sha256": "2ad850f642488893f15cf5a75fa5eb5ed05e9165a663c5066ee2dec90bbdcbbc"
+        },
+        {
+          "path": "assets/template-media/recorders/desktop.mp4",
+          "sha256": "eada7766f72bbeb939d64ca906dc11f12ad4d62e03f99f5224afa653decc990b"
+        },
+        {
+          "path": "assets/template-media/recorders/presenter.mp4",
+          "sha256": "b360b89f1ce1ed91e8407faa71c65ae2e6547e3b773762f223222972ca9e80da"
+        },
+        {
+          "path": "templates/tools/recorder-demo/storyboard.json",
+          "sha256": "df75a094025b548c9d5454505eda5fda60631efd4b36e07b4b47751974266e3d"
+        },
+        {
+          "path": "templates/tools/shorts-stack/asset-catalog.json",
+          "sha256": "f09e11d5132691475557ccdf697d25133cf8e755f77f77a0513f02f8de5e3ebc"
+        }
+      ],
+      "id": "synthetic-recorder-demo",
+      "previews": {
+        "mp4": {
+          "path": "assets/previews/recorder-shorts-stack.mp4",
+          "sha256": "e4431d1ed72be331fe6921bd999d0f47318e8a47c536745247d087192b792920"
+        },
+        "gif": {
+          "path": "assets/previews/recorder-shorts-stack.gif",
+          "sha256": "02e6ac24f6c9196abdf3c26474e6c69dbb309f20451809ebfbb9c85b5d171dc0"
+        }
+      },
+      "recipe": {
+        "path": "templates/tools/shorts-stack/recipe.json",
+        "sha256": "c40c772a965730af74d7fd78c0a222bb95c081f1a657620c7f6b230c913cc1d5"
+      }
+    },
+    "name": "shorts-stack",
+    "requiredCapabilities": [
+      {
+        "capabilityId": "span.transient-projection",
+        "minimumVersion": 1
+      },
+      {
+        "capabilityId": "capture.sample-stream",
+        "minimumVersion": 1
+      },
+      {
+        "capabilityId": "resource.chunked-generation",
+        "minimumVersion": 1
+      },
+      {
+        "capabilityId": "recording.session",
+        "minimumVersion": 1
+      },
+      {
+        "capabilityId": "microphoneCapture",
+        "minimumVersion": 1
+      },
+      {
+        "capabilityId": "displayCapture",
+        "minimumVersion": 1
+      },
+      {
+        "capabilityId": "cameraCapture",
+        "minimumVersion": 1
+      },
+      {
+        "capabilityId": "cursorSuppression",
+        "minimumVersion": 1
+      },
+      {
+        "capabilityId": "cursorTelemetry",
+        "minimumVersion": 1
+      }
+    ],
+    "title": "Shorts stack"
+  },
+  {
+    "canonical": {
+      "path": "recorders/camera-screen-cursor-recorder.mont",
+      "recorderId": "cameraScreenCursor",
+      "repository": "usemont/programmatic-tools",
+      "revision": "a2fc7873cc8caa5c9822237b760fec84aef12e57",
+      "sha256": "b57e080504ec2d241ed87574a0ea8d8be3ac7319a3d0d336a83ac788ac8f16ef"
+    },
+    "category": "Tools",
+    "compatibility": {
+      "recipeVersion": 1,
+      "recordingSessionVersion": 1
+    },
+    "description": "Square post recording layout with Device theme and Spotlight cursor. Synthetic desktop, authored cursor and fictional AI presenter; no live capture.",
+    "example": {
+      "assets": [
+        {
+          "path": "assets/template-media/recorders/silence.m4a",
+          "sha256": "2ad850f642488893f15cf5a75fa5eb5ed05e9165a663c5066ee2dec90bbdcbbc"
+        },
+        {
+          "path": "assets/template-media/recorders/desktop.mp4",
+          "sha256": "eada7766f72bbeb939d64ca906dc11f12ad4d62e03f99f5224afa653decc990b"
+        },
+        {
+          "path": "assets/template-media/recorders/presenter.mp4",
+          "sha256": "b360b89f1ce1ed91e8407faa71c65ae2e6547e3b773762f223222972ca9e80da"
+        },
+        {
+          "path": "templates/tools/recorder-demo/storyboard.json",
+          "sha256": "df75a094025b548c9d5454505eda5fda60631efd4b36e07b4b47751974266e3d"
+        },
+        {
+          "path": "templates/tools/square-post/asset-catalog.json",
+          "sha256": "c9ecf9d81fdab514dd07f9162af88db11cc6abc54a8a9cd36f6a6ee758d41383"
+        }
+      ],
+      "id": "synthetic-recorder-demo",
+      "previews": {
+        "mp4": {
+          "path": "assets/previews/recorder-square-post.mp4",
+          "sha256": "3f2e921addfaae64ac7ca62a0b477c32772a2d82a310283d134bed0492c57318"
+        },
+        "gif": {
+          "path": "assets/previews/recorder-square-post.gif",
+          "sha256": "3708a179a6bff6a4a4152b5090a7f6d2b51915dd59a57444845809ec9615161a"
+        }
+      },
+      "recipe": {
+        "path": "templates/tools/square-post/recipe.json",
+        "sha256": "85d4ffd1933bcac7c5065be93515d12f290c6f12e7a5e7253a54e1a13a1a6f52"
+      }
+    },
+    "name": "square-post",
+    "requiredCapabilities": [
+      {
+        "capabilityId": "span.transient-projection",
+        "minimumVersion": 1
+      },
+      {
+        "capabilityId": "capture.sample-stream",
+        "minimumVersion": 1
+      },
+      {
+        "capabilityId": "resource.chunked-generation",
+        "minimumVersion": 1
+      },
+      {
+        "capabilityId": "recording.session",
+        "minimumVersion": 1
+      },
+      {
+        "capabilityId": "microphoneCapture",
+        "minimumVersion": 1
+      },
+      {
+        "capabilityId": "displayCapture",
+        "minimumVersion": 1
+      },
+      {
+        "capabilityId": "cameraCapture",
+        "minimumVersion": 1
+      },
+      {
+        "capabilityId": "cursorSuppression",
+        "minimumVersion": 1
+      },
+      {
+        "capabilityId": "cursorTelemetry",
+        "minimumVersion": 1
+      }
+    ],
+    "title": "Square post"
+  }
+  ],
   "workflows": [
     {
       "name": "explainer",

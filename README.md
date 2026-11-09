@@ -6,7 +6,7 @@
 
 Ready-to-run video workflows and editable motion templates for [Mont CLI](https://github.com/usemont/mont-cli).
 
-[Try a template](#try-a-template) · [Kinetic typography](#kinetic-typography) · [Mock UI](#mock-ui) · [Notifications](#notifications) · [Social posts](#social-posts) · [Subscribe & follow](#subscribe--follow) · [Cursors](#cursors) · [Transitions](#transitions) · [Terminal showcase](#terminal-showcase) · [Workflows](#workflows) · [Contribute](#contribute)
+[Try a template](#try-a-template) · [Kinetic typography](#kinetic-typography) · [Mock UI](#mock-ui) · [Notifications](#notifications) · [Social posts](#social-posts) · [Subscribe & follow](#subscribe--follow) · [Cursors](#cursors) · [Transitions](#transitions) · [Tools](#tools) · [Terminal showcase](#terminal-showcase) · [Workflows](#workflows) · [Contribute](#contribute)
 
 ## Try a template
 
@@ -137,6 +137,28 @@ Square A/B previews. Each template includes a standalone scene and a reusable li
 <tr>
 <td align="center" valign="top"><a href="templates/transitions/object-flyby-wipe-transition"><img src="assets/previews/object-flyby-wipe-transition.gif" width="360" alt="Object Flyby Wipe: square transition from animated scene A to scene B"></a><br><a href="templates/transitions/object-flyby-wipe-transition"><strong>Object Flyby Wipe</strong></a><br><code>mont templates preview object-flyby-wipe-transition</code></td>
 <td align="center" valign="top"><a href="templates/transitions/noise-field-dissolve-transition"><img src="assets/previews/noise-field-dissolve-transition.gif" width="360" alt="Noise Field Dissolve: square transition from animated scene A to scene B"></a><br><a href="templates/transitions/noise-field-dissolve-transition"><strong>Noise Field Dissolve</strong></a><br><code>mont templates preview noise-field-dissolve-transition</code></td>
+</tr>
+</table>
+
+## Tools
+
+[Editable synthetic recorder examples](templates/tools), using the SDK's recording layouts, themes, and cursor styles.
+
+<table>
+<tr>
+<td align="center" valign="top"><a href="templates/tools/corner-bubble"><img src="assets/previews/recorder-corner-bubble.gif" width="260" alt="Corner bubble: landscape desktop and circular presenter with Studio styling"></a><br><a href="templates/tools/corner-bubble"><strong>Corner bubble</strong></a><br><code>mont tools preview corner-bubble</code></td>
+<td align="center" valign="top"><a href="templates/tools/corner-tile"><img src="assets/previews/recorder-corner-tile.gif" width="260" alt="Corner tile: landscape desktop and presenter tile with Paper styling"></a><br><a href="templates/tools/corner-tile"><strong>Corner tile</strong></a><br><code>mont tools preview corner-tile</code></td>
+<td align="center" valign="top"><a href="templates/tools/side-by-side"><img src="assets/previews/recorder-side-by-side.gif" width="260" alt="Side by side: equal-height screen and presenter with Glass styling"></a><br><a href="templates/tools/side-by-side"><strong>Side by side</strong></a><br><code>mont tools preview side-by-side</code></td>
+</tr>
+<tr>
+<td align="center" valign="top"><a href="templates/tools/presenter"><img src="assets/previews/recorder-presenter.gif" width="260" alt="Presenter layout with desktop, camera and Device styling"></a><br><a href="templates/tools/presenter"><strong>Presenter</strong></a><br><code>mont tools preview presenter</code></td>
+<td align="center" valign="top"><a href="templates/tools/edge-bubble"><img src="assets/previews/recorder-edge-bubble.gif" width="260" alt="Edge bubble: landscape desktop and presenter with Bold styling"></a><br><a href="templates/tools/edge-bubble"><strong>Edge bubble</strong></a><br><code>mont tools preview edge-bubble</code></td>
+<td align="center" valign="top"><a href="templates/tools/screen-only"><img src="assets/previews/recorder-screen-only.gif" width="260" alt="Screen only: cursor-follow desktop with Ambient styling"></a><br><a href="templates/tools/screen-only"><strong>Screen only</strong></a><br><code>mont tools preview screen-only</code></td>
+</tr>
+<tr>
+<td align="center" valign="top"><a href="templates/tools/cinematic"><img src="assets/previews/recorder-cinematic.gif" width="260" alt="Cinematic landscape recording with Paper styling"></a><br><a href="templates/tools/cinematic"><strong>Cinematic</strong></a><br><code>mont tools preview cinematic</code></td>
+<td align="center" valign="top"><a href="templates/tools/shorts-stack"><img src="assets/previews/recorder-shorts-stack.gif" width="180" alt="Shorts stack: portrait screen and presenter with Glass styling"></a><br><a href="templates/tools/shorts-stack"><strong>Shorts stack</strong></a><br><code>mont tools preview shorts-stack</code></td>
+<td align="center" valign="top"><a href="templates/tools/square-post"><img src="assets/previews/recorder-square-post.gif" width="260" alt="Square post: screen and presenter with Device styling"></a><br><a href="templates/tools/square-post"><strong>Square post</strong></a><br><code>mont tools preview square-post</code></td>
 </tr>
 </table>
 

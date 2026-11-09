@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1280, initial-scale=1">
+<title>Mont · synthetic recording workspace</title>
+<style>
+:root{color-scheme:light;font-family:Arial,Helvetica,sans-serif;color:#f4f3f0;font-size:14px;font-synthesis:none}*{box-sizing:border-box}body{margin:0;width:1280px;height:800px;overflow:hidden;cursor:none!important}button,input{font:inherit;cursor:none!important}button{border:0}#desktop{position:relative;width:1280px;height:800px;overflow:hidden;background:#d9dfd8;background-image:radial-gradient(ellipse at 15% 25%,#eff0d7 0%,transparent 53%),linear-gradient(125deg,#d7dfd8 20%,#b3c8c1 68%,#91aaa8)}.wallpaper-ribbon{position:absolute;width:1100px;height:720px;left:440px;top:160px;border:100px solid #edf0d966;border-radius:50%;transform:rotate(-34deg)}.wallpaper-ribbon.two{left:680px;top:200px;width:800px;height:540px;border-width:74px;border-color:#f2d9b842}.system-bar{height:36px;padding:0 24px;display:flex;align-items:center;gap:24px;background:#eef1e4b8;border-bottom:1px solid #ffffff50;color:#344b45;font-size:12px}.atelier{font-size:15px;font-weight:800;letter-spacing:-.7px}.system-right{margin-left:auto;display:flex;gap:20px;align-items:center}.synthetic-label{font-size:9px;letter-spacing:1.8px;border:1px solid #526b5840;border-radius:20px;padding:4px 9px}.window{position:absolute;overflow:hidden;border-radius:15px;box-shadow:0 25px 65px #29433d35,0 2px 9px #283c3b20;border:1px solid #ffffff55}.browser{left:48px;top:83px;width:950px;height:646px;background:#1d2026;z-index:3}.browser-chrome{height:48px;display:flex;align-items:center;padding:0 17px;gap:18px;background:#e7e9e2;color:#5b655e;border-bottom:1px solid #10151815}.window-controls{display:flex;gap:6px}.window-controls i{display:block;width:8px;height:8px;background:#9ca99d;border-radius:50%}.window-controls i:first-child{background:#c58f7c}.address{font-size:11px;background:#f5f6f0;padding:8px 14px;border-radius:7px;width:454px;display:flex;gap:9px}.address span{color:#829081}.chrome-end{margin-left:auto;font-size:17px;letter-spacing:2px}.app-bar{height:62px;padding:0 20px;display:flex;align-items:center;border-bottom:1px solid #ffffff0d;gap:19px}.mont-brand{font-size:25px;font-weight:800;letter-spacing:-1.8px}.mont-brand b{color:#b8d8b3}.divider{width:1px;height:24px;background:#ffffff1b}.project-title{display:flex;align-items:center;min-width:285px;gap:7px}.project-name{font-size:14px;min-height:31px;border:1px solid transparent;border-radius:5px;padding:6px 7px}.project-name.editing{background:#2d3438;border-color:#a6c59e}.type-caret{display:inline-block;width:1px;height:14px;background:#dce6d9;vertical-align:-2px;margin-left:1px}.saved{color:#91a193;font-size:10px;white-space:nowrap}.app-actions{margin-left:auto;display:flex;align-items:center;gap:12px}.small-pill{font-size:11px;padding:7px 9px;border:1px solid #ffffff21;border-radius:6px;color:#c1c8c2}.primary{background:#c2dcb4;color:#253527;font-weight:700;border-radius:7px;padding:10px 16px}.primary.pressed{background:#91b77f;transform:translateY(1px)}.body{height:536px;display:flex}.sidebar{width:176px;flex:none;background:#20242a;padding:22px 15px;border-right:1px solid #ffffff0b}.eyebrow{font-size:9px;letter-spacing:1.6px;color:#9aaba0;font-weight:700}.nav-item{height:39px;display:flex;align-items:center;gap:10px;color:#9ea6a9;font-size:12px;border-radius:6px;margin-top:5px;padding:0 10px}.nav-item.active{color:#e4e9df;background:#30392f}.nav-icon{font-size:16px;color:#9aa999;width:16px;text-align:center}.library-rule{height:1px;background:#ffffff10;margin:18px 0}.import-button{margin-top:16px;border:1px dashed #738571;border-radius:7px;background:#29322d;color:#d4e4cd;height:49px;width:100%;font-size:12px}.import-button.pressed{background:#3c4d39}.asset-thumb{height:82px;background:#d8b7a2;border-radius:6px;position:relative;overflow:hidden;margin-top:16px}.asset-thumb:before{content:"";position:absolute;width:90px;height:90px;background:#586952;border-radius:50%;left:55px;top:21px}.asset-thumb span{position:relative;font-size:10px;color:#2c3b30;font-weight:700;display:block;padding:10px}.asset-name{font-size:10px;color:#b0bbb1;margin-top:7px;display:flex;justify-content:space-between}.asset-empty{font-size:11px;line-height:1.7;color:#7f8b89;margin-top:17px}.sidebar-footer{margin-top:85px;font-size:10px;color:#7f8b89;line-height:1.7}.workspace{width:774px;background:#181b20}.preview-area{height:329px;position:relative;display:flex;align-items:center;justify-content:center;background:radial-gradient(ellipse at 50% 15%,#2d3339,#1b1e24 75%)}.preview-badge{position:absolute;left:18px;top:15px;color:#829087;font-size:9px;letter-spacing:1px}.canvas{position:relative;width:490px;height:276px;overflow:hidden;background:#e4d3bd;color:#253d31;box-shadow:0 8px 28px #0004}.canvas-grain{position:absolute;inset:0;background:linear-gradient(125deg,#eddbc3,#d8b49a)}.poster-line{position:absolute;left:30px;top:27px;font-size:8px;letter-spacing:1.8px;font-weight:bold}.poster-copy{position:absolute;left:29px;top:78px;font-weight:800;font-size:40px;line-height:.99;letter-spacing:-2.1px;z-index:2}.poster-footer{position:absolute;left:31px;bottom:24px;font-size:9px;letter-spacing:.5px;z-index:2}.poster-circle{width:215px;height:215px;border-radius:50%;background:#506b50;position:absolute;right:-28px;top:70px}.poster-leaf{position:absolute;width:140px;height:221px;border-radius:150px 0 150px 0;right:53px;top:-36px;background:#c38565;transform:rotate(25deg)}.poster-pin{position:absolute;right:32px;top:33px;width:29px;height:29px;border-radius:50%;background:#ece8c9}.poster-caption{position:absolute;bottom:21px;left:130px;right:24px;text-align:center;font-size:12px;line-height:1.3;font-weight:700;background:#222b23ed;padding:8px 11px;color:#fff;border-radius:4px;z-index:5}.empty-preview{position:absolute;inset:0;background:#252b2aeF;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:13px;color:#cbd7c8}.empty-mark{width:53px;height:53px;border:1px solid #829b77;border-radius:15px;display:grid;place-items:center;font-size:29px;color:#bfd1b5}.empty-preview h1{font-size:20px;margin:0;font-weight:500;letter-spacing:-.5px}.empty-preview p{font-size:11px;margin:0;color:#8c9e90}.transport{height:42px;display:flex;align-items:center;padding:0 20px;gap:15px;border-top:1px solid #ffffff09;border-bottom:1px solid #ffffff0d;font-size:10px;color:#879389}.play-button{width:24px;height:24px;background:#303832;border-radius:5px;display:grid;place-items:center;color:#d4e1cf;font-size:12px}.play-button.playing{background:#b8d4a9;color:#294129}.timecode{font-variant-numeric:tabular-nums;min-width:106px}.transport-right{margin-left:auto;display:flex;align-items:center;gap:15px}.caption-button{border-radius:5px;padding:6px 9px;border:1px solid #ffffff20;color:#b3bdb3;font-size:10px;background:transparent}.caption-button.active{color:#d3e9c8;border-color:#7a9d6c;background:#34412e}.timeline{height:165px;position:relative;padding:0 20px}.ruler{height:27px;display:flex;justify-content:space-between;color:#718077;font-size:8px;padding:9px 0 0 42px}.track{height:43px;display:flex;align-items:center;gap:10px;margin:5px 0}.track-icon{width:25px;color:#748476;font-size:11px}.clip{width:576px;height:39px;border:1px solid #819479;background:#465b42;border-radius:5px;position:relative;overflow:hidden;padding:11px 12px;color:#dfebd7;font-size:10px}.clip-pattern{position:absolute;inset:0;background:repeating-linear-gradient(110deg,transparent 0 57px,#c1d6ac1c 58px 80px,transparent 81px 112px)}.clip span{position:relative}.caption-track{height:25px;background:#6d5b3f;border-color:#b09a74;padding:5px 12px;color:#f0dfc3}.empty-track{width:576px;height:40px;border:1px dashed #3b453e;border-radius:5px;display:grid;place-items:center;font-size:10px;color:#667a6b}.playhead{position:absolute;top:26px;bottom:12px;width:1px;background:#d8e8cb;left:62px;z-index:4}.playhead:before{content:"";position:absolute;top:-3px;left:-3px;width:7px;height:7px;border-radius:1px;background:#d8e8cb}.timeline-status{font-size:9px;color:#738478;margin-left:36px;margin-top:7px}.notes{left:1017px;top:153px;width:237px;height:357px;background:#f7f2dc;color:#4c5947;z-index:2;transform:rotate(1deg)}.notes-bar{height:39px;padding:0 15px;border-bottom:1px solid #756e5120;display:flex;align-items:center;justify-content:space-between;font-size:11px;color:#777e65}.notes-paper{padding:20px 19px}.note-date{font-size:9px;letter-spacing:1.5px;color:#96967b}.notes h2{font-size:23px;line-height:1.15;font-weight:500;letter-spacing:-1px;margin:11px 0 17px}.notes p{font-size:12px;line-height:1.65;color:#84856e;margin:0 0 20px}.checklist{font-size:11px;line-height:1.5;display:flex;flex-direction:column;gap:13px}.check{color:#557455;font-size:13px;margin-right:6px}.note-tag{position:absolute;bottom:19px;left:19px;font-size:9px;letter-spacing:.5px;border:1px solid #b6b296;padding:5px 8px;border-radius:20px;color:#929071}.desktop-file{position:absolute;left:1080px;top:560px;width:112px;text-align:center;color:#324e48;font-size:11px}.file-icon{width:48px;height:57px;background:#f1efdd;margin:0 auto 9px;border-radius:5px 13px 5px 5px;box-shadow:0 3px 6px #46605720;display:grid;place-items:center;font-weight:700;font-size:12px;color:#6d8975}.dock{position:absolute;bottom:14px;left:474px;height:48px;background:#eaf0e0b3;border:1px solid #ffffff65;border-radius:15px;display:flex;align-items:center;padding:6px;gap:7px}.dock-app{width:35px;height:35px;border-radius:10px;display:grid;place-items:center;font-weight:800;font-size:18px;background:#f4f1da;color:#5e7665}.dock-app.mont{background:#293a2d;color:#d4e9c8}.dock-app.files{background:#6d9585;color:#e4efe5}.dock-app.notes-app{background:#eadca9;color:#8a815f}.dock-separator{height:24px;width:1px;background:#627c6140;margin:0 2px}.dock-label{padding:0 10px;font-size:9px;color:#60735f;letter-spacing:1px}.files-modal{left:184px;top:258px;width:610px;height:355px;background:#f1f1e9;color:#405244;z-index:6;border:1px solid #fff;transform-origin:50% 60%}.files-head{height:51px;display:flex;align-items:center;justify-content:space-between;padding:0 21px;border-bottom:1px solid #415a411a;font-size:13px;font-weight:700}.files-body{height:239px;display:flex}.files-sidebar{padding:18px 13px;width:136px;border-right:1px solid #415a411a;color:#849080;font-size:11px;line-height:2.7}.files-sidebar .selected{background:#dfe5d7;border-radius:5px;padding-left:8px;color:#48613f}.file-list{padding:19px 19px;width:474px}.file-path{font-size:9px;letter-spacing:1px;color:#8a9683;margin-bottom:18px}.file-columns{font-size:9px;color:#929e8e;display:flex;justify-content:space-between;padding:0 11px 11px}.file-row{height:48px;border-radius:6px;padding:0 11px;display:flex;align-items:center;gap:12px;font-size:12px;border:1px solid transparent}.file-row.selected{background:#d5e3cb;border-color:#a1ba91}.mini-video{background:#be8e71;color:#f9edcf;border-radius:4px;width:27px;height:28px;display:grid;place-items:center;font-size:11px}.file-size{margin-left:auto;color:#8a9783;font-size:10px}.other-row{color:#84907c;margin-top:5px}.files-foot{height:65px;border-top:1px solid #415a411a;display:flex;align-items:center;padding:0 22px;gap:12px}.file-count{font-size:10px;color:#929e89;margin-right:auto}.cancel{background:transparent;color:#77856f;font-size:11px;padding:9px}.files-add{background:#3f5a3c;color:#f0f4e9;padding:10px 15px;border-radius:6px;font-size:11px}.files-add.disabled{opacity:.35}.export-toast{position:absolute;left:711px;top:148px;width:265px;background:#f0f4e8;color:#334a33;padding:17px;border:1px solid #ffffff;border-radius:10px;box-shadow:0 14px 30px #0003;z-index:8;transform-origin:80% 0}.export-title{font-weight:700;font-size:13px;display:flex;gap:9px;align-items:center}.success-dot{background:#507145;color:#fff;border-radius:50%;width:21px;height:21px;display:grid;place-items:center;font-size:12px}.export-meta{font-size:10px;color:#839179;margin:10px 0 12px 30px}.export-progress{height:3px;background:#d7dfcb;border-radius:3px;overflow:hidden;margin-left:30px}.export-progress i{height:100%;background:#83a472;display:block}.hovered{box-shadow:0 0 0 1px #b8d4a96b}.file-row.hovered{box-shadow:inset 0 0 0 1px #a1ba9180}[hidden]{display:none!important}
+.caption-button{width:110px}.transport-right>span{width:40px}
+</style>
+</head>
+<body>
+<main id="desktop" aria-label="Original synthetic desktop; not a real screen capture">
+ <div class="wallpaper-ribbon"></div><div class="wallpaper-ribbon two"></div>
+ <header class="system-bar"><strong class="atelier">atelier.</strong><span>Workspace</span><span>File</span><span>View</span><div class="system-right"><span class="synthetic-label">SYNTHETIC DEMO</span><span>Connected</span><span>Mon 09:41</span></div></header>
+ <aside class="window notes"><div class="notes-bar"><span>Field notes</span><span>•••</span></div><div class="notes-paper"><div class="note-date">TODAY / MAKE SOMETHING</div><h2>A little<br>launch.</h2><p>A small story.<br>A clear point of view.</p><div class="checklist"><div><span class="check" id="note-import">□</span>Start with a good moment</div><div><span class="check" id="note-caption">□</span>Make the message clear</div><div><span class="check" id="note-export">□</span>Share something useful</div></div><span class="note-tag">less, but better</span></div></aside>
+ <div class="desktop-file"><div class="file-icon">MOV</div>studio-take.mp4</div>
+ <section class="window browser" aria-label="Synthetic Mont editor">
+  <div class="browser-chrome"><div class="window-controls"><i></i><i></i><i></i></div><span>‹ &nbsp; ›</span><div class="address"><span>▣</span>mont.video / studio / new-project</div><div class="chrome-end">+ &nbsp; ···</div></div>
+  <div class="app-bar"><div class="mont-brand">mont<b>.</b></div><div class="divider"></div><div class="project-title"><div class="project-name" id="project-name"><span id="title-text">Untitled video</span><i class="type-caret" id="type-caret" hidden></i></div><span class="saved" id="save-status">Draft</span></div><div class="app-actions"><span class="small-pill">16:9</span><button class="primary" id="export-button">Export ↗</button></div></div>
+  <div class="body"><aside class="sidebar"><div class="eyebrow">YOUR TOOLKIT</div><div class="nav-item active"><span class="nav-icon">▧</span>Media</div><div class="nav-item"><span class="nav-icon">T</span>Text</div><div class="nav-item"><span class="nav-icon">♫</span>Audio</div><div class="nav-item"><span class="nav-icon">◇</span>Elements</div><div class="library-rule"></div><div class="eyebrow">PROJECT MEDIA</div><button class="import-button" id="import-button">+ &nbsp; Import media</button><div id="imported-asset" hidden><div class="asset-thumb"><span>SMALL IDEAS.<br>BIG MOVES.</span></div><div class="asset-name"><span>studio-take.mp4</span><span>0:08</span></div></div><p class="asset-empty" id="asset-empty">Your next story<br>starts right here.</p><div class="sidebar-footer">All changes stay<br>in your workspace.</div></aside>
+   <div class="workspace"><div class="preview-area"><span class="preview-badge">PREVIEW · 50%</span><div class="canvas"><div class="canvas-grain"></div><div class="poster-leaf" id="poster-leaf"></div><div class="poster-circle" id="poster-circle"></div><div class="poster-pin"></div><div class="poster-line">A LITTLE LAUNCH / VOL. 01</div><div class="poster-copy">SMALL<br>IDEAS.<br>BIG MOVES.</div><div class="poster-footer">Made with intention. &nbsp; ↗</div><div class="poster-caption" id="poster-caption" hidden>Every great thing starts small.</div><div class="empty-preview" id="empty-preview"><div class="empty-mark">+</div><h1>A blank canvas. A new story.</h1><p>Bring a moment into your timeline.</p></div></div></div>
+   <div class="transport"><button class="play-button" id="play-button">▶</button><span class="timecode" id="timecode">00:00.00 / 00:08.00</span><div class="transport-right"><button class="caption-button" id="caption-button">CC &nbsp; Captions</button><span>Fit &nbsp;⌄</span></div></div>
+   <div class="timeline"><div class="ruler"><span>00:00</span><span>00:02</span><span>00:04</span><span>00:06</span><span>00:08</span></div><div class="track"><span class="track-icon">▧</span><div class="empty-track" id="empty-track">Drop your first clip here</div><div class="clip" id="video-track" hidden><div class="clip-pattern"></div><span>studio-take.mp4</span></div></div><div class="track" id="caption-track" hidden><span class="track-icon">CC</span><div class="clip caption-track">Every great thing starts small.</div></div><div class="playhead" id="playhead" hidden></div><div class="timeline-status" id="timeline-status">1920 × 1080 &nbsp; · &nbsp; 24 fps &nbsp; · &nbsp; Ready for your first idea</div></div></div>
+  </div>
+ </section>
+ <section class="window files-modal" id="files-modal" hidden aria-label="Import media"><div class="files-head"><span>Choose your starting point</span><span style="color:#9aa28e;font-weight:400">×</span></div><div class="files-body"><aside class="files-sidebar"><div>Recents</div><div class="selected">Launch assets</div><div>Documents</div><div>Downloads</div></aside><div class="file-list"><div class="file-path">WORKSPACE &nbsp; / &nbsp; LAUNCH ASSETS</div><div class="file-columns"><span>NAME</span><span>SIZE</span></div><div class="file-row" id="source-file"><span class="mini-video">▶</span><span>studio-take.mp4</span><span class="file-size">8.4 MB</span></div><div class="file-row other-row"><span class="mini-video" style="background:#a1ae91">≡</span><span>launch-notes.txt</span><span class="file-size">2 KB</span></div></div></div><div class="files-foot"><span class="file-count" id="file-count">Choose a file to continue</span><button class="cancel">Cancel</button><button class="files-add disabled" id="files-add">Add to timeline</button></div></section>
+ <div class="export-toast" id="export-toast" hidden><div class="export-title"><span class="success-dot" id="export-mark">↗</span><span id="export-title">Preparing your video</span></div><div class="export-meta" id="export-meta">A little launch · 1080p · MP4</div><div class="export-progress"><i id="export-progress"></i></div></div>
+ <div class="dock"><div class="dock-app files">▰</div><div class="dock-app mont">m.</div><div class="dock-app notes-app">≡</div><div class="dock-separator"></div><div class="dock-label">A PLACE TO MAKE</div></div>
+</main>
+<script>
+'use strict';
+// This page is source media only. Cursor artwork and final composition belong to the Mont SDK.
+const $ = id => document.getElementById(id);
+const clamp = value => Math.max(0, Math.min(1, value));
+const visible = (id, show) => { $(id).hidden = !show; };
+const pressDurationMs = 1000 / 12;
+const pressed = (time, at) => time >= at && time < at + pressDurationMs;
+const keyTimes = {import:1200, selectFile:2100, addFile:3000, captions:4300, play:5600, export:7100, ready:7550};
+// One absolute clock drives both UI transitions and exported pointer observations.
+const clickEvents = [
+ {key:'import', targetId:'import-button'},
+ {key:'selectFile', targetId:'source-file'},
+ {key:'addFile', targetId:'files-add'},
+ {key:'captions', targetId:'caption-button'},
+ {key:'play', targetId:'play-button'},
+ {key:'export', targetId:'export-button'}
+].map(event => ({...event, timeMs:keyTimes[event.key], preActionTimeMs:keyTimes[event.key] - .001,
+ arriveMs:keyTimes[event.key] - 150, departMs:keyTimes[event.key] + 200}));
+const clickTimes = clickEvents.map(event => event.timeMs);
+window.seekPreview = function(timeMs) {
+ const t = Math.max(0, Math.min(8000, Number(timeMs) || 0));
+ const imported = t>=keyTimes.addFile, captions = t>=keyTimes.captions;
+ const playing = t>=keyTimes.play && t<keyTimes.export;
+ $('title-text').textContent = 'A little launch';
+ $('save-status').textContent = '✓ Saved';
+ $('import-button').classList.toggle('pressed',pressed(t,keyTimes.import));
+ visible('files-modal',t>=keyTimes.import&&t<keyTimes.addFile);
+ const selected = t>=keyTimes.selectFile;
+ $('source-file').classList.toggle('selected',selected);
+ $('source-file').setAttribute('role','option');
+ $('source-file').setAttribute('aria-selected',String(selected));
+ $('files-add').classList.toggle('disabled',!selected);
+ $('files-add').disabled = !selected;
+ $('file-count').textContent = selected?'1 video selected · 8 seconds':'Choose a file to continue';
+ visible('imported-asset',imported);visible('asset-empty',!imported);visible('empty-preview',!imported);visible('empty-track',!imported);visible('video-track',imported);visible('playhead',imported);
+ visible('poster-caption',captions);visible('caption-track',captions);
+ $('caption-button').classList.toggle('active',captions);
+ $('play-button').textContent=playing?'Ⅱ':'▶';
+ $('play-button').classList.toggle('playing',playing);
+ const playback = Math.max(0,Math.min(keyTimes.export-keyTimes.play,t-keyTimes.play));
+ $('timecode').textContent = `00:${(playback/1000).toFixed(2).padStart(5,'0')} / 00:08.00`;
+ $('playhead').style.transform = `translateX(${playback/8000*576}px)`;
+ $('timeline-status').textContent = !imported?'1920 × 1080 · 24 fps · Ready for your first idea':captions?'1920 × 1080 · 24 fps · Captions on':'1920 × 1080 · 24 fps · 1 clip · 8 seconds';
+ $('note-import').textContent=imported?'✓':'□';$('note-caption').textContent=captions?'✓':'□';$('note-export').textContent=t>=keyTimes.ready?'✓':'□';
+ $('export-button').classList.toggle('pressed',pressed(t,keyTimes.export));
+ visible('export-toast',t>=keyTimes.export);
+ $('export-title').textContent=t>=keyTimes.ready?'Your video is ready':'Preparing your video';
+ $('export-mark').textContent=t>=keyTimes.ready?'✓':'↗';
+ $('export-meta').textContent=t>=keyTimes.ready?'A little launch.mp4 · 1080p':'A little launch · 1080p · MP4';
+ $('export-progress').style.width=`${clamp((t-keyTimes.export)/(keyTimes.ready-keyTimes.export))*100}%`;
+ // Hover and press use the same event clock as cursorAt, including still holds.
+ for(const event of clickEvents) {
+  $(event.targetId).classList.toggle('hovered',t>=event.arriveMs&&t<event.departMs);
+ }
+ document.documentElement.dataset.previewTimeMs=String(t);
+ return {timeMs:t, imported, captions, playing, exportReady:t>=keyTimes.ready};
+};
+function targetBounds(element) {
+ const desktop = $('desktop').getBoundingClientRect(), rect = element.getBoundingClientRect();
+ return {x:rect.left-desktop.left, y:rect.top-desktop.top, width:rect.width, height:rect.height};
+}
+// Resolve before each action: the picker must be open, its row selected before Add,
+// and Export measured before its pressed style or success toast can move/cover it.
+const clickTargets = clickEvents.map(event => {
+ window.seekPreview(event.preActionTimeMs);
+ const bounds = targetBounds($(event.targetId));
+ return {...event, bounds, cursorX:bounds.x+bounds.width/2, cursorY:bounds.y+bounds.height/2};
+});
+window.seekPreview(0);
+const canvasBounds = targetBounds(document.querySelector('.canvas'));
+const cursorMoves = [];
+let position = [canvasBounds.x+canvasBounds.width/2, canvasBounds.y+canvasBounds.height/2], previousEnd = 0;
+for(const event of clickTargets) {
+ const destination = [event.cursorX,event.cursorY];
+ const start = previousEnd || 300;
+ if(start>previousEnd) cursorMoves.push([previousEnd,start,position,position,position,position]);
+ const dx = destination[0]-position[0], dy = destination[1]-position[1];
+ const distance = Math.hypot(dx,dy), arc = Math.min(14,distance*.03);
+ const offsetX = distance ? -dy/distance*arc : 0, offsetY = distance ? dx/distance*arc : 0;
+ cursorMoves.push([start,event.arriveMs,position,
+  [position[0]+dx/3+offsetX,position[1]+dy/3+offsetY],
+  [position[0]+dx*2/3+offsetX,position[1]+dy*2/3+offsetY],destination]);
+ cursorMoves.push([event.arriveMs,event.departMs,destination,destination,destination,destination]);
+ position = destination; previousEnd = event.departMs;
+}
+cursorMoves.push([previousEnd,8000,position,position,position,position]);
+function cursorAt(timeMs) {
+ const t = Math.max(0, Math.min(8000, Number(timeMs) || 0));
+ const [start,end,a,b,c,d] = cursorMoves.find(move => t <= move[1]) || cursorMoves[cursorMoves.length-1];
+ const p = clamp((t-start)/(end-start));
+ // Quintic easing gives zero velocity and acceleration at every still hold.
+ const u = p*p*p*(p*(p*6-15)+10), v = 1-u;
+ const coordinate = axis => +(v*v*v*a[axis]+3*v*v*u*b[axis]+3*v*u*u*c[axis]+u*u*u*d[axis]).toFixed(4);
+ return {cursorX:coordinate(0),cursorY:coordinate(1),cursorPressed:clickTimes.some(at=>pressed(t,at))?1:0,
+  cursorShape:clickTargets.some(event=>t>=event.arriveMs&&t<event.departMs)?1:0,cursorInCapture:1};
+}
+window.recorderDemoStory = {
+ title:'A little launch', synthetic:true, width:1280, height:800, durationMs:8000, frameRate:24,
+ cursorSampleRate:60, keyTimes, pressDurationMs, clickEvents, clickTargets, cursorMoves, clickTimes, cursorAt,
+ // Regenerate storyboard.json directly from this page; no second coordinate/timing source.
+ storyboard:() => ({schemaVersion:1,heldChannels:{cursorPressed:0,cursorShape:0,cursorInCapture:1},
+  samples:Array.from({length:480},(_,index) => {
+   const timeMs = +(index*1000/60).toFixed(6);
+   return {timeMs,values:cursorAt(timeMs)};
+  })}),
+ description:'An original synthetic desktop: import a clip, add captions, preview, export. Not real capture evidence.'
+};
+// Parent captures PNGs after synchronous seeks; no timers, live input, network, or baked cursor.
+</script>
+</body>
+</html>

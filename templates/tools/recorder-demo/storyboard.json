@@ -1,0 +1,4810 @@
+{
+  "schemaVersion": 1,
+  "heldChannels": {
+    "cursorPressed": 0,
+    "cursorShape": 0,
+    "cursorInCapture": 1
+  },
+  "samples": [
+    {
+      "timeMs": 0,
+      "values": {
+        "cursorX": 611,
+        "cursorY": 358.5,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 16.666667,
+      "values": {
+        "cursorX": 611,
+        "cursorY": 358.5,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 33.333333,
+      "values": {
+        "cursorX": 611,
+        "cursorY": 358.5,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 50,
+      "values": {
+        "cursorX": 611,
+        "cursorY": 358.5,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 66.666667,
+      "values": {
+        "cursorX": 611,
+        "cursorY": 358.5,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 83.333333,
+      "values": {
+        "cursorX": 611,
+        "cursorY": 358.5,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 100,
+      "values": {
+        "cursorX": 611,
+        "cursorY": 358.5,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 116.666667,
+      "values": {
+        "cursorX": 611,
+        "cursorY": 358.5,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 133.333333,
+      "values": {
+        "cursorX": 611,
+        "cursorY": 358.5,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 150,
+      "values": {
+        "cursorX": 611,
+        "cursorY": 358.5,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 166.666667,
+      "values": {
+        "cursorX": 611,
+        "cursorY": 358.5,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 183.333333,
+      "values": {
+        "cursorX": 611,
+        "cursorY": 358.5,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 200,
+      "values": {
+        "cursorX": 611,
+        "cursorY": 358.5,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 216.666667,
+      "values": {
+        "cursorX": 611,
+        "cursorY": 358.5,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 233.333333,
+      "values": {
+        "cursorX": 611,
+        "cursorY": 358.5,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 250,
+      "values": {
+        "cursorX": 611,
+        "cursorY": 358.5,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 266.666667,
+      "values": {
+        "cursorX": 611,
+        "cursorY": 358.5,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 283.333333,
+      "values": {
+        "cursorX": 611,
+        "cursorY": 358.5,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 300,
+      "values": {
+        "cursorX": 611,
+        "cursorY": 358.5,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 316.666667,
+      "values": {
+        "cursorX": 610.9485,
+        "cursorY": 358.5096,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 333.333333,
+      "values": {
+        "cursorX": 610.6015,
+        "cursorY": 358.5743,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 350,
+      "values": {
+        "cursorX": 609.7011,
+        "cursorY": 358.7424,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 366.666667,
+      "values": {
+        "cursorX": 608.028,
+        "cursorY": 359.0555,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 383.333333,
+      "values": {
+        "cursorX": 605.4003,
+        "cursorY": 359.5493,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 400,
+      "values": {
+        "cursorX": 601.6714,
+        "cursorY": 360.2543,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 416.666667,
+      "values": {
+        "cursorX": 596.7287,
+        "cursorY": 361.1965,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 433.333333,
+      "values": {
+        "cursorX": 590.4909,
+        "cursorY": 362.3983,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 450,
+      "values": {
+        "cursorX": 582.9071,
+        "cursorY": 363.8784,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 466.666667,
+      "values": {
+        "cursorX": 573.9541,
+        "cursorY": 365.6527,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 483.333333,
+      "values": {
+        "cursorX": 563.6351,
+        "cursorY": 367.734,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 500,
+      "values": {
+        "cursorX": 551.9772,
+        "cursorY": 370.1322,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 516.666667,
+      "values": {
+        "cursorX": 539.0296,
+        "cursorY": 372.8542,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 533.333333,
+      "values": {
+        "cursorX": 524.8615,
+        "cursorY": 375.9035,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 550,
+      "values": {
+        "cursorX": 509.5601,
+        "cursorY": 379.2802,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 566.666667,
+      "values": {
+        "cursorX": 493.2284,
+        "cursorY": 382.9802,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 583.333333,
+      "values": {
+        "cursorX": 475.9832,
+        "cursorY": 386.9953,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 600,
+      "values": {
+        "cursorX": 457.9529,
+        "cursorY": 391.3126,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 616.666667,
+      "values": {
+        "cursorX": 439.2756,
+        "cursorY": 395.9141,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 633.333333,
+      "values": {
+        "cursorX": 420.0968,
+        "cursorY": 400.7768,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 650,
+      "values": {
+        "cursorX": 400.5676,
+        "cursorY": 405.8726,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 666.666667,
+      "values": {
+        "cursorX": 380.8427,
+        "cursorY": 411.1679,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 683.333333,
+      "values": {
+        "cursorX": 361.0784,
+        "cursorY": 416.6245,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 700,
+      "values": {
+        "cursorX": 341.4306,
+        "cursorY": 422.1991,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 716.666667,
+      "values": {
+        "cursorX": 322.0532,
+        "cursorY": 427.8447,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 733.333333,
+      "values": {
+        "cursorX": 303.0961,
+        "cursorY": 433.5105,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 750,
+      "values": {
+        "cursorX": 284.7035,
+        "cursorY": 439.1433,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 766.666667,
+      "values": {
+        "cursorX": 267.0121,
+        "cursorY": 444.6881,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 783.333333,
+      "values": {
+        "cursorX": 250.1496,
+        "cursorY": 450.0894,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 800,
+      "values": {
+        "cursorX": 234.2329,
+        "cursorY": 455.2925,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 816.666667,
+      "values": {
+        "cursorX": 219.3665,
+        "cursorY": 460.2446,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 833.333333,
+      "values": {
+        "cursorX": 205.6407,
+        "cursorY": 464.8962,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 850,
+      "values": {
+        "cursorX": 193.1305,
+        "cursorY": 469.2026,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 866.666667,
+      "values": {
+        "cursorX": 181.8935,
+        "cursorY": 473.1252,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 883.333333,
+      "values": {
+        "cursorX": 171.9683,
+        "cursorY": 476.633,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 900,
+      "values": {
+        "cursorX": 163.3732,
+        "cursorY": 479.7034,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 916.666667,
+      "values": {
+        "cursorX": 156.1041,
+        "cursorY": 482.3238,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 933.333333,
+      "values": {
+        "cursorX": 150.1333,
+        "cursorY": 484.4926,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 950,
+      "values": {
+        "cursorX": 145.4072,
+        "cursorY": 486.2197,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 966.666667,
+      "values": {
+        "cursorX": 141.8449,
+        "cursorY": 487.5277,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 983.333333,
+      "values": {
+        "cursorX": 139.336,
+        "cursorY": 488.452,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 1000,
+      "values": {
+        "cursorX": 137.7393,
+        "cursorY": 489.0416,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 1016.666667,
+      "values": {
+        "cursorX": 136.8801,
+        "cursorY": 489.3593,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 1033.333333,
+      "values": {
+        "cursorX": 136.5492,
+        "cursorY": 489.4818,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 1050,
+      "values": {
+        "cursorX": 136.5,
+        "cursorY": 489.5,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 1066.666667,
+      "values": {
+        "cursorX": 136.5,
+        "cursorY": 489.5,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 1083.333333,
+      "values": {
+        "cursorX": 136.5,
+        "cursorY": 489.5,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 1100,
+      "values": {
+        "cursorX": 136.5,
+        "cursorY": 489.5,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 1116.666667,
+      "values": {
+        "cursorX": 136.5,
+        "cursorY": 489.5,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 1133.333333,
+      "values": {
+        "cursorX": 136.5,
+        "cursorY": 489.5,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 1150,
+      "values": {
+        "cursorX": 136.5,
+        "cursorY": 489.5,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 1166.666667,
+      "values": {
+        "cursorX": 136.5,
+        "cursorY": 489.5,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 1183.333333,
+      "values": {
+        "cursorX": 136.5,
+        "cursorY": 489.5,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 1200,
+      "values": {
+        "cursorX": 136.5,
+        "cursorY": 489.5,
+        "cursorPressed": 1,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 1216.666667,
+      "values": {
+        "cursorX": 136.5,
+        "cursorY": 489.5,
+        "cursorPressed": 1,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 1233.333333,
+      "values": {
+        "cursorX": 136.5,
+        "cursorY": 489.5,
+        "cursorPressed": 1,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 1250,
+      "values": {
+        "cursorX": 136.5,
+        "cursorY": 489.5,
+        "cursorPressed": 1,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 1266.666667,
+      "values": {
+        "cursorX": 136.5,
+        "cursorY": 489.5,
+        "cursorPressed": 1,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 1283.333333,
+      "values": {
+        "cursorX": 136.5,
+        "cursorY": 489.5,
+        "cursorPressed": 1,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 1300,
+      "values": {
+        "cursorX": 136.5,
+        "cursorY": 489.5,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 1316.666667,
+      "values": {
+        "cursorX": 136.5,
+        "cursorY": 489.5,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 1333.333333,
+      "values": {
+        "cursorX": 136.5,
+        "cursorY": 489.5,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 1350,
+      "values": {
+        "cursorX": 136.5,
+        "cursorY": 489.5,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 1366.666667,
+      "values": {
+        "cursorX": 136.5,
+        "cursorY": 489.5,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 1383.333333,
+      "values": {
+        "cursorX": 136.5,
+        "cursorY": 489.5,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 1400,
+      "values": {
+        "cursorX": 136.5,
+        "cursorY": 489.5,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 1416.666667,
+      "values": {
+        "cursorX": 136.6138,
+        "cursorY": 489.4868,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 1433.333333,
+      "values": {
+        "cursorX": 137.3686,
+        "cursorY": 489.3991,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 1450,
+      "values": {
+        "cursorX": 139.2939,
+        "cursorY": 489.1742,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 1466.666667,
+      "values": {
+        "cursorX": 142.8044,
+        "cursorY": 488.7602,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 1483.333333,
+      "values": {
+        "cursorX": 148.2076,
+        "cursorY": 488.1128,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 1500,
+      "values": {
+        "cursorX": 155.7112,
+        "cursorY": 487.1931,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 1516.666667,
+      "values": {
+        "cursorX": 165.431,
+        "cursorY": 485.9663,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 1533.333333,
+      "values": {
+        "cursorX": 177.3986,
+        "cursorY": 484.4005,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 1550,
+      "values": {
+        "cursorX": 191.5698,
+        "cursorY": 482.4673,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 1566.666667,
+      "values": {
+        "cursorX": 207.8328,
+        "cursorY": 480.1426,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 1583.333333,
+      "values": {
+        "cursorX": 226.0164,
+        "cursorY": 477.4085,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 1600,
+      "values": {
+        "cursorX": 245.8986,
+        "cursorY": 474.2553,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 1616.666667,
+      "values": {
+        "cursorX": 267.2155,
+        "cursorY": 470.6836,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 1633.333333,
+      "values": {
+        "cursorX": 289.6692,
+        "cursorY": 466.7065,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 1650,
+      "values": {
+        "cursorX": 312.9367,
+        "cursorY": 462.3513,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 1666.666667,
+      "values": {
+        "cursorX": 336.6779,
+        "cursorY": 457.6605,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 1683.333333,
+      "values": {
+        "cursorX": 360.5438,
+        "cursorY": 452.6919,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 1700,
+      "values": {
+        "cursorX": 384.1845,
+        "cursorY": 447.5185,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 1716.666667,
+      "values": {
+        "cursorX": 407.2569,
+        "cursorY": 442.2264,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 1733.333333,
+      "values": {
+        "cursorX": 429.4323,
+        "cursorY": 436.9123,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 1750,
+      "values": {
+        "cursorX": 450.4035,
+        "cursorY": 431.6802,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 1766.666667,
+      "values": {
+        "cursorX": 469.8923,
+        "cursorY": 426.6369,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 1783.333333,
+      "values": {
+        "cursorX": 487.6562,
+        "cursorY": 421.8873,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 1800,
+      "values": {
+        "cursorX": 503.4958,
+        "cursorY": 417.5286,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 1816.666667,
+      "values": {
+        "cursorX": 517.2612,
+        "cursorY": 413.6459,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 1833.333333,
+      "values": {
+        "cursorX": 528.8594,
+        "cursorY": 410.3056,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 1850,
+      "values": {
+        "cursorX": 538.2612,
+        "cursorY": 407.5515,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 1866.666667,
+      "values": {
+        "cursorX": 545.5084,
+        "cursorY": 405.4002,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 1883.333333,
+      "values": {
+        "cursorX": 550.721,
+        "cursorY": 403.8376,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 1900,
+      "values": {
+        "cursorX": 554.1051,
+        "cursorY": 402.8163,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 1916.666667,
+      "values": {
+        "cursorX": 555.9602,
+        "cursorY": 402.2541,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 1933.333333,
+      "values": {
+        "cursorX": 556.6873,
+        "cursorY": 402.0333,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 1950,
+      "values": {
+        "cursorX": 556.7969,
+        "cursorY": 402,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 1966.666667,
+      "values": {
+        "cursorX": 556.7969,
+        "cursorY": 402,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 1983.333333,
+      "values": {
+        "cursorX": 556.7969,
+        "cursorY": 402,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 2000,
+      "values": {
+        "cursorX": 556.7969,
+        "cursorY": 402,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 2016.666667,
+      "values": {
+        "cursorX": 556.7969,
+        "cursorY": 402,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 2033.333333,
+      "values": {
+        "cursorX": 556.7969,
+        "cursorY": 402,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 2050,
+      "values": {
+        "cursorX": 556.7969,
+        "cursorY": 402,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 2066.666667,
+      "values": {
+        "cursorX": 556.7969,
+        "cursorY": 402,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 2083.333333,
+      "values": {
+        "cursorX": 556.7969,
+        "cursorY": 402,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 2100,
+      "values": {
+        "cursorX": 556.7969,
+        "cursorY": 402,
+        "cursorPressed": 1,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 2116.666667,
+      "values": {
+        "cursorX": 556.7969,
+        "cursorY": 402,
+        "cursorPressed": 1,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 2133.333333,
+      "values": {
+        "cursorX": 556.7969,
+        "cursorY": 402,
+        "cursorPressed": 1,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 2150,
+      "values": {
+        "cursorX": 556.7969,
+        "cursorY": 402,
+        "cursorPressed": 1,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 2166.666667,
+      "values": {
+        "cursorX": 556.7969,
+        "cursorY": 402,
+        "cursorPressed": 1,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 2183.333333,
+      "values": {
+        "cursorX": 556.7969,
+        "cursorY": 402,
+        "cursorPressed": 1,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 2200,
+      "values": {
+        "cursorX": 556.7969,
+        "cursorY": 402,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 2216.666667,
+      "values": {
+        "cursorX": 556.7969,
+        "cursorY": 402,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 2233.333333,
+      "values": {
+        "cursorX": 556.7969,
+        "cursorY": 402,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 2250,
+      "values": {
+        "cursorX": 556.7969,
+        "cursorY": 402,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 2266.666667,
+      "values": {
+        "cursorX": 556.7969,
+        "cursorY": 402,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 2283.333333,
+      "values": {
+        "cursorX": 556.7969,
+        "cursorY": 402,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 2300,
+      "values": {
+        "cursorX": 556.7969,
+        "cursorY": 402,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 2316.666667,
+      "values": {
+        "cursorX": 556.8358,
+        "cursorY": 402.0517,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 2333.333333,
+      "values": {
+        "cursorX": 557.0944,
+        "cursorY": 402.3948,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 2350,
+      "values": {
+        "cursorX": 557.7544,
+        "cursorY": 403.2697,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 2366.666667,
+      "values": {
+        "cursorX": 558.9598,
+        "cursorY": 404.8637,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 2383.333333,
+      "values": {
+        "cursorX": 560.8201,
+        "cursorY": 407.3142,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 2400,
+      "values": {
+        "cursorX": 563.4135,
+        "cursorY": 410.7114,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 2416.666667,
+      "values": {
+        "cursorX": 566.7903,
+        "cursorY": 415.1018,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 2433.333333,
+      "values": {
+        "cursorX": 570.9749,
+        "cursorY": 420.4918,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 2450,
+      "values": {
+        "cursorX": 575.9687,
+        "cursorY": 426.8516,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 2466.666667,
+      "values": {
+        "cursorX": 581.7513,
+        "cursorY": 434.1198,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 2483.333333,
+      "values": {
+        "cursorX": 588.2826,
+        "cursorY": 442.2078,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 2500,
+      "values": {
+        "cursorX": 595.5039,
+        "cursorY": 451.0046,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 2516.666667,
+      "values": {
+        "cursorX": 603.3395,
+        "cursorY": 460.3815,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 2533.333333,
+      "values": {
+        "cursorX": 611.6977,
+        "cursorY": 470.1971,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 2550,
+      "values": {
+        "cursorX": 620.4729,
+        "cursorY": 480.3016,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 2566.666667,
+      "values": {
+        "cursorX": 629.5473,
+        "cursorY": 490.5411,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 2583.333333,
+      "values": {
+        "cursorX": 638.7928,
+        "cursorY": 500.7622,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 2600,
+      "values": {
+        "cursorX": 648.0739,
+        "cursorY": 510.8148,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 2616.666667,
+      "values": {
+        "cursorX": 657.2504,
+        "cursorY": 520.5563,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 2633.333333,
+      "values": {
+        "cursorX": 666.1812,
+        "cursorY": 529.8539,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 2650,
+      "values": {
+        "cursorX": 674.7278,
+        "cursorY": 538.5877,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 2666.666667,
+      "values": {
+        "cursorX": 682.7586,
+        "cursorY": 546.6522,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 2683.333333,
+      "values": {
+        "cursorX": 690.1531,
+        "cursorY": 553.9594,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 2700,
+      "values": {
+        "cursorX": 696.8068,
+        "cursorY": 560.4397,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 2716.666667,
+      "values": {
+        "cursorX": 702.6355,
+        "cursorY": 566.0443,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 2733.333333,
+      "values": {
+        "cursorX": 707.5801,
+        "cursorY": 570.7468,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 2750,
+      "values": {
+        "cursorX": 711.6109,
+        "cursorY": 574.5456,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 2766.666667,
+      "values": {
+        "cursorX": 714.7319,
+        "cursorY": 577.4657,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 2783.333333,
+      "values": {
+        "cursorX": 716.9841,
+        "cursorY": 579.5616,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 2800,
+      "values": {
+        "cursorX": 718.4496,
+        "cursorY": 580.9203,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 2816.666667,
+      "values": {
+        "cursorX": 719.2541,
+        "cursorY": 581.6645,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 2833.333333,
+      "values": {
+        "cursorX": 719.5696,
+        "cursorY": 581.9561,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 2850,
+      "values": {
+        "cursorX": 719.6172,
+        "cursorY": 582,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 2866.666667,
+      "values": {
+        "cursorX": 719.6172,
+        "cursorY": 582,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 2883.333333,
+      "values": {
+        "cursorX": 719.6172,
+        "cursorY": 582,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 2900,
+      "values": {
+        "cursorX": 719.6172,
+        "cursorY": 582,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 2916.666667,
+      "values": {
+        "cursorX": 719.6172,
+        "cursorY": 582,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 2933.333333,
+      "values": {
+        "cursorX": 719.6172,
+        "cursorY": 582,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 2950,
+      "values": {
+        "cursorX": 719.6172,
+        "cursorY": 582,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 2966.666667,
+      "values": {
+        "cursorX": 719.6172,
+        "cursorY": 582,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 2983.333333,
+      "values": {
+        "cursorX": 719.6172,
+        "cursorY": 582,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 3000,
+      "values": {
+        "cursorX": 719.6172,
+        "cursorY": 582,
+        "cursorPressed": 1,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 3016.666667,
+      "values": {
+        "cursorX": 719.6172,
+        "cursorY": 582,
+        "cursorPressed": 1,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 3033.333333,
+      "values": {
+        "cursorX": 719.6172,
+        "cursorY": 582,
+        "cursorPressed": 1,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 3050,
+      "values": {
+        "cursorX": 719.6172,
+        "cursorY": 582,
+        "cursorPressed": 1,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 3066.666667,
+      "values": {
+        "cursorX": 719.6172,
+        "cursorY": 582,
+        "cursorPressed": 1,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 3083.333333,
+      "values": {
+        "cursorX": 719.6172,
+        "cursorY": 582,
+        "cursorPressed": 1,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 3100,
+      "values": {
+        "cursorX": 719.6172,
+        "cursorY": 582,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 3116.666667,
+      "values": {
+        "cursorX": 719.6172,
+        "cursorY": 582,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 3133.333333,
+      "values": {
+        "cursorX": 719.6172,
+        "cursorY": 582,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 3150,
+      "values": {
+        "cursorX": 719.6172,
+        "cursorY": 582,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 3166.666667,
+      "values": {
+        "cursorX": 719.6172,
+        "cursorY": 582,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 3183.333333,
+      "values": {
+        "cursorX": 719.6172,
+        "cursorY": 582,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 3200,
+      "values": {
+        "cursorX": 719.6172,
+        "cursorY": 582,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 3216.666667,
+      "values": {
+        "cursorX": 719.6251,
+        "cursorY": 581.9987,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 3233.333333,
+      "values": {
+        "cursorX": 719.679,
+        "cursorY": 581.9899,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 3250,
+      "values": {
+        "cursorX": 719.8201,
+        "cursorY": 581.9667,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 3266.666667,
+      "values": {
+        "cursorX": 720.085,
+        "cursorY": 581.9231,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 3283.333333,
+      "values": {
+        "cursorX": 720.5057,
+        "cursorY": 581.8538,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 3300,
+      "values": {
+        "cursorX": 721.1097,
+        "cursorY": 581.7538,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 3316.666667,
+      "values": {
+        "cursorX": 721.9202,
+        "cursorY": 581.619,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 3333.333333,
+      "values": {
+        "cursorX": 722.9563,
+        "cursorY": 581.4455,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 3350,
+      "values": {
+        "cursorX": 724.2331,
+        "cursorY": 581.2299,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 3366.666667,
+      "values": {
+        "cursorX": 725.762,
+        "cursorY": 580.9691,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 3383.333333,
+      "values": {
+        "cursorX": 727.5508,
+        "cursorY": 580.6603,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 3400,
+      "values": {
+        "cursorX": 729.6039,
+        "cursorY": 580.3011,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 3416.666667,
+      "values": {
+        "cursorX": 731.9225,
+        "cursorY": 579.8892,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 3433.333333,
+      "values": {
+        "cursorX": 734.5047,
+        "cursorY": 579.4227,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 3450,
+      "values": {
+        "cursorX": 737.3458,
+        "cursorY": 578.8999,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 3466.666667,
+      "values": {
+        "cursorX": 740.4385,
+        "cursorY": 578.3195,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 3483.333333,
+      "values": {
+        "cursorX": 743.7729,
+        "cursorY": 577.6805,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 3500,
+      "values": {
+        "cursorX": 747.3369,
+        "cursorY": 576.9822,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 3516.666667,
+      "values": {
+        "cursorX": 751.1165,
+        "cursorY": 576.2243,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 3533.333333,
+      "values": {
+        "cursorX": 755.0957,
+        "cursorY": 575.4071,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 3550,
+      "values": {
+        "cursorX": 759.2568,
+        "cursorY": 574.5313,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 3566.666667,
+      "values": {
+        "cursorX": 763.5807,
+        "cursorY": 573.598,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 3583.333333,
+      "values": {
+        "cursorX": 768.0471,
+        "cursorY": 572.6092,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 3600,
+      "values": {
+        "cursorX": 772.6345,
+        "cursorY": 571.5672,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 3616.666667,
+      "values": {
+        "cursorX": 777.3206,
+        "cursorY": 570.475,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 3633.333333,
+      "values": {
+        "cursorX": 782.0824,
+        "cursorY": 569.3363,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 3650,
+      "values": {
+        "cursorX": 786.8965,
+        "cursorY": 568.1555,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 3666.666667,
+      "values": {
+        "cursorX": 791.7391,
+        "cursorY": 566.9374,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 3683.333333,
+      "values": {
+        "cursorX": 796.5862,
+        "cursorY": 565.6877,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 3700,
+      "values": {
+        "cursorX": 801.4141,
+        "cursorY": 564.4124,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 3716.666667,
+      "values": {
+        "cursorX": 806.199,
+        "cursorY": 563.1183,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 3733.333333,
+      "values": {
+        "cursorX": 810.9177,
+        "cursorY": 561.8126,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 3750,
+      "values": {
+        "cursorX": 815.5478,
+        "cursorY": 560.5028,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 3766.666667,
+      "values": {
+        "cursorX": 820.0671,
+        "cursorY": 559.1968,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 3783.333333,
+      "values": {
+        "cursorX": 824.4548,
+        "cursorY": 557.9028,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 3800,
+      "values": {
+        "cursorX": 828.6909,
+        "cursorY": 556.6289,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 3816.666667,
+      "values": {
+        "cursorX": 832.7567,
+        "cursorY": 555.3836,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 3833.333333,
+      "values": {
+        "cursorX": 836.6349,
+        "cursorY": 554.1749,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 3850,
+      "values": {
+        "cursorX": 840.3098,
+        "cursorY": 553.0108,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 3866.666667,
+      "values": {
+        "cursorX": 843.7672,
+        "cursorY": 551.8988,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 3883.333333,
+      "values": {
+        "cursorX": 846.9949,
+        "cursorY": 550.8459,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 3900,
+      "values": {
+        "cursorX": 849.9826,
+        "cursorY": 549.8586,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 3916.666667,
+      "values": {
+        "cursorX": 852.7223,
+        "cursorY": 548.9425,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 3933.333333,
+      "values": {
+        "cursorX": 855.2081,
+        "cursorY": 548.1022,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 3950,
+      "values": {
+        "cursorX": 857.4368,
+        "cursorY": 547.3417,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 3966.666667,
+      "values": {
+        "cursorX": 859.4077,
+        "cursorY": 546.6634,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 3983.333333,
+      "values": {
+        "cursorX": 861.1228,
+        "cursorY": 546.0688,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 4000,
+      "values": {
+        "cursorX": 862.5872,
+        "cursorY": 545.5578,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 4016.666667,
+      "values": {
+        "cursorX": 863.8091,
+        "cursorY": 545.1292,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 4033.333333,
+      "values": {
+        "cursorX": 864.7999,
+        "cursorY": 544.7801,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 4050,
+      "values": {
+        "cursorX": 865.5745,
+        "cursorY": 544.5062,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 4066.666667,
+      "values": {
+        "cursorX": 866.1515,
+        "cursorY": 544.3016,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 4083.333333,
+      "values": {
+        "cursorX": 866.5534,
+        "cursorY": 544.1589,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 4100,
+      "values": {
+        "cursorX": 866.8063,
+        "cursorY": 544.0689,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 4116.666667,
+      "values": {
+        "cursorX": 866.941,
+        "cursorY": 544.021,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 4133.333333,
+      "values": {
+        "cursorX": 866.9924,
+        "cursorY": 544.0027,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 4150,
+      "values": {
+        "cursorX": 867,
+        "cursorY": 544,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 4166.666667,
+      "values": {
+        "cursorX": 867,
+        "cursorY": 544,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 4183.333333,
+      "values": {
+        "cursorX": 867,
+        "cursorY": 544,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 4200,
+      "values": {
+        "cursorX": 867,
+        "cursorY": 544,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 4216.666667,
+      "values": {
+        "cursorX": 867,
+        "cursorY": 544,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 4233.333333,
+      "values": {
+        "cursorX": 867,
+        "cursorY": 544,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 4250,
+      "values": {
+        "cursorX": 867,
+        "cursorY": 544,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 4266.666667,
+      "values": {
+        "cursorX": 867,
+        "cursorY": 544,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 4283.333333,
+      "values": {
+        "cursorX": 867,
+        "cursorY": 544,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 4300,
+      "values": {
+        "cursorX": 867,
+        "cursorY": 544,
+        "cursorPressed": 1,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 4316.666667,
+      "values": {
+        "cursorX": 867,
+        "cursorY": 544,
+        "cursorPressed": 1,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 4333.333333,
+      "values": {
+        "cursorX": 867,
+        "cursorY": 544,
+        "cursorPressed": 1,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 4350,
+      "values": {
+        "cursorX": 867,
+        "cursorY": 544,
+        "cursorPressed": 1,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 4366.666667,
+      "values": {
+        "cursorX": 867,
+        "cursorY": 544,
+        "cursorPressed": 1,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 4383.333333,
+      "values": {
+        "cursorX": 867,
+        "cursorY": 544,
+        "cursorPressed": 1,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 4400,
+      "values": {
+        "cursorX": 867,
+        "cursorY": 544,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 4416.666667,
+      "values": {
+        "cursorX": 867,
+        "cursorY": 544,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 4433.333333,
+      "values": {
+        "cursorX": 867,
+        "cursorY": 544,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 4450,
+      "values": {
+        "cursorX": 867,
+        "cursorY": 544,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 4466.666667,
+      "values": {
+        "cursorX": 867,
+        "cursorY": 544,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 4483.333333,
+      "values": {
+        "cursorX": 867,
+        "cursorY": 544,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 4500,
+      "values": {
+        "cursorX": 867,
+        "cursorY": 544,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 4516.666667,
+      "values": {
+        "cursorX": 866.9679,
+        "cursorY": 543.9978,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 4533.333333,
+      "values": {
+        "cursorX": 866.7502,
+        "cursorY": 543.9828,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 4550,
+      "values": {
+        "cursorX": 866.1794,
+        "cursorY": 543.9436,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 4566.666667,
+      "values": {
+        "cursorX": 865.1076,
+        "cursorY": 543.8701,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 4583.333333,
+      "values": {
+        "cursorX": 863.4054,
+        "cursorY": 543.754,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 4600,
+      "values": {
+        "cursorX": 860.9613,
+        "cursorY": 543.5883,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 4616.666667,
+      "values": {
+        "cursorX": 857.681,
+        "cursorY": 543.3682,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 4633.333333,
+      "values": {
+        "cursorX": 853.4865,
+        "cursorY": 543.0902,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 4650,
+      "values": {
+        "cursorX": 848.3157,
+        "cursorY": 542.7529,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 4666.666667,
+      "values": {
+        "cursorX": 842.1212,
+        "cursorY": 542.3569,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 4683.333333,
+      "values": {
+        "cursorX": 834.87,
+        "cursorY": 541.9043,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 4700,
+      "values": {
+        "cursorX": 826.5426,
+        "cursorY": 541.3992,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 4716.666667,
+      "values": {
+        "cursorX": 817.1322,
+        "cursorY": 540.8472,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 4733.333333,
+      "values": {
+        "cursorX": 806.6442,
+        "cursorY": 540.2555,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 4750,
+      "values": {
+        "cursorX": 795.0951,
+        "cursorY": 539.6328,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 4766.666667,
+      "values": {
+        "cursorX": 782.5121,
+        "cursorY": 538.9885,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 4783.333333,
+      "values": {
+        "cursorX": 768.9323,
+        "cursorY": 538.3333,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 4800,
+      "values": {
+        "cursorX": 754.4019,
+        "cursorY": 537.6784,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 4816.666667,
+      "values": {
+        "cursorX": 738.9753,
+        "cursorY": 537.0352,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 4833.333333,
+      "values": {
+        "cursorX": 722.7149,
+        "cursorY": 536.4154,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 4850,
+      "values": {
+        "cursorX": 705.6898,
+        "cursorY": 535.8305,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 4866.666667,
+      "values": {
+        "cursorX": 687.9753,
+        "cursorY": 535.2913,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 4883.333333,
+      "values": {
+        "cursorX": 669.6524,
+        "cursorY": 534.8081,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 4900,
+      "values": {
+        "cursorX": 650.8065,
+        "cursorY": 534.3902,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 4916.666667,
+      "values": {
+        "cursorX": 631.5273,
+        "cursorY": 534.0456,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 4933.333333,
+      "values": {
+        "cursorX": 611.9077,
+        "cursorY": 533.7811,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 4950,
+      "values": {
+        "cursorX": 592.0431,
+        "cursorY": 533.6019,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 4966.666667,
+      "values": {
+        "cursorX": 572.0308,
+        "cursorY": 533.5114,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 4983.333333,
+      "values": {
+        "cursorX": 551.9692,
+        "cursorY": 533.5114,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 5000,
+      "values": {
+        "cursorX": 531.9569,
+        "cursorY": 533.6019,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 5016.666667,
+      "values": {
+        "cursorX": 512.0923,
+        "cursorY": 533.7811,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 5033.333333,
+      "values": {
+        "cursorX": 492.4727,
+        "cursorY": 534.0456,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 5050,
+      "values": {
+        "cursorX": 473.1935,
+        "cursorY": 534.3902,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 5066.666667,
+      "values": {
+        "cursorX": 454.3476,
+        "cursorY": 534.8081,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 5083.333333,
+      "values": {
+        "cursorX": 436.0247,
+        "cursorY": 535.2913,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 5100,
+      "values": {
+        "cursorX": 418.3102,
+        "cursorY": 535.8305,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 5116.666667,
+      "values": {
+        "cursorX": 401.2851,
+        "cursorY": 536.4154,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 5133.333333,
+      "values": {
+        "cursorX": 385.0247,
+        "cursorY": 537.0352,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 5150,
+      "values": {
+        "cursorX": 369.5981,
+        "cursorY": 537.6784,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 5166.666667,
+      "values": {
+        "cursorX": 355.0677,
+        "cursorY": 538.3333,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 5183.333333,
+      "values": {
+        "cursorX": 341.4879,
+        "cursorY": 538.9885,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 5200,
+      "values": {
+        "cursorX": 328.9049,
+        "cursorY": 539.6328,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 5216.666667,
+      "values": {
+        "cursorX": 317.3558,
+        "cursorY": 540.2555,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 5233.333333,
+      "values": {
+        "cursorX": 306.8678,
+        "cursorY": 540.8472,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 5250,
+      "values": {
+        "cursorX": 297.4574,
+        "cursorY": 541.3992,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 5266.666667,
+      "values": {
+        "cursorX": 289.13,
+        "cursorY": 541.9043,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 5283.333333,
+      "values": {
+        "cursorX": 281.8788,
+        "cursorY": 542.3569,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 5300,
+      "values": {
+        "cursorX": 275.6843,
+        "cursorY": 542.7529,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 5316.666667,
+      "values": {
+        "cursorX": 270.5135,
+        "cursorY": 543.0902,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 5333.333333,
+      "values": {
+        "cursorX": 266.319,
+        "cursorY": 543.3682,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 5350,
+      "values": {
+        "cursorX": 263.0387,
+        "cursorY": 543.5883,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 5366.666667,
+      "values": {
+        "cursorX": 260.5946,
+        "cursorY": 543.754,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 5383.333333,
+      "values": {
+        "cursorX": 258.8924,
+        "cursorY": 543.8701,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 5400,
+      "values": {
+        "cursorX": 257.8206,
+        "cursorY": 543.9436,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 5416.666667,
+      "values": {
+        "cursorX": 257.2498,
+        "cursorY": 543.9828,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 5433.333333,
+      "values": {
+        "cursorX": 257.0321,
+        "cursorY": 543.9978,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 5450,
+      "values": {
+        "cursorX": 257,
+        "cursorY": 544,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 5466.666667,
+      "values": {
+        "cursorX": 257,
+        "cursorY": 544,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 5483.333333,
+      "values": {
+        "cursorX": 257,
+        "cursorY": 544,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 5500,
+      "values": {
+        "cursorX": 257,
+        "cursorY": 544,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 5516.666667,
+      "values": {
+        "cursorX": 257,
+        "cursorY": 544,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 5533.333333,
+      "values": {
+        "cursorX": 257,
+        "cursorY": 544,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 5550,
+      "values": {
+        "cursorX": 257,
+        "cursorY": 544,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 5566.666667,
+      "values": {
+        "cursorX": 257,
+        "cursorY": 544,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 5583.333333,
+      "values": {
+        "cursorX": 257,
+        "cursorY": 544,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 5600,
+      "values": {
+        "cursorX": 257,
+        "cursorY": 544,
+        "cursorPressed": 1,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 5616.666667,
+      "values": {
+        "cursorX": 257,
+        "cursorY": 544,
+        "cursorPressed": 1,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 5633.333333,
+      "values": {
+        "cursorX": 257,
+        "cursorY": 544,
+        "cursorPressed": 1,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 5650,
+      "values": {
+        "cursorX": 257,
+        "cursorY": 544,
+        "cursorPressed": 1,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 5666.666667,
+      "values": {
+        "cursorX": 257,
+        "cursorY": 544,
+        "cursorPressed": 1,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 5683.333333,
+      "values": {
+        "cursorX": 257,
+        "cursorY": 544,
+        "cursorPressed": 1,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 5700,
+      "values": {
+        "cursorX": 257,
+        "cursorY": 544,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 5716.666667,
+      "values": {
+        "cursorX": 257,
+        "cursorY": 544,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 5733.333333,
+      "values": {
+        "cursorX": 257,
+        "cursorY": 544,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 5750,
+      "values": {
+        "cursorX": 257,
+        "cursorY": 544,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 5766.666667,
+      "values": {
+        "cursorX": 257,
+        "cursorY": 544,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 5783.333333,
+      "values": {
+        "cursorX": 257,
+        "cursorY": 544,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 5800,
+      "values": {
+        "cursorX": 257,
+        "cursorY": 544,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 5816.666667,
+      "values": {
+        "cursorX": 257.0207,
+        "cursorY": 543.9897,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 5833.333333,
+      "values": {
+        "cursorX": 257.1616,
+        "cursorY": 543.9196,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 5850,
+      "values": {
+        "cursorX": 257.5335,
+        "cursorY": 543.7346,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 5866.666667,
+      "values": {
+        "cursorX": 258.2364,
+        "cursorY": 543.3849,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 5883.333333,
+      "values": {
+        "cursorX": 259.3604,
+        "cursorY": 542.8255,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 5900,
+      "values": {
+        "cursorX": 260.9857,
+        "cursorY": 542.0162,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 5916.666667,
+      "values": {
+        "cursorX": 263.183,
+        "cursorY": 540.9211,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 5933.333333,
+      "values": {
+        "cursorX": 266.0138,
+        "cursorY": 539.509,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 5950,
+      "values": {
+        "cursorX": 269.5307,
+        "cursorY": 537.7525,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 5966.666667,
+      "values": {
+        "cursorX": 273.7776,
+        "cursorY": 535.6282,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 5983.333333,
+      "values": {
+        "cursorX": 278.7901,
+        "cursorY": 533.1163,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 6000,
+      "values": {
+        "cursorX": 284.5958,
+        "cursorY": 530.2008,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 6016.666667,
+      "values": {
+        "cursorX": 291.2146,
+        "cursorY": 526.8689,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 6033.333333,
+      "values": {
+        "cursorX": 298.659,
+        "cursorY": 523.1112,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 6050,
+      "values": {
+        "cursorX": 306.9345,
+        "cursorY": 518.9211,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 6066.666667,
+      "values": {
+        "cursorX": 316.0398,
+        "cursorY": 514.2952,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 6083.333333,
+      "values": {
+        "cursorX": 325.9673,
+        "cursorY": 509.2329,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 6100,
+      "values": {
+        "cursorX": 336.7034,
+        "cursorY": 503.7364,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 6116.666667,
+      "values": {
+        "cursorX": 348.2288,
+        "cursorY": 497.8102,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 6133.333333,
+      "values": {
+        "cursorX": 360.5187,
+        "cursorY": 491.4618,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 6150,
+      "values": {
+        "cursorX": 373.5437,
+        "cursorY": 484.7006,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 6166.666667,
+      "values": {
+        "cursorX": 387.2694,
+        "cursorY": 477.5389,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 6183.333333,
+      "values": {
+        "cursorX": 401.6574,
+        "cursorY": 469.9909,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 6200,
+      "values": {
+        "cursorX": 416.6654,
+        "cursorY": 462.0729,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 6216.666667,
+      "values": {
+        "cursorX": 432.2475,
+        "cursorY": 453.8037,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 6233.333333,
+      "values": {
+        "cursorX": 448.3547,
+        "cursorY": 445.2038,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 6250,
+      "values": {
+        "cursorX": 464.9352,
+        "cursorY": 436.2958,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 6266.666667,
+      "values": {
+        "cursorX": 481.9348,
+        "cursorY": 427.1038,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 6283.333333,
+      "values": {
+        "cursorX": 499.297,
+        "cursorY": 417.6541,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 6300,
+      "values": {
+        "cursorX": 516.9639,
+        "cursorY": 407.9744,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 6316.666667,
+      "values": {
+        "cursorX": 534.876,
+        "cursorY": 398.0939,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 6333.333333,
+      "values": {
+        "cursorX": 552.9728,
+        "cursorY": 388.0432,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 6350,
+      "values": {
+        "cursorX": 571.193,
+        "cursorY": 377.8542,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 6366.666667,
+      "values": {
+        "cursorX": 589.4751,
+        "cursorY": 367.56,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 6383.333333,
+      "values": {
+        "cursorX": 607.7574,
+        "cursorY": 357.1946,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 6400,
+      "values": {
+        "cursorX": 625.9785,
+        "cursorY": 346.7928,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 6416.666667,
+      "values": {
+        "cursorX": 644.0775,
+        "cursorY": 336.3901,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 6433.333333,
+      "values": {
+        "cursorX": 661.9945,
+        "cursorY": 326.0223,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 6450,
+      "values": {
+        "cursorX": 679.6707,
+        "cursorY": 315.7256,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 6466.666667,
+      "values": {
+        "cursorX": 697.0486,
+        "cursorY": 305.5362,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 6483.333333,
+      "values": {
+        "cursorX": 714.0727,
+        "cursorY": 295.4901,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 6500,
+      "values": {
+        "cursorX": 730.6894,
+        "cursorY": 285.6228,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 6516.666667,
+      "values": {
+        "cursorX": 746.8473,
+        "cursorY": 275.9694,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 6533.333333,
+      "values": {
+        "cursorX": 762.4978,
+        "cursorY": 266.5639,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 6550,
+      "values": {
+        "cursorX": 777.5948,
+        "cursorY": 257.4391,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 6566.666667,
+      "values": {
+        "cursorX": 792.0956,
+        "cursorY": 248.6267,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 6583.333333,
+      "values": {
+        "cursorX": 805.9607,
+        "cursorY": 240.1562,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 6600,
+      "values": {
+        "cursorX": 819.1541,
+        "cursorY": 232.0558,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 6616.666667,
+      "values": {
+        "cursorX": 831.644,
+        "cursorY": 224.3509,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 6633.333333,
+      "values": {
+        "cursorX": 843.4024,
+        "cursorY": 217.0649,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 6650,
+      "values": {
+        "cursorX": 854.4057,
+        "cursorY": 210.218,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 6666.666667,
+      "values": {
+        "cursorX": 864.6352,
+        "cursorY": 203.8279,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 6683.333333,
+      "values": {
+        "cursorX": 874.0768,
+        "cursorY": 197.9086,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 6700,
+      "values": {
+        "cursorX": 882.7218,
+        "cursorY": 192.4707,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 6716.666667,
+      "values": {
+        "cursorX": 890.5667,
+        "cursorY": 187.5211,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 6733.333333,
+      "values": {
+        "cursorX": 897.6138,
+        "cursorY": 183.0627,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 6750,
+      "values": {
+        "cursorX": 903.8716,
+        "cursorY": 179.094,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 6766.666667,
+      "values": {
+        "cursorX": 909.3546,
+        "cursorY": 175.6092,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 6783.333333,
+      "values": {
+        "cursorX": 914.0839,
+        "cursorY": 172.5979,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 6800,
+      "values": {
+        "cursorX": 918.0875,
+        "cursorY": 170.0445,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 6816.666667,
+      "values": {
+        "cursorX": 921.4006,
+        "cursorY": 167.9286,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 6833.333333,
+      "values": {
+        "cursorX": 924.066,
+        "cursorY": 166.2246,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 6850,
+      "values": {
+        "cursorX": 926.1339,
+        "cursorY": 164.9014,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 6866.666667,
+      "values": {
+        "cursorX": 927.6629,
+        "cursorY": 163.9223,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 6883.333333,
+      "values": {
+        "cursorX": 928.7201,
+        "cursorY": 163.2451,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 6900,
+      "values": {
+        "cursorX": 929.3811,
+        "cursorY": 162.8215,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 6916.666667,
+      "values": {
+        "cursorX": 929.7308,
+        "cursorY": 162.5974,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 6933.333333,
+      "values": {
+        "cursorX": 929.8634,
+        "cursorY": 162.5125,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 6950,
+      "values": {
+        "cursorX": 929.8828,
+        "cursorY": 162.5,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 6966.666667,
+      "values": {
+        "cursorX": 929.8828,
+        "cursorY": 162.5,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 6983.333333,
+      "values": {
+        "cursorX": 929.8828,
+        "cursorY": 162.5,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 7000,
+      "values": {
+        "cursorX": 929.8828,
+        "cursorY": 162.5,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 7016.666667,
+      "values": {
+        "cursorX": 929.8828,
+        "cursorY": 162.5,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 7033.333333,
+      "values": {
+        "cursorX": 929.8828,
+        "cursorY": 162.5,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 7050,
+      "values": {
+        "cursorX": 929.8828,
+        "cursorY": 162.5,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 7066.666667,
+      "values": {
+        "cursorX": 929.8828,
+        "cursorY": 162.5,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 7083.333333,
+      "values": {
+        "cursorX": 929.8828,
+        "cursorY": 162.5,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 7100,
+      "values": {
+        "cursorX": 929.8828,
+        "cursorY": 162.5,
+        "cursorPressed": 1,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 7116.666667,
+      "values": {
+        "cursorX": 929.8828,
+        "cursorY": 162.5,
+        "cursorPressed": 1,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 7133.333333,
+      "values": {
+        "cursorX": 929.8828,
+        "cursorY": 162.5,
+        "cursorPressed": 1,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 7150,
+      "values": {
+        "cursorX": 929.8828,
+        "cursorY": 162.5,
+        "cursorPressed": 1,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 7166.666667,
+      "values": {
+        "cursorX": 929.8828,
+        "cursorY": 162.5,
+        "cursorPressed": 1,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 7183.333333,
+      "values": {
+        "cursorX": 929.8828,
+        "cursorY": 162.5,
+        "cursorPressed": 1,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 7200,
+      "values": {
+        "cursorX": 929.8828,
+        "cursorY": 162.5,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 7216.666667,
+      "values": {
+        "cursorX": 929.8828,
+        "cursorY": 162.5,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 7233.333333,
+      "values": {
+        "cursorX": 929.8828,
+        "cursorY": 162.5,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 7250,
+      "values": {
+        "cursorX": 929.8828,
+        "cursorY": 162.5,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 7266.666667,
+      "values": {
+        "cursorX": 929.8828,
+        "cursorY": 162.5,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 7283.333333,
+      "values": {
+        "cursorX": 929.8828,
+        "cursorY": 162.5,
+        "cursorPressed": 0,
+        "cursorShape": 1,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 7300,
+      "values": {
+        "cursorX": 929.8828,
+        "cursorY": 162.5,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 7316.666667,
+      "values": {
+        "cursorX": 929.8828,
+        "cursorY": 162.5,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 7333.333333,
+      "values": {
+        "cursorX": 929.8828,
+        "cursorY": 162.5,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 7350,
+      "values": {
+        "cursorX": 929.8828,
+        "cursorY": 162.5,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 7366.666667,
+      "values": {
+        "cursorX": 929.8828,
+        "cursorY": 162.5,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 7383.333333,
+      "values": {
+        "cursorX": 929.8828,
+        "cursorY": 162.5,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 7400,
+      "values": {
+        "cursorX": 929.8828,
+        "cursorY": 162.5,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 7416.666667,
+      "values": {
+        "cursorX": 929.8828,
+        "cursorY": 162.5,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 7433.333333,
+      "values": {
+        "cursorX": 929.8828,
+        "cursorY": 162.5,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 7450,
+      "values": {
+        "cursorX": 929.8828,
+        "cursorY": 162.5,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 7466.666667,
+      "values": {
+        "cursorX": 929.8828,
+        "cursorY": 162.5,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 7483.333333,
+      "values": {
+        "cursorX": 929.8828,
+        "cursorY": 162.5,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 7500,
+      "values": {
+        "cursorX": 929.8828,
+        "cursorY": 162.5,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 7516.666667,
+      "values": {
+        "cursorX": 929.8828,
+        "cursorY": 162.5,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 7533.333333,
+      "values": {
+        "cursorX": 929.8828,
+        "cursorY": 162.5,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 7550,
+      "values": {
+        "cursorX": 929.8828,
+        "cursorY": 162.5,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 7566.666667,
+      "values": {
+        "cursorX": 929.8828,
+        "cursorY": 162.5,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 7583.333333,
+      "values": {
+        "cursorX": 929.8828,
+        "cursorY": 162.5,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 7600,
+      "values": {
+        "cursorX": 929.8828,
+        "cursorY": 162.5,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 7616.666667,
+      "values": {
+        "cursorX": 929.8828,
+        "cursorY": 162.5,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 7633.333333,
+      "values": {
+        "cursorX": 929.8828,
+        "cursorY": 162.5,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 7650,
+      "values": {
+        "cursorX": 929.8828,
+        "cursorY": 162.5,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 7666.666667,
+      "values": {
+        "cursorX": 929.8828,
+        "cursorY": 162.5,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 7683.333333,
+      "values": {
+        "cursorX": 929.8828,
+        "cursorY": 162.5,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 7700,
+      "values": {
+        "cursorX": 929.8828,
+        "cursorY": 162.5,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 7716.666667,
+      "values": {
+        "cursorX": 929.8828,
+        "cursorY": 162.5,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 7733.333333,
+      "values": {
+        "cursorX": 929.8828,
+        "cursorY": 162.5,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 7750,
+      "values": {
+        "cursorX": 929.8828,
+        "cursorY": 162.5,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 7766.666667,
+      "values": {
+        "cursorX": 929.8828,
+        "cursorY": 162.5,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 7783.333333,
+      "values": {
+        "cursorX": 929.8828,
+        "cursorY": 162.5,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 7800,
+      "values": {
+        "cursorX": 929.8828,
+        "cursorY": 162.5,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 7816.666667,
+      "values": {
+        "cursorX": 929.8828,
+        "cursorY": 162.5,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 7833.333333,
+      "values": {
+        "cursorX": 929.8828,
+        "cursorY": 162.5,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 7850,
+      "values": {
+        "cursorX": 929.8828,
+        "cursorY": 162.5,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 7866.666667,
+      "values": {
+        "cursorX": 929.8828,
+        "cursorY": 162.5,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 7883.333333,
+      "values": {
+        "cursorX": 929.8828,
+        "cursorY": 162.5,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 7900,
+      "values": {
+        "cursorX": 929.8828,
+        "cursorY": 162.5,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 7916.666667,
+      "values": {
+        "cursorX": 929.8828,
+        "cursorY": 162.5,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 7933.333333,
+      "values": {
+        "cursorX": 929.8828,
+        "cursorY": 162.5,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 7950,
+      "values": {
+        "cursorX": 929.8828,
+        "cursorY": 162.5,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 7966.666667,
+      "values": {
+        "cursorX": 929.8828,
+        "cursorY": 162.5,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    },
+    {
+      "timeMs": 7983.333333,
+      "values": {
+        "cursorX": 929.8828,
+        "cursorY": 162.5,
+        "cursorPressed": 0,
+        "cursorShape": 0,
+        "cursorInCapture": 1
+      }
+    }
+  ]
+}
