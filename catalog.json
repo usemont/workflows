@@ -1160,6 +1160,80 @@
       }
     ],
     "title": "Square post"
+  },
+  {
+    "canonical": {
+      "path": "recorders/camera-recorder.mont",
+      "recorderId": "camera",
+      "repository": "usemont/programmatic-tools",
+      "revision": "1676059f73141282ccec2ee854669acf20a98cf8",
+      "sha256": "8f8d36bb831a4884feb804a2ec0d93be7fb1a45c364485704f0b9318937d53bf"
+    },
+    "category": "Tools",
+    "compatibility": {
+      "recipeVersion": 1,
+      "recordingSessionVersion": 1
+    },
+    "description": "Camera-only recording layout with Studio theme. Fictional AI presenter and silent microphone; no live capture.",
+    "example": {
+      "assets": [
+        {
+          "path": "assets/template-media/recorders/silence.m4a",
+          "sha256": "2ad850f642488893f15cf5a75fa5eb5ed05e9165a663c5066ee2dec90bbdcbbc"
+        },
+        {
+          "path": "assets/template-media/recorders/presenter.mp4",
+          "sha256": "b360b89f1ce1ed91e8407faa71c65ae2e6547e3b773762f223222972ca9e80da"
+        },
+        {
+          "path": "templates/tools/camera-only/asset-catalog.json",
+          "sha256": "943c1eded098ecb56bb2aa9c54889d59e71b3f1bba34ce43e12850ad612ab94a"
+        }
+      ],
+      "id": "synthetic-recorder-demo",
+      "previews": {
+        "gif": {
+          "path": "assets/previews/recorder-camera-only.gif",
+          "sha256": "0361672edbe96b13c9962db763d3a72c5643822bcdbe1b31c2539b3d7bb93621"
+        },
+        "mp4": {
+          "path": "assets/previews/recorder-camera-only.mp4",
+          "sha256": "bcd61d37b4db5ee86b11f10b1a137b6f42f769e23368a8f6da4a5527a4688af6"
+        }
+      },
+      "recipe": {
+        "path": "templates/tools/camera-only/recipe.json",
+        "sha256": "87c42f3c7aaf2107e8e58c920c2aa22479a887e5049c8779b6b9e8bc91fc19d6"
+      }
+    },
+    "name": "camera-only",
+    "requiredCapabilities": [
+      {
+        "capabilityId": "span.transient-projection",
+        "minimumVersion": 1
+      },
+      {
+        "capabilityId": "capture.sample-stream",
+        "minimumVersion": 1
+      },
+      {
+        "capabilityId": "resource.chunked-generation",
+        "minimumVersion": 1
+      },
+      {
+        "capabilityId": "recording.session",
+        "minimumVersion": 1
+      },
+      {
+        "capabilityId": "microphoneCapture",
+        "minimumVersion": 1
+      },
+      {
+        "capabilityId": "cameraCapture",
+        "minimumVersion": 1
+      }
+    ],
+    "title": "Camera only"
   }
   ],
   "workflows": [

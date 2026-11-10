@@ -160,6 +160,9 @@ Square A/B previews. Each template includes a standalone scene and a reusable li
 <td align="center" valign="top"><a href="templates/tools/shorts-stack"><img src="assets/previews/recorder-shorts-stack.gif" width="180" alt="Shorts stack: portrait screen and presenter with Glass styling"></a><br><a href="templates/tools/shorts-stack"><strong>Shorts stack</strong></a><br><code>mont tools preview shorts-stack</code></td>
 <td align="center" valign="top"><a href="templates/tools/square-post"><img src="assets/previews/recorder-square-post.gif" width="260" alt="Square post: screen and presenter with Device styling"></a><br><a href="templates/tools/square-post"><strong>Square post</strong></a><br><code>mont tools preview square-post</code></td>
 </tr>
+<tr>
+<td align="center" valign="top"><a href="templates/tools/camera-only"><img src="assets/previews/recorder-camera-only.gif" width="260" alt="Camera only: fictional AI presenter with Studio styling"></a><br><a href="templates/tools/camera-only"><strong>Camera only</strong></a><br><code>mont tools preview camera-only</code></td>
+</tr>
 </table>
 
 ## Terminal showcase
