@@ -63,6 +63,9 @@ Existing lockfiles stay pinned until migrated.
 <td align="center" valign="top"><a href="templates/product-marketing/subscription-pile-up"><img src="assets/previews/subscription-pile-up.gif" width="360" alt="Eight video-production tool subscription cards pop into a loose constellation with bouncy entrances and gentle continuous wobble"></a><br><a href="templates/product-marketing/subscription-pile-up"><strong>Subscription pile-up</strong></a><br><code>mont templates preview subscription-pile-up</code></td>
 <td align="center" valign="top"><a href="templates/product-marketing/punch-through-words"><img src="assets/previews/punch-through-words.gif" width="360" alt="White words stamp onto a widening field of subscription cards with synchronized camera impacts, blur and spring reveals"></a><br><a href="templates/product-marketing/punch-through-words"><strong>Punch-through words</strong></a><br><code>mont templates preview punch-through-words</code></td>
 </tr>
+<tr>
+<td align="center" valign="top"><a href="templates/product-marketing/card-vortex"><img src="assets/previews/card-vortex.gif" width="360" alt="Video-tool cards accelerate through a clockwise vortex with individual banking and motion blur before collapsing into a light point"></a><br><a href="templates/product-marketing/card-vortex"><strong>Card vortex</strong></a><br><code>mont templates preview card-vortex</code></td>
+</tr>
 </table>
 
 ## Mock UI

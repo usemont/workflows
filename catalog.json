@@ -82,6 +82,14 @@
       "files": ["scene.tsx"]
     },
     {
+      "name": "card-vortex",
+      "title": "Card vortex",
+      "category": "Product marketing",
+      "description": "Original video-tool cards drain through a clockwise vortex with radius-driven acceleration, velocity-aligned banking, motion blur and a light-point handoff; square 960 × 960, 3 seconds. Prices are illustrative.",
+      "path": "templates/product-marketing/card-vortex",
+      "files": ["scene.tsx"]
+    },
+    {
       "name": "chatgpt-exchange",
       "title": "ChatGPT exchange",
       "category": "Mock UI",
