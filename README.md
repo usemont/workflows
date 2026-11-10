@@ -10,19 +10,30 @@ Ready-to-run video workflows and editable motion templates for [Mont CLI](https:
 
 ## Try a template
 
+**Apple Silicon · macOS 14+ · Node.js 22+**
+
 ```sh
-# install (macOS)
-brew install usemont/tap/mont
-# generate preview
-mont templates preview stretch-row-repeater
+npx usemont templates preview morph-text
+# Reproducible CI:
+npx --yes usemont@0.1.0-preview.17 templates preview morph-text
 ```
 
-On Linux, use the [signed CLI installation guide](https://github.com/usemont/mont-cli/blob/main/docs/install.md#linux).
+No Homebrew CLI installation is required. Preview opens an editable project under
+`out/morph-text/project`; keep the web editor command running while editing.
+Preview/editor use needs no FFmpeg. Media import and MP4 rendering still require
+separately installed FFmpeg/ffprobe.
 
-Saves `preview.mp4` and an editable project to `out/stretch-row-repeater/`.
+The default npm channel currently selects `0.1.0-preview.17`, not a stable release.
+Windows/Linux npm payloads are not published. Linux users can consult the
+[signed CLI installation guide](https://github.com/usemont/mont-cli/blob/main/docs/install.md#linux).
 
-Explore the latest collection with `mont templates list` and `mont workflows list`.
-Inspect settings with `mont templates show <name>` before rendering.
+Alternatively, `brew install usemont/tap/usemont` installs the native executable
+`mont`. With npm only, prefix the `mont` examples below with
+`npx usemont` instead of `mont`; for example,
+`npx usemont templates list`.
+Existing `@usemont/cli` installations are not automatically migrated or removed;
+explicitly replace that dependency with `usemont` and commit the updated lockfile.
+Existing lockfiles stay pinned until migrated.
 
 **Image-template CLI requirement:** Image-backed templates require a CLI build with embedded-image template materialization support. `0.1.0-preview.16` does not support their standalone create/preview flow. The GIFs are independently viewable; availability of a public CLI release with this capability is not claimed here.
 
