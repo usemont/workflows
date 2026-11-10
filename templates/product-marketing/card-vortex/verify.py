@@ -8,8 +8,11 @@ import sys
 import tempfile
 import uuid
 
-PALETTE = dict(background="#101521", surface="#202A3B", border="#39465A",
-               ink="#F3F4F8", muted="#A6B1C5", accent="#F5ACD1")
+INPUTS = dict(width=960, height=960, speed=1, holdMs=550, collapseMs=1700,
+              staggerMs=110, circulation=300, coreRadius=70, flowRampMs=150,
+              alignLagMs=55, cardBlur=0.7, defocus=3, shutterMs=20,
+              vignette=0.5, flash=0.7, background="#101521", surface="#202A3B",
+              border="#39465A", ink="#F3F4F8", muted="#A6B1C5", accent="#F5ACD1")
 
 
 def run(*args, stdin=None):
@@ -68,7 +71,7 @@ def render(output):
             "requestedId": "card-vortex",
             "placement": dict(startMs=0, durationMs=3000, trackId="template", layer=0),
             "capability": {"kind": "programmatic.scene", "version": 1, "state": {
-                "sourceTsx": source, "variables": PALETTE,
+                "sourceTsx": source, "variables": INPUTS,
                 "frame": dict(x=0, y=0, width=960, height=960),
             }},
             "interaction": dict(selectable=True),

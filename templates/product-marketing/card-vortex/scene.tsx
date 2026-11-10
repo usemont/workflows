@@ -82,7 +82,7 @@ export default defineSpanScene({
     width: numberVar(960), height: numberVar(960), speed: numberVar(1),
     holdMs: numberVar(550), collapseMs: numberVar(1700), staggerMs: numberVar(110),
     circulation: numberVar(300), coreRadius: numberVar(70), flowRampMs: numberVar(150), alignLagMs: numberVar(55),
-    perspective: numberVar(900), cardBlur: numberVar(0.7), defocus: numberVar(3), shutterMs: numberVar(20),
+    cardBlur: numberVar(0.7), defocus: numberVar(3), shutterMs: numberVar(20),
     vignette: numberVar(0.5), flash: numberVar(0.7),
     background: colorVar("#101521"), surface: colorVar("#202A3B"), border: colorVar("#39465A"),
     ink: colorVar("#F3F4F8"), muted: colorVar("#A6B1C5"), accent: colorVar("#F5ACD1"),
@@ -178,7 +178,7 @@ export default defineSpanScene({
                 rotation={cardRotation(card, computed.clock)}
                 rotationX={cardBank(card, computed.clock) * (28 + card.pitch / 8 * Math.sin(flowAge(card, computed.clock) / 130 + card.phase))}
                 rotationY={cardBank(card, computed.clock) * (card.yaw * 0.42 + 10 * Math.sin(flowAge(card, computed.clock) / 170 + card.phase))}
-                perspective={Math.max(500, vars.perspective)}>
+                perspective={900}>
                 <Rect id={"card-" + index} width={340} height={98} radius={17} fill={vars.surface}
                   stroke={vars.border} strokeWidth={1} shadowColor="#000000" shadowBlur={20} shadowOffsetY={8} shadowOpacity={0.2} />
                 <Image id={"lighting-" + index} src={tokens.cardLighting} width={340} height={98} />

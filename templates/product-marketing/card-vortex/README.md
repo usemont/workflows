@@ -9,7 +9,7 @@ The original video-editing tool cards from **Punch-through words** drain through
 - `tokens.cards`: original labels, prices, center offsets, sizes and colors. `delay` staggers release, `arc` varies circulation, and `pitch`/`yaw` vary the banking flutter. Traits are fixed literals sampled from the recorded seed, never resampled during playback.
 - `holdMs`, `collapseMs`, `staggerMs`: opening hold, field-drain duration and release spread. Defaults: 550, 1700 and 110 ms. The light handoff follows their sum.
 - `circulation`: clockwise flow strength, default 300 px²/ms. Outside the core, tangential speed rises as `1/r` and angular speed as `1/r²`; `coreRadius` (70 px) caps angular speed and softens the final capture.
-- `flowRampMs` (150 ms) eases the flow in. `alignLagMs` (55 ms) lets card headings trail their velocity; banking increases toward the core. `perspective` sets local card perspective distance.
+- `flowRampMs` (150 ms) eases the flow in. `alignLagMs` (55 ms) lets card headings trail their velocity; banking increases toward the core. Local perspective is authored at 900 px; edit its literal in the card group rather than binding a runtime input, which native retained lowering does not support.
 - `cardBlur`, `defocus`: opening softness and additional collapse defocus. `shutterMs` controls directional blur from each card's actual curved velocity.
 - `vignette`, `flash`: edge darkening and light-pulse strength. The settled light point remains for the next scene's handoff.
 - `background`, `surface`, `border`, `ink`, `muted`, `accent`: inherited card palette.
