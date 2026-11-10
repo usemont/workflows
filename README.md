@@ -60,7 +60,8 @@ Existing lockfiles stay pinned until migrated.
 
 <table>
 <tr>
-<td align="center" valign="top"><a href="templates/product-marketing/subscription-pile-up"><img src="assets/previews/subscription-pile-up.gif" width="480" alt="Eight video-production tool subscription cards pop into a loose constellation with bouncy entrances and gentle continuous wobble"></a><br><a href="templates/product-marketing/subscription-pile-up"><strong>Subscription pile-up</strong></a><br><code>mont templates preview subscription-pile-up</code></td>
+<td align="center" valign="top"><a href="templates/product-marketing/subscription-pile-up"><img src="assets/previews/subscription-pile-up.gif" width="360" alt="Eight video-production tool subscription cards pop into a loose constellation with bouncy entrances and gentle continuous wobble"></a><br><a href="templates/product-marketing/subscription-pile-up"><strong>Subscription pile-up</strong></a><br><code>mont templates preview subscription-pile-up</code></td>
+<td align="center" valign="top"><a href="templates/product-marketing/punch-through-words"><img src="assets/previews/punch-through-words.gif" width="360" alt="White words stamp onto a widening field of subscription cards with synchronized camera impacts, blur and spring reveals"></a><br><a href="templates/product-marketing/punch-through-words"><strong>Punch-through words</strong></a><br><code>mont templates preview punch-through-words</code></td>
 </tr>
 </table>
 

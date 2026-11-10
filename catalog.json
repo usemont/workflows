@@ -74,6 +74,14 @@
       "files": ["scene.tsx"]
     },
     {
+      "name": "punch-through-words",
+      "title": "Punch-through words",
+      "category": "Product marketing",
+      "description": "Three editable white words stamp onto a widening field of video-tool subscription cards. Synchronized camera pullbacks, growing impact shake, spring reveals, motion blur, defocus and vignette; square 960 × 960, 3.4 seconds. Prices are illustrative.",
+      "path": "templates/product-marketing/punch-through-words",
+      "files": ["scene.tsx"]
+    },
+    {
       "name": "chatgpt-exchange",
       "title": "ChatGPT exchange",
       "category": "Mock UI",
