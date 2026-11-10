@@ -6,7 +6,7 @@
 
 Ready-to-run video workflows and editable motion templates for [Mont CLI](https://github.com/usemont/mont-cli).
 
-[Try a template](#try-a-template) · [Kinetic typography](#kinetic-typography) · [Mock UI](#mock-ui) · [Notifications](#notifications) · [Social posts](#social-posts) · [Subscribe & follow](#subscribe--follow) · [Cursors](#cursors) · [Transitions](#transitions) · [Tools](#tools) · [Terminal showcase](#terminal-showcase) · [Workflows](#workflows) · [Contribute](#contribute)
+[Try a template](#try-a-template) · [Kinetic typography](#kinetic-typography) · [Product marketing](#product-marketing) · [Mock UI](#mock-ui) · [Notifications](#notifications) · [Social posts](#social-posts) · [Subscribe & follow](#subscribe--follow) · [Cursors](#cursors) · [Transitions](#transitions) · [Tools](#tools) · [Terminal showcase](#terminal-showcase) · [Workflows](#workflows) · [Contribute](#contribute)
 
 ## Try a template
 
@@ -53,6 +53,14 @@ Existing lockfiles stay pinned until migrated.
 <tr>
 <td align="center" valign="top"><a href="templates/kinetic/camera-follow-captions"><img src="assets/previews/camera-follow-captions-square.gif" width="260" alt="Gold words pack into a grid as the camera pulls outward"></a><br><a href="templates/kinetic/camera-follow-captions"><strong>Camera follow captions</strong></a><br><code>mont templates preview camera-follow-captions</code></td>
 <td align="center" valign="top"><a href="templates/kinetic/caret-swap"><img src="assets/previews/caret-swap-square.gif" width="260" alt="A chartreuse caret wipes between two phrases with smooth motion and letter-by-letter typing"></a><br><a href="templates/kinetic/caret-swap"><strong>Caret swap</strong></a><br><code>mont templates preview caret-swap</code></td>
+</tr>
+</table>
+
+## Product marketing
+
+<table>
+<tr>
+<td align="center" valign="top"><a href="templates/product-marketing/subscription-pile-up"><img src="assets/previews/subscription-pile-up.gif" width="480" alt="Eight video-production tool subscription cards pop into a loose constellation with bouncy entrances and gentle continuous wobble"></a><br><a href="templates/product-marketing/subscription-pile-up"><strong>Subscription pile-up</strong></a><br><code>mont templates preview subscription-pile-up</code></td>
 </tr>
 </table>
 
