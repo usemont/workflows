@@ -65,6 +65,7 @@ Existing lockfiles stay pinned until migrated.
 </tr>
 <tr>
 <td align="center" valign="top"><a href="templates/product-marketing/card-vortex"><img src="assets/previews/card-vortex.gif" width="360" alt="Video-tool cards accelerate through a clockwise vortex with individual banking and motion blur before collapsing into a light point"></a><br><a href="templates/product-marketing/card-vortex"><strong>Card vortex</strong></a><br><code>mont templates preview card-vortex</code></td>
+<td align="center" valign="top"><a href="templates/product-marketing/tile-wall-reveal"><img src="assets/previews/tile-wall-reveal.gif" width="360" alt="A video-editing panel zooms out and rotates left into an isometric wall of original mini-tools that keeps panning along its vertical axis"></a><br><a href="templates/product-marketing/tile-wall-reveal"><strong>Tile wall reveal</strong></a><br><code>mont templates preview tile-wall-reveal</code></td>
 </tr>
 </table>
 

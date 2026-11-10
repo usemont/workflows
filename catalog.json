@@ -90,6 +90,14 @@
       "files": ["scene.tsx"]
     },
     {
+      "name": "tile-wall-reveal",
+      "title": "Tile wall reveal",
+      "category": "Product marketing",
+      "description": "An original video-editing panel pulls back while rotating left into a continuous isometric wall of editable mini-tools, then keeps panning along the wall's vertical axis; square 960 × 960, 6 seconds.",
+      "path": "templates/product-marketing/tile-wall-reveal",
+      "files": ["scene.tsx"]
+    },
+    {
       "name": "chatgpt-exchange",
       "title": "ChatGPT exchange",
       "category": "Mock UI",
