@@ -32,7 +32,12 @@ def render(output):
             "requestedId": "subscription-pile-up",
             "placement": {"startMs": 0, "durationMs": 5500, "trackId": "template", "layer": 0},
             "capability": {"kind": "programmatic.scene", "version": 1, "state": {
-                "sourceTsx": (HERE / "scene.tsx").read_text(), "variables": {},
+                "sourceTsx": (HERE / "scene.tsx").read_text(),
+                # Explicit palette inputs exercise the same binding path as templates create.
+                "variables": {"width": 960, "height": 960, "speed": 1,
+                              "background": "#101521", "surface": "#202A3B",
+                              "border": "#39465A", "ink": "#F3F4F8",
+                              "muted": "#A6B1C5", "accent": "#F5ACD1"},
                 "frame": {"x": 0, "y": 0, "width": 960, "height": 960}}},
             "interaction": {"selectable": True},
             "producer": {"kind": "programmatic", "id": "mont-templates", "version": "1"}}})

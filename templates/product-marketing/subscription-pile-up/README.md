@@ -12,11 +12,12 @@ mont templates preview subscription-pile-up
 python3 templates/product-marketing/subscription-pile-up/verify.py --output /tmp/subscription-pile-up.mp4
 ```
 
-Requires `mont`, Python 3, `ffmpeg`, and `ffprobe`. The command checks staggered arrivals, centered spring overshoot, continued motion after settling, and clearance between padded card silhouettes throughout the rendered animation (excluding the first 120 ms of each fade-in). To check an existing default render, pass `--video /path/to/video.mp4` instead.
+Requires `mont`, Python 3, `ffmpeg`, and `ffprobe`. The command renders with explicit palette inputs (as supplied by `templates create`) and checks staggered arrivals, centered spring overshoot, continued motion after settling, and clearance between padded card silhouettes throughout the rendered animation (excluding the first 120 ms of each fade-in). To check an existing default render, pass `--video /path/to/video.mp4` instead.
 
 ## Editing
 
 - `variables`: palette and playback speed (0.25–2).
+- Text colors use `computed.string` CSS-color bindings so explicit CLI palette inputs remain renderer-compatible.
 - `tokens.cards`: original names, badge letters, monthly prices, arrival times, center positions, rotations, scales, wobble phases, and periods in milliseconds.
 - Centers were repacked offline against rotated footprints sampled at 60 Hz over the default animation, including overshoot and wobble, with a 44 px minimum clearance and 28 px canvas inset. The scene keeps literal poses: no per-frame collision solver. Re-run verification after changing poses or motion.
 - `pop`: underdamped spring; `8` controls decay and `13` controls bounce frequency. Card opacity enters over 180 ms.

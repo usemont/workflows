@@ -44,6 +44,10 @@ export default defineSpanScene({
     ],
   },
   computeds: {
+    badgeInk: computed.string(() => vars.background),
+    textInk: computed.string(() => vars.ink),
+    mutedInk: computed.string(() => vars.muted),
+    priceInk: computed.string(() => vars.accent),
     scale: computed.number(() => Math.min(vars.width / 960, vars.height / 960)),
     clock: computed.number(() => time.ms * Math.max(0.25, Math.min(2, vars.speed))),
   },
@@ -65,15 +69,15 @@ export default defineSpanScene({
               <Rect id={"badge-" + index} x={18} y={25} width={48} height={48} radius={13} fill={card.color}
                 shadowColor={card.color} shadowBlur={14} shadowOpacity={0.24} />
               <Text id={"initial-" + index} text={card.badge} x={18} y={31} width={48} height={35}
-                fontFamily="Inter" weight={700} size={25} lineHeight={32} align="center" color={vars.background} />
+                fontFamily="Inter" weight={700} size={25} lineHeight={32} align="center" color={computed.badgeInk} />
               <Text id={"name-" + index} text={card.name} x={81} y={25} width={170} height={28}
-                fontFamily="Inter" weight={600} size={19} lineHeight={25} color={vars.ink} />
+                fontFamily="Inter" weight={600} size={19} lineHeight={25} color={computed.textInk} />
               <Text id={"renewal-" + index} text="BILLED MONTHLY" x={81} y={57} width={166} height={20}
-                fontFamily="Inter" weight={500} size={10} lineHeight={16} letterSpacing={1.2} color={vars.muted} />
+                fontFamily="Inter" weight={500} size={10} lineHeight={16} letterSpacing={1.2} color={computed.mutedInk} />
               <Text id={"price-" + index} text={"$" + card.price} x={245} y={23} width={77} height={34}
-                fontFamily="Inter" weight={600} size={27} lineHeight={34} align="right" color={vars.accent} />
+                fontFamily="Inter" weight={600} size={27} lineHeight={34} align="right" color={computed.priceInk} />
               <Text id={"period-" + index} text="/ month" x={245} y={59} width={77} height={18}
-                fontFamily="Inter" weight={400} size={11} lineHeight={16} align="right" color={vars.muted} />
+                fontFamily="Inter" weight={400} size={11} lineHeight={16} align="right" color={computed.mutedInk} />
             </Group>
         )} />
       </Group>
