@@ -129,6 +129,9 @@ Existing lockfiles stay pinned until migrated.
 <tr>
 <td align="center" valign="top"><a href="templates/cursors/agent-cursor"><img src="assets/previews/agent-cursor.gif" width="640" alt="A Mont AI cursor types its intent, selects vertical format and enables captions while concentric golden-ratio artwork reflows smoothly"></a><br><a href="templates/cursors/agent-cursor"><strong>Agent cursor</strong></a><br><code>mont templates preview agent-cursor</code></td>
 </tr>
+<tr>
+<td align="center" valign="top"><a href="templates/cursors/website-3d-cursor"><img src="assets/previews/website-3d-cursor.gif" width="480" alt="A cursor guides a light-themed fictional video editor as its panels land in depth with a gently following camera"></a><br><a href="templates/cursors/website-3d-cursor"><strong>Editor 3D assembly</strong></a><br><code>mont templates preview website-3d-cursor</code></td>
+</tr>
 </table>
 
 ## Carousels

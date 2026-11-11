@@ -210,6 +210,14 @@
       "files": ["scene.tsx"]
     },
     {
+      "name": "website-3d-cursor",
+      "title": "Editor 3D assembly",
+      "category": "Cursors",
+      "description": "An original light-themed Forma video editor assembles through staggered depth landings, guided by a Mont cursor and a restrained following camera; editable native UI, square 960 × 960, 9 seconds.",
+      "path": "templates/cursors/website-3d-cursor",
+      "files": ["scene.tsx", "README.md", "verify.py"]
+    },
+    {
       "name": "circle-carousel",
       "title": "Circle carousel",
       "category": "Carousels",
