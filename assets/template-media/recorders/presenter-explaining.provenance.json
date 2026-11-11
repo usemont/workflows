@@ -1,0 +1,187 @@
+{
+  "path": "assets/template-media/recorders/presenter-explaining.mp4",
+  "sha256": "c90d2acb6f6f24ef48f893df17505f988cc68bb2c37b60b78948a9120a9dba80",
+  "description": "Original AI-generated fictional adult product educator visibly explaining Mont screen/camera layout switching. Synthetic video, not real camera capture, proof of recording, a real person, or an endorsement.",
+  "aiGenerated": true,
+  "fictionalIdentity": true,
+  "identity": {
+    "name": null,
+    "description": "Completely fictional adult man, approximately 38, warm olive skin, brown eyes, short dark-brown side-parted hair, subtle stubble, plain muted midnight-blue crewneck. No source face image or real-person reference media was used."
+  },
+  "provider": "Google Cloud Vertex AI",
+  "model": "veo-3.1-generate-001",
+  "region": "us-central1",
+  "prompt": "A single uninterrupted photorealistic eight-second real-time video, locked stationary webcam view, of a completely fictional adult male product educator. Not based on any real person, image, actor, celebrity, or camera capture. He is about 38, warm olive skin, brown eyes, short dark-brown side-parted hair and subtle stubble, plain muted midnight-blue crewneck. He sits centered and looks at the lens. IMPORTANT COMPOSITION: camera is farther away, showing upper chest and shoulders, with his whole head taking only about 40 percent of image height; top of hair is at 18 percent of image height, not at the top edge. Leave substantial clear neutral background above the head and on both sides, safe for centered square, circle and portrait webcam crops. The face stays centered horizontally at all times. Every pixel of the background is a featureless flat warm light-gray seamless surface: no lamps, no tripods, no studio equipment, no furniture, no microphone, no objects, no gradient vignette. Soft even diffuse light on face, real skin texture. He is actively and visibly explaining Mont screen-and-camera layout switching throughout the clip, speaking at normal conversational speed: natural varied open and closed mouth phonemes, jaw movement, small friendly eyebrow changes, natural blinks, restrained tiny conversational nods. Brief natural phrase pauses but never a silent waiting pose. Relaxed upper body stays stable; no swaying, leaning or large head movements. Both hands stay outside the frame below the bottom edge. Locked camera with no movement, no zoom, no cuts. Original AI-generated fictional identity, not a real recording or endorsement. Silent video; visible speech motion is essential, no titles or subtitles.",
+  "parameters": {
+    "sampleCount": 1,
+    "durationSeconds": 8,
+    "aspectRatio": "16:9",
+    "resolution": "720p",
+    "personGeneration": "allow_adult",
+    "generateAudio": false,
+    "enhancePrompt": true,
+    "seed": 731463,
+    "negativePrompt": "studio equipment, lamp, light stand, tripod, boom, microphone, camera equipment, furniture, objects in background, hair touching top edge, close-up, tightly cropped head, silent waiting, closed mouth throughout, frozen frame, blink loop, slow motion, exaggerated acting, large nods, bobbing, swaying, leaning, hand gestures, visible hands, zoom, pan, camera motion, cuts, transitions, changing identity, changing clothing, multiple people, child, celebrity, logos, watermarks, text, subtitles, interface"
+  },
+  "submittedAt": "2026-11-11T19:41:02.927538+00:00",
+  "generatedAt": "2026-11-11T19:45:10.803605+00:00",
+  "processedAt": "2026-11-11T19:46:28.162522+00:00",
+  "generation": {
+    "method": "text-to-video followed by two supported video extensions",
+    "sourceImage": null,
+    "sourceCameraCapture": false,
+    "sourceRealPersonMedia": false,
+    "continuousGeneratedDurationSeconds": 22,
+    "stages": [
+      {
+        "method": "text-to-video",
+        "submittedAt": "2026-11-11T19:41:02.927538+00:00",
+        "prompt": "A single uninterrupted photorealistic eight-second real-time video, locked stationary webcam view, of a completely fictional adult male product educator. Not based on any real person, image, actor, celebrity, or camera capture. He is about 38, warm olive skin, brown eyes, short dark-brown side-parted hair and subtle stubble, plain muted midnight-blue crewneck. He sits centered and looks at the lens. IMPORTANT COMPOSITION: camera is farther away, showing upper chest and shoulders, with his whole head taking only about 40 percent of image height; top of hair is at 18 percent of image height, not at the top edge. Leave substantial clear neutral background above the head and on both sides, safe for centered square, circle and portrait webcam crops. The face stays centered horizontally at all times. Every pixel of the background is a featureless flat warm light-gray seamless surface: no lamps, no tripods, no studio equipment, no furniture, no microphone, no objects, no gradient vignette. Soft even diffuse light on face, real skin texture. He is actively and visibly explaining Mont screen-and-camera layout switching throughout the clip, speaking at normal conversational speed: natural varied open and closed mouth phonemes, jaw movement, small friendly eyebrow changes, natural blinks, restrained tiny conversational nods. Brief natural phrase pauses but never a silent waiting pose. Relaxed upper body stays stable; no swaying, leaning or large head movements. Both hands stay outside the frame below the bottom edge. Locked camera with no movement, no zoom, no cuts. Original AI-generated fictional identity, not a real recording or endorsement. Silent video; visible speech motion is essential, no titles or subtitles.",
+        "parameters": {
+          "sampleCount": 1,
+          "durationSeconds": 8,
+          "aspectRatio": "16:9",
+          "resolution": "720p",
+          "personGeneration": "allow_adult",
+          "generateAudio": false,
+          "enhancePrompt": true,
+          "seed": 731463,
+          "negativePrompt": "studio equipment, lamp, light stand, tripod, boom, microphone, camera equipment, furniture, objects in background, hair touching top edge, close-up, tightly cropped head, silent waiting, closed mouth throughout, frozen frame, blink loop, slow motion, exaggerated acting, large nods, bobbing, swaying, leaning, hand gestures, visible hands, zoom, pan, camera motion, cuts, transitions, changing identity, changing clothing, multiple people, child, celebrity, logos, watermarks, text, subtitles, interface"
+        },
+        "operationName": "projects/slides-recorder-454014/locations/us-central1/publishers/google/models/veo-3.1-generate-001/operations/f21f7c17-fb0b-49ea-8d95-b88335dca129",
+        "completedAt": "2026-11-11T19:42:10.744487+00:00",
+        "outputSha256": "650abd6447c66b74bf896adad875b17a8871707c1b60350cae9cf39a9d18e3ec",
+        "outputBytes": 1800620,
+        "mimeType": "video/mp4",
+        "raiMediaFilteredCount": 0,
+        "outputDurationSeconds": 8
+      },
+      {
+        "method": "video-extension",
+        "submittedAt": "2026-11-11T19:42:28.009918+00:00",
+        "prompt": "Continue the exact same uninterrupted real-time locked webcam take with the same original fictional adult man, face, hairstyle, midnight-blue shirt, lighting and plain warm-gray background. He keeps actively explaining Mont screen-only, camera-only and combined screen-and-camera layouts to the lens at normal conversational speed. Visible varied natural mouth phonemes and jaw movement throughout, subtle eyebrow and cheek changes, occasional tiny conversational nod; relaxed steady torso. His hands remain below the frame. Do not conclude or freeze; continue the explanation naturally. Keep face centered, full hair and shoulders visible, ample clear background around head, same framing, no camera movement, no swaying, no gesturing, no cuts, no text, no objects appearing. Silent output is fine, natural visible speaking motion is essential.",
+        "parameters": {
+          "sampleCount": 1,
+          "aspectRatio": "16:9",
+          "resolution": "720p",
+          "personGeneration": "allow_adult",
+          "generateAudio": false,
+          "enhancePrompt": true,
+          "seed": 731464,
+          "negativePrompt": "studio equipment, lamp, light stand, tripod, boom, microphone, camera equipment, furniture, objects in background, hair touching top edge, close-up, tightly cropped head, silent waiting, closed mouth throughout, frozen frame, blink loop, slow motion, exaggerated acting, large nods, bobbing, swaying, leaning, hand gestures, visible hands, zoom, pan, camera motion, cuts, transitions, changing identity, changing clothing, multiple people, child, celebrity, logos, watermarks, text, subtitles, interface"
+        },
+        "operationName": "projects/slides-recorder-454014/locations/us-central1/publishers/google/models/veo-3.1-generate-001/operations/11fec018-53d9-4516-8761-975b809bcbdb",
+        "inputSha256": "650abd6447c66b74bf896adad875b17a8871707c1b60350cae9cf39a9d18e3ec",
+        "completedAt": "2026-11-11T19:43:53.045892+00:00",
+        "outputSha256": "851eb95c8536148622a89566c04d35e69827e8e2b59d23226dcf48538ae3c471",
+        "outputBytes": 3679946,
+        "mimeType": "video/mp4",
+        "raiMediaFilteredCount": 0,
+        "outputDurationSeconds": 15
+      },
+      {
+        "method": "video-extension",
+        "submittedAt": "2026-11-11T19:44:01.112651+00:00",
+        "prompt": "Continue the exact same uninterrupted real-time locked webcam take with the same original fictional adult man, face, hairstyle, midnight-blue shirt, lighting and plain warm-gray background. He keeps actively explaining Mont screen-only, camera-only and combined screen-and-camera layouts to the lens at normal conversational speed. Visible varied natural mouth phonemes and jaw movement throughout, subtle eyebrow and cheek changes, occasional tiny conversational nod; relaxed steady torso. His hands remain below the frame. Do not conclude or freeze; continue the explanation naturally. Keep face centered, full hair and shoulders visible, ample clear background around head, same framing, no camera movement, no swaying, no gesturing, no cuts, no text, no objects appearing. Silent output is fine, natural visible speaking motion is essential.",
+        "parameters": {
+          "sampleCount": 1,
+          "aspectRatio": "16:9",
+          "resolution": "720p",
+          "personGeneration": "allow_adult",
+          "generateAudio": false,
+          "enhancePrompt": true,
+          "seed": 731465,
+          "negativePrompt": "studio equipment, lamp, light stand, tripod, boom, microphone, camera equipment, furniture, objects in background, hair touching top edge, close-up, tightly cropped head, silent waiting, closed mouth throughout, frozen frame, blink loop, slow motion, exaggerated acting, large nods, bobbing, swaying, leaning, hand gestures, visible hands, zoom, pan, camera motion, cuts, transitions, changing identity, changing clothing, multiple people, child, celebrity, logos, watermarks, text, subtitles, interface"
+        },
+        "operationName": "projects/slides-recorder-454014/locations/us-central1/publishers/google/models/veo-3.1-generate-001/operations/30246f52-2d9e-4388-be28-58b60b5ceaf4",
+        "inputSha256": "851eb95c8536148622a89566c04d35e69827e8e2b59d23226dcf48538ae3c471",
+        "completedAt": "2026-11-11T19:45:10.803605+00:00",
+        "outputSha256": "d8eaaf0bef285eaf791c85ea90885fec7e9c9689cf9f8627606786aaeb076fb1",
+        "outputBytes": 5356230,
+        "mimeType": "video/mp4",
+        "raiMediaFilteredCount": 0,
+        "outputDurationSeconds": 22
+      }
+    ],
+    "rejectedAttempts": [
+      {
+        "method": "text-to-video",
+        "submittedAt": "2026-11-11T19:39:00.558127+00:00",
+        "prompt": "Original photorealistic continuous eight-second real-time studio webcam video of a completely fictional adult man, not based on any real person, photograph, actor, celebrity, or camera recording. He is approximately 38, has warm olive skin, short dark brown hair with a neat side part, subtle dark stubble, expressive brown eyes, and wears a plain muted midnight-blue crewneck shirt. One person only. He is a friendly product educator actively explaining how to switch Mont between screen sharing, camera-only, and a combined screen-and-camera layout. He is visibly speaking throughout: natural varied mouth articulation and jaw movement, relaxed brief pauses between phrases, small conversational eyebrow and cheek expression changes, a couple of restrained slight nods. His performance should read clearly as someone explaining, not waiting silently or merely blinking. Normal everyday speaking speed and normal real-time body movement; never slow motion. He looks into the lens, upper body comfortably steady, shoulders relaxed. His hands remain below the image the entire time; no gesturing, no swaying or leaning. Locked tripod camera, eye-level head-and-shoulders framing with the entire head and both shoulders visible, face exactly centered horizontally, generous empty headroom above his hair and broad background side margins. Keep his head within the central square and portrait crop-safe area for a circular webcam crop. Plain seamless neutral warm-gray background and soft steady flattering studio light, realistic skin texture. No camera movement, no cuts, no overlays, no text, no UI. This is an original synthetic presenter, not a recording or endorsement. Silent output is fine but mouth articulation must look like natural continuous conversational speech.",
+        "parameters": {
+          "sampleCount": 1,
+          "durationSeconds": 8,
+          "aspectRatio": "16:9",
+          "resolution": "720p",
+          "personGeneration": "allow_adult",
+          "generateAudio": false,
+          "enhancePrompt": true,
+          "seed": 731462,
+          "negativePrompt": "silent waiting, closed mouth throughout, motionless face, repeated blink loop, frozen frame, slow motion, exaggerated acting, large nods, head bobbing, swaying, leaning, hand gestures, visible hands, camera motion, zoom, pan, cuts, transitions, changing identity, changing clothing, multiple people, child, celebrity, logos, watermarks, text, subtitles, interface, objects in background"
+        },
+        "operationName": "projects/slides-recorder-454014/locations/us-central1/publishers/google/models/veo-3.1-generate-001/operations/7cf591ec-ff19-4f33-bc49-a1c29a3cdaf7",
+        "completedAt": "2026-11-11T19:40:17.890313+00:00",
+        "outputSha256": "1fc5d767836c6eeb8fffb3831108a0bc74ffc998b29cd2943c0c42c0cb34a784",
+        "outputBytes": 2142475,
+        "mimeType": "video/mp4",
+        "raiMediaFilteredCount": 0,
+        "selection": "rejected: studio light/tripod visible at left, insufficient headroom"
+      }
+    ],
+    "promptEnhancementRequiredByProvider": true,
+    "notes": "The final source consists of one 8-second original generation extended to 15 seconds and then 22 seconds by the same Veo 3.1 model using the preceding video bytes as input. Provider extension outputs include the earlier footage and a new 7-second continuation. All stages requested generateAudio:false. The 22-second output nevertheless contained AAC audio, which was removed from the final asset. Prompt enhancement was enabled; prompts recorded here are the submitted prompts, not claimed provider rewrites. Seeds do not guarantee determinism with prompt enhancement."
+  },
+  "postprocessing": {
+    "trim": {
+      "startSeconds": 0,
+      "durationSeconds": 18
+    },
+    "reframe": {
+      "inputWidth": 1280,
+      "inputHeight": 720,
+      "crop": "1280x648 at x=0,y=0; removes the lower 72 pixels",
+      "translationY": 72,
+      "outputWidth": 1280,
+      "outputHeight": 720,
+      "topBackgroundExtension": "72-pixel top border filled by smearing the existing first background scanline, providing crop-safe headroom. This affects only background; no face/body synthesis or frame interpolation."
+    },
+    "audio": "All audio streams removed.",
+    "encoding": {
+      "codec": "libx264",
+      "crf": 18,
+      "preset": "medium",
+      "pixelFormat": "yuv420p",
+      "container": "MP4 with faststart"
+    },
+    "timing": "Original 24 fps and normal 1x real-time playback retained. No repetition, looping, freeze frames, slow motion, retiming, frame interpolation, or time stretching.",
+    "ffmpegFilter": "crop=1280:648:0:0,pad=1280:720:0:72,fillborders=top=72:mode=smear"
+  },
+  "media": {
+    "mimeType": "video/mp4",
+    "videoCodec": "h264",
+    "width": 1280,
+    "height": 720,
+    "durationSeconds": 18,
+    "framesPerSecond": 24,
+    "frameCount": 432,
+    "audioStreams": 0,
+    "bytes": 3485525
+  },
+  "inspection": {
+    "metadata": "ffprobe -count_frames confirmed 18.000000 seconds, 1280x720 H.264 video at 24 fps, 432 declared and decoded frames, zero audio streams.",
+    "visual": "Inspected the accepted original 8-second generation at 2 fps, the complete 22-second extension sequence at 2 fps, and the final 18-second reframed clip in a 36-frame contact sheet at 2 fps. A centered 720x720 crop was also inspected at 8 seconds. Consistent fictional male identity and wardrobe, neutral warm-gray background, steady camera and torso, visible varied mouth articulation, blinks and modest expression/head changes. Whole head remains visible with increased headroom and wide side margins. No large hand gestures or swaying were observed in sampled frames.",
+    "limitations": [
+      "Generated silent speech-like articulation is not verified lip-sync to a specific transcript; the Mont explanation is the prompt intent, not a claimed captured spoken statement.",
+      "Small fingertips briefly enter the lower edge around the first extension despite the hands-below-frame instruction; no large hand movements were observed.",
+      "The generated source initially provided less headroom than requested; deterministic background-only top extension and lower-edge cropping were applied as documented.",
+      "Temporal contact sheets are sampled inspection, not a claim that every frame was manually reviewed."
+    ]
+  },
+  "usage": "Original synthetic presenter shared by the published Mont recording-layout launch example. Do not describe it as real captured camera footage. Existing published-template presenter.mp4 and provenance.json remain untouched.",
+  "providerDocumentation": [
+    "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/veo/3-1-generate",
+    "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/video/extend-videos",
+    "https://docs.cloud.google.com/gemini-enterprise-agent-platform/reference/rest/Shared.Types/VideoGenerationModelInstance",
+    "https://docs.cloud.google.com/gemini-enterprise-agent-platform/reference/rest/Shared.Types/VideoGenerationModelParams"
+  ]
+}

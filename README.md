@@ -6,7 +6,7 @@
 
 Preview animated templates, customize text and colors, and render videos from your terminal with [Mont CLI](https://github.com/usemont/mont-cli).
 
-[Installation](#installation) · [Try a template](#try-a-template) · [Kinetic typography](#kinetic-typography) · [Product marketing](#product-marketing) · [Mock UI](#mock-ui) · [Notifications](#notifications) · [Social posts](#social-posts) · [Subscribe & follow](#subscribe--follow) · [Cursors](#cursors) · [Transitions](#transitions) · [Tools](#tools) · [Terminal showcase](#terminal-showcase) · [Workflows](#workflows) · [Contribute](#contribute)
+[Installation](#installation) · [Try a template](#try-a-template) · [Launch videos](#launch-videos) · [Kinetic typography](#kinetic-typography) · [Product marketing](#product-marketing) · [Mock UI](#mock-ui) · [Notifications](#notifications) · [Social posts](#social-posts) · [Subscribe & follow](#subscribe--follow) · [Cursors](#cursors) · [Transitions](#transitions) · [Tools](#tools) · [Terminal showcase](#terminal-showcase) · [Workflows](#workflows) · [Contribute](#contribute)
 
 ## Installation
 
@@ -29,6 +29,24 @@ Preview opens an editable project at `out/morph-text/project`. Keep the web edit
 command running while editing.
 
 Install FFmpeg and ffprobe for media import and MP4 rendering.
+
+## Launch videos
+
+<a href="templates/launch-videos/feature-launch#mont-recording-layouts-example"><img src="assets/previews/recording-layouts-launch.gif" width="720" alt="Mont screen and camera recordings tween between corner bubble, side by side and presenter layouts with glass borders and a synchronized arrow cursor"></a>
+
+**[Recording layout launch](templates/launch-videos/feature-launch#mont-recording-layouts-example)** · 1920 × 1080 · 18 seconds · [Watch MP4](assets/previews/recording-layouts-launch.mp4)
+
+From a clone of this repository, create the editable project with its screen, camera,
+cursor and pinned recorder scenes:
+
+```sh
+npx --yes --package=usemont -- python3 templates/launch-videos/feature-launch/create-recording-layouts.py ./mont-layouts
+npx usemont edit -C ./mont-layouts
+```
+
+The same directory includes a [feature-launch template](templates/launch-videos/feature-launch)
+with editable headline, UI, callout, palette, logo and CTA slots.
+
 
 ## Kinetic typography
 
