@@ -1,6 +1,6 @@
 # Letter inflate swell
 
-Pale-mint lettering becomes an airy sculpture above a quiet copper glow on ink blue. A rounded bulge travels through each letter's contours. It uses **one face throughout**—not a font crossfade, weight swap, or uniform word-scale animation. There are no corner labels or brand furniture.
+Pale-mint lettering becomes an airy sculpture above a quiet copper glow on ink blue. A rounded bulge travels through each letter's contours, using **one face throughout**.
 
 ```sh
 npx usemont templates preview letter-inflate-swell
@@ -18,7 +18,7 @@ npx usemont templates preview letter-inflate-swell --inputs settings.json
 
 Defaults: **960 × 540**, **24 fps**, **12 seconds**; `text: "aerate"`, `background: "#142A3A"`, `mint: "#DAF3DE"`, `copper: "#CA8968"`, `bulge: 0.85`, `cycleMs: 6000`, `phase: 0` (cycle fraction). `bulge: 0` gives undeformed lettering.
 
-Native clipped text bands deform each glyph around its own center. Measured advances keep letter order and word spacing while the lettering inflates. Bands follow output resolution; no browser runtime or unsupported warp prop is used.
+Native clipped text bands deform each glyph around its own center. Measured advances keep letter order and word spacing while the lettering inflates. Bands follow output resolution.
 
 Use 1920 × 1080 for 16:9, 1080 × 1920 for 9:16, or 1080 × 1080 for square. Short and long copy fit within the canvas; very long copy necessarily renders smaller. Space Grotesk 700 is bundled; fallback glyphs may need additional catalog fonts.
 

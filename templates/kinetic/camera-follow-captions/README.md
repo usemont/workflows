@@ -1,6 +1,6 @@
 # Camera Follow Captions
 
-**MAKE EVERY FRAME FEEL MORE ALIVE.** builds a tightly packed typographic grid. Bold **Space Grotesk 700** follows the reference's sans-serif direction; gold lettering on midnight navy uses two colors total. No lines, dots, crosses, or corner labels.
+**MAKE EVERY FRAME FEEL MORE ALIVE.** builds a tightly packed typographic grid in bold **Space Grotesk 700**, with gold lettering on midnight navy.
 
 ## Use
 
@@ -8,7 +8,7 @@ Preview with `npx usemont templates preview camera-follow-captions`, or load `sc
 
 - `word1`…`word6`: editable short uppercase words.
 - `background`, `ink1`…`ink6`: editable colors. All six inks default to the same gold.
-- Requires the native bundled **Space Grotesk 700** face; no intentional font fallback.
+- Requires the bundled **Space Grotesk 700** face.
 
 ## Packing and camera
 
@@ -16,13 +16,13 @@ Font sizes grow by the golden ratio: **f₀ = 100; fₙ = fₙ₋₁ × 1.618033
 
 Words stay fixed in the world. One zero-pivot camera fits the accumulated bounds, including additions that extend above the old block. Each target scale is capped at 96% of its predecessor: the camera only pulls outward. Direct interpolation of fitted screen translations and scale keeps previously visible words framed throughout each move.
 
-Each word is one complete Text node. Static native glyph records provide widths; fixed per-word Groups set relative sizes. There is no per-frame text reshaping or custom renderer code.
+Each word is one complete Text node. Static glyph records provide widths; fixed per-word Groups set relative sizes.
 
 ## Timing
 
-The first word is visible at frame zero. Further cues begin at **520 / 1040 / 1560 / 2080 / 2600 ms**. Each cue starts the **160 ms word fade and 400 ms camera pull-back together**, matching the reference's ordering: the new word becomes solid while the camera is still moving, not after it lands. Both use cubic ease-out.
+The first word is visible at frame zero. Further cues begin at **520 / 1040 / 1560 / 2080 / 2600 ms**. Each cue starts the **160 ms word fade and 400 ms camera pull-back together**: the new word becomes solid while the camera is still moving. Both use cubic ease-out.
 
-The final composition holds from **3000–4350 ms**, fades until **4650 ms**, then stays blank until the 5000 ms reset. The final landing is already the overview; there is no zoom back in.
+The final composition holds from **3000–4350 ms**, fades until **4650 ms**, then stays blank until the 5000 ms reset.
 
 ## Check
 
@@ -34,4 +34,4 @@ npx --yes --package=usemont -- python3 templates/kinetic/camera-follow-captions/
 
 The check renders disposable landscape and portrait projects. Diagnostic ink overrides identify actual word bounds. Assertions cover packed baseline/left-edge placement, accumulated framing, unrevealed future words, word visibility before camera landing, outward-only moves, a stable final hold, the blank reset interval, and golden-ratio cap heights. Portrait uses repeated H glyphs for comparable raster measurements.
 
-Short uppercase copy is the layout contract, not arbitrary paragraphs or multilingual text. Review both aspect ratios with the intended words before publishing.
+Use short uppercase words. Review both aspect ratios with the intended copy before publishing.

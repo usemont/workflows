@@ -1,8 +1,8 @@
 # YouTube Subscribe
 
-Native Mont programmatic scene, **1920 × 1080**, **4.5 seconds**, 30 fps preview. White channel lower third with an unmistakable actual Mont icon and black Subscribe button. Button-local press/recover, editable success label/check or chevron, restrained nine-particle burst and expanding ring; the card exits downward.
+Native Mont scene, **1920 × 1080**, **4.5 seconds**, 30 fps preview. White channel lower third with the Mont icon and black Subscribe button. Button press/recovery, editable success label/check or chevron, nine-particle burst and expanding ring; the card exits downward.
 
-Demonstration channel: **Mont · @usemont · 17.3K subscribers** (illustrative metrics). The avatar embeds the genuine `assets/template-media/mont-icon.png`, derived from Mont’s own app icon, not a third-party logo. Native **DM Sans 400/700** text uses explicit SHA-256-addressed Mont font assets; initial rendering needs `fonts.usemont.com` or its local cache. Interaction marks are native editable paths, not upstream image bytes. No text rasterization, DOM, CSS, GSAP, audio or engine changes.
+Demonstration channel: **Mont · @usemont · 17.3K subscribers** (illustrative metrics). The avatar embeds `assets/template-media/mont-icon.png`. Editable **DM Sans 400/700** text uses Mont font assets; initial rendering needs `fonts.usemont.com` or its local cache. Interaction marks are editable paths.
 
 ## Edit
 
@@ -16,9 +16,9 @@ Use `creator`, `handle`, `count`, `avatarSrc`, `profileWidth`, action/confirmed 
 
 From this repository, run `npx --yes --package=usemont -- python3 templates/subscribe/verify.py --output-root /absolute/path/to/native-repo/.tmp/template-previews/subscribe`. It creates resource-bound native workspaces, renders all five MP4s, checks dimensions/durations, visible Mont branding, press/state/particle/hold/exit changes, and saves sRGB-managed peak-burst and settled PNGs and contact sheets. Requires `mont`, `ffmpeg`, `ffprobe` and Pillow. The output directory must not already exist.
 
-To create editable workspaces without rendering, use `npx --yes --package=usemont -- python3 templates/subscribe/verify.py --create-only --output-root /absolute/path/to/native-repo/.tmp/subscribe-workspaces`, then `npx usemont render -C /absolute/path/to/native-repo/.tmp/subscribe-workspaces/NAME/workspace --output /absolute/path/to/NAME.mp4 --fps 30 --json`. The helper explicitly registers each embedded image as `project.resources[src] = {uri: src}`; the catalog single-source loader does not register child images. Register any replacement `avatarSrc` likewise. An off-canvas native image preloads the Mont avatar before the initially invisible entrance. Fonts use their explicit `renderConfig.fontAsset` descriptors, not image resource entries.
+To create editable workspaces without rendering, use `npx --yes --package=usemont -- python3 templates/subscribe/verify.py --create-only --output-root /absolute/path/to/native-repo/.tmp/subscribe-workspaces`, then `npx usemont render -C /absolute/path/to/native-repo/.tmp/subscribe-workspaces/NAME/workspace --output /absolute/path/to/NAME.mp4 --fps 30 --json`. The helper registers embedded images as `project.resources[src] = {uri: src}`; register replacement `avatarSrc` likewise. Keep the off-canvas image that preloads the avatar. Fonts use `renderConfig.fontAsset` descriptors.
 
-Keep `borderWidth={0} borderColor="transparent"` on native `Image` elements. The installed renderer otherwise draws a thin rectangular edge from its default black border color even at zero border width; `stroke`/`strokeWidth` are not mapped for images.
+Keep `borderWidth={0} borderColor="transparent"` on native `Image` elements to prevent default rectangular borders.
 
 ## Source and license
 

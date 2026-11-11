@@ -1,8 +1,8 @@
 # Agent cursor
 
-Native Mont TSX adaptation of [HeyGen’s Agent Cursor](https://hyperframes.heygen.com/catalog/components/agent-cursor.md): an AI label types its intent before each curved target move, performs two meaningful clicks, then confirms and leaves. Original Mont teaser setup copy and UI; no HeyGen visual assets.
+Native Mont TSX adaptation of [HeyGen’s Agent Cursor](https://hyperframes.heygen.com/catalog/components/agent-cursor.md): an AI label types its intent before each curved target move, performs two clicks, then confirms and leaves.
 
-**1920 × 1080 · 4.8 seconds · render at 30 fps.** Light neutral surfaces, lavender accent, embedded first-party Mont arrow, no browser or network dependency. The offscreen image prewarms the cursor resource. Keep the data URI registered as a resource when dispatching directly through the CLI.
+**1920 × 1080 · 4.8 seconds · render at 30 fps.** Light neutral surfaces, lavender accent, embedded first-party Mont arrow. The offscreen image prewarms the cursor resource. Keep the data URI registered as a resource when dispatching directly through the CLI.
 
 ## Beats
 
@@ -34,7 +34,7 @@ Native Mont TSX adaptation of [HeyGen’s Agent Cursor](https://hyperframes.heyg
 
 Editable inputs: agent name, project name, the four short status lines, accent, background and cursor image. Label strings must be nonempty, single-line text; keep replacements short enough for the 1920 px composition. Width/height preserve the composition with a centered uniform scale.
 
-Run `node templates/cursors/agent-cursor/verify.mjs` from the repository root. The regression reproduces the former center drift, then checks concentricity, golden-ratio placement, diameter proportions, circularity, containment and monotone sizing throughout the format transition, alongside the existing click/motion assertions. These checks do not replace native font shaping or visual review. Verified a native 1920×1080, 30 fps MP4 export (144 frames), inspecting 1.90, 2.03, 2.10, 2.17, 2.30 and 3.90 s for the landscape-to-portrait reflow, shared circle centers, spacing and completed setup.
+Run `node templates/cursors/agent-cursor/verify.mjs` from the repository root to check concentricity, golden-ratio placement, diameter proportions, circularity, containment, resizing, clicks, and motion.
 
 ## Attribution
 

@@ -1,8 +1,8 @@
 # Card vortex
 
-The original video-editing tool cards from **Punch-through words** drain through a clockwise vortex, then resolve into a light point and expanding pulse. Inner cards overtake outer cards; each card banks and follows its own streamline rather than rotating with the field. No headline or logo assembly.
+The video-editing tool cards from **Punch-through words** drain through a clockwise vortex, then resolve into a light point and expanding pulse. Inner cards overtake outer cards; each card banks and follows its own streamline.
 
-**960 × 960 · 3 seconds · 30 fps.** Portable Mont primitives and inline SVG lighting; no external media or browser dependency.
+**960 × 960 · 3 seconds · 30 fps.** Editable Mont primitives and inline SVG lighting.
 
 ## Edit
 

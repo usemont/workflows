@@ -1,8 +1,8 @@
 # Path carousel
 
-Ten original posters follow a rising sigmoid, not a circular arc. The central **Signal** poster expands for a featured hold, returns to the path, then the stream continues. Posters fade before their hidden offscreen resets.
+Ten original posters follow a rising sigmoid. The central **Signal** poster expands for a featured hold, returns to the path, then the stream continues. Posters fade before their hidden offscreen resets.
 
-**1920 × 1080 · seamless 14-second loop · 30 fps recommended.** Portable Mont scene primitives; embedded images, no browser or network dependency during rendering. Keep the offscreen image prewarm nodes when editing the scene.
+**1920 × 1080 · seamless 14-second loop · 30 fps recommended.** Images are embedded for offline rendering. Keep the offscreen image prewarm nodes when editing the scene.
 
 ```sh
 npx usemont templates preview path-carousel

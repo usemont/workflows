@@ -2,7 +2,7 @@
 
 Ten original posters orbit a tipped sphere using golden-angle spacing and depth-aware layering. The front-center **Soft Space** poster expands for a featured hold, returns to its orbit, then motion resumes.
 
-**1920 × 1080 · seamless 14-second loop · 30 fps recommended.** Portable Mont scene primitives; embedded images, no browser or network dependency during rendering.
+**1920 × 1080 · seamless 14-second loop · 30 fps recommended.** Images are embedded for offline rendering.
 
 ```sh
 npx usemont templates preview orbit-carousel

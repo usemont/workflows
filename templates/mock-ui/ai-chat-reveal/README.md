@@ -4,7 +4,7 @@ An unbranded mobile conversation about creating a video with Mont MCP. Authored 
 
 - **Canvas:** 540 × 960 logical pixels; 11.5 seconds.
 - **Style:** warm paper, dark ink, pale green accents, Inter typography.
-- **Sequence:** keyboard rises, synchronized typing, send clears and docks the composer, thinking dot, uneven word bursts, reading hold. No closing card.
+- **Sequence:** keyboard rises, synchronized typing, send clears and docks the composer, thinking dot, uneven word bursts, reading hold.
 
 ## Preview
 
@@ -15,7 +15,7 @@ npx --yes --package=usemont -- python3 templates/mock-ui/ai-chat-reveal/create.p
 npx usemont edit -C ./ai-chat
 ```
 
-The creator snapshots both editable TSX sources into the project and registers the keyboard as a scene asset. No engine changes or bundled video are required. The CLI's catalog preview currently loads a single source without scene-asset registration, so this composed template uses the command above instead of `npx usemont templates preview`.
+Use the creator command above to snapshot both editable TSX sources into the project and register the keyboard as a scene asset.
 
 ## Timing
 
@@ -33,7 +33,7 @@ Edit `variables` for the prompt, assistant label, placeholder, palette and timin
 
 Reply words are inline records with `copy`, `prefix`, `row`, and `beat`. `prefix` is the preceding text on that row, including spaces. Native font measurement positions each word; rows are intentionally authored rather than automatically wrapped. Edit prefixes and row numbers with the copy. Beats may repeat for short word bursts; the default stream has 32 beat slots. Each word fades from muted to dark ink over 150ms. All text is statically shaped; only opacity and transforms animate.
 
-The `AssetScene` named `mobile-keyboard` receives the active character, case, symbol page and palette. `create.py` registers `templates/components/mobile-keyboard/scene.tsx` with the native `imageAssets` descriptor. The same timed event controls visible text and key highlighting. This remains an authored animation, not an interactive text field.
+The `AssetScene` named `mobile-keyboard` receives the active character, case, symbol page and palette. `create.py` registers `templates/components/mobile-keyboard/scene.tsx` with the native `imageAssets` descriptor. The same timed event controls visible text and key highlighting.
 
 ## Verification
 

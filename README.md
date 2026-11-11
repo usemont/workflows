@@ -4,7 +4,7 @@
 
 # Mont Workflows
 
-Ready-to-run video workflows and editable motion templates for [Mont CLI](https://github.com/usemont/mont-cli).
+Preview animated templates, customize text and colors, and render videos from your terminal with [Mont CLI](https://github.com/usemont/mont-cli).
 
 [Installation](#installation) · [Try a template](#try-a-template) · [Kinetic typography](#kinetic-typography) · [Product marketing](#product-marketing) · [Mock UI](#mock-ui) · [Notifications](#notifications) · [Social posts](#social-posts) · [Subscribe & follow](#subscribe--follow) · [Cursors](#cursors) · [Transitions](#transitions) · [Tools](#tools) · [Terminal showcase](#terminal-showcase) · [Workflows](#workflows) · [Contribute](#contribute)
 
@@ -12,44 +12,23 @@ Ready-to-run video workflows and editable motion templates for [Mont CLI](https:
 
 **Apple Silicon · macOS 14+ · Node.js 22+**
 
-Install [Node.js 22 or newer](https://nodejs.org/en/download); it includes npm and
-`npx`. No Homebrew or global CLI installation is required:
+Install [Node.js 22 or newer](https://nodejs.org/en/download), then run:
 
 ```sh
 npx usemont --help
 npx usemont templates list
 ```
 
-On first use, accept the npm download prompt. `npx` downloads and caches the CLI
-and its platform-specific binary; subsequent commands reuse the cached package.
-The default npm channel currently selects `0.1.0-preview.17`, not a stable release.
-Windows/Linux npm payloads are not published. Linux users can consult the
-[signed CLI installation guide](https://github.com/usemont/mont-cli/blob/main/docs/install.md#linux).
-
 ## Try a template
 
 ```sh
 npx usemont templates preview morph-text
-# Reproducible CI:
-npx --yes usemont@0.1.0-preview.17 templates preview morph-text
 ```
 
-No Homebrew CLI installation is required. Preview opens an editable project under
-`out/morph-text/project`; keep the web editor command running while editing.
-Preview/editor use needs no FFmpeg. Media import and MP4 rendering still require
-separately installed FFmpeg/ffprobe.
+Preview opens an editable project at `out/morph-text/project`. Keep the web editor
+command running while editing.
 
-
-Homebrew remains an [alternative installation method](https://github.com/usemont/mont-cli/blob/main/docs/install.md).
-Existing `@usemont/cli` installations are not automatically migrated or removed;
-explicitly replace that dependency with `usemont` and commit the updated lockfile.
-Existing lockfiles stay pinned until migrated.
-
-Python creator and verification examples use `npx --yes --package=usemont --
-python3 ...` so scripts can find the native `mont` executable without Homebrew.
-They still require Python and any additional dependencies listed in their guides.
-
-**Image-template CLI requirement:** Image-backed templates require a CLI build with embedded-image template materialization support. `0.1.0-preview.16` does not support their standalone create/preview flow. The GIFs are independently viewable; availability of a public CLI release with this capability is not claimed here.
+Install FFmpeg and ffprobe for media import and MP4 rendering.
 
 ## Kinetic typography
 
@@ -216,12 +195,12 @@ Square A/B previews. Each template includes a standalone scene and a reusable li
 
 ## Workflows
 
-- **[Markdown → narrated explainer](workflows/explainer)** — Markdown, scene generation, voice, captions, and MP4. **Experimental: visual review incomplete; uses paid APIs.** Read its [setup](workflows/explainer/README.md) and [security notes](workflows/explainer/SECURITY.md) first.
+- **[Markdown → narrated explainer](workflows/explainer)** — Markdown, scene generation, voice, captions, and MP4. **Experimental · paid APIs.** Follow the [setup](workflows/explainer/README.md) and [security notes](workflows/explainer/SECURITY.md).
 
 ## Contribute
 
 Contributions welcome via issues and pull requests. Review unfamiliar workflows before running them: they can send inputs to configured APIs. Never commit credentials or generated projects.
 
-Carousel motion checks: `node templates/carousels/verify.mjs`. Featured-poster sequences stop travel before expansion, return the poster to its carousel pose before resuming, and preserve position and velocity across the loop.
+Check carousel motion: `node templates/carousels/verify.mjs`.
 
 [Apache-2.0](LICENSE) · Nauchu AB · [Agent skills](https://github.com/usemont/skills) · [CLI releases](https://github.com/usemont/mont-cli/releases)

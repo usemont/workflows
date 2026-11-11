@@ -1,6 +1,6 @@
 # Bottom-up letters
 
-A single editable line rises letter by letter, settles with a small overshoot, holds, and exits upward. Built entirely from native Mont text and groups; no custom renderer or runtime JavaScript.
+A single editable line rises letter by letter, settles with a small overshoot, holds, and exits upward.
 
 ```sh
 npx usemont templates preview bottom-up-letters

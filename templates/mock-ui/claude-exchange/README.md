@@ -1,10 +1,10 @@
 # Claude exchange
 
-Native editable Mont scene: an original conversation explains creating a video with Mont CLI—create a template workspace, edit it, then render an MP4. Authored UI motion, not a recording or real model output. No browser chrome, network assets, or external dependencies.
+An editable Mont scene explains creating a video with Mont CLI—create a template workspace, edit it, then render an MP4. This is authored UI motion, not a recording or real model output.
 
 - **Canvas:** 960 × 540, **duration:** 11.5 seconds.
 - **UI:** dark `#191919` canvas; 656 × 103 composer, 14px corners, plus/microphone/send controls; separate 36px Project / Opus 5.5 Medium / Manual tray.
-- **Fonts:** embedded Inter for UI and assistant prose, and JetBrains Mono for CLI commands; not proprietary Claude fonts.
+- **Fonts:** embedded Inter for UI and assistant prose, and JetBrains Mono for CLI commands.
 
 ## Default timing
 
@@ -20,7 +20,7 @@ Native editable Mont scene: an original conversation explains creating a video w
 
 Edit `variables` in `scene.tsx` for prompt, placeholder, reply lines, model, tray labels, palette, canvas, or timing. Keep replies within the 600px content column; prompts fit by horizontal scaling. Width/height scale and center the logical 960 × 540 layout uniformly. Update scene `width`/`height` metadata when changing export dimensions; 1280 × 720 uses the same layout. Set `durationMs` to the resulting cycle length when changing timing, and `editPreviewMs` to the desired editing still.
 
-The prompt uses static native `text.glyphs` records and opacity reveals. Replies keep each line as a single shaped `Text` node, with background-colored reveal rectangles; CLI flags and hyphenated template names remain intact. `Text.text` never changes with time. Conversation motion and the small native asterisk are authored approximations.
+The prompt uses static native `text.glyphs` records and opacity reveals. Replies keep each line as a single shaped `Text` node, with background-colored reveal rectangles; CLI flags and hyphenated template names remain intact.
 
 ## Verification
 

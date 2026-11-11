@@ -2,7 +2,7 @@
 
 Ten original posters travel around a tilted perspective circle. The front-center **Wave Field** poster expands for a featured hold, returns to its place, then the gallery continues.
 
-**1920 × 1080 · seamless 14-second loop · 30 fps recommended.** Portable Mont scene primitives; embedded images, no browser or network dependency during rendering.
+**1920 × 1080 · seamless 14-second loop · 30 fps recommended.** Images are embedded for offline rendering.
 
 ```sh
 npx usemont templates preview circle-carousel

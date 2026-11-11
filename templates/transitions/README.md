@@ -1,6 +1,6 @@
 # Transitions
 
-Eight square transitions from Mont's native catalog, with the approved animated A/B previews.
+Eight square transitions from Mont's catalog, with animated A/B previews.
 
 | Template | Canvas | Transition duration | License |
 | --- | --- | --- | --- |
@@ -22,10 +22,10 @@ npx usemont templates create cube-flip-transition ./cube-flip-transition
 
 Each bundle contains two editable sources:
 
-- **`preview.tsx`** is the CLI entry: a standalone demonstration using two animated scene-texture captures. It needs no external footage or timeline bindings.
-- **`scene.tsx`** is the reusable transition: it samples the outgoing and incoming timeline frames through `hostFrameInputs`. It is not a baked video.
+- **`preview.tsx`** is the CLI entry: a standalone demonstration using two animated scene-texture captures.
+- **`scene.tsx`** is the reusable transition: it samples the outgoing and incoming timeline frames through `hostFrameInputs`.
 
-Gallery GIFs show the approved live-frame timeline demonstration, including short holds before and after each transition. The standalone entry runs the transition itself.
+Gallery GIFs include short holds before and after each transition. The standalone entry runs the transition itself.
 
 ## Timeline setup
 
@@ -47,7 +47,7 @@ Use `scene.tsx` in a programmatic transition span, with the two input bindings o
 
 Replace the example IDs with the actual source span IDs. Put the transition above both sources. For a seam at time `T` and transition duration `D`, place it at `T - D / 2` for duration `D`, with the outgoing clip ending and incoming clip starting at `T`.
 
-Keep the source's `hostFrameInputs` declarations and `host-frame:clipA` / `host-frame:clipB` references: these are live timeline inputs, not asset paths. The CLI's single-span template creation does not supply those bindings, which is why its entry uses scene captures instead.
+Keep the source's `hostFrameInputs` declarations and `host-frame:clipA` / `host-frame:clipB` references as live timeline inputs. Use the scene captures in `preview.tsx` for standalone template creation.
 
 The authored geometry is square. Changing only project dimensions does not re-layout the shader, mask, or cube geometry; adapt the source when targeting another aspect ratio.
 

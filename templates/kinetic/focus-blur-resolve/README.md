@@ -1,6 +1,6 @@
 # Focus blur resolve
 
-Three editable words pull into focus one after another, hold as a crisp single-line headline, then blur away in the same order. Uses native Mont text, Gaussian blur, and groups; no custom renderer, Rust changes, or runtime JavaScript.
+Three editable words pull into focus one after another, hold as a crisp single-line headline, then blur away in the same order.
 
 | Setting | Purpose |
 | --- | --- |

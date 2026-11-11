@@ -10,7 +10,7 @@ The original demo copy follows a teaser-production board: “Ideas” → “In 
 
 `scene.tsx` exposes task labels, column headings, `accent`, `background`, `tone` (`light` or `dark`), `cursorSrc`, and canvas dimensions. The `clock`, `carryX`, `carryY`, lift and gap-close computations define the animation. Card motion and pointer motion share the same grip anchor throughout the drag.
 
-Arrival (0–650 ms), carry (900–2000 ms), lift and release use minimum-jerk quintic easing: zero endpoint velocity and acceleration. After the readable hold, the pointer leaves on one continuous cubic Bézier (2600–3600 ms), without the former stop between moving aside and exiting. Landing settles without rebound.
+Arrival (0–650 ms), carry (900–2000 ms), lift and release use minimum-jerk quintic easing: zero endpoint velocity and acceleration. After the readable hold, the pointer leaves on one continuous cubic Bézier (2600–3600 ms). Landing settles without rebound.
 
 ## Render and verify
 

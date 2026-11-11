@@ -10,7 +10,7 @@ Preview: `npx usemont templates preview text-select-cursor`
 
 `title`, `beforeText`, `phrase`, `afterText`, `bodyLine1`, `bodyLine2`, `meta`, `footer`, `background`, and `accent` are scene variables. Keep `phrase` nonempty and the complete selected line (`beforeText + phrase + afterText`) within the document’s 1106 px text column; surrounding paragraphs are deliberately editable individual lines, not an automatic text-wrap system. `width` and `height` letterbox the 1920×1080 design proportionally.
 
-Inter is proportional. Native `text.glyphs` supplies shaped advances for the prefix, phrase, and individual selection cells. The phrase itself stays a complete `Text` run to retain native shaping. At 3.15 s, its actual font weight changes from 400 to 700; the suffix and selection width use the separately measured bold advance. No monospace estimates, manually entered character widths, or selection-width stretch is used.
+Native `text.glyphs` supplies proportional shaped advances for the prefix, phrase, and individual selection cells. The phrase stays a complete `Text` run to retain native shaping. At 3.15 s, its font weight changes from 400 to 700; the suffix and selection width use the separately measured bold advance.
 
 The embedded PNGs are Mont’s `large-2x/cursor-arrow.png` and `cursor-text.png`, prewarmed offscreen. Both render at 55.652173913 px; arrow source hotspot (16,12) maps to offsets (-9.275362319,-6.956521739), text source hotspot (48,48) to (-27.826086957,-27.826086957). Arrival, toolbar approach, and move-aside follow curved minimum-jerk paths.
 
@@ -47,8 +47,6 @@ The embedded PNGs are Mont’s `large-2x/cursor-arrow.png` and `cursor-text.png`
 | Appeal | Restrained lavender feedback and uncluttered original document artwork. |
 
 Run `node templates/cursors/text-select-cursor/verify.mjs` from the repository root. It checks monotonic selection/frontier contact, continuity at travel boundaries, the exact Bold dwell, press/release and deformation limits for several text widths.
-
-Verified with a native 1920×1080, 30 fps MP4 export (168 frames). Inspected 0.73, 1.40, 2.30, 2.90, 3.18 and 4.70 seconds for anticipation, proportional selection, toolbar arrival, the Bold click, actual weight change, suffix repositioning and final cursor staging.
 
 ## Attribution
 

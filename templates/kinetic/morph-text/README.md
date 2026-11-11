@@ -1,6 +1,6 @@
 # Morph text
 
-Five bold phrases melt into one another on warm paper. Native text layers blur and overlap; a generic WGSL shader thresholds their combined alpha into crisp, merging letterforms—not a simple crossfade. No browser runtime or template-specific renderer element is required.
+Five bold phrases melt into one another on warm paper. Native text layers blur and overlap; a WGSL shader thresholds their combined alpha into crisp, merging letterforms.
 
 ```sh
 npx usemont templates preview morph-text

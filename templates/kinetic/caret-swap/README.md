@@ -2,7 +2,7 @@
 
 An original Mont type study: **Make Space. → Move Ideas.** Cream Archivo 900 on midnight blue, interrupted by a chartreuse caret. A smooth opaque sweep covers the phrase and contracts into a caret, then the replacement types on crisp, discrete beats. A short readable hold leads into a reverse wipe and smooth source reveal before the loop.
 
-Inspired by the motion vocabulary of [Hyperframes Caret Swap](https://hyperframes.heygen.com/catalog/components/caret-swap.md). This is an independently authored native scene, not a DOM/GSAP port or a text morph. The native cover is deliberately **solid**, not a simulated gradient mask.
+Inspired by the motion vocabulary of [Hyperframes Caret Swap](https://hyperframes.heygen.com/catalog/components/caret-swap.md).
 
 ## Use
 
@@ -36,7 +36,7 @@ Timing minimums are 200 ms for the opening hold, 150 ms each for sweeps/collapse
 
 ## Native behavior
 
-Only `Scene`, `Group`, `Rect`, `Text`, static `Repeat`, typed variables/computeds, and native `text.glyphs` are used. There are no assets, browser APIs, runtime JavaScript, shaders, or new built-in elements. The caret is 0.08 em wide, 1.1 em tall, with a 0.06 em gap after each measured prefix. Each typed caret uses the shaped record's `offset + advance`, never a character-count width estimate. The line reserves the larger phrase's measured width, so its left edge remains stable while typing; both phrases fit 960×540 and 540×960 using the same scale.
+The caret is 0.08 em wide, 1.1 em tall, with a 0.06 em gap after each measured prefix. Each typed caret uses the shaped record's `offset + advance`. The line reserves the larger phrase's measured width, so its left edge remains stable while typing; both phrases fit 960×540 and 540×960 using the same scale.
 
 The bundled Archivo 900 face must be available in the native runtime. Text must satisfy `text.glyphs`: nonempty, no control characters/newlines, and independently renderable shaped clusters. A font ligature or combined sequence can be one cluster; contextual or reordered scripts unsupported by that API are rejected rather than silently approximated.
 
@@ -48,4 +48,4 @@ With installed `mont` and `ffmpeg`:
 npx --yes --package=usemont -- python3 templates/kinetic/caret-swap/verify.py
 ```
 
-The check creates temporary native projects, renders landscape/title-case defaults and portrait/edited mixed-width copy, and samples their actual pixels. It checks bounded monotonic coverage and collapse without rebound or text leaks, neighboring-frame discrete typing, caret movement proportional to narrow/wide glyphs, phase-anchored hold blinking, a stable readable hold, reverse coverage/reveal without overshoot, framing, and matching source/caret silhouettes immediately before and at the loop boundary. No source-text assertions.
+The check renders landscape defaults and portrait edited copy, then checks wipe coverage, discrete typing, measured caret movement, blinking, framing, and loop continuity.

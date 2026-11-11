@@ -1,27 +1,25 @@
 # Notification Cascade
 
-Native editable Mont scene, **540 × 960**, **10 seconds**. Original fictional Mont workflow copy; no baked video, full UI screenshot or bottom-right branding footers.
+Editable Mont scene, **540 × 960**, **10 seconds**, with fictional Mont workflow notifications.
 
-## Original asset inventory
+## Assets
 
-Original generated `backgrounds/phone-on-desk.png` replaces the source photograph. The warm overlay, chevron and close glyph are native geometry. Messages is an honest identifying service mark; the last card uses the actual Mont icon. All four senders/messages are fictional.
+Generated `backgrounds/phone-on-desk.png` provides the background. The warm overlay, chevron and close glyph are native geometry. Messages identifies the service; the last card uses the Mont icon. All four senders/messages are fictional.
 
-Canonical Mont branding and generated-media prompts, model, timestamps and SHA256 are recorded in [approved-scene provenance](../../../assets/template-media/approved-scenes-provenance.json). Embedded copies are self-contained; no upstream people/photos or HeyGen branding is visible. Identifying service/platform marks remain their owners’ trademarks; no endorsement is implied.
+Branding and generated-media provenance are recorded in [approved-scene provenance](../../../assets/template-media/approved-scenes-provenance.json). Identifying service/platform marks remain their owners’ trademarks; no endorsement is implied.
 
 
-## Editing and rendering limits
+## Edit
 
-Edit the exported `variables` and native nodes in `scene.tsx`. Keep copy close to the supplied lengths: native text uses bounded editable boxes, not browser intrinsic layout. Native fonts use the content-addressed Mont catalog rather than bundling font binaries. Native blur/shadow compositing is an approximation, not browser CSS/PBR equivalence.
+Edit the exported `variables` and native nodes in `scene.tsx`. Keep copy close to the supplied lengths to fit the bounded text boxes. Fonts use the Mont catalog.
 
 ## Notification surface reference
 
-The material follows the filmed **iOS 26** notification behavior in the [MacStories review](https://www.macstories.net/stories/ios-and-ipados-26-the-macstories-review/6/) ([actual recording](https://cdn.macstories.net/notification-1757840169857.mp4)) and the supplied Notification Centre reference: strongly diffused wallpaper, smoky neutral tint and directional glass edges—not opaque navy or a uniform white outline. Cards use continuous cubic/arc corners (radius 21, smoothing 0.6), following the MIT-licensed [figma-squircle construction](https://github.com/phamfoo/figma-squircle). Its license is retained in `scene.tsx`.
+The material follows the **iOS 26** notification behavior in the [MacStories review](https://www.macstories.net/stories/ios-and-ipados-26-the-macstories-review/6/) ([recording](https://cdn.macstories.net/notification-1757840169857.mp4)): diffused wallpaper, smoky neutral tint and directional glass edges. Cards use continuous cubic/arc corners (radius 21, smoothing 0.6), following the MIT-licensed [figma-squircle construction](https://github.com/phamfoo/figma-squircle). Its license is retained in `scene.tsx`.
 
-One existing Mont WGSL pass shades all four cards from one captured, animated wallpaper: 32-tap weighted frosting, restrained edge refraction, a light-facing highlight, darker side edges and a faint inner reflection. The editable `surface` variable supplies the neutral 32%-alpha tint; native text and icons remain separate editable nodes. This is an iOS-inspired approximation, not Apple's proprietary Liquid Glass shader or an exact reproduction of UIKit's continuous corners.
+A Mont WGSL pass shades all four cards from one captured, animated wallpaper: weighted frosting, edge refraction, a light-facing highlight, darker side edges and a faint inner reflection. The editable `surface` variable supplies the neutral 32%-alpha tint; text and icons remain separate editable nodes.
 
 Keep the wallpaper capture in canvas coordinates. Shader `top0`–`top3` uniforms include the same card motion and stack exit offset as their native contents, so the frosting samples the wallpaper beneath each moving card rather than sliding with it. Arrival/exit alpha belongs on the shader's individual surfaces and each separate tint/content node, not their common parent. `../verify.py --scene notification-cascade` renders a native MP4 and checks reduced wood-grain detail through the cards while retaining wallpaper-dependent tones.
-
-Android's [official Material 3 Expressive reference](https://blog.google/products-and-platforms/platforms/android/material-3-expressive-android-wearos-launch/) uses separate tonal/grouped surfaces and shade blur; this template does not claim to implement Android styling. “iOS 26-inspired” identifies the reference version, not the latest OS.
 
 Always-live offscreen image nodes keep embedded resources available throughout native export. Their transparent zero-width image borders prevent native default black quads. These are rendering controls, not visible UI.
 
@@ -29,9 +27,9 @@ Always-live offscreen image nodes keep embedded resources available throughout n
 
 Native adaptation of the notification-cascade template in the [HyperFrames catalog](https://hyperframes.heygen.com/), Copyright 2026 HeyGen, Inc., Apache License 2.0. Derivative timing/shader/layout code remains; attribution and the full original license are retained below. The [previous source photograph](https://hyperframes.heygen.com/public/catalog/assets/b84738ef758732c7.jpg) is not bundled. Source promotional copy is replaced with the originals listed above. No permission to use upstream trademarks is claimed.
 
-## Native preview and evidence
+## Preview and render
 
-Requires a CLI build with **embedded-image template materialization support**. `0.1.0-preview.16` lacks this capability and fails standalone rendering with missing image resources. Availability of a public CLI release with this support is not claimed here; the gallery GIF remains independently viewable.
+Requires a CLI build with **embedded-image template materialization support**.
 
 Preview independently with `npx usemont templates preview notification-cascade`. To create and render without opening an app:
 
@@ -40,7 +38,7 @@ npx usemont templates create notification-cascade ./notification-cascade
 npx usemont render -C ./notification-cascade --output ./notification-cascade.mp4 --fps 30
 ```
 
-The catalog downloads only `scene.tsx`: image data is embedded and fonts use Mont's existing catalog. The [gallery GIF](../../../assets/previews/notification-cascade.gif) comes from the approved standalone MP4, with full-frame portrait scaling and Rec.709-to-sRGB conversion; it is not scene media.
+Image data is embedded; fonts use Mont's catalog. [Gallery preview](../../../assets/previews/notification-cascade.gif).
 
 Native render checks (requires `mont`, `ffmpeg`, `ffprobe` and Python with Pillow):
 

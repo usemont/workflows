@@ -22,6 +22,6 @@ The SDK resolves recorder definitions from [usemont/programmatic-tools](https://
 - [`presenter.mp4`](../../assets/template-media/recorders/presenter.mp4): original AI-generated fictional adult presenter, shared across camera layouts; [generation provenance](../../assets/template-media/recorders/provenance.json).
 - [`silence.m4a`](../../assets/template-media/recorders/silence.m4a): silent microphone input for reproducible previews.
 
-All examples are eight seconds at 24 fps. The presenter is generated, not a real person's recording or endorsement. These examples demonstrate composition, not live-capture acceptance.
+All examples are eight seconds at 24 fps. The presenter is AI-generated and fictional.
 
 [Apache-2.0](../../LICENSE)

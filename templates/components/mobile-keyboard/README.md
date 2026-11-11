@@ -1,6 +1,6 @@
 # Mobile keyboard
 
-Reusable native `AssetScene`, 540 × 326 logical pixels. It has no built-in typing timeline: the host passes the currently pressed key, case, symbol page and palette. Position or scale it with the parent `Group`.
+Reusable native `AssetScene`, 540 × 326 logical pixels. The host controls typing timing, pressed key, case, symbol page and palette. Position or scale it with the parent `Group`.
 
 | Input | Meaning |
 | --- | --- |

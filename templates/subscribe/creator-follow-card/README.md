@@ -1,8 +1,8 @@
 # Creator Follow Card
 
-Native Mont programmatic scene, **1920 × 1080**, **4.5 seconds**, 30 fps preview. Only the final profile/Follow interaction from Blue Sweater Intro Video, beginning at source **9.76 s**. The 800 × 430 warm card enters with an original generated abstract hero and generated ringed portrait. The hero has rounded top corners and square lower corners. Mont’s canonical black-and-white arrow clicks Follow; the button presses, recovers, reveals Following/check and emits a restrained native ring/nine-dot burst. The unrelated intro/chat narrative is excluded.
+Native Mont scene, **1920 × 1080**, **4.5 seconds**, 30 fps preview. An 800 × 430 warm profile card enters with a generated abstract hero and ringed portrait. Mont’s arrow clicks Follow; the button presses, recovers, reveals Following/check and emits a ring/nine-dot burst.
 
-Fictional demo identity: **Elias Reed · @eliasframes**, consistent with the X follow card. The portrait and abstract hero are model-generated for these templates, not stock photography or a claim about a real person. The original card geometry, text sizes/tracking and entrance are retained; the check remains native editable geometry. The cursor embeds the exact Mont editor arrow asset, not an upstream cursor or a redrawn approximation, and follows an authored cubic Bézier with quintic easing instead of separate straight-line legs. Source **Helvetica Neue 620/680 → native Inter 600/700**, and **Helvetica Neue 400 → native Inter 400**; exact Helvetica Neue is unavailable in the installed native font set. All text remains editable; no scene/text rasterization, DOM, CSS, GSAP, audio or engine changes.
+Fictional demo identity: **Elias Reed · @eliasframes**, shared with the X follow card. The portrait and abstract hero are model-generated. Inter 400/600/700 text, card geometry, and interaction shapes remain editable. The Mont arrow follows a cubic Bézier with quintic easing.
 
 ## Edit
 

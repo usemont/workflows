@@ -12,7 +12,7 @@ The expanded field continues the original staggered spacing, with bridging cards
 
 Words approach for 160 ms from 145% scale, slight defocus and 32% opacity, landing sharp and solid exactly on the camera, card-reveal and shake cue. The camera recedes over 180 ms with a stronger, fast-decaying impact. Each entrance starts after the previous word clears; there is no rebound. Cards retain their original sizes and progressively blur with the camera pullbacks.
 
-Edit `firstWord`, `secondWord`, and `thirdWord` for copy; `firstImpactMs` (the landing time, minimum 160 ms) and `beatMs` for timing. `cardBlur`, `shutterMs`, `shakePx`, `vignette`, and `wordShade` control the effects. Card copy, centers, tilts, colors, and float phases live in `tokens.cards`. The first eight cards preserve the approved starting layout; new cards use `enterBeat` (1–3) and `delayMs` to time their spring entrances relative to the word impacts. All artwork is inline SVG and native scene primitives; no external assets or custom renderer code.
+Edit `firstWord`, `secondWord`, and `thirdWord` for copy; `firstImpactMs` (the landing time, minimum 160 ms) and `beatMs` for timing. `cardBlur`, `shutterMs`, `shakePx`, `vignette`, and `wordShade` control the effects. Card copy, centers, tilts, colors, and float phases live in `tokens.cards`. The first eight cards preserve the starting layout; new cards use `enterBeat` (1–3) and `delayMs` to time their spring entrances relative to the word impacts.
 
 Render and verify with the installed Mont CLI, FFmpeg, and Python 3:
 

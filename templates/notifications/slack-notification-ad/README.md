@@ -1,17 +1,17 @@
 # Slack Notification Ad
 
-Native editable Mont scene, **540 × 960**, **12 seconds**. Original fictional Mont workflow copy; no baked video or full UI screenshot.
+Editable Mont scene, **540 × 960**, **12 seconds**, with fictional Mont workflow notifications.
 
-## Original asset inventory
+## Assets
 
-Original generated `backgrounds/studio-desk.png` replaces the source wallpaper, cover-cropped to portrait without stretching. Status, lock, torch and camera glyphs are independently drawn native paths. The retained Slack service mark identifies Slack; the last card uses the actual Mont icon at full app-icon size, without an extra white tile. All twelve senders/messages are fictional.
+Generated `backgrounds/studio-desk.png` is cover-cropped to portrait. Status, lock, torch and camera glyphs are native paths. The Slack mark identifies the service; the last card uses the Mont icon. All twelve senders/messages are fictional.
 
-Canonical Mont branding and generated-media prompts, model, timestamps and SHA256 are recorded in [approved-scene provenance](../../../assets/template-media/approved-scenes-provenance.json). Embedded copies are self-contained; no upstream people/photos or HeyGen branding is visible. Identifying service/platform marks remain their owners’ trademarks; no endorsement is implied.
+Branding and generated-media provenance are recorded in [approved-scene provenance](../../../assets/template-media/approved-scenes-provenance.json). Identifying service/platform marks remain their owners’ trademarks; no endorsement is implied.
 
 
-## Editing and rendering limits
+## Edit
 
-Edit the exported `variables` and native nodes in `scene.tsx`. Keep copy close to the supplied lengths: native text uses bounded editable boxes, not browser intrinsic layout. Native fonts use the content-addressed Mont catalog rather than bundling font binaries. Native blur/shadow compositing is an approximation, not browser CSS/PBR equivalence.
+Edit the exported `variables` and native nodes in `scene.tsx`. Keep copy close to the supplied lengths to fit the bounded text boxes. Fonts use the Mont catalog.
 
 Always-live offscreen image nodes keep embedded resources available throughout native export. Their transparent zero-width image borders prevent native default black quads. These are rendering controls, not visible UI.
 
@@ -19,9 +19,9 @@ Always-live offscreen image nodes keep embedded resources available throughout n
 
 Native adaptation of [the HyperFrames source](https://hyperframes.heygen.com/public/catalog/blocks/slack-notification-ad.json), Copyright 2026 HeyGen, Inc., Apache License 2.0. Derivative timing/shader/layout code remains; attribution and the full original license are retained below. Source imagery/device payloads and source promotional copy are replaced with the originals listed above. No permission to use upstream trademarks is claimed.
 
-## Native preview and evidence
+## Preview and render
 
-Requires a CLI build with **embedded-image template materialization support**. `0.1.0-preview.16` lacks this capability and fails standalone rendering with missing image resources. Availability of a public CLI release with this support is not claimed here; the gallery GIF remains independently viewable.
+Requires a CLI build with **embedded-image template materialization support**.
 
 Preview independently with `npx usemont templates preview slack-notification-ad`. To create and render without opening an app:
 
@@ -30,7 +30,7 @@ npx usemont templates create slack-notification-ad ./slack-notification-ad
 npx usemont render -C ./slack-notification-ad --output ./slack-notification-ad.mp4 --fps 30
 ```
 
-The catalog downloads only `scene.tsx`: image data is embedded and fonts use Mont's existing catalog. The [gallery GIF](../../../assets/previews/slack-notification-ad.gif) comes from the approved standalone MP4, with full-frame portrait scaling and Rec.709-to-sRGB conversion; it is not scene media.
+Image data is embedded; fonts use Mont's catalog. [Gallery preview](../../../assets/previews/slack-notification-ad.gif).
 
 <details>
 <summary>Upstream Apache2.0 license and copyright notice</summary>
