@@ -1,0 +1,15 @@
+{
+  "label": "Videos published",
+  "value": 2840,
+  "delta": "+24.8%",
+  "comparison": "vs. previous quarter",
+  "palette": ["#E48059", "#E7B857", "#559B8D", "#708EBD", "#A08ABD", "#CE9293"],
+  "series": [
+    {"label": "Studio", "value": 240, "hours": 2.2, "team": 6, "target": 300},
+    {"label": "Social", "value": 410, "hours": 3.7, "team": 11, "target": 440},
+    {"label": "Learning", "value": 330, "hours": 5.1, "team": 9, "target": 380},
+    {"label": "Product", "value": 590, "hours": 6.3, "team": 15, "target": 580},
+    {"label": "Events", "value": 470, "hours": 7.4, "team": 8, "target": 500},
+    {"label": "Brand", "value": 800, "hours": 8.8, "team": 20, "target": 750}
+  ]
+}

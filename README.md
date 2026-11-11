@@ -6,7 +6,7 @@
 
 Preview animated templates, customize text and colors, and render videos from your terminal with [Mont CLI](https://github.com/usemont/mont-cli).
 
-[Installation](#installation) · [Try a template](#try-a-template) · [Launch videos](#launch-videos) · [Kinetic typography](#kinetic-typography) · [Product marketing](#product-marketing) · [Mock UI](#mock-ui) · [Notifications](#notifications) · [Social posts](#social-posts) · [Subscribe & follow](#subscribe--follow) · [Cursors](#cursors) · [Transitions](#transitions) · [Tools](#tools) · [Terminal showcase](#terminal-showcase) · [Workflows](#workflows) · [Contribute](#contribute)
+[Installation](#installation) · [Try a template](#try-a-template) · [Launch videos](#launch-videos) · [Charts](#charts) · [Kinetic typography](#kinetic-typography) · [Product marketing](#product-marketing) · [Mock UI](#mock-ui) · [Notifications](#notifications) · [Social posts](#social-posts) · [Subscribe & follow](#subscribe--follow) · [Cursors](#cursors) · [Transitions](#transitions) · [Tools](#tools) · [Terminal showcase](#terminal-showcase) · [Workflows](#workflows) · [Contribute](#contribute)
 
 ## Installation
 
@@ -47,6 +47,18 @@ npx usemont edit -C ./mont-layouts
 The same directory includes a [feature-launch template](templates/launch-videos/feature-launch)
 with editable headline, UI, callout, palette, logo and CTA slots.
 
+
+## Charts
+
+<a href="templates/charts/animated-chart"><img src="assets/previews/animated-chart.gif" width="720" alt="Ten chart families morph from bars through line, area, doughnut, pie, polar area, radar, scatter and bubble to a mixed chart"></a>
+
+**[Animated chart](templates/charts/animated-chart)** · 1920 × 1080 · 18 seconds · [Watch MP4](assets/previews/animated-chart.mp4)
+
+```sh
+npx usemont templates preview animated-chart
+```
+
+For a custom dataset or a single chart family, use the [Python creator and example inputs](templates/charts/animated-chart#create-and-render).
 
 ## Kinetic typography
 

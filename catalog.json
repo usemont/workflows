@@ -354,6 +354,20 @@
       ]
     },
     {
+      "name": "animated-chart",
+      "title": "Animated chart",
+      "category": "Charts",
+      "description": "A count-up metric and ten chart families connected by centre-preserving morphs; editable data, labels, delta and palette. 1920 × 1080, 18 seconds, or 6 seconds for a single family.",
+      "path": "templates/charts/animated-chart",
+      "files": [
+        "scene.tsx",
+        "create.py",
+        "inputs.example.json",
+        "check.py",
+        "README.md"
+      ]
+    },
+    {
       "name": "terminal-showcase",
       "title": "Terminal showcase",
       "category": "Terminal demos",
