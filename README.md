@@ -6,7 +6,7 @@
 
 Preview animated templates, customize text and colors, and render videos from your terminal with [Mont CLI](https://github.com/usemont/mont-cli).
 
-[Installation](#installation) · [Try a template](#try-a-template) · [Launch videos](#launch-videos) · [Charts](#charts) · [Kinetic typography](#kinetic-typography) · [Product marketing](#product-marketing) · [Mock UI](#mock-ui) · [Notifications](#notifications) · [Social posts](#social-posts) · [Subscribe & follow](#subscribe--follow) · [Cursors](#cursors) · [Transitions](#transitions) · [Tools](#tools) · [Terminal showcase](#terminal-showcase) · [Workflows](#workflows) · [Contribute](#contribute)
+[Installation](#installation) · [Try a template](#try-a-template) · [Launch videos](#launch-videos) · [Charts](#charts) · [Explainers](#explainers) · [Kinetic typography](#kinetic-typography) · [Product marketing](#product-marketing) · [Mock UI](#mock-ui) · [Notifications](#notifications) · [Social posts](#social-posts) · [Subscribe & follow](#subscribe--follow) · [Cursors](#cursors) · [Transitions](#transitions) · [Tools](#tools) · [Terminal showcase](#terminal-showcase) · [Workflows](#workflows) · [Contribute](#contribute)
 
 ## Installation
 
@@ -59,6 +59,18 @@ npx usemont templates preview animated-chart
 ```
 
 For a custom dataset or a single chart family, use the [Python creator and example inputs](templates/charts/animated-chart#create-and-render).
+
+## Explainers
+
+<a href="templates/explainers/explainer-steps"><img src="assets/previews/explainer-steps.gif" width="720" alt="Noise-cancelling headphones on a train: incoming noise and opposite-phase sound combine into a smaller residual waveform"></a>
+
+**[Step-by-step explainer](templates/explainers/explainer-steps)** · 1920 × 1080 · 24 seconds · [Watch MP4](assets/previews/explainer-steps.mp4)
+
+```sh
+npx usemont templates preview explainer-steps
+```
+
+Customize the text and palette with the [Python creator](templates/explainers/explainer-steps).
 
 ## Kinetic typography
 

@@ -1,0 +1,32 @@
+{
+  "original": {
+    "model": "gemini-3.1-flash-image",
+    "generatedAt": "2026-11-11T23:21:10.120802+00:00",
+    "promptFile": "keyframe-prompt.txt",
+    "images": [
+      {
+        "file": "noise-cancellation-keyframe-1.png",
+        "sha256": "82b19af364cf36ed884581f45b758a23a1fb5a838cb1b0ebec1a4035d3932071"
+      }
+    ]
+  },
+  "layers": [
+    {
+      "file": "clean-train.png",
+      "model": "gemini-3.1-flash-image",
+      "prompt": "Edit the supplied illustration. Remove the woman completely, including her head, headphones, torso, arm and hand. Reconstruct the empty moss green upholstered seat and cream train wall/window behind her. Keep the exact train geometry, framing, navy ink outlines, pale cream paper, ochre and moss countryside and screenprint texture. Do not add any new objects or text. This is an animation clean plate; preserve the existing background exactly where visible. 16:9.",
+      "sha256": "6230cac56f54b8cf0417d9a6f03cbdab91cdb7007c4b9e5863ec772670746fa2",
+      "generatedAt": "2026-11-11T23:29:49.826671+00:00"
+    },
+    {
+      "file": "countryside.png",
+      "model": "gemini-3.1-flash-image",
+      "prompt": "Use the supplied illustration as the exact art direction. Draw ONLY the countryside seen through a train window, without any interior, train, passenger, headphones, text, window frame, seat or border. Extra-wide panorama composition with enormous pale cream sky occupying upper 60 percent, distant rolling ochre hills, muted moss shrubs, small sparse buildings and lower golden fields. Navy fine hand-inked contours and subtle warm screenprint paper texture. No foreground poles. Quiet restrained editorial illustration, not photorealistic. Match original cream colour and muted palette. 16:9.",
+      "sha256": "f7eb50cb170507896fcdb0f883981c996839fe061c240a4c0c0cdf4b59ed61cd",
+      "generatedAt": "2026-11-11T23:29:48.658886+00:00"
+    }
+  ],
+  "passenger": "Hand-traced alpha mask of approved original; no automatic vectorization.",
+  "train-interior": "Generated clean plate with window openings masked for parallax.",
+  "landscape": "Generated matching panorama, cropped to animation overscan."
+}

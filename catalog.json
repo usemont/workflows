@@ -368,6 +368,20 @@
       ]
     },
     {
+      "name": "explainer-steps",
+      "title": "Step-by-step explainer",
+      "category": "Explainers",
+      "description": "How noise-cancelling headphones reduce train rumble: layered illustration, opposite-phase waveforms, three numbered steps and a takeaway. Editable text and palette. 1920 × 1080, 24 seconds.",
+      "path": "templates/explainers/explainer-steps",
+      "files": [
+        "scene.tsx",
+        "create.py",
+        "README.md",
+        "assets/provenance.json",
+        "assets/keyframe-prompt.txt"
+      ]
+    },
+    {
       "name": "terminal-showcase",
       "title": "Terminal showcase",
       "category": "Terminal demos",
