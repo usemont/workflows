@@ -2,7 +2,7 @@
 
 Native Mont TSX, **1920 × 1080, 30 fps, 3.6 seconds**. A real vector marker circles an illustrative first-pass approval metric in an original Mont production note. No browser runtime, remote assets, raster frames, or arrow cursor disguised as a pen.
 
-Preview: `mont templates preview annotate-cursor`
+Preview: `npx usemont templates preview annotate-cursor`
 
 ## Timing
 

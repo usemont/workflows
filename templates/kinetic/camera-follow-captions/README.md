@@ -4,7 +4,7 @@
 
 ## Use
 
-Preview with `mont templates preview camera-follow-captions`, or load `scene.tsx` as a native `programmatic.scene` span. Set its frame and `width` / `height` variables to the canvas dimensions. Duration: **5000 ms**; edit preview: **3600 ms**.
+Preview with `npx usemont templates preview camera-follow-captions`, or load `scene.tsx` as a native `programmatic.scene` span. Set its frame and `width` / `height` variables to the canvas dimensions. Duration: **5000 ms**; edit preview: **3600 ms**.
 
 - `word1`…`word6`: editable short uppercase words.
 - `background`, `ink1`…`ink6`: editable colors. All six inks default to the same gold.
@@ -29,7 +29,7 @@ The final composition holds from **3000–4350 ms**, fades until **4650 ms**, th
 With native `mont` and `ffmpeg` on PATH:
 
 ```sh
-python3 templates/kinetic/camera-follow-captions/verify.py
+npx --yes --package=usemont -- python3 templates/kinetic/camera-follow-captions/verify.py
 ```
 
 The check renders disposable landscape and portrait projects. Diagnostic ink overrides identify actual word bounds. Assertions cover packed baseline/left-edge placement, accumulated framing, unrevealed future words, word visibility before camera landing, outward-only moves, a stable final hold, the blank reset interval, and golden-ratio cap heights. Portrait uses repeated H glyphs for comparable raster measurements.

@@ -16,8 +16,8 @@ Eight square transitions from Mont's native catalog, with the approved animated 
 ## Preview or create
 
 ```sh
-mont templates preview cube-flip-transition
-mont templates create cube-flip-transition ./cube-flip-transition
+npx usemont templates preview cube-flip-transition
+npx usemont templates create cube-flip-transition ./cube-flip-transition
 ```
 
 Each bundle contains two editable sources:

@@ -3,13 +3,13 @@
 Original square Mont scene: eight video-production tool subscriptions pop from their own centers into an asymmetric constellation, then keep gently wobbling. Covers screen recording, video editing, captions, motion graphics, audio cleanup, AI voiceover, color grading, and export. Prices are illustrative, not Mont pricing. Cards only—no heading or total.
 
 ```sh
-mont templates preview subscription-pile-up
+npx usemont templates preview subscription-pile-up
 ```
 
 ## Verification
 
 ```sh
-python3 templates/product-marketing/subscription-pile-up/verify.py --output /tmp/subscription-pile-up.mp4
+npx --yes --package=usemont -- python3 templates/product-marketing/subscription-pile-up/verify.py --output /tmp/subscription-pile-up.mp4
 ```
 
 Requires `mont`, Python 3, `ffmpeg`, and `ffprobe`. The command renders with explicit palette inputs (as supplied by `templates create`) and checks staggered arrivals, centered spring overshoot, continued motion after settling, and clearance between padded card silhouettes throughout the rendered animation (excluding the first 120 ms of each fade-in). To check an existing default render, pass `--video /path/to/video.mp4` instead.

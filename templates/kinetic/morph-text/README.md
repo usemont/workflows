@@ -3,7 +3,7 @@
 Five bold phrases melt into one another on warm paper. Native text layers blur and overlap; a generic WGSL shader thresholds their combined alpha into crisp, merging letterforms—not a simple crossfade. No browser runtime or template-specific renderer element is required.
 
 ```sh
-mont templates preview morph-text
+npx usemont templates preview morph-text
 ```
 
 Save editable inputs as `settings.json`:
@@ -26,7 +26,7 @@ Save editable inputs as `settings.json`:
 ```
 
 ```sh
-mont templates preview morph-text --inputs settings.json
+npx usemont templates preview morph-text --inputs settings.json
 ```
 
 Defaults: **960 × 540**, **12.5 seconds**. Each phrase holds for **1500 ms**, then morphs for **1000 ms**; the fifth morph returns to the first phrase. `holdMs` is clamped to zero and `morphMs` to at least 200 ms. Changing timing changes the loop period, not the scene duration; adjust the span duration in the editor to include more cycles.

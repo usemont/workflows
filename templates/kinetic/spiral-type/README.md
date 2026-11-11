@@ -3,7 +3,7 @@
 A centered, full-frame spiral of **DM Serif Display** lettering in ice blue on midnight navy. Every glyph follows the same circular spiral with constant turn spacing and a uniform type size; the text drifts along the path at a measured pace.
 
 ```sh
-mont templates preview spiral-type
+npx usemont templates preview spiral-type
 ```
 
 Save editable inputs as `settings.json`:
@@ -13,7 +13,7 @@ Save editable inputs as `settings.json`:
 ```
 
 ```sh
-mont templates preview spiral-type --inputs settings.json
+npx usemont templates preview spiral-type --inputs settings.json
 ```
 
 Defaults: **960 × 540**, **24 fps**, **9 seconds**; `text: "FOLLOW A DIFFERENT GRAVITY"`, `background: "#101A30"`, `ink: "#DDEAFF"`, `speed: 0.85`, `innerRadius: 62`, `pitch: 46`. Radius and pitch are reference pixels at a 540-pixel short edge and scale with the canvas. Negative `speed` reverses motion; zero freezes it.

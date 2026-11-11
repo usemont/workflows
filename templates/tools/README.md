@@ -3,12 +3,12 @@
 Ten editable synthetic examples demonstrate Mont's recording layouts, themes, and cursor styles. These are SDK-composed recorder projects, not pre-rendered video templates.
 
 ```sh
-mont tools list
-mont tools show corner-bubble
-mont tools preview corner-bubble
+npx usemont tools list
+npx usemont tools show corner-bubble
+npx usemont tools preview corner-bubble
 ```
 
-Use the names in the [Tools gallery](../../README.md#tools) with `mont tools preview`. Requires a CLI build with the `tools` commands.
+Use the names in the [Tools gallery](../../README.md#tools) with `npx usemont tools preview`. Requires a CLI build with the `tools` commands.
 
 Each example includes a pinned `recipe.json` and self-contained `asset-catalog.json`. Recipes select the layout, theme, source geometry, and, for screen recordings, cursor style with 1.2× cursor-follow zoom and 250 ms framing smoothing. Camera-only uses camera and microphone sources without cursor settings. Landscape examples use 16:9, Shorts stack uses 9:16, and Square post uses 1:1. Layouts do not animate independently of the authored interaction.
 

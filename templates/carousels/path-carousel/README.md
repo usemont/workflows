@@ -5,7 +5,7 @@ Ten original posters follow a rising sigmoid, not a circular arc. The central **
 **1920 × 1080 · seamless 14-second loop · 30 fps recommended.** Portable Mont scene primitives; embedded images, no browser or network dependency during rendering. Keep the offscreen image prewarm nodes when editing the scene.
 
 ```sh
-mont templates preview path-carousel
+npx usemont templates preview path-carousel
 ```
 
 ## Edit

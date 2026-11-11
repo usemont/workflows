@@ -33,11 +33,11 @@ Native adaptation of the notification-cascade template in the [HyperFrames catal
 
 Requires a CLI build with **embedded-image template materialization support**. `0.1.0-preview.16` lacks this capability and fails standalone rendering with missing image resources. Availability of a public CLI release with this support is not claimed here; the gallery GIF remains independently viewable.
 
-Preview independently with `mont templates preview notification-cascade`. To create and render without opening an app:
+Preview independently with `npx usemont templates preview notification-cascade`. To create and render without opening an app:
 
 ```sh
-mont templates create notification-cascade ./notification-cascade
-mont render -C ./notification-cascade --output ./notification-cascade.mp4 --fps 30
+npx usemont templates create notification-cascade ./notification-cascade
+npx usemont render -C ./notification-cascade --output ./notification-cascade.mp4 --fps 30
 ```
 
 The catalog downloads only `scene.tsx`: image data is embedded and fonts use Mont's existing catalog. The [gallery GIF](../../../assets/previews/notification-cascade.gif) comes from the approved standalone MP4, with full-frame portrait scaling and Rec.709-to-sRGB conversion; it is not scene media.
@@ -45,7 +45,7 @@ The catalog downloads only `scene.tsx`: image data is embedded and fonts use Mon
 Native render checks (requires `mont`, `ffmpeg`, `ffprobe` and Python with Pillow):
 
 ```sh
-python3 templates/notifications/verify.py --scene notification-cascade --output /absolute/path/to/previews
+npx --yes --package=usemont -- python3 templates/notifications/verify.py --scene notification-cascade --output /absolute/path/to/previews
 ```
 
 <details>

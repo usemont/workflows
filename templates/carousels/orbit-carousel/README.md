@@ -5,7 +5,7 @@ Ten original posters orbit a tipped sphere using golden-angle spacing and depth-
 **1920 × 1080 · seamless 14-second loop · 30 fps recommended.** Portable Mont scene primitives; embedded images, no browser or network dependency during rendering.
 
 ```sh
-mont templates preview orbit-carousel
+npx usemont templates preview orbit-carousel
 ```
 
 ## Edit

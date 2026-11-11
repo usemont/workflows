@@ -19,12 +19,12 @@ Square, nine-second Mont scene featuring **Forma**, an original fictional video 
 Requires Node.js, Python 3, and Mont CLI with programmatic spans and native rendering:
 
 ```sh
-python3 templates/cursors/website-3d-cursor/verify.py
-python3 templates/cursors/website-3d-cursor/verify.py /absolute/path/to/new-preview.mp4
+npx --yes --package=usemont -- python3 templates/cursors/website-3d-cursor/verify.py
+npx --yes --package=usemont -- python3 templates/cursors/website-3d-cursor/verify.py /absolute/path/to/new-preview.mp4
 ```
 
 Use a new output filename: Mont does not overwrite existing renders. The script materializes the embedded cursor as a workspace resource and renders at 960 × 960, 30 fps. Motion checks cover camera continuity, delayed following and settling, camera/rotation response to a changed cursor route, cursor target alignment, restrained face-up angles, close framing, invisible entrances, monotonic arrivals, and exact landing positions. An independent full 3D projection verifies each landing against surface-normal translation throughout its entrance.
 
-Preview from the published catalog with `mont templates preview website-3d-cursor`.
+Preview from the published catalog with `npx usemont templates preview website-3d-cursor`.
 
 Standalone create/preview requires the embedded-image template materialization support described in the repository README; CLI `0.1.0-preview.16` lacks that support. The verification script handles image materialization explicitly.

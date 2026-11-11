@@ -3,7 +3,7 @@
 Pale-mint lettering becomes an airy sculpture above a quiet copper glow on ink blue. A rounded bulge travels through each letter's contours. It uses **one face throughout**—not a font crossfade, weight swap, or uniform word-scale animation. There are no corner labels or brand furniture.
 
 ```sh
-mont templates preview letter-inflate-swell
+npx usemont templates preview letter-inflate-swell
 ```
 
 Save editable inputs as `settings.json`:
@@ -13,7 +13,7 @@ Save editable inputs as `settings.json`:
 ```
 
 ```sh
-mont templates preview letter-inflate-swell --inputs settings.json
+npx usemont templates preview letter-inflate-swell --inputs settings.json
 ```
 
 Defaults: **960 × 540**, **24 fps**, **12 seconds**; `text: "aerate"`, `background: "#142A3A"`, `mint: "#DAF3DE"`, `copper: "#CA8968"`, `bulge: 0.85`, `cycleMs: 6000`, `phase: 0` (cycle fraction). `bulge: 0` gives undeformed lettering.

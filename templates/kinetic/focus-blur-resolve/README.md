@@ -21,7 +21,7 @@ Default loop: 3.6 seconds, with a 200 ms stagger. Each cycle has a 200 ms blank 
 Requires `mont`, `ffmpeg`, and Python 3:
 
 ```sh
-python3 templates/kinetic/focus-blur-resolve/verify.py
+npx --yes --package=usemont -- python3 templates/kinetic/focus-blur-resolve/verify.py
 ```
 
 Renders landscape and portrait variants with different words and timing. Checks that the first word appears while the last remains hidden, actual optical blur independently of opacity, a stationary sharp hold, centered width-fitting text, and blank loop boundaries. Temporary workspaces and videos are removed automatically.

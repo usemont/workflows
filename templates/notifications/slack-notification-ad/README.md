@@ -23,11 +23,11 @@ Native adaptation of [the HyperFrames source](https://hyperframes.heygen.com/pub
 
 Requires a CLI build with **embedded-image template materialization support**. `0.1.0-preview.16` lacks this capability and fails standalone rendering with missing image resources. Availability of a public CLI release with this support is not claimed here; the gallery GIF remains independently viewable.
 
-Preview independently with `mont templates preview slack-notification-ad`. To create and render without opening an app:
+Preview independently with `npx usemont templates preview slack-notification-ad`. To create and render without opening an app:
 
 ```sh
-mont templates create slack-notification-ad ./slack-notification-ad
-mont render -C ./slack-notification-ad --output ./slack-notification-ad.mp4 --fps 30
+npx usemont templates create slack-notification-ad ./slack-notification-ad
+npx usemont render -C ./slack-notification-ad --output ./slack-notification-ad.mp4 --fps 30
 ```
 
 The catalog downloads only `scene.tsx`: image data is embedded and fonts use Mont's existing catalog. The [gallery GIF](../../../assets/previews/slack-notification-ad.gif) comes from the approved standalone MP4, with full-frame portrait scaling and Rec.709-to-sRGB conversion; it is not scene media.

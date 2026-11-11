@@ -3,7 +3,7 @@
 Full-frame horizontal rows alternate cobalt and citron. Archivo 900 lettering travels in opposing directions while a measured wave stretches and releases individual glyph cells, with offset timing between rows.
 
 ```sh
-mont templates preview stretch-row-repeater
+npx usemont templates preview stretch-row-repeater
 ```
 
 Save editable inputs as `settings.json`:
@@ -13,7 +13,7 @@ Save editable inputs as `settings.json`:
 ```
 
 ```sh
-mont templates preview stretch-row-repeater --inputs settings.json
+npx usemont templates preview stretch-row-repeater --inputs settings.json
 ```
 
 Defaults: **960 × 540**, **24 fps**, **12 seconds**; `text: "MAKE ROOM"`, `alternateText: "FOR THE UNEXPECTED"`, `background: "#171B22"`, `cobalt: "#3857FF"`, `lemon: "#E7F478"`, `stretch: 0.48`, `cycleMs: 12000`, `phase: 0` (radians). `stretch: 0` disables the compression wave without stopping the row travel.

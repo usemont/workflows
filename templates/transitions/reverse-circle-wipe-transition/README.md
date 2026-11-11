@@ -5,8 +5,8 @@ Reusable reverse circular wipe transition that keeps the outgoing frame inside a
 **Canvas:** 540 × 540 (square). **Transition:** 1 seconds. **License:** MIT.
 
 ```sh
-mont templates preview reverse-circle-wipe-transition
-mont templates create reverse-circle-wipe-transition ./reverse-circle-wipe-transition
+npx usemont templates preview reverse-circle-wipe-transition
+npx usemont templates create reverse-circle-wipe-transition ./reverse-circle-wipe-transition
 ```
 
 The CLI entry, `preview.tsx`, is a self-contained A/B demonstration with animated scene-texture captures. The gallery GIF shows the approved live-frame timeline demonstration.

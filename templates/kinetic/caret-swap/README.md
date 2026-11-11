@@ -6,7 +6,7 @@ Inspired by the motion vocabulary of [Hyperframes Caret Swap](https://hyperframe
 
 ## Use
 
-Preview with `mont templates preview caret-swap`, or load `scene.tsx` as a `programmatic.scene` capability with the matching frame size. Set both `width` and `height` variables when changing aspect ratio. The default cycle is **3,600 ms**, with an edit preview at 2,300 ms; longer placements loop automatically.
+Preview with `npx usemont templates preview caret-swap`, or load `scene.tsx` as a `programmatic.scene` capability with the matching frame size. Set both `width` and `height` variables when changing aspect ratio. The default cycle is **3,600 ms**, with an edit preview at 2,300 ms; longer placements loop automatically.
 
 | Variables | Purpose |
 | --- | --- |
@@ -45,7 +45,7 @@ The bundled Archivo 900 face must be available in the native runtime. Text must 
 With installed `mont` and `ffmpeg`:
 
 ```sh
-python3 templates/kinetic/caret-swap/verify.py
+npx --yes --package=usemont -- python3 templates/kinetic/caret-swap/verify.py
 ```
 
 The check creates temporary native projects, renders landscape/title-case defaults and portrait/edited mixed-width copy, and samples their actual pixels. It checks bounded monotonic coverage and collapse without rebound or text leaks, neighboring-frame discrete typing, caret movement proportional to narrow/wide glyphs, phase-anchored hold blinking, a stable readable hold, reverse coverage/reveal without overshoot, framing, and matching source/caret silhouettes immediately before and at the loop boundary. No source-text assertions.

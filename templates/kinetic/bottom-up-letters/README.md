@@ -3,7 +3,7 @@
 A single editable line rises letter by letter, settles with a small overshoot, holds, and exits upward. Built entirely from native Mont text and groups; no custom renderer or runtime JavaScript.
 
 ```sh
-mont templates preview bottom-up-letters
+npx usemont templates preview bottom-up-letters
 ```
 
 `scene.tsx` exposes:
@@ -24,7 +24,7 @@ Default loop: 4.2 seconds. Entry begins at 250 ms; the final 650 ms contains the
 Requires `mont`, `ffmpeg`, and Python 3:
 
 ```sh
-python3 templates/kinetic/bottom-up-letters/verify.py
+npx --yes --package=usemont -- python3 templates/kinetic/bottom-up-letters/verify.py
 ```
 
 Renders landscape and portrait variants, checks staggered entry, single-line horizontal fit, and hidden text at the loop seam. Temporary workspaces and videos are removed automatically.

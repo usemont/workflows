@@ -3,7 +3,7 @@
 Square, 3.4-second continuation of **Subscription pile-up**. Three editable white words stamp onto a widening constellation of video-tool subscriptions. Prices are illustrative, not Mont pricing.
 
 ```sh
-mont templates preview punch-through-words
+npx usemont templates preview punch-through-words
 ```
 
 Three word impacts pull the camera back in discrete steps. New cards spring out from their own centers in staggered waves, overshoot, and retain independent wobble; they are not an already-present offscreen field. Camera velocity drives directional motion blur; separate Gaussian defocus increases on each beat. Background shake grows on successive impacts (1×, 1.45×, 1.9×), while the words stay stable. An edge vignette and soft dark shading sit beneath the words.
@@ -17,7 +17,7 @@ Edit `firstWord`, `secondWord`, and `thirdWord` for copy; `firstImpactMs` (the l
 Render and verify with the installed Mont CLI, FFmpeg, and Python 3:
 
 ```sh
-python3 templates/product-marketing/punch-through-words/verify.py /tmp/punch-through-words.mp4
+npx --yes --package=usemont -- python3 templates/product-marketing/punch-through-words/verify.py /tmp/punch-through-words.mp4
 ```
 
 The check binds explicit palette values and verifies square output, sequential word beats, sharp stamp contact synchronized with background recession, three camera pullbacks with stationary intervals, coverage between the original and expanded field, progressive defocus, and a newly revealed card entrance that grows, overshoots, and settles.

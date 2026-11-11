@@ -17,7 +17,7 @@ Arrival (0–650 ms), carry (900–2000 ms), lift and release use minimum-jerk q
 From the workflows repository, with an embedded-image-capable `mont`, `ffmpeg`, `ffprobe`, and Python Pillow available:
 
 ```sh
-python3 templates/cursors/drag-and-drop/verify.py /absolute/path/to/new-review-directory
+npx --yes --package=usemont -- python3 templates/cursors/drag-and-drop/verify.py /absolute/path/to/new-review-directory
 ```
 
 The output directory must not already exist. The command creates an editable native workspace, binds the cursor resource, renders `drag-and-drop.mp4` at 30 fps, and checks the carry trajectory, pointer grip, bounded frame-to-frame drag speed/acceleration, landing, list gap closure, counts, and stationary card after release. It also saves color-managed reference frames.

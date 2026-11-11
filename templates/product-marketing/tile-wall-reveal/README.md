@@ -1,6 +1,6 @@
 # Tile wall reveal
 
-Preview with `mont templates preview tile-wall-reveal`, or create an editable workspace with `mont templates create tile-wall-reveal ./tile-wall`.
+Preview with `npx usemont templates preview tile-wall-reveal`, or create an editable workspace with `npx usemont templates create tile-wall-reveal ./tile-wall`.
 
 A close view of an original video-editing panel pulls back to four mini-tools, then lands in an isometric wall that keeps panning along its own vertical axis. No headline overlay. Square 960 × 960, 6 seconds, silent.
 
@@ -18,7 +18,7 @@ All tiles inherit one transform, keeping gutters and relative positions continuo
 ## Verify / render
 
 ```sh
-python3 verify.py /absolute/path/to/new-output.mp4
+npx --yes --package=usemont -- python3 verify.py /absolute/path/to/new-output.mp4
 ```
 
 Requires `mont`, Node, FFmpeg and FFprobe. The check exercises camera easing, isometric projection and pan continuity, renders all explicit inputs through the native SDK, and verifies square frame count, the closeup-to-wall visual change and continued motion after landing. It uses an isolated temporary workspace and refuses to overwrite an existing render.

@@ -5,7 +5,7 @@ Ten original posters travel around a tilted perspective circle. The front-center
 **1920 × 1080 · seamless 14-second loop · 30 fps recommended.** Portable Mont scene primitives; embedded images, no browser or network dependency during rendering.
 
 ```sh
-mont templates preview circle-carousel
+npx usemont templates preview circle-carousel
 ```
 
 ## Edit

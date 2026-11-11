@@ -5,8 +5,8 @@ Reusable shader transition that dissolves the outgoing clip into the incoming cl
 **Canvas:** 1080 × 1080 (square). **Transition:** 1 seconds. **License:** MIT.
 
 ```sh
-mont templates preview dither-dissolve-transition
-mont templates create dither-dissolve-transition ./dither-dissolve-transition
+npx usemont templates preview dither-dissolve-transition
+npx usemont templates create dither-dissolve-transition ./dither-dissolve-transition
 ```
 
 The CLI entry, `preview.tsx`, is a self-contained A/B demonstration with animated scene-texture captures. The gallery GIF shows the approved live-frame timeline demonstration.

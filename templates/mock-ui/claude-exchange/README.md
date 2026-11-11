@@ -24,4 +24,4 @@ The prompt uses static native `text.glyphs` records and opacity reveals. Replies
 
 ## Verification
 
-From the repository root, run `python3 templates/mock-ui/verify.py` with `mont` and `ffmpeg` installed. It renders the available Mock UI scenes and checks progressive typing, complete sent text, cleared input, streamed replies, and the final reading hold.
+From the repository root, run `npx --yes --package=usemont -- python3 templates/mock-ui/verify.py` with `mont` and `ffmpeg` installed. It renders the available Mock UI scenes and checks progressive typing, complete sent text, cleared input, streamed replies, and the final reading hold.

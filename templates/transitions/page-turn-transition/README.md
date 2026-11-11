@@ -5,8 +5,8 @@ Reusable page-curl transition that rolls the outgoing clip away like a turning p
 **Canvas:** 1080 × 1080 (square). **Transition:** 1 seconds. **License:** MIT.
 
 ```sh
-mont templates preview page-turn-transition
-mont templates create page-turn-transition ./page-turn-transition
+npx usemont templates preview page-turn-transition
+npx usemont templates create page-turn-transition ./page-turn-transition
 ```
 
 The CLI entry, `preview.tsx`, is a self-contained A/B demonstration with animated scene-texture captures. The gallery GIF shows the approved live-frame timeline demonstration.

@@ -5,8 +5,8 @@ Reusable object flyby wipe transition that hides the moving A/B edge behind a cl
 **Canvas:** 1080 × 1080 (square). **Transition:** 1 seconds. **License:** MIT.
 
 ```sh
-mont templates preview object-flyby-wipe-transition
-mont templates create object-flyby-wipe-transition ./object-flyby-wipe-transition
+npx usemont templates preview object-flyby-wipe-transition
+npx usemont templates create object-flyby-wipe-transition ./object-flyby-wipe-transition
 ```
 
 The CLI entry, `preview.tsx`, is a self-contained A/B demonstration with animated scene-texture captures. The gallery GIF shows the approved live-frame timeline demonstration.

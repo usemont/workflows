@@ -5,8 +5,8 @@ Reusable procedural noise-field dissolve transition with soft threshold motion, 
 **Canvas:** 1080 × 1080 (square). **Transition:** 1 seconds. **License:** MIT.
 
 ```sh
-mont templates preview noise-field-dissolve-transition
-mont templates create noise-field-dissolve-transition ./noise-field-dissolve-transition
+npx usemont templates preview noise-field-dissolve-transition
+npx usemont templates create noise-field-dissolve-transition ./noise-field-dissolve-transition
 ```
 
 The CLI entry, `preview.tsx`, is a self-contained A/B demonstration with animated scene-texture captures. The gallery GIF shows the approved live-frame timeline demonstration.

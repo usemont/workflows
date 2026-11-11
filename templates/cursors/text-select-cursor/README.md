@@ -4,7 +4,7 @@ Native Mont TSX, **1920 × 1080, 5.6 seconds, 30 fps**.
 
 A light document receives the first-party Mont arrow, switches to Mont’s I-beam, selects a phrase character by character, raises a floating formatting toolbar, clicks **Bold**, and holds the genuinely bold result while the pointer moves aside.
 
-Preview: `mont templates preview text-select-cursor`
+Preview: `npx usemont templates preview text-select-cursor`
 
 ## Editable inputs
 

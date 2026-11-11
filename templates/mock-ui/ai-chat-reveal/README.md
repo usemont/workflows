@@ -8,14 +8,14 @@ An unbranded mobile conversation about creating a video with Mont MCP. Authored 
 
 ## Preview
 
-From a clone of this repository with `mont` installed:
+From a clone of this repository with Node.js 22+ and Python 3 available:
 
 ```sh
-python3 templates/mock-ui/ai-chat-reveal/create.py ./ai-chat
-mont edit -C ./ai-chat
+npx --yes --package=usemont -- python3 templates/mock-ui/ai-chat-reveal/create.py ./ai-chat
+npx usemont edit -C ./ai-chat
 ```
 
-The creator snapshots both editable TSX sources into the project and registers the keyboard as a scene asset. No engine changes or bundled video are required. The CLI's catalog preview currently loads a single source without scene-asset registration, so this composed template uses the command above instead of `mont templates preview`.
+The creator snapshots both editable TSX sources into the project and registers the keyboard as a scene asset. No engine changes or bundled video are required. The CLI's catalog preview currently loads a single source without scene-asset registration, so this composed template uses the command above instead of `npx usemont templates preview`.
 
 ## Timing
 
@@ -37,4 +37,4 @@ The `AssetScene` named `mobile-keyboard` receives the active character, case, sy
 
 ## Verification
 
-Run `python3 templates/mock-ui/verify.py` from the repository root with `mont` and `ffmpeg` installed. It renders all Mock UI scenes and checks progressive typing, complete sent text, restored placeholders, streamed replies and stable reading holds. The portrait scene additionally checks capital/lowercase keys, Shift, space, punctuation, released keys during pauses and the final conversation hold.
+Run `npx --yes --package=usemont -- python3 templates/mock-ui/verify.py` from the repository root with `mont` and `ffmpeg` installed. It renders all Mock UI scenes and checks progressive typing, complete sent text, restored placeholders, streamed replies and stable reading holds. The portrait scene additionally checks capital/lowercase keys, Shift, space, punctuation, released keys during pauses and the final conversation hold.

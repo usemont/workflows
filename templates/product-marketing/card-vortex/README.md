@@ -22,5 +22,5 @@ The logarithm in the spiral integral uses a portable polynomial because source-o
 Check differential angular speed, inward acceleration, capped core speed and heading alignment, then render and check the visible convergence, cleared edges and light pulse. Requires Python 3, Node.js, `mont`, `ffmpeg` and `ffprobe`:
 
 ```sh
-python3 templates/product-marketing/card-vortex/verify.py /tmp/card-vortex.mp4
+npx --yes --package=usemont -- python3 templates/product-marketing/card-vortex/verify.py /tmp/card-vortex.mp4
 ```
