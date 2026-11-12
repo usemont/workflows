@@ -6,7 +6,7 @@
 
 Preview animated templates, customize text and colors, and render videos from your terminal with [Mont CLI](https://github.com/usemont/mont-cli).
 
-[Installation](#installation) · [Try a template](#try-a-template) · [Launch videos](#launch-videos) · [Charts](#charts) · [Explainers](#explainers) · [Kinetic typography](#kinetic-typography) · [Product marketing](#product-marketing) · [Mock UI](#mock-ui) · [Notifications](#notifications) · [Social posts](#social-posts) · [Subscribe & follow](#subscribe--follow) · [Cursors](#cursors) · [Transitions](#transitions) · [Tools](#tools) · [Terminal showcase](#terminal-showcase) · [Workflows](#workflows) · [Contribute](#contribute)
+[Installation](#installation) · [Try a template](#try-a-template) · [Launch videos](#launch-videos) · [Charts](#charts) · [Explainers](#explainers) · [Personalized](#personalized) · [Kinetic typography](#kinetic-typography) · [Product marketing](#product-marketing) · [Mock UI](#mock-ui) · [Notifications](#notifications) · [Social posts](#social-posts) · [Subscribe & follow](#subscribe--follow) · [Cursors](#cursors) · [Transitions](#transitions) · [Tools](#tools) · [Terminal showcase](#terminal-showcase) · [Workflows](#workflows) · [Contribute](#contribute)
 
 ## Installation
 
@@ -92,6 +92,29 @@ npx usemont templates preview lesson-step-localized
 ```
 
 Choose a locale in the [localization inputs](templates/explainers/lesson-step-localized/localization.json), then pass the file with `--inputs`. See the [template guide](templates/explainers/lesson-step-localized).
+
+## Personalized
+
+### Mont Unwrapped
+
+A personalized editing-room recap: videos made, minutes edited, and a favourite layout, connected by one continuous camera move. 1920 × 1080 · 19 seconds · fictional demo stats.
+
+<table>
+<tr>
+<td align="center"><a href="assets/previews/mont-unwrapped-ada.mp4"><img src="assets/previews/mont-unwrapped-ada.gif" width="320" alt="Ada’s recap with a contact sheet, film reel, timeline and side-by-side layout"></a><br>Ada · Side by side · <a href="assets/previews/mont-unwrapped-ada.mp4">Watch MP4</a></td>
+<td align="center"><a href="assets/previews/mont-unwrapped-mateo.mp4"><img src="assets/previews/mont-unwrapped-mateo.gif" width="320" alt="Mateo’s personalized recap with a corner camera bubble"></a><br>Mateo · Corner bubble · <a href="assets/previews/mont-unwrapped-mateo.mp4">Watch MP4</a></td>
+<td align="center"><a href="assets/previews/mont-unwrapped-lin.mp4"><img src="assets/previews/mont-unwrapped-lin.gif" width="320" alt="Lin’s personalized recap with a presenter layout"></a><br>Lin · Presenter · <a href="assets/previews/mont-unwrapped-lin.mp4">Watch MP4</a></td>
+</tr>
+</table>
+
+From a clone of this repository:
+
+```sh
+npx --yes --package=usemont -- python3 templates/personalized/mont-unwrapped/create.py ./mont-unwrapped --row 0
+npx usemont edit -C ./mont-unwrapped
+```
+
+Supply your own rows through `--inputs`; see the [example inputs](templates/personalized/mont-unwrapped/inputs.example.json) and [template guide](templates/personalized/mont-unwrapped).
 
 ## Kinetic typography
 

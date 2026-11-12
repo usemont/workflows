@@ -396,6 +396,21 @@
       ]
     },
     {
+      "name": "mont-unwrapped",
+      "title": "Mont Unwrapped",
+      "category": "Personalized",
+      "description": "A personalized editing-room recap with animated video and minute counts, a favourite recording layout, and a final poster. Includes three fictional input rows and previews. 1920 × 1080, 19 seconds.",
+      "path": "templates/personalized/mont-unwrapped",
+      "files": [
+        "scene.tsx",
+        "create.py",
+        "inputs.example.json",
+        "check.py",
+        "README.md",
+        "assets/mont-logo.png"
+      ]
+    },
+    {
       "name": "terminal-showcase",
       "title": "Terminal showcase",
       "category": "Terminal demos",
