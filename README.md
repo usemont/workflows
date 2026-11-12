@@ -72,6 +72,27 @@ npx usemont templates preview explainer-steps
 
 Customize the text and palette with the [Python creator](templates/explainers/explainer-steps).
 
+### Localized lesson step
+
+One browser-caching lesson, with every on-screen string supplied through a localization JSON table. 1920 × 1080 · 14 seconds · Mont CLI preview.18+ for Japanese.
+
+<table>
+<tr>
+<td align="center"><a href="assets/previews/lesson-step-localized-en.mp4"><img src="assets/previews/lesson-step-localized-en.gif" width="360" alt="English browser-caching lesson"></a><br>English · <a href="assets/previews/lesson-step-localized-en.mp4">Watch MP4</a></td>
+<td align="center"><a href="assets/previews/lesson-step-localized-de.mp4"><img src="assets/previews/lesson-step-localized-de.gif" width="360" alt="German browser-caching lesson with longer translated headlines"></a><br>Deutsch · <a href="assets/previews/lesson-step-localized-de.mp4">Watch MP4</a></td>
+</tr>
+<tr>
+<td align="center"><a href="assets/previews/lesson-step-localized-sv.mp4"><img src="assets/previews/lesson-step-localized-sv.gif" width="360" alt="Swedish browser-caching lesson"></a><br>Svenska · <a href="assets/previews/lesson-step-localized-sv.mp4">Watch MP4</a></td>
+<td align="center"><a href="assets/previews/lesson-step-localized-ja.mp4"><img src="assets/previews/lesson-step-localized-ja.gif" width="360" alt="Japanese browser-caching lesson with embedded Japanese typography"></a><br>日本語 · <a href="assets/previews/lesson-step-localized-ja.mp4">Watch MP4</a></td>
+</tr>
+</table>
+
+```sh
+npx usemont templates preview lesson-step-localized
+```
+
+Choose a locale in the [localization inputs](templates/explainers/lesson-step-localized/localization.json), then pass the file with `--inputs`. See the [template guide](templates/explainers/lesson-step-localized).
+
 ## Kinetic typography
 
 <table>

@@ -382,6 +382,20 @@
       ]
     },
     {
+      "name": "lesson-step-localized",
+      "title": "Localized lesson step",
+      "category": "Explainers",
+      "description": "A browser-caching lesson driven by one localization JSON table, with English, German, Swedish and Japanese copy, per-script fonts and editable step progress. 1920 × 1080, 14 seconds. Japanese requires Mont CLI preview.18 or newer.",
+      "path": "templates/explainers/lesson-step-localized",
+      "files": [
+        "scene.tsx",
+        "localization.json",
+        "create.py",
+        "check.py",
+        "README.md"
+      ]
+    },
+    {
       "name": "terminal-showcase",
       "title": "Terminal showcase",
       "category": "Terminal demos",

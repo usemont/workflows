@@ -1,0 +1,43 @@
+{
+  "locale": "en",
+  "stepNumber": 2,
+  "stepCount": 4,
+  "messages": {
+    "en": {
+      "step": "Step", "of": "of", "topic": "How browser caching works",
+      "opening": "Your browser", "emphasis": "keeps a copy.",
+      "explanation": "It saves some files on your device,\nso it can reuse them on your next visit.",
+      "firstVisit": "First visit", "nextVisit": "Next visit", "browser": "Browser", "server": "Server",
+      "storedCopy": "Saved on your device", "result": "Less to download next time.",
+      "caveat": "The browser checks again when the saved copy expires.",
+      "font": "Inter", "weight": 600, "headingSize": 108, "bodySize": 34
+    },
+    "de": {
+      "step": "Schritt", "of": "von", "topic": "So funktioniert der Browser-Cache",
+      "opening": "Dein Browser", "emphasis": "speichert\neine Kopie.",
+      "explanation": "Er speichert einige Dateien auf deinem Gerät.\nBeim nächsten Besuch kann er sie wiederverwenden.",
+      "firstVisit": "Beim ersten Besuch", "nextVisit": "Beim nächsten Besuch", "browser": "Browser", "server": "Server",
+      "storedCopy": "Auf deinem Gerät gespeichert", "result": "Beim nächsten Mal weniger laden.",
+      "caveat": "Ist die Kopie abgelaufen, fragt der Browser erneut beim Server nach.",
+      "font": "Inter", "weight": 600, "headingSize": 102, "bodySize": 32
+    },
+    "sv": {
+      "step": "Steg", "of": "av", "topic": "Så fungerar webbläsarens cache",
+      "opening": "Din webbläsare", "emphasis": "sparar en kopia.",
+      "explanation": "Den sparar vissa filer på din enhet\noch kan använda dem igen vid nästa besök.",
+      "firstVisit": "Första besöket", "nextVisit": "Nästa besök", "browser": "Webbläsare", "server": "Server",
+      "storedCopy": "Sparat på din enhet", "result": "Mindre att hämta nästa gång.",
+      "caveat": "När kopian har gått ut frågar webbläsaren servern igen.",
+      "font": "Inter", "weight": 600, "headingSize": 102, "bodySize": 34
+    },
+    "ja": {
+      "step": "ステップ", "of": "/", "topic": "ブラウザーのキャッシュの仕組み",
+      "opening": "ブラウザーは", "emphasis": "コピーを\n保存します。",
+      "explanation": "一部のファイルを端末に保存し、\n次に開くときに再利用します。",
+      "firstVisit": "初めて開くとき", "nextVisit": "次に開くとき", "browser": "ブラウザー", "server": "サーバー",
+      "storedCopy": "端末に保存したコピー", "result": "次回のダウンロードが少なくなります。",
+      "caveat": "保存したコピーの有効期限が切れると、再びサーバーに確認します。",
+      "font": "Zen Kaku Gothic New", "weight": 400, "headingSize": 100, "bodySize": 34
+    }
+  }
+}
