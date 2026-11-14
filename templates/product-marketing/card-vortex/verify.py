@@ -71,7 +71,7 @@ def render(output):
             "requestedId": "card-vortex",
             "placement": dict(startMs=0, durationMs=3000, trackId="template", layer=0),
             "capability": {"kind": "programmatic.scene", "version": 1, "state": {
-                "sourceTsx": source, "variables": INPUTS,
+                "source": source, "variables": INPUTS,
                 "frame": dict(x=0, y=0, width=960, height=960),
             }},
             "interaction": dict(selectable=True),

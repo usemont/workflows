@@ -62,7 +62,7 @@ def verify(output):
         "requestedId": "drag-and-drop",
         "placement": {"startMs": 0, "durationMs": 3600, "trackId": "template", "layer": 0},
         "capability": {"kind": "programmatic.scene", "version": 1, "state": {
-            "sourceTsx": source, "variables": {},
+            "source": source, "variables": {},
             "frame": {"x": 0, "y": 0, "width": 1920, "height": 1080}}},
         "interaction": {"selectable": True},
         "producer": {"kind": "programmatic", "id": "mont-templates", "version": "1"}}})

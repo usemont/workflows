@@ -65,7 +65,7 @@ def render(output):
             "requestedId": "tile-wall-reveal",
             "placement": dict(startMs=0, durationMs=6000, trackId="template", layer=0),
             "capability": {"kind": "programmatic.scene", "version": 1, "state": {
-                "sourceTsx": source, "variables": INPUTS,
+                "source": source, "variables": INPUTS,
                 "frame": dict(x=0, y=0, width=960, height=960),
             }},
             "interaction": dict(selectable=True),

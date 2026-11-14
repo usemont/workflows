@@ -35,7 +35,7 @@ def verify(root, width, height, words=None):
         "requestedId": "camera-follow-captions",
         "placement": {"startMs": 0, "durationMs": 5000, "trackId": "template", "layer": 0},
         "capability": {"kind": "programmatic.scene", "version": 1, "state": {
-            "sourceTsx": SOURCE, "variables": variables,
+            "source": SOURCE, "variables": variables,
             "frame": {"x": 0, "y": 0, "width": width, "height": height}}},
         "interaction": {"selectable": True},
         "producer": {"kind": "programmatic", "id": "mont-templates", "version": "1"}}})

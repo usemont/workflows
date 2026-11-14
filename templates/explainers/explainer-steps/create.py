@@ -55,7 +55,7 @@ def create(workspace, inputs):
         "requestedId": "explainer-steps",
         "placement": {"startMs": 0, "durationMs": 24000, "trackId": "template", "layer": 0},
         "capability": {"kind": "programmatic.scene", "version": 1, "state": {
-            "sourceTsx": source, "variables": inputs,
+            "source": source, "variables": inputs,
             "frame": {"x": 0, "y": 0, "width": 1920, "height": 1080}}},
         "interaction": {"selectable": True},
         "producer": {"kind": "programmatic", "id": "mont-templates", "version": "1"}}})

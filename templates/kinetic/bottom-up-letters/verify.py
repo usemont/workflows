@@ -27,7 +27,7 @@ def verify(root, width, height, variables):
         "requestedId": "bottom-up-letters",
         "placement": {"startMs": 0, "durationMs": 4200, "trackId": "template", "layer": 0},
         "capability": {"kind": "programmatic.scene", "version": 1, "state": {
-            "sourceTsx": SOURCE, "variables": {"width": width, "height": height, **variables},
+            "source": SOURCE, "variables": {"width": width, "height": height, **variables},
             "frame": {"x": 0, "y": 0, "width": width, "height": height}}},
         "interaction": {"selectable": True},
         "producer": {"kind": "programmatic", "id": "mont-templates", "version": "1"}}})

@@ -67,9 +67,9 @@ def create(workspace, inputs=None, ui_scene=None, ui_image=None, logo_image=None
         "requestedId": "feature-launch",
         "placement": {"startMs": 0, "durationMs": 12000, "trackId": "template", "layer": 0},
         "capability": {"kind": "programmatic.scene", "version": 1, "state": {
-            "sourceTsx": source, "variables": variables,
+            "source": source, "variables": variables,
             "imageAssets": {"product-ui": {"scene": {
-                "identity": "feature-launch-product-ui", "sourceTsx": child_source, "dependencies": {}}}},
+                "identity": "feature-launch-product-ui", "source": child_source, "dependencies": {}}}},
             "frame": {"x": 0, "y": 0, "width": 1920, "height": 1080}}},
         "interaction": {"selectable": True},
         "producer": {"kind": "programmatic", "id": "mont-templates", "version": "1"}}})

@@ -37,7 +37,7 @@ def render(output):
             "requestedId": "punch-through-words",
             "placement": dict(startMs=0, durationMs=3400, trackId="template", layer=0),
             "capability": {"kind": "programmatic.scene", "version": 1, "state": {
-                "sourceTsx": source, "variables": PALETTE,
+                "source": source, "variables": PALETTE,
                 "frame": dict(x=0, y=0, width=960, height=960),
             }},
             "interaction": dict(selectable=True),

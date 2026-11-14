@@ -87,7 +87,7 @@ def create(workspace, inputs, mode, width=1920, height=1080):
         'requestedId': 'animated-chart',
         'placement': {'startMs': 0, 'durationMs': duration, 'trackId': 'template', 'layer': 0},
         'capability': {'kind': 'programmatic.scene', 'version': 1, 'state': {
-            'sourceTsx': source, 'variables': variables, 'frame': {'x': 0, 'y': 0, 'width': width, 'height': height}}},
+            'source': source, 'variables': variables, 'frame': {'x': 0, 'y': 0, 'width': width, 'height': height}}},
         'interaction': {'selectable': True},
         'producer': {'kind': 'programmatic', 'id': 'mont-templates', 'version': '1'}}})
     return workspace

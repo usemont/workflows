@@ -108,7 +108,7 @@ def render(output):
         }))
         dispatch({"type": "user_intent:programmatic_span.create", "request": {
             "requestedId": "website-3d-cursor", "placement": {"startMs": 0, "durationMs": 9000, "trackId": "template", "layer": 0},
-            "capability": {"kind": "programmatic.scene", "version": 1, "state": {"sourceTsx": source, "variables": {"cursorSrc": "resource:website-cursor"}, "frame": {"x": 0, "y": 0, "width": 960, "height": 960}}},
+            "capability": {"kind": "programmatic.scene", "version": 1, "state": {"source": source, "variables": {"cursorSrc": "resource:website-cursor"}, "frame": {"x": 0, "y": 0, "width": 960, "height": 960}}},
             "interaction": {"selectable": True}, "producer": {"kind": "programmatic", "id": "mont-templates", "version": "1"}
         }})
         run("mont", "render", "-C", workspace, "--output", str(output), "--fps", "30", "--json")

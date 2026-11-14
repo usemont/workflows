@@ -55,7 +55,7 @@ def verify(output, name, case, create_only=False):
         "requestedId": name,
         "placement": {"startMs": 0, "durationMs": duration, "trackId": "template", "layer": 0},
         "capability": {"kind": "programmatic.scene", "version": 1, "state": {
-            "sourceTsx": source, "variables": {},
+            "source": source, "variables": {},
             "frame": {"x": 0, "y": 0, "width": width, "height": height}}},
         "interaction": {"selectable": True},
         "producer": {"kind": "programmatic", "id": "mont-templates", "version": "1"}}})

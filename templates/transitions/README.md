@@ -40,7 +40,7 @@ Use `scene.tsx` in a programmatic transition span, with the two input bindings o
     "clipB": "incoming-span-id"
   },
   "state": {
-    "sourceTsx": "<contents of scene.tsx>"
+    "source": "<contents of scene.tsx>"
   }
 }
 ```

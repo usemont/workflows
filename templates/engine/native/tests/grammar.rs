@@ -19,7 +19,7 @@ fn every_declared_variant_is_editable_at_both_aspect_ratios_in_every_theme() {
                     assert_eq!(state["frame"]["width"], w);
                     assert_eq!(state["frame"]["height"], h);
                     assert!(!state["variables"].as_object().unwrap().is_empty());
-                    assert!(state["sourceTsx"].as_str().is_some());
+                    assert!(state["source"].as_str().is_some());
                     assert_eq!(spans,compile_video(&json!({"theme":theme,"scenes":[fixtures::scene(family,variant.as_str().unwrap())]}),w,h).unwrap());
                 }
             }

@@ -27,7 +27,7 @@ def create(workspace, inputs, mont="mont"):
             "requestedId": "product-finish-launch",
             "placement": {"startMs": 0, "durationMs": 12000, "trackId": "template", "layer": 0},
             "capability": {"kind": "programmatic.scene", "version": 1, "state": {
-                "sourceMont": (HERE / "scene.mont").read_text(), "variables": inputs,
+                "source": (HERE / "scene.tsx").read_text(), "variables": inputs,
                 "frame": {"x": 0, "y": 0, "width": 1920, "height": 1080}}},
             "interaction": {"selectable": True},
             "producer": {"kind": "programmatic", "id": "mont-templates", "version": "1"}}})

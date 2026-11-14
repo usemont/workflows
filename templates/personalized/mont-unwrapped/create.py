@@ -65,7 +65,7 @@ def create(workspace, inputs, logo=None):
     dispatch({"type": "user_intent:programmatic_span.create", "request": {
         "requestedId": "mont-unwrapped", "placement": {"startMs": 0, "durationMs": 19000, "trackId": "template", "layer": 0},
         "capability": {"kind": "programmatic.scene", "version": 1, "state": {
-            "sourceTsx": (HERE / "scene.tsx").read_text(), "variables": variables,
+            "source": (HERE / "scene.tsx").read_text(), "variables": variables,
             "frame": {"x": 0, "y": 0, "width": 1920, "height": 1080}}},
         "interaction": {"selectable": True},
         "producer": {"kind": "programmatic", "id": "mont-templates", "version": "1"}}})

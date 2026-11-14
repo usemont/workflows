@@ -48,7 +48,7 @@ def verify(root, name, case):
             "requestedId": name,
             "placement": {"startMs": 0, "durationMs": case.get("duration", 11500), "trackId": "template", "layer": 0},
             "capability": {"kind": "programmatic.scene", "version": 1, "state": {
-                "sourceTsx": (ROOT / name / "scene.tsx").read_text(), "variables": {},
+                "source": (ROOT / name / "scene.tsx").read_text(), "variables": {},
                 "frame": {"x": 0, "y": 0, "width": 960, "height": 540}}},
             "interaction": {"selectable": True},
             "producer": {"kind": "programmatic", "id": "mont-templates", "version": "1"}}})

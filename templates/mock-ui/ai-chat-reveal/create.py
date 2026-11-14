@@ -33,10 +33,10 @@ def create(workspace):
             "requestedId": "ai-chat-reveal",
             "placement": {"startMs": 0, "durationMs": 11500, "trackId": "template", "layer": 0},
             "capability": {"kind": "programmatic.scene", "version": 1, "state": {
-                "sourceTsx": (HERE / "scene.tsx").read_text(), "variables": {},
+                "source": (HERE / "scene.tsx").read_text(), "variables": {},
                 "imageAssets": {"mobile-keyboard": {"scene": {
                     "identity": "mobile-keyboard",
-                    "sourceTsx": (HERE.parent.parent / "components/mobile-keyboard/scene.tsx").read_text(),
+                    "source": (HERE.parent.parent / "components/mobile-keyboard/scene.tsx").read_text(),
                     "dependencies": {},
                 }}},
                 "frame": {"x": 0, "y": 0, "width": 540, "height": 960}}},

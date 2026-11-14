@@ -51,7 +51,7 @@ Register the asset in the programmatic scene state's `imageAssets`:
   "mobile-keyboard": {
     "scene": {
       "identity": "mobile-keyboard",
-      "sourceTsx": "<contents of scene.tsx>",
+      "source": "<contents of scene.tsx>",
       "dependencies": {}
     }
   }

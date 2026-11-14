@@ -57,7 +57,7 @@ def create(workspace):
         "requestedId": "recording-layouts-launch",
         "placement": {"startMs": 0, "durationMs": 18000, "trackId": "launch", "layer": 0},
         "capability": {"kind": "programmatic.scene", "version": 1, "sourceBindings": bindings, "state": {
-            "sourceTsx": source, "variables": {"screenSource": "host-frame:screen", "cameraSource": "host-frame:camera"}, "imageAssets": image_assets,
+            "source": source, "variables": {"screenSource": "host-frame:screen", "cameraSource": "host-frame:camera"}, "imageAssets": image_assets,
             "frame": {"x": 0, "y": 0, "width": 1920, "height": 1080}}},
         "interaction": {"selectable": True}, "producer": {"kind": "programmatic", "id": "mont-templates", "version": "1"}}})
     return workspace

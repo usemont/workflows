@@ -140,7 +140,7 @@ fn span(
 ) -> Result<Value, String> {
     Ok(
         json!({"id":id,"placement":{"startMs":start.round() as i64,"durationMs":duration.round() as i64,"trackId":if layer==100 {"explainer-captions"} else {"explainer-scenes"},"layer":layer},
-        "capability":{"kind":"programmatic.scene","version":1,"state":{"sourceTsx":source,"variables":variables,"frame":{"x":0,"y":0,"width":width,"height":height}}},
+        "capability":{"kind":"programmatic.scene","version":1,"state":{"source":source,"variables":variables,"frame":{"x":0,"y":0,"width":width,"height":height}}},
         "interaction":{"selectable":true},"producer":{"kind":"programmatic","id":"mont-explainer-templates","version":"1"}}),
     )
 }
