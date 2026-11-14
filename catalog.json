@@ -2,6 +2,14 @@
   "schemaVersion": 1,
   "templates": [
     {
+      "name": "camera-assembly",
+      "title": "Camera assembly",
+      "category": "Tools",
+      "description": "Scene presentations: an editable four-step 3D camera lesson, with scene-only and presenter variants using SDK recording layouts and the Glass theme.",
+      "path": "templates/tools/scene-presentations/camera-assembly",
+      "files": ["scene.tsx", "create.py", "recording.example.json", "README.md"]
+    },
+    {
       "name": "stretch-row-repeater",
       "title": "Stretch row repeater",
       "category": "Kinetic typography",

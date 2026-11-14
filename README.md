@@ -271,6 +271,17 @@ Square A/B previews. Each template includes a standalone scene and a reusable li
 </tr>
 </table>
 
+### Scene presentations
+
+Step through an editable 3D scene, with or without a presenter.
+
+<table>
+<tr>
+<td align="center" valign="top"><a href="templates/tools/scene-presentations/camera-assembly"><img src="assets/previews/camera-assembly-scene-camera.gif" width="380" alt="Four-step 3D camera assembly with a fictional AI presenter and Glass recording theme"></a><br><a href="templates/tools/scene-presentations/camera-assembly"><strong>Scene + presenter</strong></a></td>
+<td align="center" valign="top"><a href="templates/tools/scene-presentations/camera-assembly"><img src="assets/previews/camera-assembly-scene-only.gif" width="380" alt="Four-step 3D camera assembly without a presenter"></a><br><a href="templates/tools/scene-presentations/camera-assembly"><strong>Scene only</strong></a></td>
+</tr>
+</table>
+
 ## Terminal showcase
 
 <table>

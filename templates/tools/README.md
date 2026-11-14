@@ -1,4 +1,4 @@
-# Recorder tools
+# Recording and presentation tools
 
 Ten editable synthetic examples demonstrate Mont's recording layouts, themes, and cursor styles. These are SDK-composed recorder projects, not pre-rendered video templates.
 
@@ -23,5 +23,11 @@ The SDK resolves recorder definitions from [usemont/programmatic-tools](https://
 - [`silence.m4a`](../../assets/template-media/recorders/silence.m4a): silent microphone input for reproducible previews.
 
 All examples are eight seconds at 24 fps. The presenter is AI-generated and fictional.
+
+## Scene presentations
+
+[Camera assembly](scene-presentations/camera-assembly) adds a four-step 3D lesson with scene-only and presenter variants. It reuses the SDK's recording layouts and Glass theme, with 800 ms transitions between steps. Both previews are ten seconds at 24 fps.
+
+These editable playback templates use the ordinary template catalog, not the `tools preview` recipes above. See the [template README](scene-presentations/camera-assembly) for creation commands, editable timing, and the fictional presenter's provenance.
 
 [Apache-2.0](../../LICENSE)
